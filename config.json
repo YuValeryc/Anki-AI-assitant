@@ -1,0 +1,15 @@
+{
+    "enabled": true,
+    "api_key": "",
+    "max_tokens": 500,
+    "selected_prompt": "explain_simple", 
+    "target_field": "Front",
+    "custom_prompts": {
+        "explain_simple": "Bạn có muốn biết thêm về: {text}",
+        "synonyms_antonyms": "Từ đồng nghĩa/trái nghĩa của: {text}",
+        "real_world_examples": "Ví dụ thực tế về: {text}",
+        "memory_tips": "Mẹo ghi nhớ cho: {text}"
+    },
+    "deck_settings": {},
+    "chat_style": "..."
+}

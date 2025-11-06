@@ -1,3 +1,4 @@
+# gemini_chatbot.py
 import os
 import json
 import requests
@@ -82,7 +83,7 @@ class GeminiChatBot:
             "selected_prompt": "explain_simple",
             "target_field": "Front",
             "custom_prompts": {
-                "explain_simple": "Bạn có muốn biết thêm về: {text}",
+                "explain_simple": "Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ",
                 "synonyms_antonyms": "Từ đồng nghĩa/trái nghĩa của: {text}",
                 "real_world_examples": "Ví dụ thực tế về: {text}",
                 "memory_tips": "Mẹo ghi nhớ cho: {text}"
@@ -328,14 +329,13 @@ class GeminiChatBot:
             return
         
         try:
-            if self.chat_window is None:
+            if not hasattr(self, "chat_window") or self.chat_window is None:
                 self.chat_window = ChatWindow(self)
-            
-            self.chat_window.show()
-            self.chat_window.activateWindow()
-            self.debug.log("Chat window opened successfully")
-            
+            self.chat_window.inject_ui()
+            self.debug.log("Chat window injected successfully")
+
         except Exception as e:
+            showInfo(f"Lỗi khi inject chat window: {e}")
             self.debug.log(f"Error opening chat window: {e}", True)
     
     def call_gemini_api(self, prompt: str) -> str:

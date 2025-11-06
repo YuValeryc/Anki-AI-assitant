@@ -1,3 +1,4 @@
+# debug_tools.py
 import os
 import sys
 from aqt import mw

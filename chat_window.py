@@ -89,6 +89,7 @@ class ChatWindow:
             border: none; /* Remove subtle border for cleaner look */
         }
         #gemini-chat-header {
+            padding-left: 25px;
             background: linear-gradient(135deg, #4A90E2, #5D5BD9); /* Brighter, more vibrant blue gradient */
             color: white;
             font-weight: 600; /* Slightly bolder */

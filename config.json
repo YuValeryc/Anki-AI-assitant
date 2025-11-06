@@ -7,7 +7,8 @@
         "explain_simple": "Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ",
         "synonyms_antonyms": "Từ đồng nghĩa/trái nghĩa của: {text}",
         "real_world_examples": "Ví dụ thực tế về: {text}",
-        "memory_tips": "Mẹo ghi nhớ cho: {text}"
+        "memory_tips": "Mẹo ghi nhớ cho: {text}",
+        "custom": "🛠 Custom (tự nhập phía dưới)"
     },
     "deck_settings": {}
 }

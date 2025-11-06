@@ -4495,3 +4495,375 @@ Front: 畑...
 [21:39:00] [LOAD] Loading settings for deck: Kanji::Kanji_N5 (ID=1725878862948)
 [21:39:00] [LOAD] Dùng model từ subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 11
 [21:39:00] [LOAD] Deck Kanji::Kanji_N5 settings: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}
+[21:49:28] PyCmd received: updateToolbar
+[21:49:28] Bridge command received: updateToolbar
+[21:50:03] Cleaned up injected chat UI elements.
+[21:50:03] Cleanup completed
+[21:50:20] Initializing GeminiChatBot...
+[21:50:20] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}, '1725878862948': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725877737735': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725891642670': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725889630012': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890727243': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890417067': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725883693207': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725891389564': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725889374509': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890025134': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725891206967': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725889845288': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725879117418': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725883309858': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725882518516': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725883056578': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890209243': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725888698558': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725878885152': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890951098': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1726415621811': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730211184472': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730257710725': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256799492': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258209387': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256404830': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256143459': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730219185226': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730257040503': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730248449927': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258498604': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258022863': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730212780016': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730249235883': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730248378399': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}}, 'target_field': 'Front'}
+[21:50:20] Configuration loaded successfully
+[21:50:20] Menu setup completed
+[21:50:20] PyCmd handlers registered
+[21:50:20] Registered 4 hooks
+[21:50:20] GeminiChatBot initialized successfully
+[21:50:20] State change: startup → deckBrowser
+[21:52:05] PyCmd received: open:1725878862948
+[21:52:05] State change: deckBrowser → overview
+[21:52:05] PyCmd received: study
+[21:52:05] State change: overview → review
+[21:52:05] === on_show_question TRIGGERED ===
+[21:52:05] Card ID: 1725891885690
+Deck ID: 1725891642670
+Note ID: 1725891885690
+Fields: ['Kanji', 'Onyomi', 'Kunyomi', 'Meaning']
+Front: 畑...
+[21:52:05] Cleaned up injected chat UI elements.
+[21:52:05] Showing button for: 畑...
+[21:52:05] ChatBot button injected successfully
+[21:52:06] PyCmd received: updateToolbar
+[21:52:07] PyCmd received: gemini_chat_open
+[21:52:07] Opening chat window...
+[21:52:07] Initializing injected ChatWindow...
+[21:52:07] PyCmd handlers registered
+[21:52:07] Deck settings for chat window: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}
+[21:52:07] Target field: Kanji
+[21:52:07] Field value: 畑
+[21:52:07] Prompt key selected: memory_tips
+[21:52:07] Resolved prompt template: Mẹo ghi nhớ cho: {text}
+[21:52:07] Auto prompt generated: Mẹo ghi nhớ cho: 畑
+[21:52:07] Attempting to pre-fill with: Mẹo ghi nhớ cho: 畑...
+[21:52:07] Chat window injected/shown successfully
+[21:52:07] Bridge command received: gemini_chat_open
+[21:52:07] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[21:52:07] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[21:52:07] Prefilled input successfully.
+[21:52:15] PyCmd received: gemini_chat_close
+[21:52:15] Bridge command received: gemini_chat_close
+[21:52:19] PyCmd received: gemini_chat_open
+[21:52:19] Opening chat window...
+[21:52:19] Deck settings for chat window: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}
+[21:52:19] Target field: Kanji
+[21:52:19] Field value: 畑
+[21:52:19] Prompt key selected: memory_tips
+[21:52:19] Resolved prompt template: Mẹo ghi nhớ cho: {text}
+[21:52:19] Auto prompt generated: Mẹo ghi nhớ cho: 畑
+[21:52:19] Attempting to pre-fill with: Mẹo ghi nhớ cho: 畑...
+[21:52:19] Chat window injected/shown successfully
+[21:52:19] Bridge command received: gemini_chat_open
+[21:52:19] Prefilled input successfully.
+[21:52:20] PyCmd received: gemini_chat_send_message
+[21:52:20] Bridge command received: gemini_chat_send_message
+[21:52:20] Calling Gemini API...
+[21:52:26] Gemini API call successful
+[21:52:26] message before formatting: Tuyệt vời! Đây là một vài mẹo ghi nhớ cho từ 畑 (はたけ - hatake), có nghĩa là "ruộng":
+
+**1. Liên tưởng hình ảnh:**
+
+*   **Phân tích chữ Hán:** Chữ 畑 được tạo bởi hai chữ 木 (mộc - cây). Hãy tưởng tượng bạn đang ở một cánh đồng rộng lớn, nơi có rất nhiều **cây** trồng san sát nhau, tạo nên một **ruộng** xanh mướt.
+*   **Mặt trời và cây:** Hình dung ánh **mặt trời** (日 - nhật, một phần của chữ 田 - điền) chiếu xuống những **cây** (木 - mộc) trên **ruộng**.
+
+**2. Liên kết âm thanh:**
+
+*   **"Hata" (はた):** Hãy liên tưởng đến một người nông dân đang **"hắt"** (phát âm gần giống "hata") mồ hôi trên **ruộng** của mình.
+*   **"Take" (け):** Tưởng tượng bạn đang **"care"** (chăm sóc - phát âm gần giống "take") cho những cây trồng trên **ruộng**.
+
+**3. Sử dụng câu chuyện:**
+
+*   "Ông lão **Hata** trồng rất nhiều **cây** trên **ruộng** của mình. Mỗi ngày, ông đều **care** (take) cho từng cây để chúng lớn nhanh."
+
+**4. Thẻ ghi nhớ (Flashcards):**
+
+*   Mặt trước: 畑
+*   Mặt sau: はたけ (hatake) - ruộng, cánh đồng
+
+**5. Luyện tập viết:**
+
+*   Viết đi viết lại chữ 畑 nhiều lần để làm quen với các nét.
+
+**Lời khuyên:**
+
+*   Kết hợp nhiều phương pháp khác nhau để đạt hiệu quả tốt nhất.
+*   Sử dụng hình ảnh minh họa để tăng khả năng ghi nhớ.
+*   Ôn tập thường xuyên để củng cố kiến thức.
+
+Chúc bạn học tốt tiếng Nhật!
+...
+[21:52:26] message after formatting: Tuyệt vời! Đây là một vài mẹo ghi nhớ cho từ 畑 (はたけ - hatake), có nghĩa là "ruộng":<br><br><b>1. Liên tưởng hình ảnh:</b><br><br><i>   <b>Phân tích chữ Hán:</b> Chữ 畑 được tạo bởi hai chữ 木 (mộc - cây). Hãy tưởng tượng bạn đang ở một cánh đồng rộng lớn, nơi có rất nhiều <b>cây</b> trồng san sát nhau, tạo nên một <b>ruộng</b> xanh mướt.<br></i>   <b>Mặt trời và cây:</b> Hình dung ánh <b>mặt trời</b> (日 - nhật, một phần của chữ 田 - điền) chiếu xuống những <b>cây</b> (木 - mộc) trên <b>ruộng</b>.<br><br><b>2. Liên kết âm thanh:</b><br><br><i>   <b>"Hata" (はた):</b> Hãy liên tưởng đến một người nông dân đang <b>"hắt"</b> (phát âm gần giống "hata") mồ hôi trên <b>ruộng</b> của mình.<br></i>   <b>"Take" (け):</b> Tưởng tượng bạn đang <b>"care"</b> (chăm sóc - phát âm gần giống "take") cho những cây trồng trên <b>ruộng</b>.<br><br><b>3. Sử dụng câu chuyện:</b><br><br><i>   "Ông lão <b>Hata</b> trồng rất nhiều <b>cây</b> trên <b>ruộng</b> của mình. Mỗi ngày, ông đều <b>care</b> (take) cho từng cây để chúng lớn nhanh."<br><br><b>4. Thẻ ghi nhớ (Flashcards):</b><br><br></i>   Mặt trước: 畑<br><i>   Mặt sau: はたけ (hatake) - ruộng, cánh đồng<br><br><b>5. Luyện tập viết:</b><br><br></i>   Viết đi viết lại chữ 畑 nhiều lần để làm quen với các nét.<br><br><b>Lời khuyên:</b><br><br><i>   Kết hợp nhiều phương pháp khác nhau để đạt hiệu quả tốt nhất.<br></i>   Sử dụng hình ảnh minh họa để tăng khả năng ghi nhớ.<br>*   Ôn tập thường xuyên để củng cố kiến thức.<br><br>Chúc bạn học tốt tiếng Nhật!<br>...
+[21:52:44] PyCmd received: gemini_chat_close
+[21:52:44] Bridge command received: gemini_chat_close
+[21:52:46] PyCmd received: gemini_chat_open
+[21:52:46] Opening chat window...
+[21:52:46] Deck settings for chat window: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}
+[21:52:46] Target field: Kanji
+[21:52:46] Field value: 畑
+[21:52:46] Prompt key selected: memory_tips
+[21:52:46] Resolved prompt template: Mẹo ghi nhớ cho: {text}
+[21:52:46] Auto prompt generated: Mẹo ghi nhớ cho: 畑
+[21:52:46] Attempting to pre-fill with: Mẹo ghi nhớ cho: 畑...
+[21:52:46] Chat window injected/shown successfully
+[21:52:46] Bridge command received: gemini_chat_open
+[21:52:46] Skipped prefill (already asked).
+[21:52:47] PyCmd received: gemini_chat_close
+[21:52:47] Bridge command received: gemini_chat_close
+[22:01:17] [LOAD] Loading settings for deck: Default (ID=1)
+[22:01:17] [LOAD] Deck Default settings: {}
+[22:04:20] Cleaned up injected chat UI elements.
+[22:04:20] Cleanup completed
+[22:04:31] Initializing GeminiChatBot...
+[22:04:31] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}, '1725878862948': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725877737735': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725891642670': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725889630012': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890727243': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890417067': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725883693207': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725891389564': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725889374509': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890025134': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725891206967': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725889845288': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725879117418': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725883309858': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725882518516': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725883056578': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890209243': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725888698558': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725878885152': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890951098': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1726415621811': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730211184472': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730257710725': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256799492': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258209387': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256404830': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256143459': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730219185226': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730257040503': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730248449927': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258498604': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258022863': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730212780016': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730249235883': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730248378399': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}}, 'target_field': 'Front'}
+[22:04:31] Configuration loaded successfully
+[22:04:31] Menu setup completed
+[22:04:31] PyCmd handlers registered
+[22:04:31] Registered 4 hooks
+[22:04:31] GeminiChatBot initialized successfully
+[22:04:31] State change: startup → deckBrowser
+[22:05:20] PyCmd received: open:1725878862948
+[22:05:20] State change: deckBrowser → overview
+[22:05:21] PyCmd received: study
+[22:05:21] State change: overview → review
+[22:05:21] === on_show_question TRIGGERED ===
+[22:05:21] Card ID: 1725891885690
+Deck ID: 1725891642670
+Note ID: 1725891885690
+Fields: ['Kanji', 'Onyomi', 'Kunyomi', 'Meaning']
+Front: 畑...
+[22:05:21] Cleaned up injected chat UI elements.
+[22:05:21] Showing button for: 畑...
+[22:05:21] ChatBot button injected successfully
+[22:05:21] PyCmd received: updateToolbar
+[22:05:26] [LOAD] Loading settings for deck: Default (ID=1)
+[22:05:26] [LOAD] Deck Default settings: {}
+[22:07:08] [LOAD] Loading settings for deck: Destination B1&2::B1::Destination_B1 (ID=1728745176996)
+[22:07:08] [LOAD] Dùng model từ subdeck: Destination B1&2::B1::Destination_B1::Unit_03
+[22:07:08] [LOAD] Deck Destination B1&2::B1::Destination_B1 settings: {}
+[22:11:38] Cleaned up injected chat UI elements.
+[22:11:38] Cleanup completed
+[22:11:55] Initializing GeminiChatBot...
+[22:11:55] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}, '1725878862948': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725877737735': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725891642670': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725889630012': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890727243': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890417067': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725883693207': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725891389564': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725889374509': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890025134': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725891206967': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725889845288': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725879117418': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725883309858': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725882518516': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725883056578': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890209243': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725888698558': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725878885152': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890951098': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1726415621811': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730211184472': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730257710725': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256799492': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258209387': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256404830': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256143459': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730219185226': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730257040503': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730248449927': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258498604': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258022863': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730212780016': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730249235883': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730248378399': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}}, 'target_field': 'Front'}
+[22:11:55] Configuration loaded successfully
+[22:11:55] Menu setup completed
+[22:11:55] PyCmd handlers registered
+[22:11:55] Registered 4 hooks
+[22:11:55] GeminiChatBot initialized successfully
+[22:11:55] State change: startup → deckBrowser
+[22:12:05] PyCmd received: open:1725878862948
+[22:12:05] State change: deckBrowser → overview
+[22:12:06] PyCmd received: study
+[22:12:06] State change: overview → review
+[22:12:06] === on_show_question TRIGGERED ===
+[22:12:06] Card ID: 1725891885690
+Deck ID: 1725891642670
+Note ID: 1725891885690
+Fields: ['Kanji', 'Onyomi', 'Kunyomi', 'Meaning']
+Front: 畑...
+[22:12:06] Cleaned up injected chat UI elements.
+[22:12:06] Showing button for: 畑...
+[22:12:06] ChatBot button injected successfully
+[22:12:07] PyCmd received: updateToolbar
+[22:12:11] [LOAD] Loading settings for deck: Default (ID=1)
+[22:12:11] [LOAD] Deck Default settings: {}
+[22:13:52] Cleaned up injected chat UI elements.
+[22:13:52] Cleanup completed
+[22:15:34] Initializing GeminiChatBot...
+[22:15:34] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}, '1725878862948': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725877737735': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725891642670': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725889630012': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890727243': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890417067': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725883693207': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725891389564': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725889374509': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890025134': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725891206967': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725889845288': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725879117418': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725883309858': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725882518516': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725883056578': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890209243': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725888698558': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725878885152': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890951098': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1726415621811': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730211184472': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730257710725': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256799492': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258209387': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256404830': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256143459': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730219185226': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730257040503': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730248449927': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258498604': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258022863': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730212780016': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730249235883': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730248378399': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}}, 'target_field': 'Front'}
+[22:15:34] Configuration loaded successfully
+[22:15:34] Menu setup completed
+[22:15:34] PyCmd handlers registered
+[22:15:34] Registered 4 hooks
+[22:15:34] GeminiChatBot initialized successfully
+[22:15:34] State change: startup → deckBrowser
+[22:15:43] PyCmd received: open:1728746313787
+[22:15:43] State change: deckBrowser → overview
+[22:15:44] PyCmd received: study
+[22:15:44] State change: overview → review
+[22:15:44] === on_show_question TRIGGERED ===
+[22:15:44] Card ID: 1728746323913
+Deck ID: 1728746313787
+Note ID: 1728746323912
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: in fact...
+[22:15:44] Cleaned up injected chat UI elements.
+[22:15:44] Showing button for: in fact...
+[22:15:44] ChatBot button injected successfully
+[22:15:45] PyCmd received: updateToolbar
+[22:15:48] Cleaned up injected chat UI elements.
+[22:15:48] Review ended - cleanup completed
+[22:15:48] State change: review → deckBrowser
+[22:15:48] Leaving review → cleaning UI
+[22:15:48] Cleaned up injected chat UI elements.
+[22:15:53] PyCmd received: open:1761820221095
+[22:15:53] State change: deckBrowser → overview
+[22:15:54] State change: overview → deckBrowser
+[22:16:00] PyCmd received: open:1725878862948
+[22:16:00] State change: deckBrowser → overview
+[22:16:02] PyCmd received: study
+[22:16:02] State change: overview → review
+[22:16:02] === on_show_question TRIGGERED ===
+[22:16:02] Card ID: 1725891885690
+Deck ID: 1725891642670
+Note ID: 1725891885690
+Fields: ['Kanji', 'Onyomi', 'Kunyomi', 'Meaning']
+Front: 畑...
+[22:16:02] Cleaned up injected chat UI elements.
+[22:16:02] Showing button for: 畑...
+[22:16:02] ChatBot button injected successfully
+[22:16:03] PyCmd received: updateToolbar
+[22:16:07] [LOAD] Loading settings for deck: Default (ID=1)
+[22:16:07] [LOAD] Deck Default settings: {}
+[22:16:14] [LOAD] Loading settings for deck: Kanji::Kanji_N5 (ID=1725878862948)
+[22:16:14] [LOAD] Dùng model từ subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 16
+[22:16:14] [LOAD] Deck Kanji::Kanji_N5 settings: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}
+[22:16:55] Configuration saved
+[22:16:56] [ADD PROMPT] kanji = Lấy 10 ví dụ âm on và âm kun cho: {text}
+[22:16:58] [SAVE] Saving settings for deck: Kanji::Kanji_N5 (ID=1725878862948)
+[22:16:58] [SAVE] Không tìm thấy model trong deck chính, thử subdeck...
+[22:16:58] [SAVE] Model lấy từ subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 10 (MID=1594195112676)
+[22:16:58] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 13 (ID=1725890209243)
+[22:16:58] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 8 (ID=1725888698558)
+[22:16:58] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 19 (ID=1725891642670)
+[22:16:58] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 1 (ID=1725877737735)
+[22:16:58] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 11 (ID=1725889845288)
+[22:16:58] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 14 (ID=1725890417067)
+[22:16:58] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 3 (ID=1725879117418)
+[22:16:58] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 17 (ID=1725891206967)
+[22:16:58] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 16 (ID=1725890951098)
+[22:16:58] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 18 (ID=1725891389564)
+[22:16:58] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 15 (ID=1725890727243)
+[22:16:58] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 2 (ID=1725878885152)
+[22:16:58] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 4 (ID=1725882518516)
+[22:16:58] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 6 (ID=1725883309858)
+[22:16:58] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 10 (ID=1725889630012)
+[22:16:58] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 7 (ID=1725883693207)
+[22:16:58] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 5 (ID=1725883056578)
+[22:16:58] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 12 (ID=1725890025134)
+[22:16:58] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 9 (ID=1725889374509)
+[22:16:58] Configuration saved
+[22:16:59] [SAVE DONE] Kanji::Kanji_N5 – Model ID=1594195112676
+[22:17:03] PyCmd received: gemini_chat_open
+[22:17:03] Opening chat window...
+[22:17:03] Initializing injected ChatWindow...
+[22:17:03] PyCmd handlers registered
+[22:17:03] Deck settings for chat window: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}
+[22:17:03] Target field: Kanji
+[22:17:03] Field value: 畑
+[22:17:03] Prompt key selected: kanji
+[22:17:03] Resolved prompt template: Lấy 10 ví dụ âm on và âm kun cho: {text}
+[22:17:03] Auto prompt generated: Lấy 10 ví dụ âm on và âm kun cho: 畑
+[22:17:03] Attempting to pre-fill with: Lấy 10 ví dụ âm on và âm kun cho: 畑...
+[22:17:03] Chat window injected/shown successfully
+[22:17:03] Bridge command received: gemini_chat_open
+[22:17:03] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[22:17:03] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[22:17:03] Prefilled input successfully.
+[22:17:05] PyCmd received: gemini_chat_send_message
+[22:17:05] Bridge command received: gemini_chat_send_message
+[22:17:05] Calling Gemini API...
+[22:17:11] Gemini API call successful
+[22:17:11] message before formatting: Tuyệt vời! Bạn muốn tìm hiểu về âm On và âm Kun của chữ Hán "畑" (Điền). Dưới đây là 10 ví dụ, kết hợp cả từ đơn và từ ghép, để bạn thấy rõ cách sử dụng của chúng:
+
+**Âm ON (はた [hata])**
+
+Âm On thường được dùng trong các từ Hán Việt hoặc từ ghép Hán Nhật. Tuy nhiên, chữ "畑" (Điền) có âm On khá đặc biệt và ít gặp trong các từ thông dụng.
+
+*   **畑地 (はたち - hatachi):** Đất canh tác, đất trồng trọt. Đây là từ ghép Hán Nhật, nhưng âm "はた" (hata) lại gần với âm Kun hơn là âm On thông thường.
+
+**Âm KUN (はたけ [hatake])**
+
+Âm Kun thường được dùng khi chữ Hán đứng một mình hoặc trong các từ thuần Nhật.
+
+1.  **畑 (はたけ - hatake):** Ruộng, nương, rẫy, đồng ruộng (nói chung). Đây là cách dùng phổ biến nhất của chữ "畑".
+2.  **麦畑 (むぎばたけ - mugibatake):** Ruộng lúa mì.
+3.  **菜畑 (なばたけ - nabatake):** Ruộng rau.
+4.  **花畑 (はなばたけ - hanabatake):** Vườn hoa, luống hoa.
+5.  **野菜畑 (やさいばたけ - yasaibatake):** Vườn rau, ruộng rau.
+6.  **畑仕事 (はたけしごと - hatake shigoto):** Công việc đồng áng, việc làm ruộng.
+7.  **畑作 (はたさく - hatasaku):** Trồng trọt trên ruộng, nương, rẫy.
+8.  **畑に入れる (はたけにいれる - hatake ni ireru):** Đi ra đồng (làm việc).
+9.  **畑一面 (はたけいちめん - hatake ichimen):** Khắp cánh đồng, cả cánh đồng.
+
+**Lưu ý:**
+
+*   Chữ "畑" có âm On (Hán Việt) là "Điền", nhưng âm On trong tiếng...
+[22:17:11] message after formatting: Tuyệt vời! Bạn muốn tìm hiểu về âm On và âm Kun của chữ Hán "畑" (Điền). Dưới đây là 10 ví dụ, kết hợp cả từ đơn và từ ghép, để bạn thấy rõ cách sử dụng của chúng:<br><br><b>Âm ON (はた [hata])</b><br><br>Âm On thường được dùng trong các từ Hán Việt hoặc từ ghép Hán Nhật. Tuy nhiên, chữ "畑" (Điền) có âm On khá đặc biệt và ít gặp trong các từ thông dụng.<br><br><i>   <b>畑地 (はたち - hatachi):</b> Đất canh tác, đất trồng trọt. Đây là từ ghép Hán Nhật, nhưng âm "はた" (hata) lại gần với âm Kun hơn là âm On thông thường.<br><br><b>Âm KUN (はたけ [hatake])</b><br><br>Âm Kun thường được dùng khi chữ Hán đứng một mình hoặc trong các từ thuần Nhật.<br><br>1.  <b>畑 (はたけ - hatake):</b> Ruộng, nương, rẫy, đồng ruộng (nói chung). Đây là cách dùng phổ biến nhất của chữ "畑".<br>2.  <b>麦畑 (むぎばたけ - mugibatake):</b> Ruộng lúa mì.<br>3.  <b>菜畑 (なばたけ - nabatake):</b> Ruộng rau.<br>4.  <b>花畑 (はなばたけ - hanabatake):</b> Vườn hoa, luống hoa.<br>5.  <b>野菜畑 (やさいばたけ - yasaibatake):</b> Vườn rau, ruộng rau.<br>6.  <b>畑仕事 (はたけしごと - hatake shigoto):</b> Công việc đồng áng, việc làm ruộng.<br>7.  <b>畑作 (はたさく - hatasaku):</b> Trồng trọt trên ruộng, nương, rẫy.<br>8.  <b>畑に入れる (はたけにいれる - hatake ni ireru):</b> Đi ra đồng (làm việc).<br>9.  <b>畑一面 (はたけいちめん - hatake ichimen):</b> Khắp cánh đồng, cả cánh đồng.<br><br><b>Lưu ý:</b><br><br></i>   Chữ "畑" có âm On (Hán Việt) là "Điền", nhưng âm On trong tiếng...
+[22:17:11] PyCmd received: ans
+[22:17:11] Bridge command received: ans
+[22:17:11] PyCmd received: updateToolbar
+[22:17:11] Bridge command received: updateToolbar
+[22:17:17] === on_show_question TRIGGERED ===
+[22:17:17] Card ID: 1725890453326
+Deck ID: 1725890417067
+Note ID: 1725890453325
+Fields: ['Kanji', 'Onyomi', 'Kunyomi', 'Meaning']
+Front: 名...
+[22:17:17] Cleaned up injected chat UI elements.
+[22:17:17] Showing button for: 名...
+[22:17:17] ChatBot button injected successfully
+[22:17:17] PyCmd received: updateToolbar
+[22:17:17] Bridge command received: updateToolbar
+[22:17:18] PyCmd received: updateToolbar
+[22:17:18] Bridge command received: updateToolbar
+[22:17:19] PyCmd received: gemini_chat_open
+[22:17:19] Opening chat window...
+[22:17:19] Deck settings for chat window: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}
+[22:17:19] Target field: Kanji
+[22:17:19] Field value: 名
+[22:17:19] Prompt key selected: kanji
+[22:17:19] Resolved prompt template: Lấy 10 ví dụ âm on và âm kun cho: {text}
+[22:17:19] Auto prompt generated: Lấy 10 ví dụ âm on và âm kun cho: 名
+[22:17:19] Attempting to pre-fill with: Lấy 10 ví dụ âm on và âm kun cho: 名...
+[22:17:19] Chat window injected/shown successfully
+[22:17:19] Bridge command received: gemini_chat_open
+[22:17:19] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[22:17:19] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[22:17:19] Prefilled input successfully.
+[22:17:21] PyCmd received: gemini_chat_send_message
+[22:17:21] Bridge command received: gemini_chat_send_message
+[22:17:21] Calling Gemini API...
+[22:17:25] Gemini API call successful
+[22:17:25] message before formatting: Tuyệt vời! Dưới đây là 10 ví dụ về từ có chữ Hán 名 (danh), kết hợp cả âm On (âm Hán Việt) và âm Kun (âm thuần Nhật):
+
+**Âm On (めい - mei, みょう - myou):**
+
+1.  **有名 (ゆうめい - yūmei):** Hữu danh, nổi tiếng
+2.  **氏名 (しめい - shimei):** Tên đầy đủ (họ và tên)
+3.  **名前 (なまえ - namae):** Tên (thường dùng, bao gồm cả âm Kun)
+4.  **命名 (めいめい - meimei):** Mệnh danh, đặt tên
+5.  **名所 (めいしょ - meisho):** Danh lam thắng cảnh
+6. **名作 (めいさく - meisaku):** Danh tác, tác phẩm nổi tiếng
+
+**Âm Kun (な - na):**
+
+7.  **名高い (なだかい - nadakai):** Nổi tiếng, lừng danh
+8.  **名ばかり (なばかり - nabakari):** Chỉ có danh tiếng, hữu danh vô thực
+9.  **名残 (なごり - nagori):** Dấu vết, tàn dư, luyến tiếc
+10. **悪名 (あくみょう - akumei):** Tiếng xấu, ác danh (có cả âm On và Kun)
+
+**Lưu ý:**
+
+*   Một số từ có thể kết hợp cả âm On và âm Kun của các chữ Hán khác nhau.
+*   Cách đọc (âm On hay âm Kun) phụ thuộc vào ngữ cảnh cụ thể của từ.
+
+Hy vọng điều này hữu ích!...
+[22:17:25] message after formatting: Tuyệt vời! Dưới đây là 10 ví dụ về từ có chữ Hán 名 (danh), kết hợp cả âm On (âm Hán Việt) và âm Kun (âm thuần Nhật):<br><br><b>Âm On (めい - mei, みょう - myou):</b><br><br>1.  <b>有名 (ゆうめい - yūmei):</b> Hữu danh, nổi tiếng<br>2.  <b>氏名 (しめい - shimei):</b> Tên đầy đủ (họ và tên)<br>3.  <b>名前 (なまえ - namae):</b> Tên (thường dùng, bao gồm cả âm Kun)<br>4.  <b>命名 (めいめい - meimei):</b> Mệnh danh, đặt tên<br>5.  <b>名所 (めいしょ - meisho):</b> Danh lam thắng cảnh<br>6. <b>名作 (めいさく - meisaku):</b> Danh tác, tác phẩm nổi tiếng<br><br><b>Âm Kun (な - na):</b><br><br>7.  <b>名高い (なだかい - nadakai):</b> Nổi tiếng, lừng danh<br>8.  <b>名ばかり (なばかり - nabakari):</b> Chỉ có danh tiếng, hữu danh vô thực<br>9.  <b>名残 (なごり - nagori):</b> Dấu vết, tàn dư, luyến tiếc<br>10. <b>悪名 (あくみょう - akumei):</b> Tiếng xấu, ác danh (có cả âm On và Kun)<br><br><b>Lưu ý:</b><br><br><i>   Một số từ có thể kết hợp cả âm On và âm Kun của các chữ Hán khác nhau.<br></i>   Cách đọc (âm On hay âm Kun) phụ thuộc vào ngữ cảnh cụ thể của từ.<br><br>Hy vọng điều này hữu ích!...
+[22:17:37] PyCmd received: gemini_chat_close
+[22:17:37] Bridge command received: gemini_chat_close
+[22:17:38] PyCmd received: gemini_chat_open
+[22:17:38] Opening chat window...
+[22:17:38] Deck settings for chat window: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}
+[22:17:38] Target field: Kanji
+[22:17:38] Field value: 名
+[22:17:38] Prompt key selected: kanji
+[22:17:38] Resolved prompt template: Lấy 10 ví dụ âm on và âm kun cho: {text}
+[22:17:38] Auto prompt generated: Lấy 10 ví dụ âm on và âm kun cho: 名
+[22:17:38] Attempting to pre-fill with: Lấy 10 ví dụ âm on và âm kun cho: 名...
+[22:17:38] Chat window injected/shown successfully
+[22:17:38] Bridge command received: gemini_chat_open
+[22:17:38] Skipped prefill (already asked).
+[22:17:40] PyCmd received: gemini_chat_close
+[22:17:40] Bridge command received: gemini_chat_close
+[22:19:22] Cleaned up injected chat UI elements.
+[22:19:22] Review ended - cleanup completed
+[22:19:22] State change: review → deckBrowser
+[22:19:22] Leaving review → cleaning UI
+[22:19:22] Cleaned up injected chat UI elements.
+[22:19:22] Bridge command received: decks

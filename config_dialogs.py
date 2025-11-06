@@ -56,6 +56,8 @@ class ConfigDialog(QDialog):
         # Load custom prompts
         for key, text in self.config.get("custom_prompts", {}).items():
             self.default_prompt.addItem(f"{key}: {text}", key)
+        
+        self.deck_selected_prompt.addItem("🛠 Custom (tự nhập phía dưới)", "custom")
 
         sel_key = self.config.get("selected_prompt", "default_simple")
         idx = self.default_prompt.findData(sel_key)
@@ -139,6 +141,7 @@ class DeckConfigDialog(QDialog):
         self.deck_selected_prompt.addItem("Giải thích ngắn gọn về {field_content}", "default_simple")
         for key, text in self.config.get("custom_prompts", {}).items():
             self.deck_selected_prompt.addItem(f"{key}: {text}", key)
+        self.deck_selected_prompt.addItem("🛠 Custom (tự nhập phía dưới)", "custom")
         layout.addWidget(self.deck_selected_prompt)
         self.deck_selected_prompt.currentIndexChanged.connect(self._on_prompt_changed)
 
@@ -153,7 +156,7 @@ class DeckConfigDialog(QDialog):
         self.btn_add_prompt = QPushButton("Thêm prompt")
         self.btn_add_prompt.clicked.connect(self.add_custom_prompt)
         layout.addWidget(self.btn_add_prompt)
-        self._toggle_custom_ui(True)  # ✅ Cho phép nhập luôn
+        self._toggle_custom_ui(False)  
 
         # Button section
         btn_layout = QHBoxLayout()
@@ -182,7 +185,8 @@ class DeckConfigDialog(QDialog):
 
     def _on_prompt_changed(self):
         data = self.deck_selected_prompt.currentData()
-        self._toggle_custom_ui(data is None)
+        self._toggle_custom_ui(data is None or data == "custom")
+
 
     # =========================================================
     # DATABASE UTILITIES
@@ -308,12 +312,33 @@ class DeckConfigDialog(QDialog):
             self.debug.log("[SAVE] ❌ Không tìm thấy notetype nào.")
             return
 
+        selected_data = self.deck_selected_prompt.currentData()
+        if selected_data == "custom":
+            # Người dùng đang nhập custom prompt thủ công
+            custom_prompt = self.custom_text.text().strip()
+            if not custom_prompt:
+                showInfo("❌ Vui lòng nhập prompt tùy chỉnh trước khi lưu.")
+                return
+            if "{text}" not in custom_prompt and "{field_content}" not in custom_prompt:
+                showInfo("❌ Prompt phải chứa {text} hoặc {field_content}.")
+                return
+
+            # Tạo key tạm riêng cho deck này
+            custom_key = f"deck_{deck_id}_custom"
+            self.config.setdefault("custom_prompts", {})
+            self.config["custom_prompts"][custom_key] = custom_prompt
+            selected_prompt_key = custom_key
+            self.parent.save_config()
+            self.debug.log(f"[SAVE] Tạo custom prompt riêng: {custom_key} = {custom_prompt}")
+        else:
+            selected_prompt_key = selected_data or self.deck_selected_prompt.currentText()
+
         self.config["deck_settings"][deck_id] = {
             "enabled": self.deck_enabled.isChecked(),
             "target_field": self.deck_target_field.currentText(),
-            "selected_prompt": self.deck_selected_prompt.currentData()
-                                or self.deck_selected_prompt.currentText()
+            "selected_prompt": selected_prompt_key
         }
+
 
         same_model_subs = []
         different_model_subs = []

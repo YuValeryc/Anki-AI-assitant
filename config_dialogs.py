@@ -104,72 +104,58 @@ class DeckConfigDialog(QDialog):
         self.debug = DebugTools("DeckConfigDialog")
         self.setup_ui()
 
+    # =========================================================
+    # UI SETUP
+    # =========================================================
     def setup_ui(self):
         self.setWindowTitle("Cài đặt theo Deck")
         self.setFixedSize(420, 550)
 
         layout = QVBoxLayout()
 
-        # ─── Deck selector ───────────────────────────────────────
+        # Deck selector
         layout.addWidget(QLabel("📚 Chọn Deck:"))
         self.deck_combo = QComboBox()
-
         decks = sorted(mw.col.decks.all(), key=lambda d: d["name"].lower())
         for deck in decks:
             self.deck_combo.addItem(deck["name"], deck["id"])
-
         self.deck_combo.currentIndexChanged.connect(self.load_deck_settings)
         layout.addWidget(self.deck_combo)
 
-        # Enable deck
+        # Enable checkbox
         self.deck_enabled = QCheckBox("Bật ChatBot cho deck này")
         layout.addWidget(self.deck_enabled)
 
-        # ─── Target Field ───────────────────────────────────────
+        # Target field
         layout.addWidget(QLabel("🎯 Trường mục tiêu:"))
         self.deck_target_field = QComboBox()
         self.deck_target_field.setEditable(True)
         layout.addWidget(self.deck_target_field)
 
-        # ─── Prompt selector ───────────────────────────────────────
+        # Prompt selector
         layout.addWidget(QLabel("💡 Prompt cho deck:"))
         self.deck_selected_prompt = QComboBox()
         self.deck_selected_prompt.setEditable(True)
-
-        # Default
-        self.deck_selected_prompt.addItem(
-            "Giải thích ngắn gọn về {field_content}",
-            "default_simple"
-        )
-
-        # Custom prompts (KEY → text)
+        self.deck_selected_prompt.addItem("Giải thích ngắn gọn về {field_content}", "default_simple")
         for key, text in self.config.get("custom_prompts", {}).items():
             self.deck_selected_prompt.addItem(f"{key}: {text}", key)
-
         layout.addWidget(self.deck_selected_prompt)
-
-        # Khi đổi dropdown → bật/tắt custom UI
         self.deck_selected_prompt.currentIndexChanged.connect(self._on_prompt_changed)
 
-        # ─── Custom Prompt Creator ───────────────────────────────
+        # Custom prompt section
         layout.addWidget(QLabel("➕ Tự tạo prompt mới:"))
-
         self.custom_key = QLineEdit()
         self.custom_key.setPlaceholderText("Nhập key (vd: synonyms)")
         layout.addWidget(self.custom_key)
-
         self.custom_text = QLineEdit()
         self.custom_text.setPlaceholderText("Nhập prompt (phải có {text})")
         layout.addWidget(self.custom_text)
-
         self.btn_add_prompt = QPushButton("Thêm prompt")
         self.btn_add_prompt.clicked.connect(self.add_custom_prompt)
         layout.addWidget(self.btn_add_prompt)
-
-        # Tắt custom UI ban đầu
         self._toggle_custom_ui(False)
 
-        # ─── SAVE BUTTON ─────────────────────────────────────────
+        # Save button
         btn_layout = QHBoxLayout()
         btn_save = QPushButton("💾 Lưu")
         btn_save.clicked.connect(self.save_deck_settings)
@@ -178,60 +164,73 @@ class DeckConfigDialog(QDialog):
 
         layout.addStretch()
         self.setLayout(layout)
-
-        # Load first deck
         self.load_deck_settings()
 
-    # ───────────────────────────────────────────────
-    # UI toggle cho custom prompt
-    # ───────────────────────────────────────────────
+    # =========================================================
+    # UI HELPER FUNCTIONS
+    # =========================================================
     def _toggle_custom_ui(self, enabled):
         self.custom_key.setEnabled(enabled)
         self.custom_text.setEnabled(enabled)
         self.btn_add_prompt.setEnabled(enabled)
 
     def _on_prompt_changed(self):
-        """
-        Nếu user chọn một item có KEY → tắt custom UI
-        Nếu user tự gõ prompt → bật custom UI
-        """
         data = self.deck_selected_prompt.currentData()
         self._toggle_custom_ui(data is None)
 
-    # ───────────────────────────────────────────────
-    # Lấy fields theo deck
-    # ───────────────────────────────────────────────
-    def _get_fields_for_deck(self, deck_id):
-        fields = []
-        card_id = mw.col.db.scalar(f"SELECT id FROM cards WHERE did = {deck_id} LIMIT 1")
-        if card_id:
-            note = mw.col.get_card(card_id).note()
-            model = note.model()
-            fields = [fld["name"] for fld in model["flds"]]
-        return fields
+    # =========================================================
+    # DATABASE UTILITIES
+    # =========================================================
+    def _get_subdecks(self, parent_id):
+        subdecks = []
+        all_decks = mw.col.decks.all()
+        parent_name = mw.col.decks.get(parent_id)["name"]
+        for d in all_decks:
+            if d["name"].startswith(parent_name + "::"):
+                subdecks.append(d)
+        return subdecks
 
-    # ───────────────────────────────────────────────
-    # Load settings
-    # ───────────────────────────────────────────────
+    def _get_model_id_for_deck(self, deck_id):
+        mid = mw.col.db.scalar(f"SELECT n.mid FROM notes n JOIN cards c ON n.id=c.nid WHERE c.did={deck_id} LIMIT 1")
+        return mid
+
+    def _get_fields_for_model(self, model_id):
+        if not model_id:
+            return []
+        model = mw.col.models.get(model_id)
+        if not model:
+            return []
+        return [fld["name"] for fld in model["flds"]]
+
+    # =========================================================
+    # LOAD SETTINGS
+    # =========================================================
     def load_deck_settings(self):
         deck_id = str(self.deck_combo.currentData())
+        deck_name = self.deck_combo.currentText()
+        self.debug.log(f"[LOAD] Loading settings for deck: {deck_name} (ID={deck_id})")
+
         deck_settings = self.config.setdefault("deck_settings", {})
-
         settings = deck_settings.get(deck_id, {})
-
         self.deck_enabled.setChecked(settings.get("enabled", True))
 
-        # Fields
-        fields = self._get_fields_for_deck(deck_id)
-        self.deck_target_field.clear()
+        # Try model for current deck or subdeck
+        model_id = self._get_model_id_for_deck(deck_id)
+        if not model_id:
+            for sub in self._get_subdecks(deck_id):
+                model_id = self._get_model_id_for_deck(sub["id"])
+                if model_id:
+                    self.debug.log(f"[LOAD] Dùng model từ subdeck: {sub['name']}")
+                    break
 
+        # Load field list
+        fields = self._get_fields_for_model(model_id)
+        self.deck_target_field.clear()
         if fields:
             self.deck_target_field.setEnabled(True)
             self.deck_target_field.addItems(fields)
-
             saved_field = settings.get("target_field", fields[0])
             idx = self.deck_target_field.findText(saved_field)
-
             if idx != -1:
                 self.deck_target_field.setCurrentIndex(idx)
             else:
@@ -240,62 +239,72 @@ class DeckConfigDialog(QDialog):
             self.deck_target_field.addItem("Không tìm thấy trường")
             self.deck_target_field.setEnabled(False)
 
-        # Prompt
+        # Load prompt
         saved_key = settings.get("selected_prompt", "default_simple")
         idx = self.deck_selected_prompt.findData(saved_key)
-
         if idx != -1:
             self.deck_selected_prompt.setCurrentIndex(idx)
         else:
             self.deck_selected_prompt.setEditText(saved_key)
 
-        self.debug.log(f"[LOAD] Deck {deck_id} settings: {settings}")
+        self.debug.log(f"[LOAD] Deck {deck_name} settings: {settings}")
 
-    # ───────────────────────────────────────────────
-    # Add custom prompt
-    # ───────────────────────────────────────────────
+    # =========================================================
+    # ADD CUSTOM PROMPT
+    # =========================================================
     def add_custom_prompt(self):
         key = self.custom_key.text().strip()
         text = self.custom_text.text().strip()
-
         if not key:
             showInfo("❌ Key không được để trống.")
             return
-
         if " " in key:
             showInfo("❌ Key không được chứa khoảng trắng.")
             return
-
         if not text:
             showInfo("❌ Prompt không được để trống.")
             return
-
         if "{text}" not in text and "{field_content}" not in text:
             showInfo("❌ Prompt phải chứa {text} hoặc {field_content}.")
             return
 
-        # Save to config
         self.config.setdefault("custom_prompts", {})
         self.config["custom_prompts"][key] = text
         self.parent.save_config()
-
-        # Add to dropdown
         self.deck_selected_prompt.addItem(f"{key}: {text}", key)
         idx = self.deck_selected_prompt.findData(key)
         if idx != -1:
             self.deck_selected_prompt.setCurrentIndex(idx)
-
         self.custom_key.clear()
         self.custom_text.clear()
-
         showInfo("✅ Prompt đã được thêm!")
+        self.debug.log(f"[ADD PROMPT] {key} = {text}")
 
-    # ───────────────────────────────────────────────
-    # Save deck settings
-    # ───────────────────────────────────────────────
+    # =========================================================
+    # SAVE SETTINGS
+    # =========================================================
     def save_deck_settings(self):
         deck_id = str(self.deck_combo.currentData())
+        deck_name = self.deck_combo.currentText()
 
+        self.debug.log(f"[SAVE] Saving settings for deck: {deck_name} (ID={deck_id})")
+
+        # Lấy model của deck cha
+        model_id = self._get_model_id_for_deck(deck_id)
+        if not model_id:
+            self.debug.log("[SAVE] Không tìm thấy model trong deck chính, thử subdeck...")
+            for sub in self._get_subdecks(deck_id):
+                model_id = self._get_model_id_for_deck(sub["id"])
+                if model_id:
+                    self.debug.log(f"[SAVE] Model lấy từ subdeck: {sub['name']} (MID={model_id})")
+                    break
+
+        if not model_id:
+            showInfo("❌ Không tìm thấy notetype trong deck hoặc subdeck.")
+            self.debug.log("[SAVE] ❌ Không tìm thấy notetype nào.")
+            return
+
+        # Cập nhật cho deck chính
         self.config["deck_settings"][deck_id] = {
             "enabled": self.deck_enabled.isChecked(),
             "target_field": self.deck_target_field.currentText(),
@@ -303,6 +312,38 @@ class DeckConfigDialog(QDialog):
                                 or self.deck_selected_prompt.currentText()
         }
 
+        # Kiểm tra các subdeck cùng model
+        same_model_subs = []
+        different_model_subs = []
+        for sub in self._get_subdecks(deck_id):
+            sub_model_id = self._get_model_id_for_deck(sub["id"])
+            if sub_model_id == model_id:
+                same_model_subs.append(sub)
+            elif sub_model_id:
+                different_model_subs.append((sub, sub_model_id))
+
+        # Áp dụng cài đặt cho subdeck cùng model
+        for sub in same_model_subs:
+            sid = str(sub["id"])
+            self.config["deck_settings"][sid] = {
+                "enabled": self.deck_enabled.isChecked(),
+                "target_field": self.deck_target_field.currentText(),
+                "selected_prompt": self.deck_selected_prompt.currentData()
+                                    or self.deck_selected_prompt.currentText()
+            }
+            self.debug.log(f"[SAVE] ✅ Áp dụng cho subdeck: {sub['name']} (ID={sub['id']})")
+
+        # Log deck có notetype khác
+        if different_model_subs:
+            self.debug.log(f"[SAVE] ⚠️ Bỏ qua {len(different_model_subs)} subdeck có notetype khác:")
+            for sub, mid in different_model_subs:
+                self.debug.log(f"    - {sub['name']} (ID={sub['id']}, MID={mid})")
+
         self.parent.save_config()
-        showInfo(f"✅ Đã lưu cài đặt cho deck: {self.deck_combo.currentText()}")
-        self.debug.log(f"[SAVE] {deck_id} = {self.config['deck_settings'][deck_id]}")
+
+        # Hiển thị thông báo tổng kết
+        msg = f"✅ Đã lưu cho deck: {deck_name} (và {len(same_model_subs)} subdeck cùng notetype)"
+        if different_model_subs:
+            msg += f"\n⚠️ Bỏ qua {len(different_model_subs)} subdeck có notetype khác."
+        showInfo(msg)
+        self.debug.log(f"[SAVE DONE] {deck_name} – Model ID={model_id}")

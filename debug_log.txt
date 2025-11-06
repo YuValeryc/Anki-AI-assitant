@@ -3236,3 +3236,561 @@ Front: in fact...
 [18:17:56] message after formatting: BART (Bidirectional and Auto-Regressive Transformers) và BERT (Bidirectional Encoder Representations from Transformers) đều là các mô hình Transformer mạnh mẽ được sử dụng rộng rãi trong xử lý ngôn ngữ tự nhiên (NLP), nhưng chúng được thiết kế và huấn luyện cho các mục tiêu khác nhau, dẫn đến sự khác biệt về kiến trúc và ứng dụng. Dưới đây là sự khác biệt chính giữa BART và BERT:<br><br><b>1. Kiến trúc và Mục tiêu Huấn luyện:</b><br><br><i>   <b>BERT (Bidirectional Encoder):</b><br></i>   <b>Kiến trúc:</b> Chỉ sử dụng các lớp Encoder của Transformer.<br><i>   <b>Mục tiêu huấn luyện:</b><br></i>   <b>Masked Language Modeling (MLM):</b> Ngẫu nhiên che giấu một số từ trong câu và yêu cầu mô hình dự đoán các từ bị che giấu đó dựa trên ngữ cảnh xung quanh.<br><i>   <b>Next Sentence Prediction (NSP):</b> Huấn luyện mô hình dự đoán xem hai câu có phải là câu tiếp theo của nhau trong văn bản hay không. (Tuy nhiên, NSP đã được chứng minh là không hiệu quả và thường bị loại bỏ trong các biến thể BERT sau này).<br></i>   <b>Đặc điểm:</b> BERT được huấn luyện để hiểu biểu diễn ngữ cảnh của các từ trong câu một cách sâu sắc. Nó đặc biệt tốt cho các tác vụ liên quan đến hiểu ngôn ngữ (NLU) như phân loại văn bản, nhận dạng thực thể có tên (NER), trả lời câu hỏi, v.v.<br><br><i>   <b>BART (Bidirectional and Auto-Regressive Transformer):</b><br></i>   <b>Kiến trúc:</b> Sử dụng cả Encoder và Decoder của Transformer.<br><i>   <b>Mục tiêu huấn luyện:</b><br></i>   <b>Denoising Sequence-to-Sequence:</b> Mô hình được huấn luyện để tái tạo lại văn bản gốc từ một phiên bản bị hỏng (corrupted) của nó. Quá trình làm hỏng có thể bao gồm việc che giấu từ, xóa từ, hoán đổi từ, hoặc chèn thêm nhiễu.<br>*   <b>Đặc điểm:</b> BART được huấn luyện để vừa hiểu ngôn ngữ (nhờ Encoder) vừa tạo ra ngôn ngữ (nhờ Decoder). Nó đặc biệt tốt cho các tác vụ tạo văn bản (text generation) như tóm tắt văn bản, dịch máy, tạo câu hỏi, v....
 [18:17:59] PyCmd received: gemini_chat_close
 [18:17:59] Bridge command received: gemini_chat_close
+[18:18:28] Cleaned up injected chat UI elements.
+[18:18:28] Review ended - cleanup completed
+[18:18:28] State change: review → deckBrowser
+[18:18:28] Leaving review → cleaning UI
+[18:18:28] Cleaned up injected chat UI elements.
+[18:18:28] Bridge command received: decks
+[18:18:33] PyCmd received: open:1725878862948
+[18:18:33] Bridge command received: open:1725878862948
+[18:18:33] State change: deckBrowser → overview
+[18:18:34] PyCmd received: study
+[18:18:34] Bridge command received: study
+[18:18:34] State change: overview → review
+[18:18:34] === on_show_question TRIGGERED ===
+[18:18:34] Card ID: 1725891885690
+Deck ID: 1725891642670
+Note ID: 1725891885690
+Fields: ['Kanji', 'Onyomi', 'Kunyomi', 'Meaning']
+Front: 畑...
+[18:18:34] Cleaned up injected chat UI elements.
+[18:18:34] Showing button for: 畑...
+[18:18:34] ChatBot button injected successfully
+[18:18:34] PyCmd received: updateToolbar
+[18:18:34] Bridge command received: updateToolbar
+[18:18:36] PyCmd received: gemini_chat_open
+[18:18:36] Opening chat window...
+[18:18:36] Initializing injected ChatWindow...
+[18:18:36] PyCmd handlers registered
+[18:18:36] Deck settings for chat window: {}
+[18:18:36] Target field: None
+[18:18:38] Error opening chat window: 'NoneType' object has no attribute 'lower'
+[18:18:38] Bridge command received: gemini_chat_open
+[18:18:38] Bridge command received: gemini_chat_open
+[18:18:38] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:18:38] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:18:42] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}}, 'target_field': 'Front'}
+[18:18:42] Configuration loaded successfully
+[18:18:42] Current config before dialog: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'target_field': 'Front', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}}}
+[18:18:42] Loading API Key from config: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'target_field': 'Front', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}}}
+[18:18:50] [LOAD] Deck 1 settings: {}
+[18:19:02] [LOAD] Deck 1725878862948 settings: {}
+[18:19:09] Cleaned up injected chat UI elements.
+[18:19:09] Review ended - cleanup completed
+[18:19:09] State change: review → deckBrowser
+[18:19:09] Leaving review → cleaning UI
+[18:19:09] Cleaned up injected chat UI elements.
+[18:19:09] Bridge command received: decks
+[18:19:09] Bridge command received: decks
+[18:21:25] PyCmd received: open:1728746313787
+[18:21:25] Bridge command received: open:1728746313787
+[18:21:25] Bridge command received: open:1728746313787
+[18:21:25] State change: deckBrowser → overview
+[18:21:26] PyCmd received: study
+[18:21:26] Bridge command received: study
+[18:21:26] Bridge command received: study
+[18:21:26] State change: overview → review
+[18:21:26] === on_show_question TRIGGERED ===
+[18:21:26] Card ID: 1728746323913
+Deck ID: 1728746313787
+Note ID: 1728746323912
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: in fact...
+[18:21:26] Cleaned up injected chat UI elements.
+[18:21:26] Showing button for: in fact...
+[18:21:26] ChatBot button injected successfully
+[18:21:26] PyCmd received: updateToolbar
+[18:21:26] Bridge command received: updateToolbar
+[18:21:26] Bridge command received: updateToolbar
+[18:21:27] PyCmd received: gemini_chat_open
+[18:21:27] Opening chat window...
+[18:21:27] Initializing injected ChatWindow...
+[18:21:27] PyCmd handlers registered
+[18:21:27] Deck settings for chat window: {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}
+[18:21:27] Target field: Phrase
+[18:21:27] Field value: in fact
+[18:21:27] Prompt key selected: real_world_examples
+[18:21:27] Resolved prompt template: Ví dụ thực tế về: {text}
+[18:21:27] Auto prompt generated: Ví dụ thực tế về: in fact
+[18:21:27] Attempting to pre-fill with: Ví dụ thực tế về: in fact...
+[18:21:27] Chat window injected/shown successfully
+[18:21:27] Bridge command received: gemini_chat_open
+[18:21:27] Bridge command received: gemini_chat_open
+[18:21:27] Bridge command received: gemini_chat_open
+[18:21:27] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:21:27] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:21:27] Prefilled input successfully.
+[18:21:29] PyCmd received: gemini_chat_send_message
+[18:21:29] Bridge command received: gemini_chat_send_message
+[18:21:29] Bridge command received: gemini_chat_send_message
+[18:21:29] Bridge command received: gemini_chat_send_message
+[18:21:29] Calling Gemini API...
+[18:21:34] Gemini API call successful
+[18:21:34] message before formatting: Chắc chắn rồi, đây là một vài ví dụ thực tế về cách sử dụng "in fact" trong câu:
+
+**1. Nhấn mạnh hoặc làm rõ một điều gì đó:**
+
+*   **Ví dụ:** "I thought the movie would be boring, but in fact, it was incredibly exciting." (Tôi nghĩ bộ phim sẽ nhàm chán, nhưng thực tế là nó lại vô cùng thú vị.)
+*   **Giải thích:** "In fact" được dùng để nhấn mạnh rằng trải nghiệm thực tế khác với kỳ vọng ban đầu.
+
+**2. Thêm thông tin chi tiết hoặc bằng chứng:**
+
+*   **Ví dụ:** "The company is doing very well. In fact, profits have doubled this year." (Công ty đang làm ăn rất tốt. Thực tế là lợi nhuận đã tăng gấp đôi trong năm nay.)
+*   **Giải thích:** "In fact" giới thiệu một bằng chứng cụ thể để chứng minh cho nhận định trước đó.
+
+**3. Đưa ra thông tin trái ngược hoặc gây ngạc nhiên:**
+
+*   **Ví dụ:** "He seems very confident, but in fact, he's quite nervous about the presentation." (Anh ấy có vẻ rất tự tin, nhưng thực tế là anh ấy khá lo lắng về bài thuyết trình.)
+*   **Giải thích:** "In fact" được dùng để đưa ra một sự thật trái ngược với vẻ bề ngoài.
+
+**4. Sửa lại hoặc điều chỉnh một phát biểu trước đó:**
+
+*   **Ví dụ:** "I said I would be there at 8, but in fact, I'll be a little late, maybe around 8:30." (Tôi đã nói tôi sẽ đến đó lúc 8 giờ, nhưng thực tế là tôi sẽ đến muộn một chút, có lẽ khoảng 8:30.)
+*   **Giải thích:** "In fact" được dùng để sửa đổi hoặc làm rõ hơn một thông tin đã cung cấp trước đó.
+
+**5. Đưa ra một sự thật hiển nhiên hoặc được biết đến rộng rãi:**
+
+*   **Ví dụ:** "Exercise is good for your health. In fact, it's essential for a long and healthy life." (Tập thể dục tốt cho sức khỏe của bạn. Thực tế là nó rất cần thiết cho một cuộc sống lâu dài và khỏe mạnh.)
+*   **Giải thích:** "In fact" được...
+[18:21:34] message after formatting: Chắc chắn rồi, đây là một vài ví dụ thực tế về cách sử dụng "in fact" trong câu:<br><br><b>1. Nhấn mạnh hoặc làm rõ một điều gì đó:</b><br><br><i>   <b>Ví dụ:</b> "I thought the movie would be boring, but in fact, it was incredibly exciting." (Tôi nghĩ bộ phim sẽ nhàm chán, nhưng thực tế là nó lại vô cùng thú vị.)<br></i>   <b>Giải thích:</b> "In fact" được dùng để nhấn mạnh rằng trải nghiệm thực tế khác với kỳ vọng ban đầu.<br><br><b>2. Thêm thông tin chi tiết hoặc bằng chứng:</b><br><br><i>   <b>Ví dụ:</b> "The company is doing very well. In fact, profits have doubled this year." (Công ty đang làm ăn rất tốt. Thực tế là lợi nhuận đã tăng gấp đôi trong năm nay.)<br></i>   <b>Giải thích:</b> "In fact" giới thiệu một bằng chứng cụ thể để chứng minh cho nhận định trước đó.<br><br><b>3. Đưa ra thông tin trái ngược hoặc gây ngạc nhiên:</b><br><br><i>   <b>Ví dụ:</b> "He seems very confident, but in fact, he's quite nervous about the presentation." (Anh ấy có vẻ rất tự tin, nhưng thực tế là anh ấy khá lo lắng về bài thuyết trình.)<br></i>   <b>Giải thích:</b> "In fact" được dùng để đưa ra một sự thật trái ngược với vẻ bề ngoài.<br><br><b>4. Sửa lại hoặc điều chỉnh một phát biểu trước đó:</b><br><br><i>   <b>Ví dụ:</b> "I said I would be there at 8, but in fact, I'll be a little late, maybe around 8:30." (Tôi đã nói tôi sẽ đến đó lúc 8 giờ, nhưng thực tế là tôi sẽ đến muộn một chút, có lẽ khoảng 8:30.)<br></i>   <b>Giải thích:</b> "In fact" được dùng để sửa đổi hoặc làm rõ hơn một thông tin đã cung cấp trước đó.<br><br><b>5. Đưa ra một sự thật hiển nhiên hoặc được biết đến rộng rãi:</b><br><br><i>   <b>Ví dụ:</b> "Exercise is good for your health. In fact, it's essential for a long and healthy life." (Tập thể dục tốt cho sức khỏe của bạn. Thực tế là nó rất cần thiết cho một cuộc sống lâu dài và khỏe mạnh.)<br></i>   <b>Giải thích:</b> "In fact" được...
+[18:21:44] PyCmd received: gemini_chat_close
+[18:21:44] Bridge command received: gemini_chat_close
+[18:21:44] Bridge command received: gemini_chat_close
+[18:21:44] Bridge command received: gemini_chat_close
+[18:22:46] Cleaned up injected chat UI elements.
+[18:22:46] Cleanup completed
+[18:33:16] Initializing GeminiChatBot...
+[18:33:16] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}}, 'target_field': 'Front'}
+[18:33:16] Configuration loaded successfully
+[18:33:16] Menu setup completed
+[18:33:16] PyCmd handlers registered
+[18:33:16] Registered 4 hooks
+[18:33:16] GeminiChatBot initialized successfully
+[18:33:16] State change: startup → deckBrowser
+[18:35:30] [LOAD] Deck 1 settings: {}
+[18:35:42] State change: deckBrowser → deckBrowser
+[18:35:43] PyCmd received: editorState:0:-1
+[18:35:43] PyCmd received: focus:0
+[18:35:43] PyCmd received: key:18:0:
+[18:35:48] PyCmd received: blur:0:0:
+[18:40:29] Cleaned up injected chat UI elements.
+[18:40:29] Cleanup completed
+[18:40:41] Initializing GeminiChatBot...
+[18:40:41] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}}, 'target_field': 'Front'}
+[18:40:41] Configuration loaded successfully
+[18:40:41] Menu setup completed
+[18:40:41] PyCmd handlers registered
+[18:40:41] Registered 4 hooks
+[18:40:41] GeminiChatBot initialized successfully
+[18:40:41] State change: startup → deckBrowser
+[18:40:48] PyCmd received: open:1728746313787
+[18:40:48] State change: deckBrowser → overview
+[18:40:50] PyCmd received: study
+[18:40:50] State change: overview → review
+[18:40:50] === on_show_question TRIGGERED ===
+[18:40:50] Card ID: 1728746323913
+Deck ID: 1728746313787
+Note ID: 1728746323912
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: in fact...
+[18:40:50] Cleaned up injected chat UI elements.
+[18:40:50] Showing button for: in fact...
+[18:40:50] ChatBot button injected successfully
+[18:40:50] PyCmd received: updateToolbar
+[18:40:52] Cleaned up injected chat UI elements.
+[18:40:52] Review ended - cleanup completed
+[18:40:52] State change: review → deckBrowser
+[18:40:52] Leaving review → cleaning UI
+[18:40:52] Cleaned up injected chat UI elements.
+[18:40:55] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}}, 'target_field': 'Front'}
+[18:40:55] Configuration loaded successfully
+[18:40:55] Current config before dialog: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'target_field': 'Front', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}}}
+[18:40:55] Loading API Key from config: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'target_field': 'Front', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}}}
+[18:41:02] [LOAD] Loading settings for deck: Default (ID=1)
+[18:41:02] [LOAD] Deck Default settings: {}
+[18:41:07] [LOAD] Loading settings for deck: Destination B1&2::B1::Destination_B1 (ID=1728745176996)
+[18:41:08] [LOAD] Deck Destination B1&2::B1::Destination_B1 không có thẻ, dùng model từ subdeck: Destination B1&2::B1::Destination_B1::Unit_42
+[18:41:08] [LOAD] Deck Destination B1&2::B1::Destination_B1 settings: {}
+[18:41:15] [LOAD] Loading settings for deck: Destination B1&2::B1::39.Laughing and crying (ID=1726415621836)
+[18:41:15] [LOAD] Deck Destination B1&2::B1::39.Laughing and crying settings: {}
+[18:41:21] [LOAD] Loading settings for deck: Destination B1&2::B2 (ID=1726415621811)
+[18:41:21] [LOAD] Deck Destination B1&2::B2 không có thẻ, dùng model từ subdeck: Destination B1&2::B2::08.The media
+[18:41:21] [LOAD] Deck Destination B1&2::B2 settings: {}
+[18:45:04] Cleaned up injected chat UI elements.
+[18:45:04] Cleanup completed
+[18:45:19] Initializing GeminiChatBot...
+[18:45:19] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}}, 'target_field': 'Front'}
+[18:45:19] Configuration loaded successfully
+[18:45:19] Menu setup completed
+[18:45:19] PyCmd handlers registered
+[18:45:19] Registered 4 hooks
+[18:45:19] GeminiChatBot initialized successfully
+[18:45:19] State change: startup → deckBrowser
+[18:45:29] PyCmd received: open:1725878862948
+[18:45:29] State change: deckBrowser → overview
+[18:45:30] PyCmd received: study
+[18:45:30] State change: overview → review
+[18:45:30] === on_show_question TRIGGERED ===
+[18:45:30] Card ID: 1725891885690
+Deck ID: 1725891642670
+Note ID: 1725891885690
+Fields: ['Kanji', 'Onyomi', 'Kunyomi', 'Meaning']
+Front: 畑...
+[18:45:30] Cleaned up injected chat UI elements.
+[18:45:30] Showing button for: 畑...
+[18:45:30] ChatBot button injected successfully
+[18:45:31] PyCmd received: updateToolbar
+[18:45:31] PyCmd received: updateToolbar
+[18:45:33] PyCmd received: gemini_chat_open
+[18:45:33] Opening chat window...
+[18:45:33] Initializing injected ChatWindow...
+[18:45:33] PyCmd handlers registered
+[18:45:33] Deck settings for chat window: {}
+[18:45:33] Target field: None
+[18:45:35] Error opening chat window: 'NoneType' object has no attribute 'lower'
+[18:45:35] Bridge command received: gemini_chat_open
+[18:45:35] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:45:35] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:45:39] [LOAD] Loading settings for deck: Default (ID=1)
+[18:45:39] [LOAD] Deck Default settings: {}
+[18:45:42] [LOAD] Loading settings for deck: Destination B1&2::B1::Destination_B1 (ID=1728745176996)
+[18:45:42] [LOAD] Dùng model từ subdeck: Destination B1&2::B1::Destination_B1::Unit_42
+[18:45:42] [LOAD] Deck Destination B1&2::B1::Destination_B1 settings: {}
+[18:45:47] [LOAD] Loading settings for deck: Destination B1&2::B2 (ID=1726415621811)
+[18:45:47] [LOAD] Dùng model từ subdeck: Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_26
+[18:45:47] [LOAD] Deck Destination B1&2::B2 settings: {}
+[18:46:05] [LOAD] Loading settings for deck: Kanji::Kanji_N5 (ID=1725878862948)
+[18:46:05] [LOAD] Dùng model từ subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 2
+[18:46:05] [LOAD] Deck Kanji::Kanji_N5 settings: {}
+[18:46:08] [SAVE] Saving settings for deck: Kanji::Kanji_N5 (ID=1725878862948)
+[18:46:08] [SAVE] Không tìm thấy model trong deck chính, thử subdeck...
+[18:46:08] [SAVE] Model lấy từ subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 2 (MID=1594195112676)
+[18:46:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 1 (ID=1725877737735)
+[18:46:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 19 (ID=1725891642670)
+[18:46:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 10 (ID=1725889630012)
+[18:46:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 15 (ID=1725890727243)
+[18:46:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 14 (ID=1725890417067)
+[18:46:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 7 (ID=1725883693207)
+[18:46:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 18 (ID=1725891389564)
+[18:46:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 9 (ID=1725889374509)
+[18:46:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 12 (ID=1725890025134)
+[18:46:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 17 (ID=1725891206967)
+[18:46:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 11 (ID=1725889845288)
+[18:46:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 3 (ID=1725879117418)
+[18:46:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 6 (ID=1725883309858)
+[18:46:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 4 (ID=1725882518516)
+[18:46:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 5 (ID=1725883056578)
+[18:46:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 13 (ID=1725890209243)
+[18:46:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 8 (ID=1725888698558)
+[18:46:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 2 (ID=1725878885152)
+[18:46:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 16 (ID=1725890951098)
+[18:46:08] Configuration saved
+[18:46:11] [SAVE DONE] Kanji::Kanji_N5 – Model ID=1594195112676
+[18:46:23] [LOAD] Loading settings for deck: Destination B1&2::B2 (ID=1726415621811)
+[18:46:23] [LOAD] Dùng model từ subdeck: Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_06
+[18:46:23] [LOAD] Deck Destination B1&2::B2 settings: {}
+[18:46:24] [SAVE] Saving settings for deck: Destination B1&2::B2 (ID=1726415621811)
+[18:46:24] [SAVE] Không tìm thấy model trong deck chính, thử subdeck...
+[18:46:24] [SAVE] Model lấy từ subdeck: Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_16 (MID=1730210540567)
+[18:46:24] [SAVE] ✅ Áp dụng cho subdeck: Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_02 (ID=1730211184472)
+[18:46:24] [SAVE] ✅ Áp dụng cho subdeck: Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_22 (ID=1730257710725)
+[18:46:24] [SAVE] ✅ Áp dụng cho subdeck: Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_18 (ID=1730256799492)
+[18:46:24] [SAVE] ✅ Áp dụng cho subdeck: Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_26 (ID=1730258209387)
+[18:46:24] [SAVE] ✅ Áp dụng cho subdeck: Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_16 (ID=1730256404830)
+[18:46:24] [SAVE] ✅ Áp dụng cho subdeck: Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_14 (ID=1730256143459)
+[18:46:24] [SAVE] ✅ Áp dụng cho subdeck: Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_06 (ID=1730219185226)
+[18:46:24] [SAVE] ✅ Áp dụng cho subdeck: Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_20 (ID=1730257040503)
+[18:46:24] [SAVE] ✅ Áp dụng cho subdeck: Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_10 (ID=1730248449927)
+[18:46:24] [SAVE] ✅ Áp dụng cho subdeck: Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_28 (ID=1730258498604)
+[18:46:24] [SAVE] ✅ Áp dụng cho subdeck: Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_24 (ID=1730258022863)
+[18:46:24] [SAVE] ✅ Áp dụng cho subdeck: Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_04 (ID=1730212780016)
+[18:46:24] [SAVE] ✅ Áp dụng cho subdeck: Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_12 (ID=1730249235883)
+[18:46:24] [SAVE] ✅ Áp dụng cho subdeck: Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_08 (ID=1730248378399)
+[18:46:24] [SAVE] ⚠️ Bỏ qua 14 subdeck có notetype khác:
+[18:46:24]     - Destination B1&2::B2::24.Entertainment (ID=1726415621821, MID=1652207374679)
+[18:46:24]     - Destination B1&2::B2::06.Science and technology (ID=1726415621840, MID=1652207374679)
+[18:46:24]     - Destination B1&2::B2::08.The media (ID=1726415621839, MID=1652207374679)
+[18:46:24]     - Destination B1&2::B2::12.The law and crime (ID=1726415621815, MID=1652207374679)
+[18:46:24]     - Destination B1&2::B2::04.Hobbies,sport and games (ID=1726415621838, MID=1652207374679)
+[18:46:24]     - Destination B1&2::B2::02.Travel and transport (ID=1726415621824, MID=1652207374679)
+[18:46:24]     - Destination B1&2::B2::22.Money and shopping (ID=1726415621820, MID=1652207374679)
+[18:46:24]     - Destination B1&2::B2::14.Health and fitness (ID=1726415621816, MID=1652207374679)
+[18:46:24]     - Destination B1&2::B2::20.Weather and the environment (ID=1726415621819, MID=1652207374679)
+[18:46:24]     - Destination B1&2::B2::18.Education and learning (ID=1726415621818, MID=1652207374679)
+[18:46:24]     - Destination B1&2::B2::28.Work and business (ID=1726415621823, MID=1652207374679)
+[18:46:24]     - Destination B1&2::B2::16.Food and drink (ID=1726415621817, MID=1652207374679)
+[18:46:24]     - Destination B1&2::B2::10.People and society (ID=1726415621826, MID=1652207374679)
+[18:46:24]     - Destination B1&2::B2::26.Fashion and design (ID=1726415621822, MID=1652207374679)
+[18:46:24] Configuration saved
+[18:46:32] [SAVE DONE] Destination B1&2::B2 – Model ID=1730210540567
+[18:46:39] PyCmd received: gemini_chat_close
+[18:46:39] Bridge command received: gemini_chat_close
+[18:46:40] PyCmd received: gemini_chat_open
+[18:46:40] Opening chat window...
+[18:46:40] Deck settings for chat window: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}
+[18:46:40] Target field: Kanji
+[18:46:40] Field value: 畑
+[18:46:40] Prompt key selected: default_simple
+[18:46:40] Resolved prompt template: Giải thích về: {text}
+[18:46:40] Auto prompt generated: Giải thích về: 畑
+[18:46:40] Attempting to pre-fill with: Giải thích về: 畑...
+[18:46:40] Chat window injected/shown successfully
+[18:46:40] Bridge command received: gemini_chat_open
+[18:46:40] Prefilled input successfully.
+[18:46:41] PyCmd received: gemini_chat_send_message
+[18:46:41] Bridge command received: gemini_chat_send_message
+[18:46:41] Calling Gemini API...
+[18:46:45] Gemini API call successful
+[18:46:45] message before formatting: "畑" (hatake) trong tiếng Nhật có nghĩa là **ruộng cạn, nương rẫy, hoặc đất trồng (không phải ruộng lúa nước)**.
+
+Dưới đây là giải thích chi tiết hơn:
+
+* **Loại đất:**  "畑" chỉ đến những khu đất được sử dụng để trồng các loại cây trồng **không cần ngập nước liên tục** như rau củ (cà rốt, bắp cải, khoai tây), cây ăn quả (táo, lê), đậu, và các loại cây công nghiệp (bông, thuốc lá).  Điểm khác biệt chính so với "田" (ta), có nghĩa là ruộng lúa nước.
+
+* **Phương pháp canh tác:**  Việc canh tác trên "畑" thường bao gồm việc cày xới đất, bón phân, gieo hạt hoặc trồng cây con, và tưới nước (khi cần thiết).
+
+* **Phân biệt với "田" (ta):**  Sự khác biệt quan trọng nhất giữa "畑" và "田" là lượng nước. "田" là ruộng lúa nước, luôn được giữ ngập nước trong quá trình trồng lúa. "畑" thì không cần điều đó.
+
+* **Ví dụ sử dụng:**
+
+    * 野菜畑 (yasai hatake):  Vườn rau
+    * 果樹畑 (kajuu hatake):  Vườn cây ăn quả
+    * 畑仕事 (hatake shigoto):  Công việc đồng áng (ở ruộng cạn)
+    * 畑で野菜を育てる (hatake de yasai o sodateru):  Trồng rau trên ruộng cạn.
+
+**Tóm lại:** "畑" là một từ tiếng Nhật chỉ một loại đất trồng trọt, đặc biệt là đất dùng để trồng các loại cây không cần nhiều nước như lúa. Nó tương đương với nương, rẫy, hoặc đất trồng rau củ quả trong tiếng Việt.
+...
+[18:46:45] message after formatting: "畑" (hatake) trong tiếng Nhật có nghĩa là <b>ruộng cạn, nương rẫy, hoặc đất trồng (không phải ruộng lúa nước)</b>.<br><br>Dưới đây là giải thích chi tiết hơn:<br><br><i> <b>Loại đất:</b>  "畑" chỉ đến những khu đất được sử dụng để trồng các loại cây trồng <b>không cần ngập nước liên tục</b> như rau củ (cà rốt, bắp cải, khoai tây), cây ăn quả (táo, lê), đậu, và các loại cây công nghiệp (bông, thuốc lá).  Điểm khác biệt chính so với "田" (ta), có nghĩa là ruộng lúa nước.<br><br></i> <b>Phương pháp canh tác:</b>  Việc canh tác trên "畑" thường bao gồm việc cày xới đất, bón phân, gieo hạt hoặc trồng cây con, và tưới nước (khi cần thiết).<br><br><i> <b>Phân biệt với "田" (ta):</b>  Sự khác biệt quan trọng nhất giữa "畑" và "田" là lượng nước. "田" là ruộng lúa nước, luôn được giữ ngập nước trong quá trình trồng lúa. "畑" thì không cần điều đó.<br><br></i> <b>Ví dụ sử dụng:</b><br><br><i> 野菜畑 (yasai hatake):  Vườn rau<br></i> 果樹畑 (kajuu hatake):  Vườn cây ăn quả<br><i> 畑仕事 (hatake shigoto):  Công việc đồng áng (ở ruộng cạn)<br></i> 畑で野菜を育てる (hatake de yasai o sodateru):  Trồng rau trên ruộng cạn.<br><br><b>Tóm lại:</b> "畑" là một từ tiếng Nhật chỉ một loại đất trồng trọt, đặc biệt là đất dùng để trồng các loại cây không cần nhiều nước như lúa. Nó tương đương với nương, rẫy, hoặc đất trồng rau củ quả trong tiếng Việt.<br>...
+[18:46:50] PyCmd received: gemini_chat_close
+[18:46:50] Bridge command received: gemini_chat_close
+[18:46:53] Cleaned up injected chat UI elements.
+[18:46:53] Review ended - cleanup completed
+[18:46:53] State change: review → deckBrowser
+[18:46:53] Leaving review → cleaning UI
+[18:46:53] Cleaned up injected chat UI elements.
+[18:46:53] Bridge command received: decks
+[18:47:02] PyCmd received: open:1726415621819
+[18:47:02] Bridge command received: open:1726415621819
+[18:47:02] State change: deckBrowser → overview
+[18:47:02] PyCmd received: study
+[18:47:02] Bridge command received: study
+[18:47:02] State change: overview → review
+[18:47:02] === on_show_question TRIGGERED ===
+[18:47:02] Card ID: 1649001544480
+Deck ID: 1726415621819
+Note ID: 1649001544334
+Fields: ['ID', 'Word', 'Synonyms', 'Antonyms', 'Img1', 'PoS1', 'Def1', 'VNDef1', 'Ex1', 'SoundEx1', 'Phones1', 'VNTrans1', 'Img2', 'PoS2', 'Def2', 'VNDef2', 'Ex2', 'SoundEx2', 'Phones2', 'VNTrans2', 'Img3', 'PoS3', 'Def3', 'VNDef3', 'Ex3', 'SoundEx3', 'Phones3', 'VNTrans3', 'Img4', 'PoS4', 'Def4', 'VNDef4', 'Ex4', 'SoundEx4', 'Phones4', 'VNTrans4', 'Img5', 'PoS5', 'Def5', 'VNDef5', 'Ex5', 'SoundEx5', 'Phones5', 'VNTrans5', 'Img6', 'PoS6', 'Def6', 'VNDef6', 'Ex6', 'SoundEx6', 'Phones6', 'VNTrans6', 'Sound', 'Hint', 'Phonetics', 'Collocations', 'Formations', 'Unit', 'Topic', 'LacViet']
+Front: B2_VOCAB_20_272...
+[18:47:02] Cleaned up injected chat UI elements.
+[18:47:02] Showing button for: B2_VOCAB_20_272...
+[18:47:02] ChatBot button injected successfully
+[18:47:03] PyCmd received: updateToolbar
+[18:47:03] Bridge command received: updateToolbar
+[18:47:04] PyCmd received: gemini_chat_open
+[18:47:04] Opening chat window...
+[18:47:04] Initializing injected ChatWindow...
+[18:47:04] PyCmd handlers registered
+[18:47:04] Deck settings for chat window: {}
+[18:47:04] Target field: None
+[18:47:06] Error opening chat window: 'NoneType' object has no attribute 'lower'
+[18:47:06] Bridge command received: gemini_chat_open
+[18:47:06] Bridge command received: gemini_chat_open
+[18:47:06] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:47:06] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:47:07] PyCmd received: gemini_chat_close
+[18:47:07] Bridge command received: gemini_chat_close
+[18:47:07] Bridge command received: gemini_chat_close
+[18:47:08] Cleaned up injected chat UI elements.
+[18:47:08] Review ended - cleanup completed
+[18:47:08] State change: review → deckBrowser
+[18:47:08] Leaving review → cleaning UI
+[18:47:08] Cleaned up injected chat UI elements.
+[18:47:08] Bridge command received: decks
+[18:47:08] Bridge command received: decks
+[18:47:14] PyCmd received: open:1730211184472
+[18:47:14] Bridge command received: open:1730211184472
+[18:47:14] Bridge command received: open:1730211184472
+[18:47:14] State change: deckBrowser → overview
+[18:47:14] PyCmd received: study
+[18:47:14] Bridge command received: study
+[18:47:14] Bridge command received: study
+[18:47:14] State change: overview → review
+[18:47:14] === on_show_question TRIGGERED ===
+[18:47:14] Card ID: 1730211423364
+Deck ID: 1730211184472
+Note ID: 1730211423364
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: regret to tell/inform you...
+[18:47:14] Cleaned up injected chat UI elements.
+[18:47:14] Showing button for: regret to tell/inform you...
+[18:47:14] ChatBot button injected successfully
+[18:47:15] PyCmd received: updateToolbar
+[18:47:15] Bridge command received: updateToolbar
+[18:47:15] Bridge command received: updateToolbar
+[18:47:16] PyCmd received: gemini_chat_open
+[18:47:16] Opening chat window...
+[18:47:16] Initializing injected ChatWindow...
+[18:47:16] PyCmd handlers registered
+[18:47:16] Deck settings for chat window: {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}
+[18:47:16] Target field: Collocation
+[18:47:16] Field value: regret to tell/inform you
+[18:47:16] Prompt key selected: default_simple
+[18:47:16] Resolved prompt template: Giải thích về: {text}
+[18:47:16] Auto prompt generated: Giải thích về: regret to tell/inform you
+[18:47:16] Attempting to pre-fill with: Giải thích về: regret to tell/inform you...
+[18:47:16] Chat window injected/shown successfully
+[18:47:16] Bridge command received: gemini_chat_open
+[18:47:16] Bridge command received: gemini_chat_open
+[18:47:16] Bridge command received: gemini_chat_open
+[18:47:16] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:47:16] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:47:16] Prefilled input successfully.
+[18:47:18] PyCmd received: gemini_chat_send_message
+[18:47:18] Bridge command received: gemini_chat_send_message
+[18:47:18] Bridge command received: gemini_chat_send_message
+[18:47:18] Bridge command received: gemini_chat_send_message
+[18:47:18] Calling Gemini API...
+[18:47:23] Gemini API call successful
+[18:47:23] message before formatting: Cụm từ "regret to tell/inform you" là một cách diễn đạt lịch sự và trang trọng được sử dụng để báo tin xấu hoặc tin không vui cho người khác.  Nó thể hiện sự hối tiếc của người nói khi phải thông báo tin tức đó.
+
+Dưới đây là giải thích chi tiết:
+
+*   **Regret (động từ):** Có nghĩa là cảm thấy buồn, thất vọng hoặc hối hận về điều gì đó đã xảy ra hoặc sắp xảy ra.
+*   **To tell/inform:** Có nghĩa là thông báo, cho ai đó biết điều gì đó.
+*   **You:** Người nghe, người nhận thông tin.
+
+**Ý nghĩa tổng thể:** "Tôi rất tiếc phải nói/thông báo cho bạn..."
+
+**Khi nào sử dụng:**
+
+*   Khi bạn phải thông báo tin xấu: Ví dụ, bị từ chối công việc, hủy sự kiện, kết quả không tốt, v.v.
+*   Khi bạn phải đưa ra một quyết định khó khăn mà có thể gây thất vọng cho người khác.
+*   Trong các tình huống trang trọng hoặc chuyên nghiệp, như thư từ kinh doanh, thông báo chính thức, v.v.
+
+**Ví dụ:**
+
+*   "I **regret to inform you** that your application has been unsuccessful." (Tôi rất tiếc phải thông báo cho bạn rằng đơn đăng ký của bạn không thành công.)
+*   "We **regret to tell you** that the concert has been cancelled due to unforeseen circumstances." (Chúng tôi rất tiếc phải thông báo cho bạn rằng buổi hòa nhạc đã bị hủy do những tình huống không lường trước được.)
+*   "I **regret to inform you** of my resignation from my position." (Tôi rất tiếc phải thông báo cho bạn về việc tôi từ chức.)
+
+**Lưu ý:**
+
+*   Sau cụm "regret to tell/inform you," hãy nói rõ và trực tiếp thông tin bạn muốn truyền đạt.
+*   Cố gắng đưa ra lời giải thích ngắn gọn và hợp lý nếu có thể.
+*   Thể hiện sự thông cảm và thấu hiểu với cảm xúc của người nghe.
+
+**Các cách diễn đạt tương tự:**
+
+*   "I'm sorry to tell you..." (Tôi rất tiếc phải nói với bạn...)
+*   "I'm afraid I...
+[18:47:23] message after formatting: Cụm từ "regret to tell/inform you" là một cách diễn đạt lịch sự và trang trọng được sử dụng để báo tin xấu hoặc tin không vui cho người khác.  Nó thể hiện sự hối tiếc của người nói khi phải thông báo tin tức đó.<br><br>Dưới đây là giải thích chi tiết:<br><br><i>   <b>Regret (động từ):</b> Có nghĩa là cảm thấy buồn, thất vọng hoặc hối hận về điều gì đó đã xảy ra hoặc sắp xảy ra.<br></i>   <b>To tell/inform:</b> Có nghĩa là thông báo, cho ai đó biết điều gì đó.<br><i>   <b>You:</b> Người nghe, người nhận thông tin.<br><br><b>Ý nghĩa tổng thể:</b> "Tôi rất tiếc phải nói/thông báo cho bạn..."<br><br><b>Khi nào sử dụng:</b><br><br></i>   Khi bạn phải thông báo tin xấu: Ví dụ, bị từ chối công việc, hủy sự kiện, kết quả không tốt, v.v.<br><i>   Khi bạn phải đưa ra một quyết định khó khăn mà có thể gây thất vọng cho người khác.<br></i>   Trong các tình huống trang trọng hoặc chuyên nghiệp, như thư từ kinh doanh, thông báo chính thức, v.v.<br><br><b>Ví dụ:</b><br><br><i>   "I <b>regret to inform you</b> that your application has been unsuccessful." (Tôi rất tiếc phải thông báo cho bạn rằng đơn đăng ký của bạn không thành công.)<br></i>   "We <b>regret to tell you</b> that the concert has been cancelled due to unforeseen circumstances." (Chúng tôi rất tiếc phải thông báo cho bạn rằng buổi hòa nhạc đã bị hủy do những tình huống không lường trước được.)<br><i>   "I <b>regret to inform you</b> of my resignation from my position." (Tôi rất tiếc phải thông báo cho bạn về việc tôi từ chức.)<br><br><b>Lưu ý:</b><br><br></i>   Sau cụm "regret to tell/inform you," hãy nói rõ và trực tiếp thông tin bạn muốn truyền đạt.<br><i>   Cố gắng đưa ra lời giải thích ngắn gọn và hợp lý nếu có thể.<br></i>   Thể hiện sự thông cảm và thấu hiểu với cảm xúc của người nghe.<br><br><b>Các cách diễn đạt tương tự:</b><br><br><i>   "I'm sorry to tell you..." (Tôi rất tiếc phải nói với bạn...)<br></i>   "I'm afraid I...
+[18:47:42] PyCmd received: gemini_chat_close
+[18:47:42] Bridge command received: gemini_chat_close
+[18:47:42] Bridge command received: gemini_chat_close
+[18:47:42] Bridge command received: gemini_chat_close
+[18:47:43] Cleaned up injected chat UI elements.
+[18:47:43] Review ended - cleanup completed
+[18:47:43] State change: review → deckBrowser
+[18:47:43] Leaving review → cleaning UI
+[18:47:43] Cleaned up injected chat UI elements.
+[18:47:44] Bridge command received: decks
+[18:47:44] Bridge command received: decks
+[18:47:44] Bridge command received: decks
+[18:47:59] Bridge command received: onigiri_collapse:1725878862948
+[18:47:59] Bridge command received: onigiri_collapse:1725878862948
+[18:47:59] Bridge command received: onigiri_collapse:1725878862948
+[18:48:01] PyCmd received: open:1725890417067
+[18:48:01] Bridge command received: open:1725890417067
+[18:48:01] Bridge command received: open:1725890417067
+[18:48:01] Bridge command received: open:1725890417067
+[18:48:01] State change: deckBrowser → overview
+[18:48:01] PyCmd received: study
+[18:48:01] Bridge command received: study
+[18:48:01] Bridge command received: study
+[18:48:01] Bridge command received: study
+[18:48:01] State change: overview → review
+[18:48:01] === on_show_question TRIGGERED ===
+[18:48:01] Card ID: 1725890453326
+Deck ID: 1725890417067
+Note ID: 1725890453325
+Fields: ['Kanji', 'Onyomi', 'Kunyomi', 'Meaning']
+Front: 名...
+[18:48:01] Cleaned up injected chat UI elements.
+[18:48:01] Showing button for: 名...
+[18:48:01] ChatBot button injected successfully
+[18:48:02] PyCmd received: updateToolbar
+[18:48:02] Bridge command received: updateToolbar
+[18:48:02] Bridge command received: updateToolbar
+[18:48:02] Bridge command received: updateToolbar
+[18:48:03] PyCmd received: gemini_chat_open
+[18:48:03] Opening chat window...
+[18:48:03] Initializing injected ChatWindow...
+[18:48:03] PyCmd handlers registered
+[18:48:03] Deck settings for chat window: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}
+[18:48:03] Target field: Kanji
+[18:48:03] Field value: 名
+[18:48:03] Prompt key selected: default_simple
+[18:48:03] Resolved prompt template: Giải thích về: {text}
+[18:48:03] Auto prompt generated: Giải thích về: 名
+[18:48:03] Attempting to pre-fill with: Giải thích về: 名...
+[18:48:03] Chat window injected/shown successfully
+[18:48:03] Bridge command received: gemini_chat_open
+[18:48:03] Bridge command received: gemini_chat_open
+[18:48:03] Bridge command received: gemini_chat_open
+[18:48:03] Bridge command received: gemini_chat_open
+[18:48:03] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:48:03] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:48:03] Prefilled input successfully.
+[18:48:05] PyCmd received: gemini_chat_send_message
+[18:48:05] Bridge command received: gemini_chat_send_message
+[18:48:05] Bridge command received: gemini_chat_send_message
+[18:48:05] Bridge command received: gemini_chat_send_message
+[18:48:05] Bridge command received: gemini_chat_send_message
+[18:48:05] Calling Gemini API...
+[18:48:10] Gemini API call successful
+[18:48:10] message before formatting: "名" (Danh) trong tiếng Việt và tiếng Nhật (めい - mei hoặc な - na) có nhiều nghĩa, tùy thuộc vào ngữ cảnh sử dụng. Dưới đây là những nghĩa phổ biến nhất và cách sử dụng của nó:
+
+**1. Tên (Name):** Đây là nghĩa phổ biến nhất của "名".
+
+*   **Trong tiếng Việt:**
+    *   "Danh tính": Identity
+    *   "Họ tên": Full name
+    *   "Danh hiệu": Title
+    *   "Nổi danh": Famous
+    *   "Danh tiếng": Reputation
+
+*   **Trong tiếng Nhật:**
+    *   名前 (namae): Tên
+    *   氏名 (shimei): Họ tên
+    *   名刺 (meishi): Danh thiếp
+    *   名誉 (meiyo): Danh dự
+    *   有名 (yuumei): Nổi tiếng
+
+**Ví dụ:**
+
+*   **Việt Nam:** "Tên cô ấy là Lan."
+*   **Nhật Bản:** "彼女の名前は蘭です。(Kanojo no namae wa Ran desu.)" (Tên cô ấy là Ran.)
+
+**2. Danh tiếng, tiếng tăm (Reputation, Fame):**  "名" cũng chỉ đến danh tiếng, sự nổi tiếng của một người hoặc một vật.
+
+*   **Trong tiếng Việt:**
+    *   "Danh giá": Prestigious
+    *   "Danh vọng": Fame and reputation
+    *   "Vô danh": Unknown
+
+*   **Trong tiếng Nhật:**
+    *   名声 (meisei): Danh tiếng
+    *   悪名 (akumei): Tai tiếng (danh tiếng xấu)
+    *   名高い (nadakai): Nổi tiếng
+
+**Ví dụ:**
+
+*   **Việt Nam:** "Ông ấy có danh tiếng lẫy lừng."
+*   **Nhật Bản:** "彼は名声が高い。(Kare wa meisei ga takai.)" (Anh ấy có danh tiếng cao.)
+
+**3. Đơn vị đếm người (Counter for people):** Trong tiếng Nhật, "名" còn được dùng làm đơn vị đếm người, thể hiện sự trang trọng hơn so với "人" (hito).
+
+*   **Trong tiếng Nhật:**
+    *   1名様 (...
+[18:48:10] message after formatting: "名" (Danh) trong tiếng Việt và tiếng Nhật (めい - mei hoặc な - na) có nhiều nghĩa, tùy thuộc vào ngữ cảnh sử dụng. Dưới đây là những nghĩa phổ biến nhất và cách sử dụng của nó:<br><br><b>1. Tên (Name):</b> Đây là nghĩa phổ biến nhất của "名".<br><br><i>   <b>Trong tiếng Việt:</b><br></i>   "Danh tính": Identity<br><i>   "Họ tên": Full name<br></i>   "Danh hiệu": Title<br><i>   "Nổi danh": Famous<br></i>   "Danh tiếng": Reputation<br><br><i>   <b>Trong tiếng Nhật:</b><br></i>   名前 (namae): Tên<br><i>   氏名 (shimei): Họ tên<br></i>   名刺 (meishi): Danh thiếp<br><i>   名誉 (meiyo): Danh dự<br></i>   有名 (yuumei): Nổi tiếng<br><br><b>Ví dụ:</b><br><br><i>   <b>Việt Nam:</b> "Tên cô ấy là Lan."<br></i>   <b>Nhật Bản:</b> "彼女の名前は蘭です。(Kanojo no namae wa Ran desu.)" (Tên cô ấy là Ran.)<br><br><b>2. Danh tiếng, tiếng tăm (Reputation, Fame):</b>  "名" cũng chỉ đến danh tiếng, sự nổi tiếng của một người hoặc một vật.<br><br><i>   <b>Trong tiếng Việt:</b><br></i>   "Danh giá": Prestigious<br><i>   "Danh vọng": Fame and reputation<br></i>   "Vô danh": Unknown<br><br><i>   <b>Trong tiếng Nhật:</b><br></i>   名声 (meisei): Danh tiếng<br><i>   悪名 (akumei): Tai tiếng (danh tiếng xấu)<br></i>   名高い (nadakai): Nổi tiếng<br><br><b>Ví dụ:</b><br><br><i>   <b>Việt Nam:</b> "Ông ấy có danh tiếng lẫy lừng."<br></i>   <b>Nhật Bản:</b> "彼は名声が高い。(Kare wa meisei ga takai.)" (Anh ấy có danh tiếng cao.)<br><br><b>3. Đơn vị đếm người (Counter for people):</b> Trong tiếng Nhật, "名" còn được dùng làm đơn vị đếm người, thể hiện sự trang trọng hơn so với "人" (hito).<br><br><i>   <b>Trong tiếng Nhật:</b><br></i>   1名様 (...

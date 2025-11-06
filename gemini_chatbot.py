@@ -393,8 +393,7 @@ class GeminiChatBot:
             return "❌ Lỗi: Chưa cấu hình API Key"
 
         api_key = self.config.get("api_key")
-        # Sử dụng gemini-pro cho khả năng tốt hơn, gemini-2.0-flash không tồn tại trong API công khai
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={api_key}"
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key={api_key}"
 
         payload = {
             "contents": [{"parts": [{"text": prompt}]}],

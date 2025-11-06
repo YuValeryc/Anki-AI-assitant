@@ -56,8 +56,6 @@ class ConfigDialog(QDialog):
         # Load custom prompts
         for key, text in self.config.get("custom_prompts", {}).items():
             self.default_prompt.addItem(f"{key}: {text}", key)
-        
-        self.deck_selected_prompt.addItem("🛠 Custom (tự nhập phía dưới)", "custom")
 
         sel_key = self.config.get("selected_prompt", "default_simple")
         idx = self.default_prompt.findData(sel_key)

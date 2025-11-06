@@ -2,5 +2,3 @@ __pycache__/
 
 ./debug_log.txt
 ./.gitignore
-./debug_log.txt
-./meta.json

@@ -27,7 +27,7 @@ class ChatWindow:
         self.parent = parent # This is the GeminiChatBot instance
         self.debug = DebugTools("ChatWindow")
         self.thread = None
-        self.debug.log("Initializing injected ChatWindow...")
+        # self.debug.log("Initializing injected ChatWindow...")
         self.register_handlers()
         # self.inject_ui() # Don't inject on init, only when explicitly opened
 
@@ -35,11 +35,11 @@ class ChatWindow:
         """Register message handlers"""
         from aqt.gui_hooks import webview_did_receive_js_message
         webview_did_receive_js_message.append(self.handle_pycmd)
-        self.debug.log("PyCmd handlers registered")
+        # self.debug.log("PyCmd handlers registered")
 
     def handle_pycmd(self, handled, message, context):
         """Xử lý các lệnh được gửi từ JS qua pycmd()."""
-        self.debug.log(f"Bridge command received: {message}")
+        # self.debug.log(f"Bridge command received: {message}")
 
         if message == "gemini_chat_close":
             self.close()
@@ -318,7 +318,7 @@ class ChatWindow:
             }}
             """
         else: # bot message
-            self.debug.log(f"message before formatting: {safe_message[:]}...")
+            # self.debug.log(f"message before formatting: {safe_message[:]}...")
             def format_markdown(text):
                 # ***text*** → <b><i>text</i></b>
                 text = re.sub(r"\*\*\*(.*?)\*\*\*", r"<b><i>\1</i></b>", text)
@@ -339,7 +339,7 @@ class ChatWindow:
                 return text
 
             safe_message = format_markdown(safe_message)
-            self.debug.log(f"message after formatting: {safe_message[:]}...")
+            # self.debug.log(f"message after formatting: {safe_message[:]}...")
             js = f"""
             var m = document.getElementById('gemini-chat-messages');
             if (m) {{
@@ -386,7 +386,7 @@ class ChatWindow:
         if self.thread and self.thread.isRunning():
             self.thread.terminate()
             self.thread.wait() # Wait for it to finish gracefully
-            self.debug.log("Terminated previous GeminiThread.")
+            # self.debug.log("Terminated previous GeminiThread.")
 
         self.thread = GeminiThread(self.parent, text)
         self.thread.finished.connect(self.handle_response)
@@ -399,7 +399,7 @@ class ChatWindow:
     
     def pre_fill_input(self, text):
         """Prefill input only if this exact prompt has NOT been asked before."""
-        self.debug.log(f"Attempting to pre-fill with: {text[:50]}...")
+        # self.debug.log(f"Attempting to pre-fill with: {text[:50]}...")
 
         if not text:
             return
@@ -426,9 +426,11 @@ class ChatWindow:
 
         def callback(result):
             if result:
-                self.debug.log("Prefilled input successfully.")
+                # self.debug.log("Prefilled input successfully.")
+                pass
             else:
-                self.debug.log("Skipped prefill (already asked).")
+                # self.debug.log("Skipped prefill (already asked).")
+                pass
 
         if mw.reviewer and mw.reviewer.web:
             mw.reviewer.web.evalWithCallback(js, callback)

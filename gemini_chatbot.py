@@ -18,7 +18,7 @@ from .config_dialogs import ConfigDialog, DeckConfigDialog
 class GeminiChatBot:
     def __init__(self):
         self.debug = DebugTools("GeminiChatBot")
-        self.debug.log("Initializing GeminiChatBot...")
+        # self.debug.log("Initializing GeminiChatBot...")
 
         self.config = self.load_config()
         self.current_card = None
@@ -28,13 +28,13 @@ class GeminiChatBot:
         self.register_handlers()
         self.register_hooks()
 
-        self.debug.log("GeminiChatBot initialized successfully", True)
+        # self.debug.log("GeminiChatBot initialized successfully", True)
 
     def register_handlers(self):
         """Register message handlers"""
         from aqt.gui_hooks import webview_did_receive_js_message
         webview_did_receive_js_message.append(self.handle_pycmd)
-        self.debug.log("PyCmd handlers registered")
+        # self.debug.log("PyCmd handlers registered")
 
     def register_hooks(self):
         """Register all hooks"""
@@ -50,13 +50,13 @@ class GeminiChatBot:
         for hook, handler in hooks:
             hook.append(handler)
 
-        self.debug.log(f"Registered {len(hooks)} hooks")
+        # self.debug.log(f"Registered {len(hooks)} hooks")
 
     def on_state_change(self, new_state, old_state):
         """Debug state changes"""
-        self.debug.log(f"State change: {old_state} → {new_state}")
+        # self.debug.log(f"State change: {old_state} → {new_state}")
         if old_state == "review" and new_state != "review":
-            self.debug.log("Leaving review → cleaning UI")
+            # self.debug.log("Leaving review → cleaning UI")
             self._cleanup_injected_elements()
 
             if self.chat_window:
@@ -72,7 +72,7 @@ class GeminiChatBot:
         if already_handled:
             return handled
 
-        self.debug.log(f"PyCmd received: {cmd}")
+        # self.debug.log(f"PyCmd received: {cmd}")
 
         if cmd == "gemini_chat_open":
             self.open_chat_window()
@@ -104,26 +104,27 @@ class GeminiChatBot:
 
         try:
             user_config = mw.addonManager.getConfig(__name__) or {}
-            self.debug.log(f"User config loaded: {user_config}")
+            # self.debug.log(f"User config loaded: {user_config}")
             # Deep merge
             config = default_config.copy()
             config.update(user_config)
             config["custom_prompts"] = {**default_config["custom_prompts"], **user_config.get("custom_prompts", {})}
 
-            self.debug.log("Configuration loaded successfully")
+            # self.debug.log("Configuration loaded successfully")
             return config
 
         except Exception as e:
-            self.debug.log(f"Config load error: {e}", True)
+            # self.debug.log(f"Config load error: {e}", True)
             return default_config
 
     def save_config(self):
         """Save configuration"""
         try:
             mw.addonManager.writeConfig(__name__, self.config)
-            self.debug.log("Configuration saved")
+            # self.debug.log("Configuration saved")
         except Exception as e:
-            self.debug.log(f"Config save error: {e}", True)
+            # self.debug.log(f"Config save error: {e}", True)
+            pass
 
     def setup_menu(self):
         """Add menu items"""
@@ -143,10 +144,11 @@ class GeminiChatBot:
                 menu.addAction(action)
 
             mw.form.menuTools.addMenu(menu)
-            self.debug.log("Menu setup completed")
+            # self.debug.log("Menu setup completed")
 
         except Exception as e:
-            self.debug.log(f"Menu setup error: {e}", True)
+            # self.debug.log(f"Menu setup error: {e}", True)
+            pass
 
     def show_debug_info(self):
         """Show debug information"""
@@ -167,20 +169,20 @@ class GeminiChatBot:
     def on_show_question(self, card):
         """Called when question is shown"""
         try:
-            self.debug.log("=== on_show_question TRIGGERED ===")
-            self.debug.log(self.debug.inspect_card(card))
+            # self.debug.log("=== on_show_question TRIGGERED ===")
+            # self.debug.log(self.debug.inspect_card(card))
 
             # Remove existing chat UI and button on new card
             self._cleanup_injected_elements()
 
             # Check if addon is enabled
             if not self.config["enabled"]:
-                self.debug.log("Addon disabled in config")
+                # self.debug.log("Addon disabled in config")
                 return
 
             # Check if reviewer and webview are ready
             if not mw.reviewer or not mw.reviewer.web:
-                self.debug.log("Reviewer or WebView not ready")
+                # self.debug.log("Reviewer or WebView not ready")
                 return
 
             self.current_card = card
@@ -191,7 +193,7 @@ class GeminiChatBot:
             deck_enabled = deck_settings.get("enabled", True)
 
             if not deck_enabled:
-                self.debug.log(f"ChatBot disabled for deck {deck_id}")
+                # self.debug.log(f"ChatBot disabled for deck {deck_id}")
                 return
 
             # Get target field text
@@ -199,18 +201,19 @@ class GeminiChatBot:
             field_text = self.get_field_text(card, target_field)
 
             if not field_text.strip():
-                self.debug.log(f"Empty field text for field: {target_field}")
+                # self.debug.log(f"Empty field text for field: {target_field}")
                 return
 
             # Get prompt template
             prompt_key = deck_settings.get("selected_prompt", self.config["selected_prompt"])
             prompt_template = self.config["custom_prompts"].get(prompt_key, "Bạn có muốn biết thêm về: {text}")
 
-            self.debug.log(f"Showing button for: {field_text[:30]}...")
+            # self.debug.log(f"Showing button for: {field_text[:30]}...")
             self.show_chatbot_button(field_text, prompt_template)
 
         except Exception as e:
-            self.debug.log(f"Error in on_show_question: {e}", True)
+            # self.debug.log(f"Error in on_show_question: {e}", True)
+            pass
 
     def get_field_text(self, card, target_field):
         """Get text from target field"""
@@ -306,10 +309,11 @@ class GeminiChatBot:
             """
 
             mw.reviewer.web.eval(js_code)
-            self.debug.log("ChatBot button injected successfully")
+            # self.debug.log("ChatBot button injected successfully")
 
         except Exception as e:
-            self.debug.log(f"Error showing chatbot button: {e}", True)
+            # self.debug.log(f"Error showing chatbot button: {e}", True)
+            pass
 
     def _cleanup_injected_elements(self):
         """Remove any previously injected button or chat window from the webview."""
@@ -321,19 +325,20 @@ class GeminiChatBot:
             if (chatContainer) chatContainer.remove();
             """
             mw.reviewer.web.eval(js_cleanup)
-            self.debug.log("Cleaned up injected chat UI elements.")
+            # self.debug.log("Cleaned up injected chat UI elements.")
 
     def on_review_end(self):
         """Clean up when review ends"""
         try:
             self._cleanup_injected_elements()
-            self.debug.log("Review ended - cleanup completed")
+            # self.debug.log("Review ended - cleanup completed")
         except Exception as e:
-            self.debug.log(f"Cleanup error: {e}")
+            # self.debug.log(f"Cleanup error: {e}")
+            pass
 
     def open_chat_window(self):
         """Open chat window"""
-        self.debug.log("Opening chat window...")
+        # self.debug.log("Opening chat window...")
 
         if not self.current_card:
             showInfo("Không có card nào đang active!")
@@ -353,19 +358,19 @@ class GeminiChatBot:
             
             deck_id = str(self.current_card.did)
             deck_settings = self.config["deck_settings"].get(deck_id, {})
-            self.debug.log(f"Deck settings for chat window: {deck_settings}")
+            # self.debug.log(f"Deck settings for chat window: {deck_settings}")
 
             target_field = deck_settings.get("target_field")
-            self.debug.log(f"Target field: {target_field}")
+            # self.debug.log(f"Target field: {target_field}")
 
             # ✅ Lấy content của field
             card_content = self.get_field_text(self.current_card, target_field)
-            self.debug.log(f"Field value: {card_content}")
+            # self.debug.log(f"Field value: {card_content}")
 
             prompt_key = deck_settings.get("selected_prompt") \
                         or self.config.get("selected_prompt")
 
-            self.debug.log(f"Prompt key selected: {prompt_key}")
+            # self.debug.log(f"Prompt key selected: {prompt_key}")
 
             prompt_template = self.config["custom_prompts"].get(prompt_key)
 
@@ -373,19 +378,19 @@ class GeminiChatBot:
             if not prompt_template:
                 prompt_template = "Giải thích về: {text}"
 
-            self.debug.log(f"Resolved prompt template: {prompt_template}")
+            # self.debug.log(f"Resolved prompt template: {prompt_template}")
             auto_prompt = prompt_template.replace("{text}", card_content)
-            self.debug.log(f"Auto prompt generated: {auto_prompt}")
+            # self.debug.log(f"Auto prompt generated: {auto_prompt}")
 
             self.chat_window.pre_fill_input(auto_prompt)
-            self.debug.log("Chat window injected/shown successfully")
+            # self.debug.log("Chat window injected/shown successfully")
 
         except Exception as e:
             if str(e) == "'NoneType' object has no attribute 'lower'":
                 showInfo("Chưa bật chatbot cho bộ deck này.")
             else:
                 showInfo(f"Lỗi khi inject chat window: {e}")
-            self.debug.log(f"Error opening chat window: {e}", True)
+            # self.debug.log(f"Error opening chat window: {e}", True)
 
     def call_gemini_api(self, prompt: str) -> str:
         """Call Gemini API với error handling"""
@@ -403,7 +408,7 @@ class GeminiChatBot:
             }
         }
 
-        self.debug.log("Calling Gemini API...")
+        # self.debug.log("Calling Gemini API...")
 
         # retry on 429 (rate limit) with exponential backoff
         max_attempts = 3
@@ -413,7 +418,7 @@ class GeminiChatBot:
                 response = requests.post(url, json=payload, timeout=30)
                 # self.debug.log(f"Response: {response.status_code} - {response.text}")
                 if response.status_code == 429:
-                    self.debug.log(f"Gemini API rate-limited (429). Attempt {attempt}/{max_attempts}")
+                    # self.debug.log(f"Gemini API rate-limited (429). Attempt {attempt}/{max_attempts}")
                     if attempt < max_attempts:
                         time.sleep(backoff)
                         backoff *= 2
@@ -431,35 +436,36 @@ class GeminiChatBot:
                 except (IndexError, TypeError): # Handle cases where candidates or content might be missing
                     # If text is not found, try to return error message from API
                     error_message = result.get("error", {}).get("message", str(result))
-                    self.debug.log(f"Gemini API response parsing error, full result: {result}")
+                    # self.debug.log(f"Gemini API response parsing error, full result: {result}")
                     return f"❌ Lỗi Gemini: {error_message}"
 
-                self.debug.log("Gemini API call successful")
+                # self.debug.log("Gemini API call successful")
                 return response_text
 
             except requests.exceptions.RequestException as e:
-                self.debug.log(f"Gemini API network error (attempt {attempt}): {e}")
+                # self.debug.log(f"Gemini API network error (attempt {attempt}): {e}")
                 if attempt < max_attempts:
                     time.sleep(backoff)
                     backoff *= 2
                     continue
                 return f"❌ Lỗi kết nối Gemini: {e}"
             except Exception as e:
-                self.debug.log(f"Gemini API unexpected error: {e}", True)
+                # self.debug.log(f"Gemini API unexpected error: {e}", True)
                 return f"❌ Lỗi Gemini nội bộ: {e}"
 
     def show_config_dialog(self):
         """Show configuration dialog"""
         try:
             self.config = self.load_config()  # Reload config before showing dialog
-            self.debug.log(f"Current config before dialog: {self.config}")
+            # self.debug.log(f"Current config before dialog: {self.config}")
             dialog = ConfigDialog(self.config, self)
             if dialog.exec():
                 self.config = dialog.get_config()
                 self.save_config()
                 showInfo("Cấu hình đã được lưu!")
         except Exception as e:
-            self.debug.log(f"Config dialog error: {e}", True)
+            # self.debug.log(f"Config dialog error: {e}", True)
+            pass
 
     def show_deck_config(self):
         """Show deck configuration"""
@@ -467,7 +473,8 @@ class GeminiChatBot:
             dialog = DeckConfigDialog(self.config, self)
             dialog.exec()
         except Exception as e:
-            self.debug.log(f"Deck config error: {e}", True)
+            # self.debug.log(f"Deck config error: {e}", True)
+            pass
 
     def test_api_key(self):
         """Test API key"""
@@ -475,15 +482,15 @@ class GeminiChatBot:
             showInfo("Chưa có API Key!")
             return
 
-        self.debug.log("Testing API key...")
+        # self.debug.log("Testing API key...")
         result = self.call_gemini_api("Xin chào! Hãy trả lời ngắn gọn 'Kết nối thành công!'")
 
         if "Kết nối thành công" in result:
             showInfo("✅ API Key hoạt động tốt!")
-            self.debug.log("API test: SUCCESS")
+            # self.debug.log("API test: SUCCESS")
         else:
             showInfo("❌ Lỗi API Key: " + result)
-            self.debug.log(f"API test: FAILED - {result}")
+            # self.debug.log(f"API test: FAILED - {result}")
 
     def cleanup(self):
         """Clean up resources"""
@@ -492,6 +499,7 @@ class GeminiChatBot:
             if self.chat_window:
                 self.chat_window.close() # Now chat_window.close() will hide the injected UI
                 self.chat_window = None # Dereference the chat window
-            self.debug.log("Cleanup completed")
+            # self.debug.log("Cleanup completed")
         except Exception as e:
-            self.debug.log(f"Cleanup error: {e}")
+            # self.debug.log(f"Cleanup error: {e}")
+            pass

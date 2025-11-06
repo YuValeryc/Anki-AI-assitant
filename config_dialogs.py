@@ -25,7 +25,7 @@ class ConfigDialog(QDialog):
 
         # API Key
         layout.addWidget(QLabel("🔑 Gemini API Key:"))
-        self.debug.log(f"Loading API Key from config: {self.config}")
+        # self.debug.log(f"Loading API Key from config: {self.config}")
         self.api_key = QLineEdit()
         self.api_key.setText(self.config.get("api_key", ""))
         layout.addWidget(self.api_key)
@@ -217,7 +217,7 @@ class DeckConfigDialog(QDialog):
     def load_deck_settings(self):
         deck_id = str(self.deck_combo.currentData())
         deck_name = self.deck_combo.currentText()
-        self.debug.log(f"[LOAD] Loading settings for deck: {deck_name} (ID={deck_id})")
+        # self.debug.log(f"[LOAD] Loading settings for deck: {deck_name} (ID={deck_id})")
 
         deck_settings = self.config.setdefault("deck_settings", {})
         settings = deck_settings.get(deck_id, {})
@@ -228,7 +228,7 @@ class DeckConfigDialog(QDialog):
             for sub in self._get_subdecks(deck_id):
                 model_id = self._get_model_id_for_deck(sub["id"])
                 if model_id:
-                    self.debug.log(f"[LOAD] Dùng model từ subdeck: {sub['name']}")
+                    # self.debug.log(f"[LOAD] Dùng model từ subdeck: {sub['name']}")
                     break
 
         fields = self._get_fields_for_model(model_id)
@@ -253,7 +253,7 @@ class DeckConfigDialog(QDialog):
         else:
             self.deck_selected_prompt.setEditText(saved_key)
 
-        self.debug.log(f"[LOAD] Deck {deck_name} settings: {settings}")
+        # self.debug.log(f"[LOAD] Deck {deck_name} settings: {settings}")
 
     # =========================================================
     # ADD CUSTOM PROMPT
@@ -284,7 +284,7 @@ class DeckConfigDialog(QDialog):
         self.custom_key.clear()
         self.custom_text.clear()
         showInfo("✅ Prompt đã được thêm!")
-        self.debug.log(f"[ADD PROMPT] {key} = {text}")
+        # self.debug.log(f"[ADD PROMPT] {key} = {text}")
 
     # =========================================================
     # SAVE SETTINGS
@@ -293,20 +293,20 @@ class DeckConfigDialog(QDialog):
         deck_id = str(self.deck_combo.currentData())
         deck_name = self.deck_combo.currentText()
 
-        self.debug.log(f"[SAVE] Saving settings for deck: {deck_name} (ID={deck_id})")
+        # self.debug.log(f"[SAVE] Saving settings for deck: {deck_name} (ID={deck_id})")
 
         model_id = self._get_model_id_for_deck(deck_id)
         if not model_id:
-            self.debug.log("[SAVE] Không tìm thấy model trong deck chính, thử subdeck...")
+            # self.debug.log("[SAVE] Không tìm thấy model trong deck chính, thử subdeck...")
             for sub in self._get_subdecks(deck_id):
                 model_id = self._get_model_id_for_deck(sub["id"])
                 if model_id:
-                    self.debug.log(f"[SAVE] Model lấy từ subdeck: {sub['name']} (MID={model_id})")
+                    # self.debug.log(f"[SAVE] Model lấy từ subdeck: {sub['name']} (MID={model_id})")
                     break
 
         if not model_id:
             showInfo("❌ Không tìm thấy notetype trong deck hoặc subdeck.")
-            self.debug.log("[SAVE] ❌ Không tìm thấy notetype nào.")
+            # self.debug.log("[SAVE] ❌ Không tìm thấy notetype nào.")
             return
 
         selected_data = self.deck_selected_prompt.currentData()
@@ -326,7 +326,7 @@ class DeckConfigDialog(QDialog):
             self.config["custom_prompts"][custom_key] = custom_prompt
             selected_prompt_key = custom_key
             self.parent.save_config()
-            self.debug.log(f"[SAVE] Tạo custom prompt riêng: {custom_key} = {custom_prompt}")
+            # self.debug.log(f"[SAVE] Tạo custom prompt riêng: {custom_key} = {custom_prompt}")
         else:
             selected_prompt_key = selected_data or self.deck_selected_prompt.currentText()
 
@@ -354,19 +354,19 @@ class DeckConfigDialog(QDialog):
                 "selected_prompt": self.deck_selected_prompt.currentData()
                                     or self.deck_selected_prompt.currentText()
             }
-            self.debug.log(f"[SAVE] ✅ Áp dụng cho subdeck: {sub['name']} (ID={sub['id']})")
+            # self.debug.log(f"[SAVE] ✅ Áp dụng cho subdeck: {sub['name']} (ID={sub['id']})")
 
-        if different_model_subs:
-            self.debug.log(f"[SAVE] ⚠️ Bỏ qua {len(different_model_subs)} subdeck có notetype khác:")
-            for sub, mid in different_model_subs:
-                self.debug.log(f"    - {sub['name']} (ID={sub['id']}, MID={mid})")
+        # if different_model_subs:
+        #     # self.debug.log(f"[SAVE] ⚠️ Bỏ qua {len(different_model_subs)} subdeck có notetype khác:")
+        #     for sub, mid in different_model_subs:
+        #         self.debug.log(f"    - {sub['name']} (ID={sub['id']}, MID={mid})")
 
         self.parent.save_config()
         msg = f"✅ Đã lưu cho deck: {deck_name} (và {len(same_model_subs)} subdeck cùng notetype)"
         if different_model_subs:
             msg += f"\n⚠️ Bỏ qua {len(different_model_subs)} subdeck có notetype khác."
         showInfo(msg)
-        self.debug.log(f"[SAVE DONE] {deck_name} – Model ID={model_id}")
+        # self.debug.log(f"[SAVE DONE] {deck_name} – Model ID={model_id}")
 
     # =========================================================
     # CHECK NOTETYPE (SIMPLIFIED VERSION)
@@ -387,18 +387,18 @@ class DeckConfigDialog(QDialog):
             mids = {mid for mid in mids if mid is not None}
             if not mids:
                 showInfo(f"❌ Không tìm thấy notetype nào trong '{deck_name}' hoặc subdeck.")
-                self.debug.log(f"[CHECK] Không tìm thấy notetype trong {deck_name}")
+                # self.debug.log(f"[CHECK] Không tìm thấy notetype trong {deck_name}")
                 return
 
             if len(mids) == 1:
                 showInfo(f"✅ Deck '{deck_name}' và các subdeck cùng 1 notetype.")
-                self.debug.log(f"[CHECK] ✅ {deck_name} cùng notetype (MID={list(mids)[0]})")
+                # self.debug.log(f"[CHECK] ✅ {deck_name} cùng notetype (MID={list(mids)[0]})")
             else:
                 showInfo(f"⚠️ Deck '{deck_name}' và các subdeck có nhiều notetype khác nhau ({len(mids)} loại).")
-                self.debug.log(f"[CHECK] ⚠️ {deck_name} có {len(mids)} notetype khác nhau: {mids}")
+                # self.debug.log(f"[CHECK] ⚠️ {deck_name} có {len(mids)} notetype khác nhau: {mids}")
 
         except Exception as e:
-            self.debug.log(f"[CHECK ERROR] {e}")
+            # self.debug.log(f"[CHECK ERROR] {e}")
             showInfo(f"❌ Lỗi khi kiểm tra notetype: {e}")
         try:
             deck_id = self.deck_combo.currentData()
@@ -406,7 +406,7 @@ class DeckConfigDialog(QDialog):
 
             all_decks = [mw.col.decks.get(deck_id)] + self._get_subdecks(deck_id)
             found = {}
-            self.debug.log(f"[CHECK] Kiểm tra notetype của '{deck_name}' và các subdeck...")
+            # self.debug.log(f"[CHECK] Kiểm tra notetype của '{deck_name}' và các subdeck...")
 
             for d in all_decks:
                 did = d["id"]
@@ -419,7 +419,7 @@ class DeckConfigDialog(QDialog):
 
             if not found:
                 showInfo(f"❌ Không tìm thấy note nào trong deck '{deck_name}' hoặc subdeck.")
-                self.debug.log("[CHECK] Không tìm thấy notetype nào.")
+                # self.debug.log("[CHECK] Không tìm thấy notetype nào.")
                 return
 
             msg = f"📚 Notetype trong '{deck_name}' và các subdeck:\n\n"
@@ -429,10 +429,10 @@ class DeckConfigDialog(QDialog):
                     msg += f"    - {dname}\n"
             showInfo(msg)
 
-            self.debug.log("[CHECK] Kết quả:")
-            for model_name, decks in found.items():
-                self.debug.log(f"   - {model_name}: {', '.join(decks)}")
+            # self.debug.log("[CHECK] Kết quả:")
+            # for model_name, decks in found.items():
+                # self.debug.log(f"   - {model_name}: {', '.join(decks)}")
 
         except Exception as e:
-            self.debug.log(f"[CHECK ERROR] {e}")
+            # self.debug.log(f"[CHECK ERROR] {e}")
             showInfo(f"❌ Lỗi khi kiểm tra notetype: {e}")

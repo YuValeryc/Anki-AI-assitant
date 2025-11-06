@@ -2620,3 +2620,619 @@ Front: confuse sth with...
 [17:50:06] Bridge command received: gemini_chat_close
 [17:50:06] Bridge command received: gemini_chat_close
 [17:50:06] Bridge command received: gemini_chat_close
+[17:50:40] PyCmd received: gemini_chat_open
+[17:50:40] Opening chat window...
+[17:50:40] Deck settings for chat window: {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}
+[17:50:40] Current card ID: 1728746323919
+[17:50:40] Target field for auto prompt: Phrase
+[17:50:40] Selected prompt template: real_world_examples
+[17:50:40] Auto prompt generated: real_world_examples
+[17:50:40] Attempting to pre-fill with: real_world_examples...
+[17:50:40] Chat window injected/shown successfully
+[17:50:40] Bridge command received: gemini_chat_open
+[17:50:40] Bridge command received: gemini_chat_open
+[17:50:40] Bridge command received: gemini_chat_open
+[17:50:40] Prefilled input successfully.
+[17:52:24] Cleaned up injected chat UI elements.
+[17:52:24] Cleanup completed
+[17:52:57] Initializing GeminiChatBot...
+[17:52:57] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}}, 'target_field': 'Front'}
+[17:52:57] Configuration loaded successfully
+[17:52:57] Menu setup completed
+[17:52:57] PyCmd handlers registered
+[17:52:57] Registered 4 hooks
+[17:52:57] GeminiChatBot initialized successfully
+[17:52:57] State change: startup → deckBrowser
+[17:53:04] PyCmd received: open:1728746313787
+[17:53:04] State change: deckBrowser → overview
+[17:53:04] PyCmd received: study
+[17:53:04] State change: overview → review
+[17:53:04] === on_show_question TRIGGERED ===
+[17:53:04] Card ID: 1728746323919
+Deck ID: 1728746313787
+Note ID: 1728746323918
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: confuse sth with...
+[17:53:04] Cleaned up injected chat UI elements.
+[17:53:04] Showing button for: confuse sth with...
+[17:53:04] ChatBot button injected successfully
+[17:53:05] PyCmd received: updateToolbar
+[17:53:06] PyCmd received: gemini_chat_open
+[17:53:06] Opening chat window...
+[17:53:06] Initializing injected ChatWindow...
+[17:53:06] PyCmd handlers registered
+[17:53:06] Deck settings for chat window: {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}
+[17:53:06] Target field: Phrase
+[17:53:06] Field value: confuse sth with
+[17:53:06] Prompt key selected: real_world_examples
+[17:53:06] Resolved prompt template: Ví dụ thực tế về: {text}
+[17:53:06] Auto prompt generated: Ví dụ thực tế về: confuse sth with
+[17:53:06] Attempting to pre-fill with: Ví dụ thực tế về: confuse sth with...
+[17:53:06] Chat window injected/shown successfully
+[17:53:06] Bridge command received: gemini_chat_open
+[17:53:06] Prefilled input successfully.
+[17:53:09] PyCmd received: gemini_chat_send_message
+[17:53:09] Bridge command received: gemini_chat_send_message
+[17:53:09] Calling Gemini API...
+[17:53:13] Gemini API call successful
+[17:56:30] Cleaned up injected chat UI elements.
+[17:56:30] Review ended - cleanup completed
+[17:56:30] State change: review → deckBrowser
+[17:56:30] Leaving review → cleaning UI
+[17:56:30] Cleaned up injected chat UI elements.
+[17:56:30] Bridge command received: decks
+[17:56:33] PyCmd received: open:1728746768124
+[17:56:33] Bridge command received: open:1728746768124
+[17:56:33] State change: deckBrowser → overview
+[17:56:34] PyCmd received: study
+[17:56:34] Bridge command received: study
+[17:56:34] State change: overview → review
+[17:56:34] === on_show_question TRIGGERED ===
+[17:56:34] Card ID: 1728746796687
+Deck ID: 1728746768124
+Note ID: 1728746796686
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: on the coast...
+[17:56:34] Cleaned up injected chat UI elements.
+[17:56:34] Showing button for: on the coast...
+[17:56:34] ChatBot button injected successfully
+[17:56:34] PyCmd received: updateToolbar
+[17:56:34] Bridge command received: updateToolbar
+[17:56:36] PyCmd received: gemini_chat_open
+[17:56:36] Opening chat window...
+[17:56:36] Initializing injected ChatWindow...
+[17:56:36] PyCmd handlers registered
+[17:56:36] Deck settings for chat window: {}
+[17:56:36] Target field: None
+[17:56:50] Error opening chat window: 'NoneType' object has no attribute 'lower'
+[17:56:50] Bridge command received: gemini_chat_open
+[17:56:50] Bridge command received: gemini_chat_open
+[17:56:54] PyCmd received: updateToolbar
+[17:56:54] Bridge command received: updateToolbar
+[17:56:54] Bridge command received: updateToolbar
+[17:57:00] === on_show_question TRIGGERED ===
+[17:57:00] Card ID: 1728746796698
+Deck ID: 1728746768124
+Note ID: 1728746796697
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: provide sb with...
+[17:57:00] Cleaned up injected chat UI elements.
+[17:57:00] Showing button for: provide sb with...
+[17:57:00] ChatBot button injected successfully
+[17:57:00] PyCmd received: updateToolbar
+[17:57:00] Bridge command received: updateToolbar
+[17:57:01] Bridge command received: updateToolbar
+[17:57:03] PyCmd received: ans
+[17:57:03] Bridge command received: ans
+[17:57:03] Bridge command received: ans
+[17:57:03] PyCmd received: updateToolbar
+[17:57:03] Bridge command received: updateToolbar
+[17:57:03] Bridge command received: updateToolbar
+[17:57:05] PyCmd received: gemini_chat_open
+[17:57:05] Opening chat window...
+[17:57:05] Deck settings for chat window: {}
+[17:57:05] Target field: None
+[17:57:07] Error opening chat window: 'NoneType' object has no attribute 'lower'
+[17:57:07] Bridge command received: gemini_chat_open
+[17:57:07] Bridge command received: gemini_chat_open
+[17:57:08] PyCmd received: gemini_chat_close
+[17:57:08] Bridge command received: gemini_chat_close
+[17:57:08] Bridge command received: gemini_chat_close
+[17:57:53] === on_show_question TRIGGERED ===
+[17:57:53] Card ID: 1728746796690
+Deck ID: 1728746768124
+Note ID: 1728746796689
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: be far from...
+[17:57:53] Cleaned up injected chat UI elements.
+[17:57:53] Showing button for: be far from...
+[17:57:53] ChatBot button injected successfully
+[17:57:53] PyCmd received: updateToolbar
+[17:57:53] Bridge command received: updateToolbar
+[17:57:53] Bridge command received: updateToolbar
+[17:57:55] PyCmd received: gemini_chat_open
+[17:57:55] Opening chat window...
+[17:57:55] Deck settings for chat window: {}
+[17:57:55] Target field: None
+[17:59:48] Error opening chat window: 'NoneType' object has no attribute 'lower'
+[17:59:48] Bridge command received: gemini_chat_open
+[17:59:48] Bridge command received: gemini_chat_open
+[17:59:48] Cleaned up injected chat UI elements.
+[17:59:48] Cleanup completed
+[18:00:02] Initializing GeminiChatBot...
+[18:00:02] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}}, 'target_field': 'Front'}
+[18:00:02] Configuration loaded successfully
+[18:00:02] Menu setup completed
+[18:00:02] PyCmd handlers registered
+[18:00:02] Registered 4 hooks
+[18:00:02] GeminiChatBot initialized successfully
+[18:00:02] State change: startup → deckBrowser
+[18:00:08] PyCmd received: open:1728746313787
+[18:00:08] State change: deckBrowser → overview
+[18:00:09] PyCmd received: study
+[18:00:09] State change: overview → review
+[18:00:09] === on_show_question TRIGGERED ===
+[18:00:09] Card ID: 1728746323919
+Deck ID: 1728746313787
+Note ID: 1728746323918
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: confuse sth with...
+[18:00:09] Cleaned up injected chat UI elements.
+[18:00:09] Showing button for: confuse sth with...
+[18:00:09] ChatBot button injected successfully
+[18:00:09] PyCmd received: updateToolbar
+[18:00:11] PyCmd received: gemini_chat_open
+[18:00:11] Opening chat window...
+[18:00:11] Initializing injected ChatWindow...
+[18:00:11] PyCmd handlers registered
+[18:00:11] Deck settings for chat window: {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}
+[18:00:11] Target field: Phrase
+[18:00:11] Field value: confuse sth with
+[18:00:11] Prompt key selected: real_world_examples
+[18:00:11] Resolved prompt template: Ví dụ thực tế về: {text}
+[18:00:11] Auto prompt generated: Ví dụ thực tế về: confuse sth with
+[18:00:11] Attempting to pre-fill with: Ví dụ thực tế về: confuse sth with...
+[18:00:11] Chat window injected/shown successfully
+[18:00:11] Bridge command received: gemini_chat_open
+[18:00:11] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[18:00:11] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[18:00:11] Prefilled input successfully.
+[18:00:13] PyCmd received: gemini_chat_send_message
+[18:00:13] Bridge command received: gemini_chat_send_message
+[18:00:13] Calling Gemini API...
+[18:00:19] Gemini API call successful
+[18:00:19] message before formatting: Chắc chắn rồi, đây là một vài ví dụ thực tế về các...
+[18:00:19] message after formatting: Chắc chắn rồi, đây là một vài ví dụ thực tế về các...
+[18:00:42] Cleaned up injected chat UI elements.
+[18:00:42] Review ended - cleanup completed
+[18:00:42] State change: review → deckBrowser
+[18:00:42] Leaving review → cleaning UI
+[18:00:42] Cleaned up injected chat UI elements.
+[18:00:46] PyCmd received: open:1728746768124
+[18:00:46] Bridge command received: open:1728746768124
+[18:00:46] State change: deckBrowser → overview
+[18:00:47] PyCmd received: study
+[18:00:47] Bridge command received: study
+[18:00:47] State change: overview → review
+[18:00:47] === on_show_question TRIGGERED ===
+[18:00:47] Card ID: 1728746796690
+Deck ID: 1728746768124
+Note ID: 1728746796689
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: be far from...
+[18:00:47] Cleaned up injected chat UI elements.
+[18:00:47] Showing button for: be far from...
+[18:00:47] ChatBot button injected successfully
+[18:00:47] PyCmd received: updateToolbar
+[18:00:47] Bridge command received: updateToolbar
+[18:00:49] PyCmd received: gemini_chat_open
+[18:00:49] Opening chat window...
+[18:00:49] Initializing injected ChatWindow...
+[18:00:49] PyCmd handlers registered
+[18:00:49] Deck settings for chat window: {}
+[18:00:49] Target field: None
+[18:00:51] Error opening chat window: 'NoneType' object has no attribute 'lower'
+[18:00:51] Bridge command received: gemini_chat_open
+[18:00:51] Bridge command received: gemini_chat_open
+[18:00:51] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[18:00:51] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[18:00:53] PyCmd received: gemini_chat_close
+[18:00:53] Bridge command received: gemini_chat_close
+[18:00:53] Bridge command received: gemini_chat_close
+[18:00:59] Cleaned up injected chat UI elements.
+[18:00:59] Cleanup completed
+[18:01:26] Initializing GeminiChatBot...
+[18:01:26] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}}, 'target_field': 'Front'}
+[18:01:26] Configuration loaded successfully
+[18:01:26] Menu setup completed
+[18:01:26] PyCmd handlers registered
+[18:01:26] Registered 4 hooks
+[18:01:26] GeminiChatBot initialized successfully
+[18:01:26] State change: startup → deckBrowser
+[18:01:45] PyCmd received: open:1728746313787
+[18:01:45] State change: deckBrowser → overview
+[18:01:45] PyCmd received: study
+[18:01:45] State change: overview → review
+[18:01:45] === on_show_question TRIGGERED ===
+[18:01:45] Card ID: 1728746323919
+Deck ID: 1728746313787
+Note ID: 1728746323918
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: confuse sth with...
+[18:01:45] Cleaned up injected chat UI elements.
+[18:01:45] Showing button for: confuse sth with...
+[18:01:45] ChatBot button injected successfully
+[18:01:45] PyCmd received: updateToolbar
+[18:01:47] PyCmd received: ans
+[18:01:47] PyCmd received: updateToolbar
+[18:01:48] === on_show_question TRIGGERED ===
+[18:01:48] Card ID: 1728746323913
+Deck ID: 1728746313787
+Note ID: 1728746323912
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: in fact...
+[18:01:48] Cleaned up injected chat UI elements.
+[18:01:48] Showing button for: in fact...
+[18:01:48] ChatBot button injected successfully
+[18:01:48] PyCmd received: updateToolbar
+[18:01:50] PyCmd received: gemini_chat_open
+[18:01:50] Opening chat window...
+[18:01:50] Initializing injected ChatWindow...
+[18:01:50] PyCmd handlers registered
+[18:01:50] Deck settings for chat window: {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}
+[18:01:50] Target field: Phrase
+[18:01:50] Field value: in fact
+[18:01:50] Prompt key selected: real_world_examples
+[18:01:50] Resolved prompt template: Ví dụ thực tế về: {text}
+[18:01:50] Auto prompt generated: Ví dụ thực tế về: in fact
+[18:01:50] Attempting to pre-fill with: Ví dụ thực tế về: in fact...
+[18:01:50] Chat window injected/shown successfully
+[18:01:50] Bridge command received: gemini_chat_open
+[18:01:50] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:01:50] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:01:50] Prefilled input successfully.
+[18:01:51] PyCmd received: gemini_chat_send_message
+[18:01:51] Bridge command received: gemini_chat_send_message
+[18:01:51] Calling Gemini API...
+[18:01:56] Gemini API call successful
+[18:01:56] message before formatting: Chắc chắn rồi, đây là một vài ví dụ thực tế về cách sử dụng "in fact":
+
+**1. Để nhấn mạnh hoặc làm rõ một điều gì đó:**
+
+*   **Tình huống:** Bạn nghĩ rằng một người bạn chỉ hơi mệt mỏi.
+*   **Câu nói:** "I thought she was just tired, but **in fact**, she's been feeling ill for weeks." (Tôi cứ tưởng cô ấy chỉ mệt thôi, nhưng **thực tế là**, cô ấy đã cảm thấy không khỏe trong nhiều tuần rồi.)
+
+**2. Để đưa ra thông tin trái ngược hoặc bất ngờ:**
+
+*   **Tình huống:** Mọi người nghĩ rằng việc học một ngôn ngữ mới rất khó.
+*   **Câu nói:** "Many people think learning a new language is difficult, but **in fact**, with the right resources and motivation, it can be quite enjoyable." (Nhiều người nghĩ rằng học một ngôn ngữ mới là khó, nhưng **thực tế là**, với tài liệu và động lực phù hợp, nó có thể khá thú vị.)
+
+**3. Để thêm thông tin chi tiết hoặc cụ thể hơn:**
+
+*   **Tình huống:** Bạn đang nói về một bộ phim.
+*   **Câu nói:** "The movie was good, **in fact**, it was one of the best I've seen this year." (Bộ phim hay, **thực tế là**, nó là một trong những bộ phim hay nhất tôi đã xem năm nay.)
+
+**4. Để sửa chữa hoặc điều chỉnh một phát biểu trước đó:**
+
+*   **Tình huống:** Bạn không chắc chắn về số lượng chính xác.
+*   **Câu nói:** "I think there were about twenty people at the party, **in fact**, there were probably closer to thirty." (Tôi nghĩ có khoảng hai mươi người ở bữa tiệc, **thực tế là**, có lẽ gần ba mươi người hơn.)
+
+**Tóm lại, "in fact" được sử dụng để:**
+
+*   Nhấn mạnh sự thật
+*   Đưa ra thông tin trái ngược
+*   Thêm chi tiết
+*   Sửa chữa thông tin
+
+Hy vọng điều này giúp bạn hiểu rõ hơn về cách sử dụng "in fact" trong thực tế!...
+[18:01:56] message after formatting: Chắc chắn rồi, đây là một vài ví dụ thực tế về cách sử dụng "in fact":<br><br><b>1. Để nhấn mạnh hoặc làm rõ một điều gì đó:</b><br><br>*   <b>Tình huống:</b> Bạn nghĩ rằng một người bạn chỉ hơi mệt mỏi.<br>*   <b>Câu nói:</b> "I thought she was just tired, but <b>in fact</b>, she's been feeling ill for weeks." (Tôi cứ tưởng cô ấy chỉ mệt thôi, nhưng <b>thực tế là</b>, cô ấy đã cảm thấy không khỏe trong nhiều tuần rồi.)<br><br><b>2. Để đưa ra thông tin trái ngược hoặc bất ngờ:</b><br><br>*   <b>Tình huống:</b> Mọi người nghĩ rằng việc học một ngôn ngữ mới rất khó.<br>*   <b>Câu nói:</b> "Many people think learning a new language is difficult, but <b>in fact</b>, with the right resources and motivation, it can be quite enjoyable." (Nhiều người nghĩ rằng học một ngôn ngữ mới là khó, nhưng <b>thực tế là</b>, với tài liệu và động lực phù hợp, nó có thể khá thú vị.)<br><br><b>3. Để thêm thông tin chi tiết hoặc cụ thể hơn:</b><br><br>*   <b>Tình huống:</b> Bạn đang nói về một bộ phim.<br>*   <b>Câu nói:</b> "The movie was good, <b>in fact</b>, it was one of the best I've seen this year." (Bộ phim hay, <b>thực tế là</b>, nó là một trong những bộ phim hay nhất tôi đã xem năm nay.)<br><br><b>4. Để sửa chữa hoặc điều chỉnh một phát biểu trước đó:</b><br><br>*   <b>Tình huống:</b> Bạn không chắc chắn về số lượng chính xác.<br>*   <b>Câu nói:</b> "I think there were about twenty people at the party, <b>in fact</b>, there were probably closer to thirty." (Tôi nghĩ có khoảng hai mươi người ở bữa tiệc, <b>thực tế là</b>, có lẽ gần ba mươi người hơn.)<br><br><b>Tóm lại, "in fact" được sử dụng để:</b><br><br>*   Nhấn mạnh sự thật<br>*   Đưa ra thông tin trái ngược<br>*   Thêm chi tiết<br>*   Sửa chữa thông tin<br><br>Hy vọng điều này giúp bạn hiểu rõ hơn về cách sử dụng "in fact" trong thực tế!...
+[18:07:20] Cleaned up injected chat UI elements.
+[18:07:20] Cleanup completed
+[18:07:50] Initializing GeminiChatBot...
+[18:07:50] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}}, 'target_field': 'Front'}
+[18:07:50] Configuration loaded successfully
+[18:07:50] Menu setup completed
+[18:07:50] PyCmd handlers registered
+[18:07:50] Registered 4 hooks
+[18:07:50] GeminiChatBot initialized successfully
+[18:07:50] State change: startup → deckBrowser
+[18:07:58] PyCmd received: open:1728746313787
+[18:07:58] State change: deckBrowser → overview
+[18:07:59] PyCmd received: study
+[18:07:59] State change: overview → review
+[18:07:59] === on_show_question TRIGGERED ===
+[18:07:59] Card ID: 1728746323913
+Deck ID: 1728746313787
+Note ID: 1728746323912
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: in fact...
+[18:07:59] Cleaned up injected chat UI elements.
+[18:07:59] Showing button for: in fact...
+[18:07:59] ChatBot button injected successfully
+[18:07:59] PyCmd received: updateToolbar
+[18:08:00] PyCmd received: gemini_chat_open
+[18:08:00] Opening chat window...
+[18:08:00] Initializing injected ChatWindow...
+[18:08:00] PyCmd handlers registered
+[18:08:00] Deck settings for chat window: {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}
+[18:08:00] Target field: Phrase
+[18:08:00] Field value: in fact
+[18:08:00] Prompt key selected: real_world_examples
+[18:08:00] Resolved prompt template: Ví dụ thực tế về: {text}
+[18:08:00] Auto prompt generated: Ví dụ thực tế về: in fact
+[18:08:00] Attempting to pre-fill with: Ví dụ thực tế về: in fact...
+[18:08:00] Chat window injected/shown successfully
+[18:08:00] Bridge command received: gemini_chat_open
+[18:08:00] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:08:00] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:08:00] Prefilled input successfully.
+[18:08:01] PyCmd received: gemini_chat_send_message
+[18:08:01] Bridge command received: gemini_chat_send_message
+[18:08:01] Calling Gemini API...
+[18:08:06] Gemini API call successful
+[18:08:06] message before formatting: Chắc chắn rồi, đây là một vài ví dụ thực tế về cách sử dụng "in fact" trong câu:
+
+**1. Để nhấn mạnh hoặc thêm thông tin chi tiết:**
+
+*   "I thought the movie would be boring, but **in fact**, it was the best film I've seen all year!" (Tôi nghĩ bộ phim sẽ chán, nhưng thực tế là nó là bộ phim hay nhất tôi xem trong năm nay!)
+*   "She said she was tired, but **in fact**, she had been up all night working on the project." (Cô ấy nói cô ấy mệt, nhưng thực tế là cô ấy đã thức cả đêm để làm dự án.)
+*   "The restaurant looks expensive, but **in fact**, the prices are quite reasonable." (Nhà hàng trông có vẻ đắt tiền, nhưng thực tế là giá cả khá hợp lý.)
+
+**2. Để đưa ra một sự thật trái ngược với những gì người khác có thể nghĩ:**
+
+*   "He seems very confident, but **in fact**, he's quite nervous about the presentation." (Anh ấy có vẻ rất tự tin, nhưng thực tế là anh ấy khá lo lắng về bài thuyết trình.)
+*   "Most people think that elephants are afraid of mice, but **in fact**, they are more likely to be wary of bees." (Hầu hết mọi người nghĩ rằng voi sợ chuột, nhưng thực tế là chúng có nhiều khả năng cảnh giác với ong hơn.)
+*   "The weather forecast predicted rain, but **in fact**, it's a beautiful sunny day." (Dự báo thời tiết dự đoán có mưa, nhưng thực tế là một ngày nắng đẹp.)
+
+**3. Để sửa hoặc làm rõ điều gì đó đã nói trước đó:**
+
+*   "I'm not sure if I can finish the project by tomorrow. **In fact**, I know I won't be able to." (Tôi không chắc liệu tôi có thể hoàn thành dự án vào ngày mai hay không. Thực tế là tôi biết tôi sẽ không thể.)
+*   "She's a good student. **In fact**, she's the best student in the class." (Cô ấy là một học sinh giỏi. Thực tế là cô ấy là học sinh giỏi nhất lớp.)
+
+**Tóm lại:** "In fact" thường được sử dụng để đưa ra một sự thật, một thông tin chi tiết hơn,...
+[18:08:06] message after formatting: Chắc chắn rồi, đây là một vài ví dụ thực tế về cách sử dụng "in fact" trong câu:<br><br><b>1. Để nhấn mạnh hoặc thêm thông tin chi tiết:</b><br><br><i>   "I thought the movie would be boring, but <b>in fact</b>, it was the best film I've seen all year!" (Tôi nghĩ bộ phim sẽ chán, nhưng thực tế là nó là bộ phim hay nhất tôi xem trong năm nay!)<br></i>   "She said she was tired, but <b>in fact</b>, she had been up all night working on the project." (Cô ấy nói cô ấy mệt, nhưng thực tế là cô ấy đã thức cả đêm để làm dự án.)<br><i>   "The restaurant looks expensive, but <b>in fact</b>, the prices are quite reasonable." (Nhà hàng trông có vẻ đắt tiền, nhưng thực tế là giá cả khá hợp lý.)<br><br><b>2. Để đưa ra một sự thật trái ngược với những gì người khác có thể nghĩ:</b><br><br></i>   "He seems very confident, but <b>in fact</b>, he's quite nervous about the presentation." (Anh ấy có vẻ rất tự tin, nhưng thực tế là anh ấy khá lo lắng về bài thuyết trình.)<br><i>   "Most people think that elephants are afraid of mice, but <b>in fact</b>, they are more likely to be wary of bees." (Hầu hết mọi người nghĩ rằng voi sợ chuột, nhưng thực tế là chúng có nhiều khả năng cảnh giác với ong hơn.)<br></i>   "The weather forecast predicted rain, but <b>in fact</b>, it's a beautiful sunny day." (Dự báo thời tiết dự đoán có mưa, nhưng thực tế là một ngày nắng đẹp.)<br><br><b>3. Để sửa hoặc làm rõ điều gì đó đã nói trước đó:</b><br><br><i>   "I'm not sure if I can finish the project by tomorrow. <b>In fact</b>, I know I won't be able to." (Tôi không chắc liệu tôi có thể hoàn thành dự án vào ngày mai hay không. Thực tế là tôi biết tôi sẽ không thể.)<br></i>   "She's a good student. <b>In fact</b>, she's the best student in the class." (Cô ấy là một học sinh giỏi. Thực tế là cô ấy là học sinh giỏi nhất lớp.)<br><br><b>Tóm lại:</b> "In fact" thường được sử dụng để đưa ra một sự thật, một thông tin chi tiết hơn,...
+[18:11:32] Cleaned up injected chat UI elements.
+[18:11:32] Cleanup completed
+[18:11:43] Initializing GeminiChatBot...
+[18:11:43] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}}, 'target_field': 'Front'}
+[18:11:43] Configuration loaded successfully
+[18:11:43] Menu setup completed
+[18:11:43] PyCmd handlers registered
+[18:11:43] Registered 4 hooks
+[18:11:43] GeminiChatBot initialized successfully
+[18:11:43] State change: startup → deckBrowser
+[18:12:22] PyCmd received: open:1728746313787
+[18:12:22] State change: deckBrowser → overview
+[18:12:23] PyCmd received: study
+[18:12:23] State change: overview → review
+[18:12:23] === on_show_question TRIGGERED ===
+[18:12:23] Card ID: 1728746323913
+Deck ID: 1728746313787
+Note ID: 1728746323912
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: in fact...
+[18:12:23] Cleaned up injected chat UI elements.
+[18:12:23] Showing button for: in fact...
+[18:12:23] ChatBot button injected successfully
+[18:12:23] PyCmd received: updateToolbar
+[18:12:25] PyCmd received: gemini_chat_open
+[18:12:25] Opening chat window...
+[18:12:25] Initializing injected ChatWindow...
+[18:12:25] PyCmd handlers registered
+[18:12:25] Deck settings for chat window: {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}
+[18:12:25] Target field: Phrase
+[18:12:25] Field value: in fact
+[18:12:25] Prompt key selected: real_world_examples
+[18:12:25] Resolved prompt template: Ví dụ thực tế về: {text}
+[18:12:25] Auto prompt generated: Ví dụ thực tế về: in fact
+[18:12:25] Attempting to pre-fill with: Ví dụ thực tế về: in fact...
+[18:12:25] Chat window injected/shown successfully
+[18:12:25] Bridge command received: gemini_chat_open
+[18:12:25] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:12:25] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:12:25] Prefilled input successfully.
+[18:12:26] PyCmd received: gemini_chat_send_message
+[18:12:26] Bridge command received: gemini_chat_send_message
+[18:12:26] Calling Gemini API...
+[18:12:31] Gemini API call successful
+[18:12:31] message before formatting: Chắc chắn rồi, đây là một vài ví dụ thực tế về cách sử dụng cụm từ "in fact" trong câu:
+
+**1. Nhấn mạnh hoặc làm rõ một điều gì đó:**
+
+*   "I thought the movie would be boring, but **in fact**, it was really exciting." (Tôi nghĩ bộ phim sẽ nhàm chán, nhưng thực tế, nó lại rất thú vị.)
+*   "She seemed nervous at first, but **in fact**, she was just excited about the opportunity." (Ban đầu cô ấy có vẻ lo lắng, nhưng thực tế, cô ấy chỉ hào hứng về cơ hội này.)
+
+**2. Thêm thông tin bất ngờ hoặc trái ngược với những gì đã được nói trước đó:**
+
+*   "He said he was tired, but **in fact**, he stayed up all night working on the project." (Anh ấy nói anh ấy mệt, nhưng thực tế, anh ấy đã thức cả đêm để làm dự án.)
+*   "I thought I knew everything about her, but **in fact**, there were many things she hadn't told me." (Tôi nghĩ tôi biết mọi thứ về cô ấy, nhưng thực tế, có nhiều điều cô ấy chưa kể với tôi.)
+
+**3. Đưa ra một sự thật hoặc bằng chứng để củng cố một tuyên bố:**
+
+*   "The company is doing very well. **In fact**, their profits have doubled in the last year." (Công ty đang làm ăn rất tốt. Thực tế, lợi nhuận của họ đã tăng gấp đôi trong năm ngoái.)
+*   "Exercise is important for your health. **In fact**, studies have shown that regular exercise can reduce the risk of heart disease." (Tập thể dục rất quan trọng cho sức khỏe của bạn. Thực tế, các nghiên cứu đã chỉ ra rằng tập thể dục thường xuyên có thể giảm nguy cơ mắc bệnh tim.)
+
+**4. Sửa lại hoặc điều chỉnh một tuyên bố trước đó:**
+
+*   "I thought the restaurant was expensive, but **in fact**, it was quite affordable." (Tôi nghĩ nhà hàng đó đắt đỏ, nhưng thực tế, nó khá phải chăng.)
+*   "He's not just a good player; **in fact**, he's one of the best players in the league." (Anh ấy không chỉ là một cầu thủ giỏi; thực tế, anh ấy là một trong những...
+[18:12:31] message after formatting: Chắc chắn rồi, đây là một vài ví dụ thực tế về cách sử dụng cụm từ "in fact" trong câu:<br><br><b>1. Nhấn mạnh hoặc làm rõ một điều gì đó:</b><br><br><i>   "I thought the movie would be boring, but <b>in fact</b>, it was really exciting." (Tôi nghĩ bộ phim sẽ nhàm chán, nhưng thực tế, nó lại rất thú vị.)<br></i>   "She seemed nervous at first, but <b>in fact</b>, she was just excited about the opportunity." (Ban đầu cô ấy có vẻ lo lắng, nhưng thực tế, cô ấy chỉ hào hứng về cơ hội này.)<br><br><b>2. Thêm thông tin bất ngờ hoặc trái ngược với những gì đã được nói trước đó:</b><br><br><i>   "He said he was tired, but <b>in fact</b>, he stayed up all night working on the project." (Anh ấy nói anh ấy mệt, nhưng thực tế, anh ấy đã thức cả đêm để làm dự án.)<br></i>   "I thought I knew everything about her, but <b>in fact</b>, there were many things she hadn't told me." (Tôi nghĩ tôi biết mọi thứ về cô ấy, nhưng thực tế, có nhiều điều cô ấy chưa kể với tôi.)<br><br><b>3. Đưa ra một sự thật hoặc bằng chứng để củng cố một tuyên bố:</b><br><br><i>   "The company is doing very well. <b>In fact</b>, their profits have doubled in the last year." (Công ty đang làm ăn rất tốt. Thực tế, lợi nhuận của họ đã tăng gấp đôi trong năm ngoái.)<br></i>   "Exercise is important for your health. <b>In fact</b>, studies have shown that regular exercise can reduce the risk of heart disease." (Tập thể dục rất quan trọng cho sức khỏe của bạn. Thực tế, các nghiên cứu đã chỉ ra rằng tập thể dục thường xuyên có thể giảm nguy cơ mắc bệnh tim.)<br><br><b>4. Sửa lại hoặc điều chỉnh một tuyên bố trước đó:</b><br><br><i>   "I thought the restaurant was expensive, but <b>in fact</b>, it was quite affordable." (Tôi nghĩ nhà hàng đó đắt đỏ, nhưng thực tế, nó khá phải chăng.)<br></i>   "He's not just a good player; <b>in fact</b>, he's one of the best players in the league." (Anh ấy không chỉ là một cầu thủ giỏi; thực tế, anh ấy là một trong những...
+[18:14:47] Cleaned up injected chat UI elements.
+[18:14:47] Cleanup completed
+[18:14:58] Initializing GeminiChatBot...
+[18:14:58] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}}, 'target_field': 'Front'}
+[18:14:58] Configuration loaded successfully
+[18:14:58] Menu setup completed
+[18:14:58] PyCmd handlers registered
+[18:14:58] Registered 4 hooks
+[18:14:58] GeminiChatBot initialized successfully
+[18:14:58] State change: startup → deckBrowser
+[18:15:08] PyCmd received: open:1728746313787
+[18:15:08] State change: deckBrowser → overview
+[18:15:09] PyCmd received: study
+[18:15:09] State change: overview → review
+[18:15:09] === on_show_question TRIGGERED ===
+[18:15:09] Card ID: 1728746323913
+Deck ID: 1728746313787
+Note ID: 1728746323912
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: in fact...
+[18:15:09] Cleaned up injected chat UI elements.
+[18:15:09] Showing button for: in fact...
+[18:15:09] ChatBot button injected successfully
+[18:15:09] PyCmd received: updateToolbar
+[18:15:11] PyCmd received: gemini_chat_open
+[18:15:11] Opening chat window...
+[18:15:11] Initializing injected ChatWindow...
+[18:15:11] PyCmd handlers registered
+[18:15:11] Deck settings for chat window: {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}
+[18:15:11] Target field: Phrase
+[18:15:11] Field value: in fact
+[18:15:11] Prompt key selected: real_world_examples
+[18:15:11] Resolved prompt template: Ví dụ thực tế về: {text}
+[18:15:11] Auto prompt generated: Ví dụ thực tế về: in fact
+[18:15:11] Attempting to pre-fill with: Ví dụ thực tế về: in fact...
+[18:15:11] Chat window injected/shown successfully
+[18:15:11] Bridge command received: gemini_chat_open
+[18:15:11] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:15:11] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:15:11] Prefilled input successfully.
+[18:15:12] PyCmd received: gemini_chat_send_message
+[18:15:12] Bridge command received: gemini_chat_send_message
+[18:15:12] Calling Gemini API...
+[18:15:17] Gemini API call successful
+[18:15:17] message before formatting: Tuyệt vời! Dưới đây là một số ví dụ thực tế về cách sử dụng "in fact" trong câu, kèm theo giải thích để bạn dễ hình dung:
+
+**1. Đưa ra thông tin chính xác hơn hoặc chi tiết hơn:**
+
+*   **Câu:** I thought the movie would be boring, but in fact, it was quite entertaining.
+*   **Giải thích:** Người nói ban đầu nghĩ bộ phim chán, nhưng sự thật là nó lại khá hay. "In fact" giới thiệu một thông tin trái ngược và chính xác hơn.
+
+*   **Câu:** He seemed calm, but in fact, he was very nervous.
+*   **Giải thích:** Bề ngoài anh ta có vẻ bình tĩnh, nhưng thực tế là anh ta đang rất lo lắng. "In fact" làm rõ trạng thái thực sự bên trong.
+
+**2. Nhấn mạnh hoặc củng cố ý kiến:**
+
+*   **Câu:** The company is doing well; in fact, it's having its best year ever.
+*   **Giải thích:** Công ty đang làm ăn tốt, và để nhấn mạnh điều đó, "in fact" được dùng để nói rằng đây là năm tốt nhất từ trước đến nay của công ty.
+
+*   **Câu:** Exercise is good for you; in fact, it's essential for maintaining good health.
+*   **Giải thích:** Tập thể dục tốt cho bạn, và "in fact" được dùng để nhấn mạnh tầm quan trọng của nó, rằng nó thực sự cần thiết cho sức khỏe.
+
+**3. Đưa ra một sự thật bất ngờ hoặc gây ngạc nhiên:**
+
+*   **Câu:** I've never been to Europe; in fact, I've never even been on an airplane.
+*   **Giải thích:** Người nói chưa từng đến châu Âu, và điều gây ngạc nhiên hơn là họ thậm chí còn chưa từng đi máy bay.
+
+*   **Câu:** The house looked small from the outside, but in fact, it had six bedrooms.
+*   **Giải thích:** Ngôi nhà trông nhỏ từ bên ngoài, nhưng sự thật bất ngờ là nó có tới sáu phòng ngủ.
+
+**4. Chỉnh sửa hoặc làm rõ một điều gì đó đã nói trước đó:**
+
+*   **Câu:** I said I was tired, but in fact, I'm exhausted.
+*   **Giải thích:**...
+[18:15:17] message after formatting: Tuyệt vời! Dưới đây là một số ví dụ thực tế về cách sử dụng "in fact" trong câu, kèm theo giải thích để bạn dễ hình dung:<br><br><b>1. Đưa ra thông tin chính xác hơn hoặc chi tiết hơn:</b><br><br><i>   <b>Câu:</b> I thought the movie would be boring, but in fact, it was quite entertaining.<br></i>   <b>Giải thích:</b> Người nói ban đầu nghĩ bộ phim chán, nhưng sự thật là nó lại khá hay. "In fact" giới thiệu một thông tin trái ngược và chính xác hơn.<br><br><i>   <b>Câu:</b> He seemed calm, but in fact, he was very nervous.<br></i>   <b>Giải thích:</b> Bề ngoài anh ta có vẻ bình tĩnh, nhưng thực tế là anh ta đang rất lo lắng. "In fact" làm rõ trạng thái thực sự bên trong.<br><br><b>2. Nhấn mạnh hoặc củng cố ý kiến:</b><br><br><i>   <b>Câu:</b> The company is doing well; in fact, it's having its best year ever.<br></i>   <b>Giải thích:</b> Công ty đang làm ăn tốt, và để nhấn mạnh điều đó, "in fact" được dùng để nói rằng đây là năm tốt nhất từ trước đến nay của công ty.<br><br><i>   <b>Câu:</b> Exercise is good for you; in fact, it's essential for maintaining good health.<br></i>   <b>Giải thích:</b> Tập thể dục tốt cho bạn, và "in fact" được dùng để nhấn mạnh tầm quan trọng của nó, rằng nó thực sự cần thiết cho sức khỏe.<br><br><b>3. Đưa ra một sự thật bất ngờ hoặc gây ngạc nhiên:</b><br><br><i>   <b>Câu:</b> I've never been to Europe; in fact, I've never even been on an airplane.<br></i>   <b>Giải thích:</b> Người nói chưa từng đến châu Âu, và điều gây ngạc nhiên hơn là họ thậm chí còn chưa từng đi máy bay.<br><br><i>   <b>Câu:</b> The house looked small from the outside, but in fact, it had six bedrooms.<br></i>   <b>Giải thích:</b> Ngôi nhà trông nhỏ từ bên ngoài, nhưng sự thật bất ngờ là nó có tới sáu phòng ngủ.<br><br><b>4. Chỉnh sửa hoặc làm rõ một điều gì đó đã nói trước đó:</b><br><br><i>   <b>Câu:</b> I said I was tired, but in fact, I'm exhausted.<br></i>   <b>Giải thích:</b>...
+[18:16:05] Cleaned up injected chat UI elements.
+[18:16:05] Cleanup completed
+[18:16:15] Initializing GeminiChatBot...
+[18:16:15] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}}, 'target_field': 'Front'}
+[18:16:15] Configuration loaded successfully
+[18:16:15] Menu setup completed
+[18:16:15] PyCmd handlers registered
+[18:16:15] Registered 4 hooks
+[18:16:15] GeminiChatBot initialized successfully
+[18:16:15] State change: startup → deckBrowser
+[18:16:24] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}}, 'target_field': 'Front'}
+[18:16:24] Configuration loaded successfully
+[18:16:24] Current config before dialog: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'target_field': 'Front', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}}}
+[18:16:24] Loading API Key from config: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'target_field': 'Front', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}}}
+[18:16:35] PyCmd received: open:1728746313787
+[18:16:35] State change: deckBrowser → overview
+[18:16:35] PyCmd received: study
+[18:16:35] State change: overview → review
+[18:16:35] === on_show_question TRIGGERED ===
+[18:16:35] Card ID: 1728746323913
+Deck ID: 1728746313787
+Note ID: 1728746323912
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: in fact...
+[18:16:35] Cleaned up injected chat UI elements.
+[18:16:35] Showing button for: in fact...
+[18:16:35] ChatBot button injected successfully
+[18:16:35] PyCmd received: updateToolbar
+[18:16:37] PyCmd received: gemini_chat_open
+[18:16:37] Opening chat window...
+[18:16:37] Initializing injected ChatWindow...
+[18:16:37] PyCmd handlers registered
+[18:16:37] Deck settings for chat window: {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}
+[18:16:37] Target field: Phrase
+[18:16:37] Field value: in fact
+[18:16:37] Prompt key selected: real_world_examples
+[18:16:37] Resolved prompt template: Ví dụ thực tế về: {text}
+[18:16:37] Auto prompt generated: Ví dụ thực tế về: in fact
+[18:16:37] Attempting to pre-fill with: Ví dụ thực tế về: in fact...
+[18:16:37] Chat window injected/shown successfully
+[18:16:37] Bridge command received: gemini_chat_open
+[18:16:37] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:16:37] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:16:37] Prefilled input successfully.
+[18:16:38] PyCmd received: gemini_chat_send_message
+[18:16:38] Bridge command received: gemini_chat_send_message
+[18:16:38] Calling Gemini API...
+[18:16:43] Gemini API call successful
+[18:16:43] message before formatting: Chắc chắn rồi, đây là một vài ví dụ thực tế về cách sử dụng "in fact" trong câu:
+
+**1. Để nhấn mạnh hoặc làm rõ một điều gì đó:**
+
+*   "I thought the movie would be boring, but **in fact**, it was one of the best I've seen all year." (Tôi nghĩ bộ phim sẽ chán, nhưng thực tế, nó là một trong những bộ phim hay nhất tôi đã xem trong năm nay.)
+*   "He seemed nervous, but **in fact**, he was just really excited about the presentation." (Anh ấy trông có vẻ lo lắng, nhưng thực tế, anh ấy chỉ thực sự hào hứng về bài thuyết trình.)
+*   "The restaurant looks expensive, but **in fact**, their lunch specials are quite affordable." (Nhà hàng trông có vẻ đắt đỏ, nhưng thực tế, các món đặc biệt vào bữa trưa của họ khá phải chăng.)
+
+**2. Để đưa ra thông tin chính xác hơn hoặc chi tiết hơn:**
+
+*   "She's a talented musician. **In fact**, she plays several instruments and writes her own songs." (Cô ấy là một nhạc sĩ tài năng. Thực tế, cô ấy chơi nhiều nhạc cụ và tự viết bài hát của mình.)
+*   "The company is expanding rapidly. **In fact**, they're planning to open three new branches next year." (Công ty đang mở rộng nhanh chóng. Thực tế, họ đang lên kế hoạch mở ba chi nhánh mới vào năm tới.)
+*   "He's lived in France for a long time. **In fact**, he's been there for over ten years." (Anh ấy đã sống ở Pháp một thời gian dài. Thực tế, anh ấy đã ở đó hơn mười năm.)
+
+**3. Để đưa ra một sự thật trái ngược với những gì người ta có thể nghĩ:**
+
+*   "He's not as rich as people think. **In fact**, he's had to take out a loan to pay for his house." (Anh ấy không giàu như mọi người nghĩ. Thực tế, anh ấy đã phải vay tiền để trả tiền mua nhà.)
+*   "She doesn't seem very confident, but **in fact**, she's a very capable leader." (Cô ấy có vẻ không tự tin lắm, nhưng thực tế, cô ấy là một nhà lãnh đạo rất có năng lực...
+[18:16:43] message after formatting: Chắc chắn rồi, đây là một vài ví dụ thực tế về cách sử dụng "in fact" trong câu:<br><br><b>1. Để nhấn mạnh hoặc làm rõ một điều gì đó:</b><br><br><i>   "I thought the movie would be boring, but <b>in fact</b>, it was one of the best I've seen all year." (Tôi nghĩ bộ phim sẽ chán, nhưng thực tế, nó là một trong những bộ phim hay nhất tôi đã xem trong năm nay.)<br></i>   "He seemed nervous, but <b>in fact</b>, he was just really excited about the presentation." (Anh ấy trông có vẻ lo lắng, nhưng thực tế, anh ấy chỉ thực sự hào hứng về bài thuyết trình.)<br><i>   "The restaurant looks expensive, but <b>in fact</b>, their lunch specials are quite affordable." (Nhà hàng trông có vẻ đắt đỏ, nhưng thực tế, các món đặc biệt vào bữa trưa của họ khá phải chăng.)<br><br><b>2. Để đưa ra thông tin chính xác hơn hoặc chi tiết hơn:</b><br><br></i>   "She's a talented musician. <b>In fact</b>, she plays several instruments and writes her own songs." (Cô ấy là một nhạc sĩ tài năng. Thực tế, cô ấy chơi nhiều nhạc cụ và tự viết bài hát của mình.)<br><i>   "The company is expanding rapidly. <b>In fact</b>, they're planning to open three new branches next year." (Công ty đang mở rộng nhanh chóng. Thực tế, họ đang lên kế hoạch mở ba chi nhánh mới vào năm tới.)<br></i>   "He's lived in France for a long time. <b>In fact</b>, he's been there for over ten years." (Anh ấy đã sống ở Pháp một thời gian dài. Thực tế, anh ấy đã ở đó hơn mười năm.)<br><br><b>3. Để đưa ra một sự thật trái ngược với những gì người ta có thể nghĩ:</b><br><br><i>   "He's not as rich as people think. <b>In fact</b>, he's had to take out a loan to pay for his house." (Anh ấy không giàu như mọi người nghĩ. Thực tế, anh ấy đã phải vay tiền để trả tiền mua nhà.)<br></i>   "She doesn't seem very confident, but <b>in fact</b>, she's a very capable leader." (Cô ấy có vẻ không tự tin lắm, nhưng thực tế, cô ấy là một nhà lãnh đạo rất có năng lực...
+[18:16:50] PyCmd received: gemini_chat_close
+[18:16:50] Bridge command received: gemini_chat_close
+[18:17:37] PyCmd received: gemini_chat_open
+[18:17:37] Opening chat window...
+[18:17:37] Deck settings for chat window: {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}
+[18:17:37] Target field: Phrase
+[18:17:37] Field value: in fact
+[18:17:37] Prompt key selected: real_world_examples
+[18:17:37] Resolved prompt template: Ví dụ thực tế về: {text}
+[18:17:37] Auto prompt generated: Ví dụ thực tế về: in fact
+[18:17:37] Attempting to pre-fill with: Ví dụ thực tế về: in fact...
+[18:17:37] Chat window injected/shown successfully
+[18:17:37] Bridge command received: gemini_chat_open
+[18:17:37] Skipped prefill (already asked).
+[18:17:51] PyCmd received: gemini_chat_send_message
+[18:17:51] Bridge command received: gemini_chat_send_message
+[18:17:51] Calling Gemini API...
+[18:17:56] Gemini API call successful
+[18:17:56] message before formatting: BART (Bidirectional and Auto-Regressive Transformers) và BERT (Bidirectional Encoder Representations from Transformers) đều là các mô hình Transformer mạnh mẽ được sử dụng rộng rãi trong xử lý ngôn ngữ tự nhiên (NLP), nhưng chúng được thiết kế và huấn luyện cho các mục tiêu khác nhau, dẫn đến sự khác biệt về kiến trúc và ứng dụng. Dưới đây là sự khác biệt chính giữa BART và BERT:
+
+**1. Kiến trúc và Mục tiêu Huấn luyện:**
+
+*   **BERT (Bidirectional Encoder):**
+    *   **Kiến trúc:** Chỉ sử dụng các lớp Encoder của Transformer.
+    *   **Mục tiêu huấn luyện:**
+        *   **Masked Language Modeling (MLM):** Ngẫu nhiên che giấu một số từ trong câu và yêu cầu mô hình dự đoán các từ bị che giấu đó dựa trên ngữ cảnh xung quanh.
+        *   **Next Sentence Prediction (NSP):** Huấn luyện mô hình dự đoán xem hai câu có phải là câu tiếp theo của nhau trong văn bản hay không. (Tuy nhiên, NSP đã được chứng minh là không hiệu quả và thường bị loại bỏ trong các biến thể BERT sau này).
+    *   **Đặc điểm:** BERT được huấn luyện để hiểu biểu diễn ngữ cảnh của các từ trong câu một cách sâu sắc. Nó đặc biệt tốt cho các tác vụ liên quan đến hiểu ngôn ngữ (NLU) như phân loại văn bản, nhận dạng thực thể có tên (NER), trả lời câu hỏi, v.v.
+
+*   **BART (Bidirectional and Auto-Regressive Transformer):**
+    *   **Kiến trúc:** Sử dụng cả Encoder và Decoder của Transformer.
+    *   **Mục tiêu huấn luyện:**
+        *   **Denoising Sequence-to-Sequence:** Mô hình được huấn luyện để tái tạo lại văn bản gốc từ một phiên bản bị hỏng (corrupted) của nó. Quá trình làm hỏng có thể bao gồm việc che giấu từ, xóa từ, hoán đổi từ, hoặc chèn thêm nhiễu.
+    *   **Đặc điểm:** BART được huấn luyện để vừa hiểu ngôn ngữ (nhờ Encoder) vừa tạo ra ngôn ngữ (nhờ Decoder). Nó đặc biệt tốt cho các tác vụ tạo văn bản (text generation) như tóm tắt văn bản, dịch máy, tạo câu hỏi, v....
+[18:17:56] message after formatting: BART (Bidirectional and Auto-Regressive Transformers) và BERT (Bidirectional Encoder Representations from Transformers) đều là các mô hình Transformer mạnh mẽ được sử dụng rộng rãi trong xử lý ngôn ngữ tự nhiên (NLP), nhưng chúng được thiết kế và huấn luyện cho các mục tiêu khác nhau, dẫn đến sự khác biệt về kiến trúc và ứng dụng. Dưới đây là sự khác biệt chính giữa BART và BERT:<br><br><b>1. Kiến trúc và Mục tiêu Huấn luyện:</b><br><br><i>   <b>BERT (Bidirectional Encoder):</b><br></i>   <b>Kiến trúc:</b> Chỉ sử dụng các lớp Encoder của Transformer.<br><i>   <b>Mục tiêu huấn luyện:</b><br></i>   <b>Masked Language Modeling (MLM):</b> Ngẫu nhiên che giấu một số từ trong câu và yêu cầu mô hình dự đoán các từ bị che giấu đó dựa trên ngữ cảnh xung quanh.<br><i>   <b>Next Sentence Prediction (NSP):</b> Huấn luyện mô hình dự đoán xem hai câu có phải là câu tiếp theo của nhau trong văn bản hay không. (Tuy nhiên, NSP đã được chứng minh là không hiệu quả và thường bị loại bỏ trong các biến thể BERT sau này).<br></i>   <b>Đặc điểm:</b> BERT được huấn luyện để hiểu biểu diễn ngữ cảnh của các từ trong câu một cách sâu sắc. Nó đặc biệt tốt cho các tác vụ liên quan đến hiểu ngôn ngữ (NLU) như phân loại văn bản, nhận dạng thực thể có tên (NER), trả lời câu hỏi, v.v.<br><br><i>   <b>BART (Bidirectional and Auto-Regressive Transformer):</b><br></i>   <b>Kiến trúc:</b> Sử dụng cả Encoder và Decoder của Transformer.<br><i>   <b>Mục tiêu huấn luyện:</b><br></i>   <b>Denoising Sequence-to-Sequence:</b> Mô hình được huấn luyện để tái tạo lại văn bản gốc từ một phiên bản bị hỏng (corrupted) của nó. Quá trình làm hỏng có thể bao gồm việc che giấu từ, xóa từ, hoán đổi từ, hoặc chèn thêm nhiễu.<br>*   <b>Đặc điểm:</b> BART được huấn luyện để vừa hiểu ngôn ngữ (nhờ Encoder) vừa tạo ra ngôn ngữ (nhờ Decoder). Nó đặc biệt tốt cho các tác vụ tạo văn bản (text generation) như tóm tắt văn bản, dịch máy, tạo câu hỏi, v....
+[18:17:59] PyCmd received: gemini_chat_close
+[18:17:59] Bridge command received: gemini_chat_close

@@ -122,6 +122,12 @@ class ChatWindow:
         #gemini-close-btn:active {
             background: rgba(255, 255, 255, 0.45);
         }
+        .message b {
+            font-weight: 700; /* Hoặc 'bold'. 700 là một giá trị số phổ biến cho in đậm */
+        }
+        .message i {
+            font-style: italic; /* Đảm bảo kiểu chữ là nghiêng */
+        }
         #gemini-chat-messages {
             flex: 1;
             padding: 15px; /* More padding */
@@ -312,15 +318,28 @@ class ChatWindow:
             }}
             """
         else: # bot message
+            self.debug.log(f"message before formatting: {safe_message[:]}...")
             def format_markdown(text):
+                # ***text*** → <b><i>text</i></b>
+                text = re.sub(r"\*\*\*(.*?)\*\*\*", r"<b><i>\1</i></b>", text)
+
                 # **text** → <b>text</b>
-                text = re.sub(r"\*\*(.*?)\*\*", r"<b>\1</b>", text)
-                # *text* → <i>text</i>
-                text = re.sub(r"(?<!\*)\*(?!\*)(.*?)\*(?<!\*)", r"<i>\1</i>", text)
-                # Xuống dòng: nếu Gemini trả về "\n", chuyển thành <br>
+                text = re.sub(r"(?<!\*)\*\*(?!\*)(.*?)\*\*(?!\*)", r"<b>\1</b>", text)
+
+                # *text* → <i>text</i> 
+                # (không ăn vào dấu * trong bullet list hoặc khoảng trắng)
+                text = re.sub(r"(?<!\S)\*(?!\*)([^\*]+?)\*(?!\S)", r"<i>\1</i>", text)
+
+                # Chuyển xuống dòng thành <br>
                 text = text.replace("\n", "<br>")
+
+                # Loại bỏ khoảng trắng dư quanh <br>
+                text = re.sub(r"\s*<br>\s*", "<br>", text)
+
                 return text
+
             safe_message = format_markdown(safe_message)
+            self.debug.log(f"message after formatting: {safe_message[:]}...")
             js = f"""
             var m = document.getElementById('gemini-chat-messages');
             if (m) {{

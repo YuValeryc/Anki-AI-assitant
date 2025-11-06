@@ -49,7 +49,7 @@ class ConfigDialog(QDialog):
 
         # Default prompt key
         self.default_prompt.addItem(
-            "Giải thích ngắn gọn về {field_content}",
+            "Giải thích ngắn gọn về {text}",
             "default_simple"
         )
 
@@ -136,10 +136,9 @@ class DeckConfigDialog(QDialog):
         layout.addWidget(QLabel("💡 Prompt cho deck:"))
         self.deck_selected_prompt = QComboBox()
         self.deck_selected_prompt.setEditable(True)
-        self.deck_selected_prompt.addItem("Giải thích ngắn gọn về {field_content}", "default_simple")
+        self.deck_selected_prompt.addItem("Giải thích ngắn gọn về {text}", "default_simple")
         for key, text in self.config.get("custom_prompts", {}).items():
             self.deck_selected_prompt.addItem(f"{key}: {text}", key)
-        self.deck_selected_prompt.addItem("🛠 Custom (tự nhập phía dưới)", "custom")
         layout.addWidget(self.deck_selected_prompt)
         self.deck_selected_prompt.currentIndexChanged.connect(self._on_prompt_changed)
 

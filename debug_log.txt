@@ -5548,3 +5548,280 @@ Front: 飲...
 [23:19:02] Skipped prefill (already asked).
 [23:19:04] PyCmd received: gemini_chat_close
 [23:19:04] Bridge command received: gemini_chat_close
+[23:20:47] PyCmd received: gemini_chat_open
+[23:20:47] Opening chat window...
+[23:20:47] Deck settings for chat window: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}
+[23:20:47] Target field: Kanji
+[23:20:47] Field value: 飲
+[23:20:47] Prompt key selected: kanji
+[23:20:47] Resolved prompt template: Lấy 10 ví dụ âm on và âm kun cho: {text}
+[23:20:47] Auto prompt generated: Lấy 10 ví dụ âm on và âm kun cho: 飲
+[23:20:47] Attempting to pre-fill with: Lấy 10 ví dụ âm on và âm kun cho: 飲...
+[23:20:47] Chat window injected/shown successfully
+[23:20:47] Bridge command received: gemini_chat_open
+[23:20:47] Skipped prefill (already asked).
+[23:20:56] PyCmd received: gemini_chat_close
+[23:20:56] Bridge command received: gemini_chat_close
+[23:22:00] Cleaned up injected chat UI elements.
+[23:22:00] Cleanup completed
+[23:22:17] Initializing GeminiChatBot...
+[23:22:17] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}', 'kanji': 'Lấy 10 ví dụ âm on và âm kun cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}, '1725878862948': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}, '1725877737735': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}, '1725891642670': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}, '1725889630012': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}, '1725890727243': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}, '1725890417067': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}, '1725883693207': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}, '1725891389564': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}, '1725889374509': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}, '1725890025134': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}, '1725891206967': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}, '1725889845288': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}, '1725879117418': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}, '1725883309858': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}, '1725882518516': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}, '1725883056578': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}, '1725890209243': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}, '1725888698558': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}, '1725878885152': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}, '1725890951098': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}, '1726415621811': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730211184472': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730257710725': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256799492': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258209387': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256404830': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256143459': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730219185226': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730257040503': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730248449927': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258498604': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258022863': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730212780016': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730249235883': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730248378399': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}}}
+[23:22:17] Configuration loaded successfully
+[23:22:17] Menu setup completed
+[23:22:17] PyCmd handlers registered
+[23:22:17] Registered 4 hooks
+[23:22:17] GeminiChatBot initialized successfully
+[23:22:17] State change: startup → deckBrowser
+[23:22:32] PyCmd received: open:1725878862948
+[23:22:32] State change: deckBrowser → overview
+[23:22:33] PyCmd received: study
+[23:22:33] State change: overview → review
+[23:22:33] === on_show_question TRIGGERED ===
+[23:22:33] Card ID: 1725883780428
+Deck ID: 1725883693207
+Note ID: 1725883780428
+Fields: ['Kanji', 'Onyomi', 'Kunyomi', 'Meaning']
+Front: 飲...
+[23:22:33] Cleaned up injected chat UI elements.
+[23:22:33] Showing button for: 飲...
+[23:22:33] ChatBot button injected successfully
+[23:22:33] PyCmd received: updateToolbar
+[23:22:35] PyCmd received: gemini_chat_open
+[23:22:35] Opening chat window...
+[23:22:35] Initializing injected ChatWindow...
+[23:22:35] PyCmd handlers registered
+[23:22:35] Deck settings for chat window: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}
+[23:22:35] Target field: Kanji
+[23:22:35] Field value: 飲
+[23:22:35] Prompt key selected: kanji
+[23:22:35] Resolved prompt template: Lấy 10 ví dụ âm on và âm kun cho: {text}
+[23:22:35] Auto prompt generated: Lấy 10 ví dụ âm on và âm kun cho: 飲
+[23:22:35] Attempting to pre-fill with: Lấy 10 ví dụ âm on và âm kun cho: 飲...
+[23:22:35] Chat window injected/shown successfully
+[23:22:35] Bridge command received: gemini_chat_open
+[23:22:35] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[23:22:35] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[23:22:35] Prefilled input successfully.
+[23:23:01] Cleaned up injected chat UI elements.
+[23:23:01] Cleanup completed
+[23:23:12] Initializing GeminiChatBot...
+[23:23:12] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn dưới 200 từ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text} trả lời dưới 200 từ', 'real_world_examples': 'Ví dụ thực tế về: {text} trả lời dưới 200 từ', 'memory_tips': 'Mẹo ghi nhớ cho: {text} trả lời dưới 200 từ', 'custom': '🛠 Custom (tự nhập phía dưới)'}, 'deck_settings': {}}
+[23:23:12] Configuration loaded successfully
+[23:23:12] Menu setup completed
+[23:23:12] PyCmd handlers registered
+[23:23:12] Registered 4 hooks
+[23:23:12] GeminiChatBot initialized successfully
+[23:23:12] State change: startup → deckBrowser
+[23:23:21] PyCmd received: open:1725878862948
+[23:23:21] State change: deckBrowser → overview
+[23:23:22] PyCmd received: study
+[23:23:22] State change: overview → review
+[23:23:22] === on_show_question TRIGGERED ===
+[23:23:22] Card ID: 1725883780428
+Deck ID: 1725883693207
+Note ID: 1725883780428
+Fields: ['Kanji', 'Onyomi', 'Kunyomi', 'Meaning']
+Front: 飲...
+[23:23:22] Cleaned up injected chat UI elements.
+[23:23:22] Showing button for: 飲...
+[23:23:22] ChatBot button injected successfully
+[23:23:22] PyCmd received: updateToolbar
+[23:23:24] PyCmd received: gemini_chat_open
+[23:23:24] Opening chat window...
+[23:23:24] Initializing injected ChatWindow...
+[23:23:24] PyCmd handlers registered
+[23:23:24] Deck settings for chat window: {}
+[23:23:24] Target field: None
+[23:23:26] Error opening chat window: 'NoneType' object has no attribute 'lower'
+[23:23:26] Bridge command received: gemini_chat_open
+[23:23:26] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[23:23:26] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[23:23:31] [LOAD] Loading settings for deck: Default (ID=1)
+[23:23:31] [LOAD] Deck Default settings: {}
+[23:23:41] [LOAD] Loading settings for deck: Kanji::Kanji_N5 (ID=1725878862948)
+[23:23:41] [LOAD] Dùng model từ subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 13
+[23:23:41] [LOAD] Deck Kanji::Kanji_N5 settings: {}
+[23:26:05] Configuration saved
+[23:26:07] [ADD PROMPT] kanji = Lấy 10 từ vựng có âm on và âm kun cho: {text}
+[23:26:08] [SAVE] Saving settings for deck: Kanji::Kanji_N5 (ID=1725878862948)
+[23:26:08] [SAVE] Không tìm thấy model trong deck chính, thử subdeck...
+[23:26:08] [SAVE] Model lấy từ subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 13 (MID=1594195112676)
+[23:26:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 4 (ID=1725882518516)
+[23:26:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 18 (ID=1725891389564)
+[23:26:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 5 (ID=1725883056578)
+[23:26:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 8 (ID=1725888698558)
+[23:26:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 11 (ID=1725889845288)
+[23:26:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 6 (ID=1725883309858)
+[23:26:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 10 (ID=1725889630012)
+[23:26:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 12 (ID=1725890025134)
+[23:26:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 9 (ID=1725889374509)
+[23:26:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 3 (ID=1725879117418)
+[23:26:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 2 (ID=1725878885152)
+[23:26:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 14 (ID=1725890417067)
+[23:26:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 15 (ID=1725890727243)
+[23:26:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 7 (ID=1725883693207)
+[23:26:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 17 (ID=1725891206967)
+[23:26:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 16 (ID=1725890951098)
+[23:26:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 13 (ID=1725890209243)
+[23:26:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 1 (ID=1725877737735)
+[23:26:08] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 19 (ID=1725891642670)
+[23:26:08] Configuration saved
+[23:26:09] [SAVE DONE] Kanji::Kanji_N5 – Model ID=1594195112676
+[23:26:12] PyCmd received: gemini_chat_close
+[23:26:12] Bridge command received: gemini_chat_close
+[23:26:13] PyCmd received: gemini_chat_open
+[23:26:13] Opening chat window...
+[23:26:13] Deck settings for chat window: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}
+[23:26:13] Target field: Kanji
+[23:26:13] Field value: 飲
+[23:26:13] Prompt key selected: kanji
+[23:26:13] Resolved prompt template: Lấy 10 từ vựng có âm on và âm kun cho: {text}
+[23:26:13] Auto prompt generated: Lấy 10 từ vựng có âm on và âm kun cho: 飲
+[23:26:13] Attempting to pre-fill with: Lấy 10 từ vựng có âm on và âm kun cho: 飲...
+[23:26:13] Chat window injected/shown successfully
+[23:26:13] Bridge command received: gemini_chat_open
+[23:26:13] Prefilled input successfully.
+[23:26:15] PyCmd received: gemini_chat_send_message
+[23:26:15] Bridge command received: gemini_chat_send_message
+[23:26:15] Calling Gemini API...
+[23:26:20] Gemini API call successful
+[23:26:20] message before formatting: Chắc chắn rồi! Dưới đây là 10 từ vựng có chứa âm "on" và âm "kun" cho chữ Hán 飲 (thường có nghĩa là uống, nước uống, hoặc liên quan đến việc uống):
+
+**Âm On (âm Hán-Việt):**
+
+1.  **Ẩm (飲):** Đây là âm Hán-Việt trực tiếp của chữ 飲, có nghĩa là uống.
+2.  **Duyệt ẩm (閱飲):** Có nghĩa là xem và uống, thường chỉ việc thưởng thức đồ uống trong một không gian đẹp hoặc khi xem một buổi biểu diễn.
+3.  **Tửu ẩm (酒飲):** Có nghĩa là đồ uống có cồn, rượu.
+4.  **Tiêu ẩm (消飲):** Có nghĩa là tiêu thụ đồ uống, uống.
+5.  **Tân ẩm (津飲):** Có nghĩa là nước bọt, nước miếng (trong ngữ cảnh y học cổ truyền hoặc một số trường hợp đặc biệt).
+
+**Âm Kun (âm Hán-Nhật):**
+
+1.  **Nomu (飲む):** Đây là cách đọc âm Kun phổ biến nhất của chữ 飲, có nghĩa là uống.
+2.  **Nomikomu (飲み込む):** Có nghĩa là nuốt, nuốt chửng.
+3.  **Nomiyajiru (飲みやじる):** Có nghĩa là uống rượu say sưa, uống say. (Ít phổ biến hơn, nhưng vẫn là một cách kết hợp âm Kun).
+4.  **Nomisugi (飲み過ぎ):** Có nghĩa là uống quá nhiều, say quá.
+5.  **Nomihodai (飲み放題):** Có nghĩa là uống không giới hạn, uống thả ga (thường trong các nhà hàng hoặc quán bar).
+
+Hy vọng danh sách này hữu ích cho bạn!...
+[23:26:20] message after formatting: Chắc chắn rồi! Dưới đây là 10 từ vựng có chứa âm "on" và âm "kun" cho chữ Hán 飲 (thường có nghĩa là uống, nước uống, hoặc liên quan đến việc uống):<br><br><b>Âm On (âm Hán-Việt):</b><br><br>1.  <b>Ẩm (飲):</b> Đây là âm Hán-Việt trực tiếp của chữ 飲, có nghĩa là uống.<br>2.  <b>Duyệt ẩm (閱飲):</b> Có nghĩa là xem và uống, thường chỉ việc thưởng thức đồ uống trong một không gian đẹp hoặc khi xem một buổi biểu diễn.<br>3.  <b>Tửu ẩm (酒飲):</b> Có nghĩa là đồ uống có cồn, rượu.<br>4.  <b>Tiêu ẩm (消飲):</b> Có nghĩa là tiêu thụ đồ uống, uống.<br>5.  <b>Tân ẩm (津飲):</b> Có nghĩa là nước bọt, nước miếng (trong ngữ cảnh y học cổ truyền hoặc một số trường hợp đặc biệt).<br><br><b>Âm Kun (âm Hán-Nhật):</b><br><br>1.  <b>Nomu (飲む):</b> Đây là cách đọc âm Kun phổ biến nhất của chữ 飲, có nghĩa là uống.<br>2.  <b>Nomikomu (飲み込む):</b> Có nghĩa là nuốt, nuốt chửng.<br>3.  <b>Nomiyajiru (飲みやじる):</b> Có nghĩa là uống rượu say sưa, uống say. (Ít phổ biến hơn, nhưng vẫn là một cách kết hợp âm Kun).<br>4.  <b>Nomisugi (飲み過ぎ):</b> Có nghĩa là uống quá nhiều, say quá.<br>5.  <b>Nomihodai (飲み放題):</b> Có nghĩa là uống không giới hạn, uống thả ga (thường trong các nhà hàng hoặc quán bar).<br><br>Hy vọng danh sách này hữu ích cho bạn!...
+[23:26:26] PyCmd received: gemini_chat_close
+[23:26:26] Bridge command received: gemini_chat_close
+[23:26:51] Cleaned up injected chat UI elements.
+[23:26:51] Cleanup completed
+[23:27:11] Initializing GeminiChatBot...
+[23:27:11] User config loaded: {'enabled': True, 'api_key': '', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn dưới 200 từ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text} trả lời dưới 200 từ', 'real_world_examples': 'Ví dụ thực tế về: {text} trả lời dưới 200 từ', 'memory_tips': 'Mẹo ghi nhớ cho: {text} trả lời dưới 200 từ', 'custom': '🛠 Custom (tự nhập phía dưới)'}, 'deck_settings': {}}
+[23:27:11] Configuration loaded successfully
+[23:27:11] Menu setup completed
+[23:27:11] PyCmd handlers registered
+[23:27:11] Registered 4 hooks
+[23:27:11] GeminiChatBot initialized successfully
+[23:27:11] State change: startup → deckBrowser
+[23:27:54] PyCmd received: open:1725878862948
+[23:27:54] State change: deckBrowser → overview
+[23:27:55] PyCmd received: study
+[23:27:55] State change: overview → review
+[23:27:55] === on_show_question TRIGGERED ===
+[23:27:55] Card ID: 1725883780428
+Deck ID: 1725883693207
+Note ID: 1725883780428
+Fields: ['Kanji', 'Onyomi', 'Kunyomi', 'Meaning']
+Front: 飲...
+[23:27:55] Cleaned up injected chat UI elements.
+[23:27:55] Showing button for: 飲...
+[23:27:55] ChatBot button injected successfully
+[23:27:55] PyCmd received: updateToolbar
+[23:28:08] PyCmd received: gemini_chat_open
+[23:28:08] Opening chat window...
+[23:28:12] User config loaded: {'enabled': True, 'api_key': '', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn dưới 200 từ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text} trả lời dưới 200 từ', 'real_world_examples': 'Ví dụ thực tế về: {text} trả lời dưới 200 từ', 'memory_tips': 'Mẹo ghi nhớ cho: {text} trả lời dưới 200 từ', 'custom': '🛠 Custom (tự nhập phía dưới)'}, 'deck_settings': {}}
+[23:28:12] Configuration loaded successfully
+[23:28:12] Current config before dialog: {'enabled': True, 'api_key': '', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'target_field': 'Front', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn dưới 200 từ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text} trả lời dưới 200 từ', 'real_world_examples': 'Ví dụ thực tế về: {text} trả lời dưới 200 từ', 'memory_tips': 'Mẹo ghi nhớ cho: {text} trả lời dưới 200 từ', 'custom': '🛠 Custom (tự nhập phía dưới)'}, 'deck_settings': {}}
+[23:28:12] Loading API Key from config: {'enabled': True, 'api_key': '', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'target_field': 'Front', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn dưới 200 từ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text} trả lời dưới 200 từ', 'real_world_examples': 'Ví dụ thực tế về: {text} trả lời dưới 200 từ', 'memory_tips': 'Mẹo ghi nhớ cho: {text} trả lời dưới 200 từ', 'custom': '🛠 Custom (tự nhập phía dưới)'}, 'deck_settings': {}}
+[23:28:26] Configuration saved
+[23:28:28] PyCmd received: gemini_chat_open
+[23:28:28] Opening chat window...
+[23:28:28] Initializing injected ChatWindow...
+[23:28:28] PyCmd handlers registered
+[23:28:28] Deck settings for chat window: {}
+[23:28:28] Target field: None
+[23:28:30] Error opening chat window: 'NoneType' object has no attribute 'lower'
+[23:28:30] Bridge command received: gemini_chat_open
+[23:28:30] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[23:28:30] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[23:28:34] [LOAD] Loading settings for deck: Default (ID=1)
+[23:28:34] [LOAD] Deck Default settings: {}
+[23:28:41] [LOAD] Loading settings for deck: Kanji::Kanji_N5 (ID=1725878862948)
+[23:28:41] [LOAD] Dùng model từ subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 12
+[23:28:41] [LOAD] Deck Kanji::Kanji_N5 settings: {}
+[23:30:27] Configuration saved
+[23:30:29] [ADD PROMPT] kanji = Lấy 10 ví dụ âm on và âm kun cho từ: {text}
+[23:30:29] [SAVE] Saving settings for deck: Kanji::Kanji_N5 (ID=1725878862948)
+[23:30:29] [SAVE] Không tìm thấy model trong deck chính, thử subdeck...
+[23:30:29] [SAVE] Model lấy từ subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 18 (MID=1594195112676)
+[23:30:29] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 3 (ID=1725879117418)
+[23:30:29] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 15 (ID=1725890727243)
+[23:30:29] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 1 (ID=1725877737735)
+[23:30:29] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 4 (ID=1725882518516)
+[23:30:29] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 16 (ID=1725890951098)
+[23:30:29] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 7 (ID=1725883693207)
+[23:30:29] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 17 (ID=1725891206967)
+[23:30:29] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 18 (ID=1725891389564)
+[23:30:29] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 13 (ID=1725890209243)
+[23:30:29] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 2 (ID=1725878885152)
+[23:30:29] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 10 (ID=1725889630012)
+[23:30:29] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 5 (ID=1725883056578)
+[23:30:29] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 12 (ID=1725890025134)
+[23:30:29] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 11 (ID=1725889845288)
+[23:30:29] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 9 (ID=1725889374509)
+[23:30:29] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 19 (ID=1725891642670)
+[23:30:29] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 6 (ID=1725883309858)
+[23:30:29] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 14 (ID=1725890417067)
+[23:30:29] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 8 (ID=1725888698558)
+[23:30:29] Configuration saved
+[23:30:31] [SAVE DONE] Kanji::Kanji_N5 – Model ID=1594195112676
+[23:30:34] PyCmd received: gemini_chat_close
+[23:30:34] Bridge command received: gemini_chat_close
+[23:30:35] PyCmd received: gemini_chat_open
+[23:30:35] Opening chat window...
+[23:30:35] Deck settings for chat window: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'kanji'}
+[23:30:35] Target field: Kanji
+[23:30:35] Field value: 飲
+[23:30:35] Prompt key selected: kanji
+[23:30:35] Resolved prompt template: Lấy 10 ví dụ âm on và âm kun cho từ: {text}
+[23:30:35] Auto prompt generated: Lấy 10 ví dụ âm on và âm kun cho từ: 飲
+[23:30:35] Attempting to pre-fill with: Lấy 10 ví dụ âm on và âm kun cho từ: 飲...
+[23:30:35] Chat window injected/shown successfully
+[23:30:35] Bridge command received: gemini_chat_open
+[23:30:35] Prefilled input successfully.
+[23:30:37] PyCmd received: gemini_chat_send_message
+[23:30:37] Bridge command received: gemini_chat_send_message
+[23:30:37] Calling Gemini API...
+[23:30:41] Gemini API call successful
+[23:30:41] message before formatting: Dưới đây là 10 ví dụ âm "on" và 10 ví dụ âm "kun" cho từ 飲 (uống):
+
+**Âm On (Âm Hán Việt)**
+
+Âm "on" thường được sử dụng trong các từ ghép Hán-Nhật, mang tính chất trang trọng hoặc kỹ thuật hơn.
+
+1.  **飲酒 (いんしゅ - inshu)**: Uống rượu.
+2.  **飲水 (いんすい - insui)**: Uống nước.
+3.  **飲用 (いんよう - inyou)**: Dùng để uống, uống được.
+4.  **飲放 (いんほう - inhō)**: Uống không giới hạn (ví dụ: 飲み放題 - nomihōdai).
+5.  **飲茶 (おちゃ - ocha)**: Uống trà (trong ngữ cảnh văn hóa Trung Quốc, thường là một bữa ăn nhẹ kèm theo trà).
+6.  **飲物 (のみもの - nomimono)**: Đồ uống (tuy từ này có âm "kun" ở cuối, nhưng phần "飲" vẫn giữ âm "on" khi đứng một mình).
+7.  **飲酒運転 (いんしゅうんてん - inshūnten)**: Lái xe sau khi uống rượu.
+8.  **飲料水 (いんりょうすい - inryōsui)**: Nước uống.
+9.  **飲酒量 (いんしゅりょう - inshuryō)**: Lượng rượu đã uống.
+10. **飲酒事故 (いんしゅじこ - inshujiko)**: Tai nạn do uống rượu gây ra.
+
+**Âm Kun (Âm Thuần Nhật)**
+
+Âm "kun" thường được sử dụng cho từ gốc tiếng Nhật hoặc khi từ đó đứng độc lập.
+
+1.  **飲む (のむ - nomu)**: Uống (động từ nguyên thể).
+2.  **飲んで (のんで - nonde)**: Đang uống / Hãy uống đi (hình thức て của động từ).
+3.  **飲んだ (のんだ - nonda)**: Đã uống (hình thức た của động từ).
+4.  **飲みたい (のみたい - nomit...
+[23:30:41] message after formatting: Dưới đây là 10 ví dụ âm "on" và 10 ví dụ âm "kun" cho từ 飲 (uống):<br><br><b>Âm On (Âm Hán Việt)</b><br><br>Âm "on" thường được sử dụng trong các từ ghép Hán-Nhật, mang tính chất trang trọng hoặc kỹ thuật hơn.<br><br>1.  <b>飲酒 (いんしゅ - inshu)</b>: Uống rượu.<br>2.  <b>飲水 (いんすい - insui)</b>: Uống nước.<br>3.  <b>飲用 (いんよう - inyou)</b>: Dùng để uống, uống được.<br>4.  <b>飲放 (いんほう - inhō)</b>: Uống không giới hạn (ví dụ: 飲み放題 - nomihōdai).<br>5.  <b>飲茶 (おちゃ - ocha)</b>: Uống trà (trong ngữ cảnh văn hóa Trung Quốc, thường là một bữa ăn nhẹ kèm theo trà).<br>6.  <b>飲物 (のみもの - nomimono)</b>: Đồ uống (tuy từ này có âm "kun" ở cuối, nhưng phần "飲" vẫn giữ âm "on" khi đứng một mình).<br>7.  <b>飲酒運転 (いんしゅうんてん - inshūnten)</b>: Lái xe sau khi uống rượu.<br>8.  <b>飲料水 (いんりょうすい - inryōsui)</b>: Nước uống.<br>9.  <b>飲酒量 (いんしゅりょう - inshuryō)</b>: Lượng rượu đã uống.<br>10. <b>飲酒事故 (いんしゅじこ - inshujiko)</b>: Tai nạn do uống rượu gây ra.<br><br><b>Âm Kun (Âm Thuần Nhật)</b><br><br>Âm "kun" thường được sử dụng cho từ gốc tiếng Nhật hoặc khi từ đó đứng độc lập.<br><br>1.  <b>飲む (のむ - nomu)</b>: Uống (động từ nguyên thể).<br>2.  <b>飲んで (のんで - nonde)</b>: Đang uống / Hãy uống đi (hình thức て của động từ).<br>3.  <b>飲んだ (のんだ - nonda)</b>: Đã uống (hình thức た của động từ).<br>4.  **飲みたい (のみたい - nomit...
+[23:30:48] PyCmd received: gemini_chat_close
+[23:30:48] Bridge command received: gemini_chat_close

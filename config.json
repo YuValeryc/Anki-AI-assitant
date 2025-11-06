@@ -1,13 +1,13 @@
 {
     "enabled": true,
-    "api_key": "AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8",
+    "api_key": "",
     "max_tokens": 500,
     "selected_prompt": "explain_simple",
     "custom_prompts": {
-        "explain_simple": "Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ",
-        "synonyms_antonyms": "Từ đồng nghĩa/trái nghĩa của: {text}",
-        "real_world_examples": "Ví dụ thực tế về: {text}",
-        "memory_tips": "Mẹo ghi nhớ cho: {text}",
+        "explain_simple": "Giải thích chi tiết về: {text} ngắn gọn dưới 200 từ",
+        "synonyms_antonyms": "Từ đồng nghĩa/trái nghĩa của: {text} trả lời dưới 200 từ",
+        "real_world_examples": "Ví dụ thực tế về: {text} trả lời dưới 200 từ",
+        "memory_tips": "Mẹo ghi nhớ cho: {text} trả lời dưới 200 từ",
         "custom": "🛠 Custom (tự nhập phía dưới)"
     },
     "deck_settings": {}

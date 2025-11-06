@@ -109,7 +109,7 @@ class DeckConfigDialog(QDialog):
     # =========================================================
     def setup_ui(self):
         self.setWindowTitle("Cài đặt theo Deck")
-        self.setFixedSize(420, 550)
+        self.setFixedSize(420, 580)
 
         layout = QVBoxLayout()
 
@@ -153,17 +153,23 @@ class DeckConfigDialog(QDialog):
         self.btn_add_prompt = QPushButton("Thêm prompt")
         self.btn_add_prompt.clicked.connect(self.add_custom_prompt)
         layout.addWidget(self.btn_add_prompt)
-        self._toggle_custom_ui(False)
+        self._toggle_custom_ui(True)  # ✅ Cho phép nhập luôn
 
-        # Save button
+        # Button section
         btn_layout = QHBoxLayout()
+
         btn_save = QPushButton("💾 Lưu")
         btn_save.clicked.connect(self.save_deck_settings)
         btn_layout.addWidget(btn_save)
-        layout.addLayout(btn_layout)
 
+        btn_check_types = QPushButton("🔍 Kiểm tra Notetype Deck cha")
+        btn_check_types.clicked.connect(self.check_deck_notetypes)
+        btn_layout.addWidget(btn_check_types)
+
+        layout.addLayout(btn_layout)
         layout.addStretch()
         self.setLayout(layout)
+
         self.load_deck_settings()
 
     # =========================================================
@@ -191,7 +197,9 @@ class DeckConfigDialog(QDialog):
         return subdecks
 
     def _get_model_id_for_deck(self, deck_id):
-        mid = mw.col.db.scalar(f"SELECT n.mid FROM notes n JOIN cards c ON n.id=c.nid WHERE c.did={deck_id} LIMIT 1")
+        mid = mw.col.db.scalar(
+            f"SELECT n.mid FROM notes n JOIN cards c ON n.id=c.nid WHERE c.did={deck_id} LIMIT 1"
+        )
         return mid
 
     def _get_fields_for_model(self, model_id):
@@ -214,7 +222,6 @@ class DeckConfigDialog(QDialog):
         settings = deck_settings.get(deck_id, {})
         self.deck_enabled.setChecked(settings.get("enabled", True))
 
-        # Try model for current deck or subdeck
         model_id = self._get_model_id_for_deck(deck_id)
         if not model_id:
             for sub in self._get_subdecks(deck_id):
@@ -223,7 +230,6 @@ class DeckConfigDialog(QDialog):
                     self.debug.log(f"[LOAD] Dùng model từ subdeck: {sub['name']}")
                     break
 
-        # Load field list
         fields = self._get_fields_for_model(model_id)
         self.deck_target_field.clear()
         if fields:
@@ -239,7 +245,6 @@ class DeckConfigDialog(QDialog):
             self.deck_target_field.addItem("Không tìm thấy trường")
             self.deck_target_field.setEnabled(False)
 
-        # Load prompt
         saved_key = settings.get("selected_prompt", "default_simple")
         idx = self.deck_selected_prompt.findData(saved_key)
         if idx != -1:
@@ -289,7 +294,6 @@ class DeckConfigDialog(QDialog):
 
         self.debug.log(f"[SAVE] Saving settings for deck: {deck_name} (ID={deck_id})")
 
-        # Lấy model của deck cha
         model_id = self._get_model_id_for_deck(deck_id)
         if not model_id:
             self.debug.log("[SAVE] Không tìm thấy model trong deck chính, thử subdeck...")
@@ -304,7 +308,6 @@ class DeckConfigDialog(QDialog):
             self.debug.log("[SAVE] ❌ Không tìm thấy notetype nào.")
             return
 
-        # Cập nhật cho deck chính
         self.config["deck_settings"][deck_id] = {
             "enabled": self.deck_enabled.isChecked(),
             "target_field": self.deck_target_field.currentText(),
@@ -312,7 +315,6 @@ class DeckConfigDialog(QDialog):
                                 or self.deck_selected_prompt.currentText()
         }
 
-        # Kiểm tra các subdeck cùng model
         same_model_subs = []
         different_model_subs = []
         for sub in self._get_subdecks(deck_id):
@@ -322,7 +324,6 @@ class DeckConfigDialog(QDialog):
             elif sub_model_id:
                 different_model_subs.append((sub, sub_model_id))
 
-        # Áp dụng cài đặt cho subdeck cùng model
         for sub in same_model_subs:
             sid = str(sub["id"])
             self.config["deck_settings"][sid] = {
@@ -333,17 +334,83 @@ class DeckConfigDialog(QDialog):
             }
             self.debug.log(f"[SAVE] ✅ Áp dụng cho subdeck: {sub['name']} (ID={sub['id']})")
 
-        # Log deck có notetype khác
         if different_model_subs:
             self.debug.log(f"[SAVE] ⚠️ Bỏ qua {len(different_model_subs)} subdeck có notetype khác:")
             for sub, mid in different_model_subs:
                 self.debug.log(f"    - {sub['name']} (ID={sub['id']}, MID={mid})")
 
         self.parent.save_config()
-
-        # Hiển thị thông báo tổng kết
         msg = f"✅ Đã lưu cho deck: {deck_name} (và {len(same_model_subs)} subdeck cùng notetype)"
         if different_model_subs:
             msg += f"\n⚠️ Bỏ qua {len(different_model_subs)} subdeck có notetype khác."
         showInfo(msg)
         self.debug.log(f"[SAVE DONE] {deck_name} – Model ID={model_id}")
+
+    # =========================================================
+    # CHECK NOTETYPE (SIMPLIFIED VERSION)
+    # =========================================================
+    def check_deck_notetypes(self):
+        try:
+            deck_id = self.deck_combo.currentData()
+            deck_name = self.deck_combo.currentText()
+            all_decks = [mw.col.decks.get(deck_id)] + self._get_subdecks(deck_id)
+
+            mids = set()
+            for d in all_decks:
+                did = d["id"]
+                mids.update(mw.col.db.list(
+                    f"SELECT DISTINCT n.mid FROM notes n JOIN cards c ON n.id=c.nid WHERE c.did={did}"
+                ))
+
+            mids = {mid for mid in mids if mid is not None}
+            if not mids:
+                showInfo(f"❌ Không tìm thấy notetype nào trong '{deck_name}' hoặc subdeck.")
+                self.debug.log(f"[CHECK] Không tìm thấy notetype trong {deck_name}")
+                return
+
+            if len(mids) == 1:
+                showInfo(f"✅ Deck '{deck_name}' và các subdeck cùng 1 notetype.")
+                self.debug.log(f"[CHECK] ✅ {deck_name} cùng notetype (MID={list(mids)[0]})")
+            else:
+                showInfo(f"⚠️ Deck '{deck_name}' và các subdeck có nhiều notetype khác nhau ({len(mids)} loại).")
+                self.debug.log(f"[CHECK] ⚠️ {deck_name} có {len(mids)} notetype khác nhau: {mids}")
+
+        except Exception as e:
+            self.debug.log(f"[CHECK ERROR] {e}")
+            showInfo(f"❌ Lỗi khi kiểm tra notetype: {e}")
+        try:
+            deck_id = self.deck_combo.currentData()
+            deck_name = self.deck_combo.currentText()
+
+            all_decks = [mw.col.decks.get(deck_id)] + self._get_subdecks(deck_id)
+            found = {}
+            self.debug.log(f"[CHECK] Kiểm tra notetype của '{deck_name}' và các subdeck...")
+
+            for d in all_decks:
+                did = d["id"]
+                name = d["name"]
+                mids = mw.col.db.list(f"SELECT DISTINCT n.mid FROM notes n JOIN cards c ON n.id=c.nid WHERE c.did={did}")
+                for mid in mids:
+                    model = mw.col.models.get(mid)
+                    if model:
+                        found.setdefault(model["name"], []).append(name)
+
+            if not found:
+                showInfo(f"❌ Không tìm thấy note nào trong deck '{deck_name}' hoặc subdeck.")
+                self.debug.log("[CHECK] Không tìm thấy notetype nào.")
+                return
+
+            msg = f"📚 Notetype trong '{deck_name}' và các subdeck:\n\n"
+            for model_name, decks in found.items():
+                msg += f"• {model_name} ({len(decks)} deck):\n"
+                for dname in decks:
+                    msg += f"    - {dname}\n"
+            showInfo(msg)
+
+            self.debug.log("[CHECK] Kết quả:")
+            for model_name, decks in found.items():
+                self.debug.log(f"   - {model_name}: {', '.join(decks)}")
+
+        except Exception as e:
+            self.debug.log(f"[CHECK ERROR] {e}")
+            showInfo(f"❌ Lỗi khi kiểm tra notetype: {e}")

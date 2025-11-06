@@ -3794,3 +3794,704 @@ Front: 名...
 *   **Trong tiếng Nhật:**
     *   1名様 (...
 [18:48:10] message after formatting: "名" (Danh) trong tiếng Việt và tiếng Nhật (めい - mei hoặc な - na) có nhiều nghĩa, tùy thuộc vào ngữ cảnh sử dụng. Dưới đây là những nghĩa phổ biến nhất và cách sử dụng của nó:<br><br><b>1. Tên (Name):</b> Đây là nghĩa phổ biến nhất của "名".<br><br><i>   <b>Trong tiếng Việt:</b><br></i>   "Danh tính": Identity<br><i>   "Họ tên": Full name<br></i>   "Danh hiệu": Title<br><i>   "Nổi danh": Famous<br></i>   "Danh tiếng": Reputation<br><br><i>   <b>Trong tiếng Nhật:</b><br></i>   名前 (namae): Tên<br><i>   氏名 (shimei): Họ tên<br></i>   名刺 (meishi): Danh thiếp<br><i>   名誉 (meiyo): Danh dự<br></i>   有名 (yuumei): Nổi tiếng<br><br><b>Ví dụ:</b><br><br><i>   <b>Việt Nam:</b> "Tên cô ấy là Lan."<br></i>   <b>Nhật Bản:</b> "彼女の名前は蘭です。(Kanojo no namae wa Ran desu.)" (Tên cô ấy là Ran.)<br><br><b>2. Danh tiếng, tiếng tăm (Reputation, Fame):</b>  "名" cũng chỉ đến danh tiếng, sự nổi tiếng của một người hoặc một vật.<br><br><i>   <b>Trong tiếng Việt:</b><br></i>   "Danh giá": Prestigious<br><i>   "Danh vọng": Fame and reputation<br></i>   "Vô danh": Unknown<br><br><i>   <b>Trong tiếng Nhật:</b><br></i>   名声 (meisei): Danh tiếng<br><i>   悪名 (akumei): Tai tiếng (danh tiếng xấu)<br></i>   名高い (nadakai): Nổi tiếng<br><br><b>Ví dụ:</b><br><br><i>   <b>Việt Nam:</b> "Ông ấy có danh tiếng lẫy lừng."<br></i>   <b>Nhật Bản:</b> "彼は名声が高い。(Kare wa meisei ga takai.)" (Anh ấy có danh tiếng cao.)<br><br><b>3. Đơn vị đếm người (Counter for people):</b> Trong tiếng Nhật, "名" còn được dùng làm đơn vị đếm người, thể hiện sự trang trọng hơn so với "人" (hito).<br><br><i>   <b>Trong tiếng Nhật:</b><br></i>   1名様 (...
+[18:48:56] PyCmd received: gemini_chat_send_message
+[18:48:56] Bridge command received: gemini_chat_send_message
+[18:48:56] Bridge command received: gemini_chat_send_message
+[18:48:56] Bridge command received: gemini_chat_send_message
+[18:48:56] Bridge command received: gemini_chat_send_message
+[18:48:56] Calling Gemini API...
+[18:49:00] Gemini API call successful
+[18:49:00] message before formatting: "Trong tiếng Trung" có thể được dịch theo nhiều cách, tùy thuộc vào ngữ cảnh cụ thể mà bạn muốn diễn đạt. Dưới đây là một số cách dịch phổ biến:
+
+*   **用中文 (yòng Zhōngwén):** Sử dụng tiếng Trung.
+*   **在中文里 (zài Zhōngwén lǐ):** Trong tiếng Trung.
+*   **中文里 (Zhōngwén lǐ):** Trong tiếng Trung.
+*   **用汉语 (yòng Hànyǔ):** Sử dụng tiếng Hán (tương tự như tiếng Trung).
+*   **在汉语里 (zài Hànyǔ lǐ):** Trong tiếng Hán.
+*   **汉语里 (Hànyǔ lǐ):** Trong tiếng Hán.
+
+Ví dụ:
+
+*   "Tôi không biết nói trong tiếng Trung là gì." - "我不知道**用中文**怎么说。" (Wǒ bù zhīdào **yòng Zhōngwén** zěnme shuō.)
+*   "Từ này có nghĩa là gì trong tiếng Trung?" - "这个词**在中文里**是什么意思？" (Zhège cí **zài Zhōngwén lǐ** shì shénme yìsi?)
+
+Bạn có thể cho mình biết ngữ cảnh cụ thể mà bạn muốn sử dụng cụm từ "trong tiếng Trung" để mình có thể đưa ra bản dịch chính xác nhất được không?...
+[18:49:00] message after formatting: "Trong tiếng Trung" có thể được dịch theo nhiều cách, tùy thuộc vào ngữ cảnh cụ thể mà bạn muốn diễn đạt. Dưới đây là một số cách dịch phổ biến:<br><br><i>   <b>用中文 (yòng Zhōngwén):</b> Sử dụng tiếng Trung.<br></i>   <b>在中文里 (zài Zhōngwén lǐ):</b> Trong tiếng Trung.<br><i>   <b>中文里 (Zhōngwén lǐ):</b> Trong tiếng Trung.<br></i>   <b>用汉语 (yòng Hànyǔ):</b> Sử dụng tiếng Hán (tương tự như tiếng Trung).<br><i>   <b>在汉语里 (zài Hànyǔ lǐ):</b> Trong tiếng Hán.<br></i>   <b>汉语里 (Hànyǔ lǐ):</b> Trong tiếng Hán.<br><br>Ví dụ:<br><br><i>   "Tôi không biết nói trong tiếng Trung là gì." - "我不知道<b>用中文</b>怎么说。" (Wǒ bù zhīdào <b>yòng Zhōngwén</b> zěnme shuō.)<br></i>   "Từ này có nghĩa là gì trong tiếng Trung?" - "这个词<b>在中文里</b>是什么意思？" (Zhège cí <b>zài Zhōngwén lǐ</b> shì shénme yìsi?)<br><br>Bạn có thể cho mình biết ngữ cảnh cụ thể mà bạn muốn sử dụng cụm từ "trong tiếng Trung" để mình có thể đưa ra bản dịch chính xác nhất được không?...
+[18:51:23] PyCmd received: gemini_chat_close
+[18:51:23] Bridge command received: gemini_chat_close
+[18:51:23] Bridge command received: gemini_chat_close
+[18:51:23] Bridge command received: gemini_chat_close
+[18:51:23] Bridge command received: gemini_chat_close
+[18:51:25] PyCmd received: gemini_chat_open
+[18:51:25] Opening chat window...
+[18:51:25] Deck settings for chat window: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}
+[18:51:25] Target field: Kanji
+[18:51:25] Field value: 名
+[18:51:25] Prompt key selected: default_simple
+[18:51:25] Resolved prompt template: Giải thích về: {text}
+[18:51:25] Auto prompt generated: Giải thích về: 名
+[18:51:25] Attempting to pre-fill with: Giải thích về: 名...
+[18:51:25] Chat window injected/shown successfully
+[18:51:25] Bridge command received: gemini_chat_open
+[18:51:25] Bridge command received: gemini_chat_open
+[18:51:25] Bridge command received: gemini_chat_open
+[18:51:25] Bridge command received: gemini_chat_open
+[18:51:25] Skipped prefill (already asked).
+[18:51:26] Cleaned up injected chat UI elements.
+[18:51:26] Review ended - cleanup completed
+[18:51:26] State change: review → deckBrowser
+[18:51:26] Leaving review → cleaning UI
+[18:51:26] Cleaned up injected chat UI elements.
+[18:51:27] Bridge command received: decks
+[18:51:27] Bridge command received: decks
+[18:51:27] Bridge command received: decks
+[18:51:27] Bridge command received: decks
+[18:51:36] PyCmd received: open:1725891206967
+[18:51:36] Bridge command received: open:1725891206967
+[18:51:36] Bridge command received: open:1725891206967
+[18:51:36] Bridge command received: open:1725891206967
+[18:51:36] Bridge command received: open:1725891206967
+[18:51:36] State change: deckBrowser → overview
+[18:51:36] PyCmd received: study
+[18:51:36] Bridge command received: study
+[18:51:36] Bridge command received: study
+[18:51:36] Bridge command received: study
+[18:51:36] Bridge command received: study
+[18:51:36] State change: overview → review
+[18:51:36] === on_show_question TRIGGERED ===
+[18:51:36] Card ID: 1725891378405
+Deck ID: 1725891206967
+Note ID: 1725891378405
+Fields: ['Kanji', 'Onyomi', 'Kunyomi', 'Meaning']
+Front: 石&nbsp;...
+[18:51:36] Cleaned up injected chat UI elements.
+[18:51:36] Showing button for: 石&nbsp;...
+[18:51:36] ChatBot button injected successfully
+[18:51:36] PyCmd received: updateToolbar
+[18:51:36] Bridge command received: updateToolbar
+[18:51:36] Bridge command received: updateToolbar
+[18:51:36] Bridge command received: updateToolbar
+[18:51:36] Bridge command received: updateToolbar
+[18:51:38] PyCmd received: gemini_chat_open
+[18:51:38] Opening chat window...
+[18:51:38] Initializing injected ChatWindow...
+[18:51:38] PyCmd handlers registered
+[18:51:38] Deck settings for chat window: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}
+[18:51:38] Target field: Kanji
+[18:51:38] Field value: 石&nbsp;
+[18:51:38] Prompt key selected: default_simple
+[18:51:38] Resolved prompt template: Giải thích về: {text}
+[18:51:38] Auto prompt generated: Giải thích về: 石&nbsp;
+[18:51:38] Attempting to pre-fill with: Giải thích về: 石&nbsp;...
+[18:51:38] Chat window injected/shown successfully
+[18:51:38] Bridge command received: gemini_chat_open
+[18:51:38] Bridge command received: gemini_chat_open
+[18:51:38] Bridge command received: gemini_chat_open
+[18:51:38] Bridge command received: gemini_chat_open
+[18:51:38] Bridge command received: gemini_chat_open
+[18:51:38] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:51:38] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:51:38] Prefilled input successfully.
+[18:51:40] PyCmd received: gemini_chat_send_message
+[18:51:40] Bridge command received: gemini_chat_send_message
+[18:51:40] Bridge command received: gemini_chat_send_message
+[18:51:40] Bridge command received: gemini_chat_send_message
+[18:51:40] Bridge command received: gemini_chat_send_message
+[18:51:40] Bridge command received: gemini_chat_send_message
+[18:51:40] Calling Gemini API...
+[18:51:45] Gemini API call successful
+[18:51:45] message before formatting: Chữ "石" trong tiếng Nhật có nghĩa là **đá**. Nó có thể được sử dụng theo nhiều cách khác nhau, tùy thuộc vào ngữ cảnh. Dưới đây là một số cách sử dụng phổ biến nhất:
+
+**1. Nghĩa cơ bản: Đá, sỏi, hòn đá:**
+
+*   **石 (ishi):** Đá (nói chung)
+    *   Ví dụ: 道に石が落ちている。(Michi ni ishi ga ochite iru.) - Có một hòn đá rơi trên đường.
+*   **石ころ (ishikoro):** Hòn sỏi, hòn đá nhỏ
+*   **岩 (iwa):** Tảng đá, đá lớn
+
+**2. Thành phần của các từ ghép:**
+
+Chữ "石" thường được sử dụng để tạo thành các từ ghép có liên quan đến đá hoặc các vật liệu cứng, rắn:
+
+*   **石炭 (sekitan):** Than đá
+*   **石鹸 (sekken):** Xà phòng (nghĩa đen là "đá tẩy rửa")
+*   **石油 (sekiyu):** Dầu mỏ (nghĩa đen là "dầu đá")
+*   **石像 (sekizō):** Tượng đá
+*   **石垣 (ishigaki):** Tường đá
+
+**3.  Trong các thành ngữ và tục ngữ:**
+
+*   **石の上にも三年 (ishi no ue nimo san nen):**  "Ba năm trên đá."  Tương tự như thành ngữ "Có công mài sắt có ngày nên kim."  Ý chỉ sự kiên trì sẽ mang lại thành công.
+*   **石橋を叩いて渡る (ishibashi o tataite wataru):**  "Gõ vào cây cầu đá trước khi băng qua."  Ý chỉ sự cẩn trọng quá mức.
+
+**4.  Tên riêng:**
+
+"石" cũng có thể được sử dụng trong tên người hoặc địa danh.
+
+**Tóm lại:**
+
+Chữ "石" có nghĩa cơ bản là "đá" và được sử dụng rộng rãi trong tiếng Nhật để chỉ các vật liệu cứng, rắn, cũng như trong các thành ngữ và tên riêng.  Để hiểu rõ nghĩa của "石" trong một ngữ cảnh cụ thể, cần xem xét các từ xung quanh...
+[18:51:45] message after formatting: Chữ "石" trong tiếng Nhật có nghĩa là <b>đá</b>. Nó có thể được sử dụng theo nhiều cách khác nhau, tùy thuộc vào ngữ cảnh. Dưới đây là một số cách sử dụng phổ biến nhất:<br><br><b>1. Nghĩa cơ bản: Đá, sỏi, hòn đá:</b><br><br><i>   <b>石 (ishi):</b> Đá (nói chung)<br></i>   Ví dụ: 道に石が落ちている。(Michi ni ishi ga ochite iru.) - Có một hòn đá rơi trên đường.<br><i>   <b>石ころ (ishikoro):</b> Hòn sỏi, hòn đá nhỏ<br></i>   <b>岩 (iwa):</b> Tảng đá, đá lớn<br><br><b>2. Thành phần của các từ ghép:</b><br><br>Chữ "石" thường được sử dụng để tạo thành các từ ghép có liên quan đến đá hoặc các vật liệu cứng, rắn:<br><br><i>   <b>石炭 (sekitan):</b> Than đá<br></i>   <b>石鹸 (sekken):</b> Xà phòng (nghĩa đen là "đá tẩy rửa")<br><i>   <b>石油 (sekiyu):</b> Dầu mỏ (nghĩa đen là "dầu đá")<br></i>   <b>石像 (sekizō):</b> Tượng đá<br><i>   <b>石垣 (ishigaki):</b> Tường đá<br><br><b>3.  Trong các thành ngữ và tục ngữ:</b><br><br></i>   <b>石の上にも三年 (ishi no ue nimo san nen):</b>  "Ba năm trên đá."  Tương tự như thành ngữ "Có công mài sắt có ngày nên kim."  Ý chỉ sự kiên trì sẽ mang lại thành công.<br>*   <b>石橋を叩いて渡る (ishibashi o tataite wataru):</b>  "Gõ vào cây cầu đá trước khi băng qua."  Ý chỉ sự cẩn trọng quá mức.<br><br><b>4.  Tên riêng:</b><br><br>"石" cũng có thể được sử dụng trong tên người hoặc địa danh.<br><br><b>Tóm lại:</b><br><br>Chữ "石" có nghĩa cơ bản là "đá" và được sử dụng rộng rãi trong tiếng Nhật để chỉ các vật liệu cứng, rắn, cũng như trong các thành ngữ và tên riêng.  Để hiểu rõ nghĩa của "石" trong một ngữ cảnh cụ thể, cần xem xét các từ xung quanh...
+[18:51:48] Cleaned up injected chat UI elements.
+[18:51:48] Review ended - cleanup completed
+[18:51:48] State change: review → deckBrowser
+[18:51:48] Leaving review → cleaning UI
+[18:51:48] Cleaned up injected chat UI elements.
+[18:51:48] Bridge command received: decks
+[18:51:48] Bridge command received: decks
+[18:51:48] Bridge command received: decks
+[18:51:48] Bridge command received: decks
+[18:51:48] Bridge command received: decks
+[18:51:54] PyCmd received: open:1725882518516
+[18:51:54] Bridge command received: open:1725882518516
+[18:51:54] Bridge command received: open:1725882518516
+[18:51:54] Bridge command received: open:1725882518516
+[18:51:54] Bridge command received: open:1725882518516
+[18:51:54] Bridge command received: open:1725882518516
+[18:51:54] State change: deckBrowser → overview
+[18:51:55] PyCmd received: study
+[18:51:55] Bridge command received: study
+[18:51:55] Bridge command received: study
+[18:51:55] Bridge command received: study
+[18:51:55] Bridge command received: study
+[18:51:55] Bridge command received: study
+[18:51:55] State change: overview → review
+[18:51:55] === on_show_question TRIGGERED ===
+[18:51:55] Card ID: 1725882989322
+Deck ID: 1725882518516
+Note ID: 1725882989322
+Fields: ['Kanji', 'Onyomi', 'Kunyomi', 'Meaning']
+Front: 方...
+[18:51:55] Cleaned up injected chat UI elements.
+[18:51:55] Showing button for: 方...
+[18:51:55] ChatBot button injected successfully
+[18:51:55] PyCmd received: updateToolbar
+[18:51:55] Bridge command received: updateToolbar
+[18:51:55] Bridge command received: updateToolbar
+[18:51:55] Bridge command received: updateToolbar
+[18:51:55] Bridge command received: updateToolbar
+[18:51:55] Bridge command received: updateToolbar
+[18:51:57] PyCmd received: gemini_chat_open
+[18:51:57] Opening chat window...
+[18:51:57] Initializing injected ChatWindow...
+[18:51:57] PyCmd handlers registered
+[18:51:57] Deck settings for chat window: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}
+[18:51:57] Target field: Kanji
+[18:51:57] Field value: 方
+[18:51:57] Prompt key selected: default_simple
+[18:51:57] Resolved prompt template: Giải thích về: {text}
+[18:51:57] Auto prompt generated: Giải thích về: 方
+[18:51:57] Attempting to pre-fill with: Giải thích về: 方...
+[18:51:57] Chat window injected/shown successfully
+[18:51:57] Bridge command received: gemini_chat_open
+[18:51:57] Bridge command received: gemini_chat_open
+[18:51:57] Bridge command received: gemini_chat_open
+[18:51:57] Bridge command received: gemini_chat_open
+[18:51:57] Bridge command received: gemini_chat_open
+[18:51:57] Bridge command received: gemini_chat_open
+[18:51:57] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:51:57] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:51:57] Prefilled input successfully.
+[18:51:59] PyCmd received: gemini_chat_send_message
+[18:51:59] Bridge command received: gemini_chat_send_message
+[18:51:59] Bridge command received: gemini_chat_send_message
+[18:51:59] Bridge command received: gemini_chat_send_message
+[18:51:59] Bridge command received: gemini_chat_send_message
+[18:51:59] Bridge command received: gemini_chat_send_message
+[18:51:59] Bridge command received: gemini_chat_send_message
+[18:51:59] Calling Gemini API...
+[18:52:04] Gemini API call successful
+[18:52:04] message before formatting: Chữ "方" (fāng) trong tiếng Trung Quốc là một chữ rất đa năng và có nhiều nghĩa khác nhau tùy thuộc vào ngữ cảnh. Dưới đây là một số nghĩa phổ biến và cách sử dụng của nó:
+
+**1. Phương hướng, phía:**
+
+*   Đây là nghĩa cơ bản và phổ biến nhất của "方".
+*   **Ví dụ:**
+    *   东方 (dōngfāng): Phương Đông
+    *   西方 (xīfāng): Phương Tây
+    *   北方 (běifāng): Phương Bắc
+    *   南方 (nánfāng): Phương Nam
+    *   方向 (fāngxiàng): Phương hướng, hướng đi
+    *   四面八方 (sìmiànbāfāng): Bốn phương tám hướng (khắp nơi)
+
+**2.  Cách thức, phương pháp:**
+
+*   "方" có thể chỉ cách làm một việc gì đó, một phương pháp, một giải pháp.
+*   **Ví dụ:**
+    *   方法 (fāngfǎ): Phương pháp, cách thức
+    *   方式 (fāngshì): Hình thức, phương thức
+    *   方便 (fāngbiàn): Thuận tiện, dễ dàng (nghĩa rộng hơn, nhưng liên quan đến cách thức làm cho dễ dàng)
+    *   想办法 (xiǎng bànfǎ): Nghĩ cách, tìm giải pháp
+
+**3.  Chính, ngay thẳng, đạo đức (ít phổ biến hơn):**
+
+*   Trong một số trường hợp, "方" mang ý nghĩa chính trực, ngay thẳng, liên quan đến đạo đức.
+*   **Ví dụ:**
+    *   品方 (pǐn fāng):  Phẩm chất ngay thẳng (ít dùng)
+
+**4.  Bên, phía (trong ngữ cảnh cụ thể):**
+
+*   "方" có thể chỉ một bên trong một mối quan hệ, một cuộc đối thoại, hoặc một tranh chấp.
+*   **Ví dụ:**
+    *   甲方 (jiǎfāng): Bên A (thường là bên cung cấp dịch vụ hoặc sản phẩm)
+    *   乙方 (yǐfāng): Bên B (thường là bên sử dụng dịch vụ hoặc sản phẩm)
+    *   双方 (shuāngfāng): Hai bên
+
+**5....
+[18:52:04] message after formatting: Chữ "方" (fāng) trong tiếng Trung Quốc là một chữ rất đa năng và có nhiều nghĩa khác nhau tùy thuộc vào ngữ cảnh. Dưới đây là một số nghĩa phổ biến và cách sử dụng của nó:<br><br><b>1. Phương hướng, phía:</b><br><br><i>   Đây là nghĩa cơ bản và phổ biến nhất của "方".<br></i>   <b>Ví dụ:</b><br><i>   东方 (dōngfāng): Phương Đông<br></i>   西方 (xīfāng): Phương Tây<br><i>   北方 (běifāng): Phương Bắc<br></i>   南方 (nánfāng): Phương Nam<br><i>   方向 (fāngxiàng): Phương hướng, hướng đi<br></i>   四面八方 (sìmiànbāfāng): Bốn phương tám hướng (khắp nơi)<br><br><b>2.  Cách thức, phương pháp:</b><br><br><i>   "方" có thể chỉ cách làm một việc gì đó, một phương pháp, một giải pháp.<br></i>   <b>Ví dụ:</b><br><i>   方法 (fāngfǎ): Phương pháp, cách thức<br></i>   方式 (fāngshì): Hình thức, phương thức<br><i>   方便 (fāngbiàn): Thuận tiện, dễ dàng (nghĩa rộng hơn, nhưng liên quan đến cách thức làm cho dễ dàng)<br></i>   想办法 (xiǎng bànfǎ): Nghĩ cách, tìm giải pháp<br><br><b>3.  Chính, ngay thẳng, đạo đức (ít phổ biến hơn):</b><br><br><i>   Trong một số trường hợp, "方" mang ý nghĩa chính trực, ngay thẳng, liên quan đến đạo đức.<br></i>   <b>Ví dụ:</b><br><i>   品方 (pǐn fāng):  Phẩm chất ngay thẳng (ít dùng)<br><br><b>4.  Bên, phía (trong ngữ cảnh cụ thể):</b><br><br></i>   "方" có thể chỉ một bên trong một mối quan hệ, một cuộc đối thoại, hoặc một tranh chấp.<br><i>   <b>Ví dụ:</b><br></i>   甲方 (jiǎfāng): Bên A (thường là bên cung cấp dịch vụ hoặc sản phẩm)<br><i>   乙方 (yǐfāng): Bên B (thường là bên sử dụng dịch vụ hoặc sản phẩm)<br></i>   双方 (shuāngfāng): Hai bên<br><br>**5....
+[18:55:35] Cleaned up injected chat UI elements.
+[18:55:35] Cleanup completed
+[18:55:48] Initializing GeminiChatBot...
+[18:55:48] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}, '1725878862948': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725877737735': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725891642670': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725889630012': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725890727243': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725890417067': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725883693207': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725891389564': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725889374509': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725890025134': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725891206967': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725889845288': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725879117418': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725883309858': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725882518516': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725883056578': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725890209243': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725888698558': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725878885152': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725890951098': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1726415621811': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730211184472': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730257710725': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256799492': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258209387': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256404830': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256143459': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730219185226': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730257040503': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730248449927': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258498604': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258022863': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730212780016': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730249235883': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730248378399': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}}, 'target_field': 'Front'}
+[18:55:48] Configuration loaded successfully
+[18:55:48] Menu setup completed
+[18:55:48] PyCmd handlers registered
+[18:55:48] Registered 4 hooks
+[18:55:48] GeminiChatBot initialized successfully
+[18:55:48] State change: startup → deckBrowser
+[18:56:03] PyCmd received: open:1725890417067
+[18:56:03] State change: deckBrowser → overview
+[18:56:03] PyCmd received: study
+[18:56:03] State change: overview → review
+[18:56:04] === on_show_question TRIGGERED ===
+[18:56:04] Card ID: 1725890453326
+Deck ID: 1725890417067
+Note ID: 1725890453325
+Fields: ['Kanji', 'Onyomi', 'Kunyomi', 'Meaning']
+Front: 名...
+[18:56:04] Cleaned up injected chat UI elements.
+[18:56:04] Showing button for: 名...
+[18:56:04] ChatBot button injected successfully
+[18:56:04] PyCmd received: updateToolbar
+[18:56:06] PyCmd received: gemini_chat_open
+[18:56:06] Opening chat window...
+[18:56:06] Initializing injected ChatWindow...
+[18:56:06] PyCmd handlers registered
+[18:56:06] Deck settings for chat window: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}
+[18:56:06] Target field: Kanji
+[18:56:06] Field value: 名
+[18:56:06] Prompt key selected: default_simple
+[18:56:06] Resolved prompt template: Giải thích về: {text}
+[18:56:06] Auto prompt generated: Giải thích về: 名
+[18:56:06] Attempting to pre-fill with: Giải thích về: 名...
+[18:56:06] Chat window injected/shown successfully
+[18:56:06] Bridge command received: gemini_chat_open
+[18:56:06] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:56:06] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:56:06] Prefilled input successfully.
+[18:56:08] PyCmd received: gemini_chat_send_message
+[18:56:08] Bridge command received: gemini_chat_send_message
+[18:56:08] Đã gọi show_typing().
+[18:56:08] Calling Gemini API...
+[18:56:13] Gemini API call successful
+[18:56:13] message before formatting: Chữ "名" (danh) trong tiếng Hán Việt có rất nhiều ý nghĩa, tùy thuộc vào ngữ cảnh sử dụng. Dưới đây là một số ý nghĩa phổ biến nhất:
+
+**1. Tên (Name):** Đây là ý nghĩa phổ biến nhất của chữ "名".
+
+*   **Ví dụ:**
+    *   姓名 (xìngmíng) - Họ tên
+    *   名字 (míngzi) - Tên
+    *   有名 (yǒumíng) - Nổi tiếng, có danh
+
+**2. Danh tiếng, tiếng tăm (Reputation, Fame):**
+
+*   **Ví dụ:**
+    *   名声 (míngshēng) - Danh tiếng
+    *   名誉 (míngyù) - Danh dự
+    *   成名 (chéngmíng) - Thành danh, nổi tiếng
+
+**3. Danh nghĩa, danh hiệu (Title, Name):**
+
+*   **Ví dụ:**
+    *   以...的名义 (yǐ... de míngyì) - Nhân danh...
+    *   名义 (míngyì) - Danh nghĩa
+    *   头衔 (tóuxián) - Danh hiệu (cũng có thể dùng "名号 - mínghào")
+
+**4. Chức vụ, vị trí (Position, Rank):**
+
+*   **Ví dụ:**
+    *   名额 (míng'é) - Số lượng, chỉ tiêu (chẳng hạn số lượng vị trí)
+    *   名次 (míngcì) - Thứ hạng
+
+**5. (Trong ngữ pháp) Danh từ (Noun):**
+
+*   **Ví dụ:**
+    *   名词 (míngcí) - Danh từ
+
+**6. (Trong triết học) Danh (Name, Concept):** Liên quan đến khái niệm, định nghĩa, và mối quan hệ giữa tên gọi và thực tế.
+
+**7. (Động từ) Gọi tên, đặt tên:**
+
+*   **Ví dụ:**
+    *   不可名状 (bù kě míng zhuàng) - Không thể diễn tả bằng lời (nghĩa đen: không thể gọi tên trạng thái đó)
+
+**Để hiểu rõ ý nghĩa cụ thể của chữ "名" trong một câu hoặc cụm từ, cần xem xét ngữ cảnh...
+[18:56:13] message after formatting: Chữ "名" (danh) trong tiếng Hán Việt có rất nhiều ý nghĩa, tùy thuộc vào ngữ cảnh sử dụng. Dưới đây là một số ý nghĩa phổ biến nhất:<br><br><b>1. Tên (Name):</b> Đây là ý nghĩa phổ biến nhất của chữ "名".<br><br><i>   <b>Ví dụ:</b><br></i>   姓名 (xìngmíng) - Họ tên<br><i>   名字 (míngzi) - Tên<br></i>   有名 (yǒumíng) - Nổi tiếng, có danh<br><br><b>2. Danh tiếng, tiếng tăm (Reputation, Fame):</b><br><br><i>   <b>Ví dụ:</b><br></i>   名声 (míngshēng) - Danh tiếng<br><i>   名誉 (míngyù) - Danh dự<br></i>   成名 (chéngmíng) - Thành danh, nổi tiếng<br><br><b>3. Danh nghĩa, danh hiệu (Title, Name):</b><br><br><i>   <b>Ví dụ:</b><br></i>   以...的名义 (yǐ... de míngyì) - Nhân danh...<br><i>   名义 (míngyì) - Danh nghĩa<br></i>   头衔 (tóuxián) - Danh hiệu (cũng có thể dùng "名号 - mínghào")<br><br><b>4. Chức vụ, vị trí (Position, Rank):</b><br><br><i>   <b>Ví dụ:</b><br></i>   名额 (míng'é) - Số lượng, chỉ tiêu (chẳng hạn số lượng vị trí)<br><i>   名次 (míngcì) - Thứ hạng<br><br><b>5. (Trong ngữ pháp) Danh từ (Noun):</b><br><br></i>   <b>Ví dụ:</b><br><i>   名词 (míngcí) - Danh từ<br><br><b>6. (Trong triết học) Danh (Name, Concept):</b> Liên quan đến khái niệm, định nghĩa, và mối quan hệ giữa tên gọi và thực tế.<br><br><b>7. (Động từ) Gọi tên, đặt tên:</b><br><br></i>   <b>Ví dụ:</b><br>*   不可名状 (bù kě míng zhuàng) - Không thể diễn tả bằng lời (nghĩa đen: không thể gọi tên trạng thái đó)<br><br>**Để hiểu rõ ý nghĩa cụ thể của chữ "名" trong một câu hoặc cụm từ, cần xem xét ngữ cảnh...
+[18:57:50] Cleaned up injected chat UI elements.
+[18:57:50] Cleanup completed
+[18:58:02] Initializing GeminiChatBot...
+[18:58:02] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}, '1725878862948': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725877737735': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725891642670': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725889630012': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725890727243': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725890417067': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725883693207': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725891389564': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725889374509': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725890025134': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725891206967': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725889845288': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725879117418': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725883309858': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725882518516': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725883056578': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725890209243': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725888698558': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725878885152': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725890951098': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1726415621811': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730211184472': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730257710725': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256799492': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258209387': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256404830': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256143459': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730219185226': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730257040503': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730248449927': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258498604': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258022863': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730212780016': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730249235883': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730248378399': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}}, 'target_field': 'Front'}
+[18:58:02] Configuration loaded successfully
+[18:58:02] Menu setup completed
+[18:58:02] PyCmd handlers registered
+[18:58:02] Registered 4 hooks
+[18:58:02] GeminiChatBot initialized successfully
+[18:58:02] State change: startup → deckBrowser
+[18:58:17] PyCmd received: open:1725889845288
+[18:58:17] State change: deckBrowser → overview
+[18:58:17] PyCmd received: study
+[18:58:17] State change: overview → review
+[18:58:18] === on_show_question TRIGGERED ===
+[18:58:18] Card ID: 1725889965308
+Deck ID: 1725889845288
+Note ID: 1725889965308
+Fields: ['Kanji', 'Onyomi', 'Kunyomi', 'Meaning']
+Front: 上...
+[18:58:18] Cleaned up injected chat UI elements.
+[18:58:18] Showing button for: 上...
+[18:58:18] ChatBot button injected successfully
+[18:58:18] PyCmd received: updateToolbar
+[18:58:19] PyCmd received: gemini_chat_open
+[18:58:19] Opening chat window...
+[18:58:19] Initializing injected ChatWindow...
+[18:58:19] PyCmd handlers registered
+[18:58:19] Deck settings for chat window: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}
+[18:58:19] Target field: Kanji
+[18:58:19] Field value: 上
+[18:58:19] Prompt key selected: default_simple
+[18:58:19] Resolved prompt template: Giải thích về: {text}
+[18:58:19] Auto prompt generated: Giải thích về: 上
+[18:58:19] Attempting to pre-fill with: Giải thích về: 上...
+[18:58:19] Chat window injected/shown successfully
+[18:58:19] Bridge command received: gemini_chat_open
+[18:58:19] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:58:19] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[18:58:19] Prefilled input successfully.
+[18:58:21] PyCmd received: gemini_chat_send_message
+[18:58:21] Bridge command received: gemini_chat_send_message
+[18:58:21] Gửi prompt: Giải thích về: 上...
+[18:58:21] Đang chờ JS hiển thị 'AI đang trả lời...'...
+[18:58:21] ✅ 'AI đang trả lời...' đã hiển thị — bắt đầu GeminiThread.
+[18:58:21] Thread mới đã được start().
+[18:58:21] Calling Gemini API...
+[18:58:28] Gemini API call successful
+[18:58:28] message before formatting: Chữ "上" (shàng) trong tiếng Trung là một từ rất đa năng và có nhiều nghĩa khác nhau tùy thuộc vào ngữ cảnh. Dưới đây là một số nghĩa phổ biến và cách sử dụng của nó:
+
+**1. Vị trí: Trên, phía trên, bên trên**
+
+*   **Ví dụ:**
+    *   桌子上 (zhuōzi shàng): trên bàn
+    *   山上 (shān shàng): trên núi
+    *   在上面 (zài shàngmiàn): ở phía trên
+
+**2. Đi lên, leo lên, lên (xe, tàu, máy bay)**
+
+*   **Ví dụ:**
+    *   上楼 (shàng lóu): lên lầu
+    *   上车 (shàng chē): lên xe
+    *   上飞机 (shàng fēijī): lên máy bay
+
+**3. Đi học, đi làm, lên lớp**
+
+*   **Ví dụ:**
+    *   上学 (shàng xué): đi học
+    *   上班 (shàng bān): đi làm
+    *   上课 (shàng kè): lên lớp
+
+**4. Lên, đăng (báo, tạp chí, mạng)**
+
+*   **Ví dụ:**
+    *   上报 (shàng bào): đăng báo
+    *   上网 (shàng wǎng): lên mạng
+
+**5. Bắt đầu (một hành động, một quá trình)**
+
+*   **Ví dụ:**
+    *   上演 (shàng yǎn): bắt đầu biểu diễn
+    *   上菜 (shàng cài): bắt đầu dọn món ăn
+
+**6. Trước, trước đây, vừa qua**
+
+*   **Ví dụ:**
+    *   上个星期 (shàng gè xīngqí): tuần trước
+    *   上次 (shàng cì): lần trước
+
+**7. Tốt, giỏi (trong một số cụm từ cố định)**
+
+*   **Ví dụ:**
+    *   上等 (shàng děng): hạng nhất, loại tốt nhất
+
+**8. Như một hậu tố (suffix) để chỉ vị trí, thời gian, hoặc một khía cạnh nào đó**
+
+*   **Ví dụ:**
+    *   实际上 (shíjì shang): trên thực tế
+    *   理论上 (...
+[18:58:28] message after formatting: Chữ "上" (shàng) trong tiếng Trung là một từ rất đa năng và có nhiều nghĩa khác nhau tùy thuộc vào ngữ cảnh. Dưới đây là một số nghĩa phổ biến và cách sử dụng của nó:<br><br><b>1. Vị trí: Trên, phía trên, bên trên</b><br><br><i>   <b>Ví dụ:</b><br></i>   桌子上 (zhuōzi shàng): trên bàn<br><i>   山上 (shān shàng): trên núi<br></i>   在上面 (zài shàngmiàn): ở phía trên<br><br><b>2. Đi lên, leo lên, lên (xe, tàu, máy bay)</b><br><br><i>   <b>Ví dụ:</b><br></i>   上楼 (shàng lóu): lên lầu<br><i>   上车 (shàng chē): lên xe<br></i>   上飞机 (shàng fēijī): lên máy bay<br><br><b>3. Đi học, đi làm, lên lớp</b><br><br><i>   <b>Ví dụ:</b><br></i>   上学 (shàng xué): đi học<br><i>   上班 (shàng bān): đi làm<br></i>   上课 (shàng kè): lên lớp<br><br><b>4. Lên, đăng (báo, tạp chí, mạng)</b><br><br><i>   <b>Ví dụ:</b><br></i>   上报 (shàng bào): đăng báo<br><i>   上网 (shàng wǎng): lên mạng<br><br><b>5. Bắt đầu (một hành động, một quá trình)</b><br><br></i>   <b>Ví dụ:</b><br><i>   上演 (shàng yǎn): bắt đầu biểu diễn<br></i>   上菜 (shàng cài): bắt đầu dọn món ăn<br><br><b>6. Trước, trước đây, vừa qua</b><br><br><i>   <b>Ví dụ:</b><br></i>   上个星期 (shàng gè xīngqí): tuần trước<br><i>   上次 (shàng cì): lần trước<br><br><b>7. Tốt, giỏi (trong một số cụm từ cố định)</b><br><br></i>   <b>Ví dụ:</b><br><i>   上等 (shàng děng): hạng nhất, loại tốt nhất<br><br><b>8. Như một hậu tố (suffix) để chỉ vị trí, thời gian, hoặc một khía cạnh nào đó</b><br><br></i>   <b>Ví dụ:</b><br><i>   实际上 (shíjì shang): trên thực tế<br></i>   理论上 (...
+[18:59:14] PyCmd received: gemini_chat_send_message
+[18:59:14] Bridge command received: gemini_chat_send_message
+[18:59:14] Gửi prompt: à mình hiểu rồi...
+[18:59:14] Đang chờ JS hiển thị 'AI đang trả lời...'...
+[18:59:14] ✅ 'AI đang trả lời...' đã hiển thị — bắt đầu GeminiThread.
+[18:59:14] Thread mới đã được start().
+[18:59:14] Calling Gemini API...
+[18:59:15] Gemini API call successful
+[18:59:15] message before formatting: Tuyệt vời! Mình rất vui vì bạn đã hiểu. Nếu bạn có bất kỳ câu hỏi nào khác hoặc cần mình giải thích thêm điều gì, đừng ngần ngại hỏi nhé!...
+[18:59:15] message after formatting: Tuyệt vời! Mình rất vui vì bạn đã hiểu. Nếu bạn có bất kỳ câu hỏi nào khác hoặc cần mình giải thích thêm điều gì, đừng ngần ngại hỏi nhé!...
+[18:59:17] PyCmd received: gemini_chat_close
+[18:59:17] Bridge command received: gemini_chat_close
+[21:21:26] Cleaned up injected chat UI elements.
+[21:21:26] Cleanup completed
+[21:21:38] Initializing GeminiChatBot...
+[21:21:38] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}, '1725878862948': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725877737735': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725891642670': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725889630012': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725890727243': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725890417067': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725883693207': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725891389564': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725889374509': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725890025134': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725891206967': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725889845288': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725879117418': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725883309858': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725882518516': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725883056578': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725890209243': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725888698558': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725878885152': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1725890951098': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}, '1726415621811': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730211184472': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730257710725': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256799492': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258209387': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256404830': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256143459': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730219185226': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730257040503': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730248449927': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258498604': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258022863': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730212780016': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730249235883': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730248378399': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}}, 'target_field': 'Front'}
+[21:21:38] Configuration loaded successfully
+[21:21:38] Menu setup completed
+[21:21:38] PyCmd handlers registered
+[21:21:38] Registered 4 hooks
+[21:21:38] GeminiChatBot initialized successfully
+[21:21:38] State change: startup → deckBrowser
+[21:22:00] [LOAD] Loading settings for deck: Default (ID=1)
+[21:22:00] [LOAD] Deck Default settings: {}
+[21:22:06] [LOAD] Loading settings for deck: Destination B1&2::B1::Destination_B1 (ID=1728745176996)
+[21:22:06] [LOAD] Dùng model từ subdeck: Destination B1&2::B1::Destination_B1::Unit_09
+[21:22:06] [LOAD] Deck Destination B1&2::B1::Destination_B1 settings: {}
+[21:22:07] [CHECK] Kiểm tra notetype của 'Destination B1&2::B1::Destination_B1' và các subdeck...
+[21:22:13] [CHECK] Kết quả:
+[21:22:13]    - Phrase: Destination B1&2::B1::Destination_B1::Unit_18, Destination B1&2::B1::Destination_B1::Unit_09, Destination B1&2::B1::Destination_B1::Unit_24, Destination B1&2::B1::Destination_B1::Unit_06, Destination B1&2::B1::Destination_B1::Unit_12, Destination B1&2::B1::Destination_B1::Unit_21, Destination B1&2::B1::Destination_B1::Unit_33, Destination B1&2::B1::Destination_B1::Unit_27, Destination B1&2::B1::Destination_B1::Unit_15, Destination B1&2::B1::Destination_B1::Unit_30, Destination B1&2::B1::Destination_B1::Unit_42, Destination B1&2::B1::Destination_B1::Unit_39, Destination B1&2::B1::Destination_B1::Unit_03, Destination B1&2::B1::Destination_B1::Unit_36
+[21:22:18] [LOAD] Loading settings for deck: Destination B1&2::B1 (ID=1726415621812)
+[21:22:18] [LOAD] Dùng model từ subdeck: Destination B1&2::B1::06.Learning and doing
+[21:22:18] [LOAD] Deck Destination B1&2::B1 settings: {}
+[21:22:19] [CHECK] Kiểm tra notetype của 'Destination B1&2::B1' và các subdeck...
+[21:22:27] [CHECK] Kết quả:
+[21:22:27]    - iKnown! Destination: Destination B1&2::B1::27.Working and earning, Destination B1&2::B1::33.Creating and building, Destination B1&2::B1::36.Nature and the universe, Destination B1&2::B1::30.Body and lifestyle, Destination B1&2::B1::21.Sending and receiving, Destination B1&2::B1::09.Coming and going, Destination B1&2::B1::18.Inventions and discoveries, Destination B1&2::B1::24.People and daily life, Destination B1&2::B1::03.Fun and games, Destination B1&2::B1::39.Laughing and crying, Destination B1&2::B1::06.Learning and doing, Destination B1&2::B1::42.Problems and solutions, Destination B1&2::B1::12.Friends and relations, Destination B1&2::B1::15.Buying and selling
+[21:22:27]    - Grammar Template (Phrasal Verb): Destination B1&2::B1::27.Working and earning, Destination B1&2::B1::33.Creating and building, Destination B1&2::B1::36.Nature and the universe, Destination B1&2::B1::30.Body and lifestyle, Destination B1&2::B1::21.Sending and receiving, Destination B1&2::B1::09.Coming and going, Destination B1&2::B1::18.Inventions and discoveries, Destination B1&2::B1::24.People and daily life, Destination B1&2::B1::03.Fun and games, Destination B1&2::B1::39.Laughing and crying, Destination B1&2::B1::06.Learning and doing, Destination B1&2::B1::42.Problems and solutions, Destination B1&2::B1::12.Friends and relations, Destination B1&2::B1::15.Buying and selling
+[21:22:27]    - Phrase: Destination B1&2::B1::Destination_B1::Unit_36, Destination B1&2::B1::Destination_B1::Unit_15, Destination B1&2::B1::Destination_B1::Unit_24, Destination B1&2::B1::Destination_B1::Unit_42, Destination B1&2::B1::Destination_B1::Unit_06, Destination B1&2::B1::Destination_B1::Unit_39, Destination B1&2::B1::Destination_B1::Unit_03, Destination B1&2::B1::Destination_B1::Unit_33, Destination B1&2::B1::Destination_B1::Unit_18, Destination B1&2::B1::Destination_B1::Unit_21, Destination B1&2::B1::Destination_B1::Unit_30, Destination B1&2::B1::Destination_B1::Unit_09, Destination B1&2::B1::Destination_B1::Unit_12, Destination B1&2::B1::Destination_B1::Unit_27
+[21:22:28] [CHECK] Kiểm tra notetype của 'Destination B1&2::B1' và các subdeck...
+[21:22:30] [CHECK] Kết quả:
+[21:22:30]    - Phrase: Destination B1&2::B1::Destination_B1::Unit_18, Destination B1&2::B1::Destination_B1::Unit_24, Destination B1&2::B1::Destination_B1::Unit_36, Destination B1&2::B1::Destination_B1::Unit_06, Destination B1&2::B1::Destination_B1::Unit_09, Destination B1&2::B1::Destination_B1::Unit_33, Destination B1&2::B1::Destination_B1::Unit_27, Destination B1&2::B1::Destination_B1::Unit_03, Destination B1&2::B1::Destination_B1::Unit_15, Destination B1&2::B1::Destination_B1::Unit_12, Destination B1&2::B1::Destination_B1::Unit_30, Destination B1&2::B1::Destination_B1::Unit_39, Destination B1&2::B1::Destination_B1::Unit_42, Destination B1&2::B1::Destination_B1::Unit_21
+[21:22:30]    - iKnown! Destination: Destination B1&2::B1::18.Inventions and discoveries, Destination B1&2::B1::39.Laughing and crying, Destination B1&2::B1::24.People and daily life, Destination B1&2::B1::21.Sending and receiving, Destination B1&2::B1::30.Body and lifestyle, Destination B1&2::B1::09.Coming and going, Destination B1&2::B1::42.Problems and solutions, Destination B1&2::B1::06.Learning and doing, Destination B1&2::B1::15.Buying and selling, Destination B1&2::B1::27.Working and earning, Destination B1&2::B1::36.Nature and the universe, Destination B1&2::B1::33.Creating and building, Destination B1&2::B1::03.Fun and games, Destination B1&2::B1::12.Friends and relations
+[21:22:30]    - Grammar Template (Phrasal Verb): Destination B1&2::B1::18.Inventions and discoveries, Destination B1&2::B1::39.Laughing and crying, Destination B1&2::B1::24.People and daily life, Destination B1&2::B1::21.Sending and receiving, Destination B1&2::B1::30.Body and lifestyle, Destination B1&2::B1::09.Coming and going, Destination B1&2::B1::42.Problems and solutions, Destination B1&2::B1::06.Learning and doing, Destination B1&2::B1::15.Buying and selling, Destination B1&2::B1::27.Working and earning, Destination B1&2::B1::36.Nature and the universe, Destination B1&2::B1::33.Creating and building, Destination B1&2::B1::03.Fun and games, Destination B1&2::B1::12.Friends and relations
+[21:22:34] [LOAD] Loading settings for deck: Destination B1&2 (ID=1726415621810)
+[21:22:34] [LOAD] Dùng model từ subdeck: Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_16
+[21:22:34] [LOAD] Deck Destination B1&2 settings: {}
+[21:22:36] [CHECK] Kiểm tra notetype của 'Destination B1&2' và các subdeck...
+[21:22:41] [CHECK] Kết quả:
+[21:22:41]    - Collocation B2: Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_10, Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_28, Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_16, Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_04, Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_02, Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_20, Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_08, Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_14, Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_22, Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_12, Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_26, Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_06, Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_18, Destination B1&2::B2::Destination B2: Collocation and Word pattern::Unit_24
+[21:22:41]    - iKnown! Destination: Destination B1&2::B2::14.Health and fitness, Destination B1&2::B1::36.Nature and the universe, Destination B1&2::B1::27.Working and earning, Destination B1&2::B2::06.Science and technology, Destination B1&2::B1::42.Problems and solutions, Destination B1&2::B1::12.Friends and relations, Destination B1&2::B2::20.Weather and the environment, Destination B1&2::B1::33.Creating and building, Destination B1&2::B2::02.Travel and transport, Destination B1&2::B2::24.Entertainment, Destination B1&2::B1::18.Inventions and discoveries, Destination B1&2::B1::24.People and daily life, Destination B1&2::B2::18.Education and learning, Destination B1&2::B2::04.Hobbies,sport and games, Destination B1&2::B2::22.Money and shopping, Destination B1&2::B1::21.Sending and receiving, Destination B1&2::B2::28.Work and business, Destination B1&2::B1::30.Body and lifestyle, Destination B1&2::B1::03.Fun and games, Destination B1&2::B2::10.People and society, Destination B1&2::B2::12.The law and crime, Destination B1&2::B1::39.Laughing and crying, Destination B1&2::B2::16.Food and drink, Destination B1&2::B1::06.Learning and doing, Destination B1&2::B1::09.Coming and going, Destination B1&2::B1::15.Buying and selling, Destination B1&2::B2::26.Fashion and design, Destination B1&2::B2::08.The media
+[21:22:41]    - Grammar Template (Phrasal Verb): Destination B1&2::B2::14.Health and fitness, Destination B1&2::B1::36.Nature and the universe, Destination B1&2::B1::27.Working and earning, Destination B1&2::B2::06.Science and technology, Destination B1&2::B1::42.Problems and solutions, Destination B1&2::B1::12.Friends and relations, Destination B1&2::B2::20.Weather and the environment, Destination B1&2::B1::33.Creating and building, Destination B1&2::B2::02.Travel and transport, Destination B1&2::B2::24.Entertainment, Destination B1&2::B1::18.Inventions and discoveries, Destination B1&2::B1::24.People and daily life, Destination B1&2::B2::18.Education and learning, Destination B1&2::B2::04.Hobbies,sport and games, Destination B1&2::B2::22.Money and shopping, Destination B1&2::B1::21.Sending and receiving, Destination B1&2::B2::28.Work and business, Destination B1&2::B1::30.Body and lifestyle, Destination B1&2::B1::03.Fun and games, Destination B1&2::B2::10.People and society, Destination B1&2::B2::12.The law and crime, Destination B1&2::B1::39.Laughing and crying, Destination B1&2::B2::16.Food and drink, Destination B1&2::B1::06.Learning and doing, Destination B1&2::B1::09.Coming and going, Destination B1&2::B1::15.Buying and selling, Destination B1&2::B2::26.Fashion and design, Destination B1&2::B2::08.The media
+[21:22:41]    - Phrase: Destination B1&2::B1::Destination_B1::Unit_42, Destination B1&2::B1::Destination_B1::Unit_36, Destination B1&2::B1::Destination_B1::Unit_12, Destination B1&2::B1::Destination_B1::Unit_18, Destination B1&2::B1::Destination_B1::Unit_15, Destination B1&2::B1::Destination_B1::Unit_06, Destination B1&2::B1::Destination_B1::Unit_03, Destination B1&2::B1::Destination_B1::Unit_39, Destination B1&2::B1::Destination_B1::Unit_27, Destination B1&2::B1::Destination_B1::Unit_24, Destination B1&2::B1::Destination_B1::Unit_21, Destination B1&2::B1::Destination_B1::Unit_33, Destination B1&2::B1::Destination_B1::Unit_09, Destination B1&2::B1::Destination_B1::Unit_30
+[21:23:01] PyCmd received: open:1762438905425
+[21:23:01] State change: deckBrowser → overview
+[21:23:03] PyCmd received: study
+[21:23:03] State change: overview → review
+[21:23:03] === on_show_question TRIGGERED ===
+[21:23:03] Card ID: 1649001543895
+Deck ID: 1762438905425
+Note ID: 1649001543749
+Fields: ['ID', 'Word', 'Synonyms', 'Antonyms', 'Img1', 'PoS1', 'Def1', 'VNDef1', 'Ex1', 'SoundEx1', 'Phones1', 'VNTrans1', 'Img2', 'PoS2', 'Def2', 'VNDef2', 'Ex2', 'SoundEx2', 'Phones2', 'VNTrans2', 'Img3', 'PoS3', 'Def3', 'VNDef3', 'Ex3', 'SoundEx3', 'Phones3', 'VNTrans3', 'Img4', 'PoS4', 'Def4', 'VNDef4', 'Ex4', 'SoundEx4', 'Phones4', 'VNTrans4', 'Img5', 'PoS5', 'Def5', 'VNDef5', 'Ex5', 'SoundEx5', 'Phones5', 'VNTrans5', 'Img6', 'PoS6', 'Def6', 'VNDef6', 'Ex6', 'SoundEx6', 'Phones6', 'VNTrans6', 'Sound', 'Hint', 'Phonetics', 'Collocations', 'Formations', 'Unit', 'Topic', 'LacViet']
+Front: B1_VOCAB_12_108...
+[21:23:03] Cleaned up injected chat UI elements.
+[21:23:03] Showing button for: B1_VOCAB_12_108...
+[21:23:03] ChatBot button injected successfully
+[21:23:03] PyCmd received: updateToolbar
+[21:23:06] Cleaned up injected chat UI elements.
+[21:23:06] Review ended - cleanup completed
+[21:23:06] State change: review → deckBrowser
+[21:23:06] Leaving review → cleaning UI
+[21:23:06] Cleaned up injected chat UI elements.
+[21:23:20] PyCmd received: opts:1762438905425
+[21:23:32] [LOAD] Loading settings for deck: Default (ID=1)
+[21:23:32] [LOAD] Deck Default settings: {}
+[21:23:34] [CHECK] Kiểm tra notetype của 'Default' và các subdeck...
+[21:23:35] [CHECK] Không tìm thấy notetype nào.
+[21:23:38] [LOAD] Loading settings for deck: Destination B1&2::B1::Destination_B1 (ID=1728745176996)
+[21:23:38] [LOAD] Dùng model từ subdeck: Destination B1&2::B1::Destination_B1::Unit_24
+[21:23:38] [LOAD] Deck Destination B1&2::B1::Destination_B1 settings: {}
+[21:23:39] [CHECK] Kiểm tra notetype của 'Destination B1&2::B1::Destination_B1' và các subdeck...
+[21:23:40] [CHECK] Kết quả:
+[21:23:40]    - Phrase: Destination B1&2::B1::Destination_B1::Unit_27, Destination B1&2::B1::Destination_B1::Unit_30, Destination B1&2::B1::Destination_B1::Unit_12, Destination B1&2::B1::Destination_B1::Unit_42, Destination B1&2::B1::Destination_B1::Unit_33, Destination B1&2::B1::Destination_B1::Unit_15, Destination B1&2::B1::Destination_B1::Unit_39, Destination B1&2::B1::Destination_B1::Unit_21, Destination B1&2::B1::Destination_B1::Unit_03, Destination B1&2::B1::Destination_B1::Unit_36, Destination B1&2::B1::Destination_B1::Unit_09, Destination B1&2::B1::Destination_B1::Unit_06, Destination B1&2::B1::Destination_B1::Unit_18, Destination B1&2::B1::Destination_B1::Unit_24
+[21:23:46] PyCmd received: open:1725890417067
+[21:23:46] State change: deckBrowser → overview
+[21:23:48] PyCmd received: study
+[21:23:48] State change: overview → review
+[21:23:48] === on_show_question TRIGGERED ===
+[21:23:48] Card ID: 1725890453326
+Deck ID: 1725890417067
+Note ID: 1725890453325
+Fields: ['Kanji', 'Onyomi', 'Kunyomi', 'Meaning']
+Front: 名...
+[21:23:48] Cleaned up injected chat UI elements.
+[21:23:48] Showing button for: 名...
+[21:23:48] ChatBot button injected successfully
+[21:23:48] PyCmd received: updateToolbar
+[21:23:50] Cleaned up injected chat UI elements.
+[21:23:50] Review ended - cleanup completed
+[21:23:50] State change: review → deckBrowser
+[21:23:50] Leaving review → cleaning UI
+[21:23:50] Cleaned up injected chat UI elements.
+[21:23:56] [LOAD] Loading settings for deck: Default (ID=1)
+[21:23:56] [LOAD] Deck Default settings: {}
+[21:24:06] [LOAD] Loading settings for deck: Kanji::Kanji_N5 (ID=1725878862948)
+[21:24:06] [LOAD] Dùng model từ subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 13
+[21:24:06] [LOAD] Deck Kanji::Kanji_N5 settings: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'default_simple'}
+[21:25:19] [SAVE] Saving settings for deck: Kanji::Kanji_N5 (ID=1725878862948)
+[21:25:19] [SAVE] Không tìm thấy model trong deck chính, thử subdeck...
+[21:25:19] [SAVE] Model lấy từ subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 2 (MID=1594195112676)
+[21:25:19] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 15 (ID=1725890727243)
+[21:25:19] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 4 (ID=1725882518516)
+[21:25:19] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 5 (ID=1725883056578)
+[21:25:19] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 9 (ID=1725889374509)
+[21:25:19] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 3 (ID=1725879117418)
+[21:25:19] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 17 (ID=1725891206967)
+[21:25:19] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 8 (ID=1725888698558)
+[21:25:19] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 12 (ID=1725890025134)
+[21:25:19] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 2 (ID=1725878885152)
+[21:25:19] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 18 (ID=1725891389564)
+[21:25:19] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 13 (ID=1725890209243)
+[21:25:19] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 10 (ID=1725889630012)
+[21:25:19] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 6 (ID=1725883309858)
+[21:25:19] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 19 (ID=1725891642670)
+[21:25:19] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 16 (ID=1725890951098)
+[21:25:19] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 14 (ID=1725890417067)
+[21:25:19] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 1 (ID=1725877737735)
+[21:25:19] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 7 (ID=1725883693207)
+[21:25:19] [SAVE] ✅ Áp dụng cho subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 11 (ID=1725889845288)
+[21:25:19] Configuration saved
+[21:25:21] [SAVE DONE] Kanji::Kanji_N5 – Model ID=1594195112676
+[21:25:27] PyCmd received: open:1725882518516
+[21:25:27] State change: deckBrowser → overview
+[21:25:27] PyCmd received: study
+[21:25:27] State change: overview → review
+[21:25:28] === on_show_question TRIGGERED ===
+[21:25:28] Card ID: 1725882989322
+Deck ID: 1725882518516
+Note ID: 1725882989322
+Fields: ['Kanji', 'Onyomi', 'Kunyomi', 'Meaning']
+Front: 方...
+[21:25:28] Cleaned up injected chat UI elements.
+[21:25:28] Showing button for: 方...
+[21:25:28] ChatBot button injected successfully
+[21:25:28] PyCmd received: updateToolbar
+[21:25:30] PyCmd received: gemini_chat_open
+[21:25:30] Opening chat window...
+[21:25:30] Initializing injected ChatWindow...
+[21:25:30] PyCmd handlers registered
+[21:25:30] Deck settings for chat window: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}
+[21:25:30] Target field: Kanji
+[21:25:30] Field value: 方
+[21:25:30] Prompt key selected: memory_tips
+[21:25:30] Resolved prompt template: Mẹo ghi nhớ cho: {text}
+[21:25:30] Auto prompt generated: Mẹo ghi nhớ cho: 方
+[21:25:30] Attempting to pre-fill with: Mẹo ghi nhớ cho: 方...
+[21:25:30] Chat window injected/shown successfully
+[21:25:30] Bridge command received: gemini_chat_open
+[21:25:30] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[21:25:30] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[21:25:30] Prefilled input successfully.
+[21:25:33] Cleaned up injected chat UI elements.
+[21:25:33] Cleanup completed
+[21:27:00] Initializing GeminiChatBot...
+[21:27:00] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}, '1725878862948': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725877737735': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725891642670': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725889630012': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890727243': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890417067': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725883693207': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725891389564': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725889374509': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890025134': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725891206967': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725889845288': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725879117418': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725883309858': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725882518516': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725883056578': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890209243': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725888698558': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725878885152': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890951098': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1726415621811': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730211184472': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730257710725': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256799492': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258209387': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256404830': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256143459': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730219185226': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730257040503': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730248449927': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258498604': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258022863': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730212780016': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730249235883': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730248378399': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}}, 'target_field': 'Front'}
+[21:27:00] Configuration loaded successfully
+[21:27:00] Menu setup completed
+[21:27:00] PyCmd handlers registered
+[21:27:00] Registered 4 hooks
+[21:27:00] GeminiChatBot initialized successfully
+[21:27:00] State change: startup → deckBrowser
+[21:28:04] PyCmd received: open:1725878862948
+[21:28:04] State change: deckBrowser → overview
+[21:28:04] PyCmd received: study
+[21:28:04] State change: overview → review
+[21:28:04] === on_show_question TRIGGERED ===
+[21:28:04] Card ID: 1725891885690
+Deck ID: 1725891642670
+Note ID: 1725891885690
+Fields: ['Kanji', 'Onyomi', 'Kunyomi', 'Meaning']
+Front: 畑...
+[21:28:04] Cleaned up injected chat UI elements.
+[21:28:04] Showing button for: 畑...
+[21:28:04] ChatBot button injected successfully
+[21:28:04] PyCmd received: updateToolbar
+[21:28:06] PyCmd received: gemini_chat_open
+[21:28:06] Opening chat window...
+[21:28:06] Initializing injected ChatWindow...
+[21:28:06] PyCmd handlers registered
+[21:28:06] Deck settings for chat window: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}
+[21:28:06] Target field: Kanji
+[21:28:06] Field value: 畑
+[21:28:06] Prompt key selected: memory_tips
+[21:28:06] Resolved prompt template: Mẹo ghi nhớ cho: {text}
+[21:28:06] Auto prompt generated: Mẹo ghi nhớ cho: 畑
+[21:28:06] Attempting to pre-fill with: Mẹo ghi nhớ cho: 畑...
+[21:28:06] Chat window injected/shown successfully
+[21:28:06] Bridge command received: gemini_chat_open
+[21:28:06] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[21:28:06] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[21:28:06] Prefilled input successfully.
+[21:28:09] PyCmd received: gemini_chat_close
+[21:28:09] Bridge command received: gemini_chat_close
+[21:34:58] PyCmd received: gemini_chat_open
+[21:34:58] Opening chat window...
+[21:34:58] Deck settings for chat window: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}
+[21:34:58] Target field: Kanji
+[21:34:58] Field value: 畑
+[21:34:58] Prompt key selected: memory_tips
+[21:34:58] Resolved prompt template: Mẹo ghi nhớ cho: {text}
+[21:34:58] Auto prompt generated: Mẹo ghi nhớ cho: 畑
+[21:34:58] Attempting to pre-fill with: Mẹo ghi nhớ cho: 畑...
+[21:34:58] Chat window injected/shown successfully
+[21:34:58] Bridge command received: gemini_chat_open
+[21:34:58] Prefilled input successfully.
+[21:36:31] Cleaned up injected chat UI elements.
+[21:36:31] Cleanup completed
+[21:37:29] Initializing GeminiChatBot...
+[21:37:29] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}, '1728746313787': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}, '1725878862948': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725877737735': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725891642670': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725889630012': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890727243': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890417067': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725883693207': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725891389564': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725889374509': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890025134': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725891206967': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725889845288': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725879117418': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725883309858': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725882518516': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725883056578': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890209243': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725888698558': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725878885152': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1725890951098': {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}, '1726415621811': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730211184472': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730257710725': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256799492': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258209387': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256404830': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730256143459': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730219185226': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730257040503': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730248449927': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258498604': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730258022863': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730212780016': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730249235883': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}, '1730248378399': {'enabled': True, 'target_field': 'Collocation', 'selected_prompt': 'default_simple'}}, 'target_field': 'Front'}
+[21:37:29] Configuration loaded successfully
+[21:37:29] Menu setup completed
+[21:37:29] PyCmd handlers registered
+[21:37:29] Registered 4 hooks
+[21:37:29] GeminiChatBot initialized successfully
+[21:37:29] State change: startup → deckBrowser
+[21:38:20] PyCmd received: open:1725878862948
+[21:38:20] State change: deckBrowser → overview
+[21:38:21] PyCmd received: study
+[21:38:21] State change: overview → review
+[21:38:21] === on_show_question TRIGGERED ===
+[21:38:21] Card ID: 1725891885690
+Deck ID: 1725891642670
+Note ID: 1725891885690
+Fields: ['Kanji', 'Onyomi', 'Kunyomi', 'Meaning']
+Front: 畑...
+[21:38:21] Cleaned up injected chat UI elements.
+[21:38:21] Showing button for: 畑...
+[21:38:21] ChatBot button injected successfully
+[21:38:21] PyCmd received: updateToolbar
+[21:38:23] PyCmd received: gemini_chat_open
+[21:38:23] Opening chat window...
+[21:38:23] Initializing injected ChatWindow...
+[21:38:23] PyCmd handlers registered
+[21:38:23] Deck settings for chat window: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}
+[21:38:23] Target field: Kanji
+[21:38:23] Field value: 畑
+[21:38:23] Prompt key selected: memory_tips
+[21:38:23] Resolved prompt template: Mẹo ghi nhớ cho: {text}
+[21:38:23] Auto prompt generated: Mẹo ghi nhớ cho: 畑
+[21:38:23] Attempting to pre-fill with: Mẹo ghi nhớ cho: 畑...
+[21:38:23] Chat window injected/shown successfully
+[21:38:23] Bridge command received: gemini_chat_open
+[21:38:23] message before formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[21:38:23] message after formatting: Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?...
+[21:38:23] Prefilled input successfully.
+[21:38:38] [LOAD] Loading settings for deck: Default (ID=1)
+[21:38:38] [LOAD] Deck Default settings: {}
+[21:38:42] [LOAD] Loading settings for deck: Destination B1&2::B1 (ID=1726415621812)
+[21:38:42] [LOAD] Dùng model từ subdeck: Destination B1&2::B1::03.Fun and games
+[21:38:42] [LOAD] Deck Destination B1&2::B1 settings: {}
+[21:38:46] [CHECK] ⚠️ Destination B1&2::B1 có 3 notetype khác nhau: {1728745232720, 1631866926593, 1652207374679}
+[21:38:46] [CHECK] Kiểm tra notetype của 'Destination B1&2::B1' và các subdeck...
+[21:38:48] [CHECK] Kết quả:
+[21:38:48]    - Grammar Template (Phrasal Verb): Destination B1&2::B1::39.Laughing and crying, Destination B1&2::B1::36.Nature and the universe, Destination B1&2::B1::30.Body and lifestyle, Destination B1&2::B1::09.Coming and going, Destination B1&2::B1::06.Learning and doing, Destination B1&2::B1::21.Sending and receiving, Destination B1&2::B1::12.Friends and relations, Destination B1&2::B1::27.Working and earning, Destination B1&2::B1::18.Inventions and discoveries, Destination B1&2::B1::33.Creating and building, Destination B1&2::B1::15.Buying and selling, Destination B1&2::B1::03.Fun and games, Destination B1&2::B1::42.Problems and solutions, Destination B1&2::B1::24.People and daily life
+[21:38:48]    - iKnown! Destination: Destination B1&2::B1::39.Laughing and crying, Destination B1&2::B1::36.Nature and the universe, Destination B1&2::B1::30.Body and lifestyle, Destination B1&2::B1::09.Coming and going, Destination B1&2::B1::06.Learning and doing, Destination B1&2::B1::21.Sending and receiving, Destination B1&2::B1::12.Friends and relations, Destination B1&2::B1::27.Working and earning, Destination B1&2::B1::18.Inventions and discoveries, Destination B1&2::B1::33.Creating and building, Destination B1&2::B1::15.Buying and selling, Destination B1&2::B1::03.Fun and games, Destination B1&2::B1::42.Problems and solutions, Destination B1&2::B1::24.People and daily life
+[21:38:48]    - Phrase: Destination B1&2::B1::Destination_B1::Unit_12, Destination B1&2::B1::Destination_B1::Unit_39, Destination B1&2::B1::Destination_B1::Unit_33, Destination B1&2::B1::Destination_B1::Unit_36, Destination B1&2::B1::Destination_B1::Unit_15, Destination B1&2::B1::Destination_B1::Unit_27, Destination B1&2::B1::Destination_B1::Unit_42, Destination B1&2::B1::Destination_B1::Unit_06, Destination B1&2::B1::Destination_B1::Unit_09, Destination B1&2::B1::Destination_B1::Unit_24, Destination B1&2::B1::Destination_B1::Unit_03, Destination B1&2::B1::Destination_B1::Unit_30, Destination B1&2::B1::Destination_B1::Unit_18, Destination B1&2::B1::Destination_B1::Unit_21
+[21:39:00] [LOAD] Loading settings for deck: Kanji::Kanji_N5 (ID=1725878862948)
+[21:39:00] [LOAD] Dùng model từ subdeck: Kanji::Kanji_N5::Kanji_N5_Bài 11
+[21:39:00] [LOAD] Deck Kanji::Kanji_N5 settings: {'enabled': True, 'target_field': 'Kanji', 'selected_prompt': 'memory_tips'}

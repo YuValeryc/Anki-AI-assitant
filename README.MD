@@ -31,8 +31,8 @@ Supports **per-deck prompt customization**, **multi-note-type handling**, and **
 
 You can install this add-on directly from **AnkiWeb**:
 
-**Add-on Code:** `.....`  
-**AnkiWeb Page:** [https://ankiweb.net/shared/info/..](https://ankiweb.net/shared/info/...)
+**Add-on Code:** `1698042138`  
+**AnkiWeb Page:** [https://ankiweb.net/shared/info/1698042138](https://ankiweb.net/shared/info/1698042138)
 
 Alternatively, you can install it manually by cloning or downloading this repository into your Anki add-ons directory.
 After installation:

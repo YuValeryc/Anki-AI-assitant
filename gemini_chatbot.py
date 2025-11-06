@@ -104,6 +104,7 @@ class GeminiChatBot:
 
         try:
             user_config = mw.addonManager.getConfig(__name__) or {}
+            self.debug.log(f"User config loaded: {user_config}")
             # Deep merge
             config = default_config.copy()
             config.update(user_config)
@@ -346,41 +347,21 @@ class GeminiChatBot:
             # Initialize chat_window if it doesn't exist
             if self.chat_window is None:
                 self.chat_window = ChatWindow(self)
-
+                # Inject/show the chat UI
             self.chat_window.inject_ui()
-
             # ====== TẠO PROMPT TỰ ĐỘNG ======
             deck_id = str(self.current_card.did)
             deck_settings = self.config["deck_settings"].get(deck_id, {})
             self.debug.log(f"Deck settings for chat window: {deck_settings}")
-
             target_field = deck_settings.get("target_field")
-            self.debug.log(f"Target field: {target_field}")
-
-            # ✅ Lấy content của field
-            card_content = self.get_field_text(self.current_card, target_field)
-            self.debug.log(f"Field value: {card_content}")
-
-            # ✅ Lấy prompt KEY trước
-            prompt_key = deck_settings.get("selected_prompt") \
-                        or self.config.get("selected_prompt")
-
-            self.debug.log(f"Prompt key selected: {prompt_key}")
-
-            # ✅ Lookup từ custom_prompts
-            prompt_template = self.config["custom_prompts"].get(prompt_key)
-
-            # Nếu prompt không nằm trong custom_prompt → dùng default
-            if not prompt_template:
-                prompt_template = "Giải thích về: {text}"
-
-            self.debug.log(f"Resolved prompt template: {prompt_template}")
-
-            # ✅ Tạo auto prompt
-            auto_prompt = prompt_template.replace("{text}", card_content)
+            self.debug.log(f"Current card ID: {self.current_card.id}")
+            self.debug.log(f"Target field for auto prompt: {target_field}")
+            selected_prompt = deck_settings.get("selected_prompt", "Giải thích về: {text}")
+            self.debug.log(f"Selected prompt template: {selected_prompt}")
+            card_content = self.get_field_text(self.current_card, target_field)  
+            auto_prompt = selected_prompt.replace("{text}", card_content)
             self.debug.log(f"Auto prompt generated: {auto_prompt}")
-
-            # ✅ Đưa sẵn vào ô input
+            # ====== ĐẶT SẴN PROMPT VÀO INPUT ======
             self.chat_window.pre_fill_input(auto_prompt)
             self.debug.log("Chat window injected/shown successfully")
 
@@ -453,6 +434,8 @@ class GeminiChatBot:
     def show_config_dialog(self):
         """Show configuration dialog"""
         try:
+            self.config = self.load_config()  # Reload config before showing dialog
+            self.debug.log(f"Current config before dialog: {self.config}")
             dialog = ConfigDialog(self.config, self)
             if dialog.exec():
                 self.config = dialog.get_config()

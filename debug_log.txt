@@ -1121,3 +1121,1502 @@ Front: be popular with...
 [16:09:26] Pre-filling input with text: Từ đồng nghĩa/trái nghĩa của: be popular with...
 [16:09:26] Chat window injected/shown successfully
 [16:09:26] Bridge command received: gemini_chat_open
+[16:10:28] [LOAD] Deck 1 settings: {}
+[16:10:31] [LOAD] Deck 1726415621835 settings: {}
+[16:10:33] [LOAD] Deck 1728746768124 settings: {}
+[16:10:45] [LOAD] Deck 1728747706504 settings: {}
+[16:10:50] [LOAD] Deck 1728748419364 settings: {}
+[16:10:57] [LOAD] Deck 1726415621839 settings: {}
+[16:12:20] Cleaned up injected chat UI elements.
+[16:12:20] Cleanup completed
+[16:12:34] Initializing GeminiChatBot...
+[16:12:34] Configuration loaded successfully
+[16:12:34] Menu setup completed
+[16:12:34] PyCmd handlers registered
+[16:12:34] Registered 4 hooks
+[16:12:34] GeminiChatBot initialized successfully
+[16:12:34] State change: startup → deckBrowser
+[16:12:44] PyCmd received: open:1728745194596
+[16:12:44] State change: deckBrowser → overview
+[16:12:45] PyCmd received: study
+[16:12:45] State change: overview → review
+[16:12:45] === on_show_question TRIGGERED ===
+[16:12:45] Card ID: 1728745705503
+Deck ID: 1728745194596
+Note ID: 1728745705503
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: be popular with...
+[16:12:45] Cleaned up injected chat UI elements.
+[16:12:45] Showing button for: be popular with...
+[16:12:45] ChatBot button injected successfully
+[16:12:45] PyCmd received: updateToolbar
+[16:12:48] PyCmd received: gemini_chat_open
+[16:12:48] Opening chat window...
+[16:12:48] Initializing injected ChatWindow...
+[16:12:48] PyCmd handlers registered
+[16:12:48] Deck settings for chat window: {'enabled': True, 'selected_prompt': 'synonyms_antonyms', 'target_field': 'Phrase'}
+[16:12:48] Target field: Phrase
+[16:12:48] Field value: be popular with
+[16:12:48] Prompt key selected: synonyms_antonyms
+[16:12:48] Resolved prompt template: Từ đồng nghĩa/trái nghĩa của: {text}
+[16:12:48] Auto prompt generated: Từ đồng nghĩa/trái nghĩa của: be popular with
+[16:12:48] Pre-filling input with text: Từ đồng nghĩa/trái nghĩa của: be popular with...
+[16:12:48] Chat window injected/shown successfully
+[16:12:48] Bridge command received: gemini_chat_open
+[16:13:00] [LOAD] Deck 1 settings: {}
+[16:13:03] [LOAD] Deck 1728745194596 settings: {'enabled': True, 'selected_prompt': 'synonyms_antonyms', 'target_field': 'Phrase'}
+[16:14:58] Cleaned up injected chat UI elements.
+[16:14:58] Cleanup completed
+[16:15:10] Initializing GeminiChatBot...
+[16:15:10] Configuration loaded successfully
+[16:15:10] Menu setup completed
+[16:15:10] PyCmd handlers registered
+[16:15:10] Registered 4 hooks
+[16:15:10] GeminiChatBot initialized successfully
+[16:15:10] State change: startup → deckBrowser
+[16:16:00] PyCmd received: open:1728745194596
+[16:16:00] State change: deckBrowser → overview
+[16:16:01] PyCmd received: study
+[16:16:01] State change: overview → review
+[16:16:01] === on_show_question TRIGGERED ===
+[16:16:01] Card ID: 1728745705503
+Deck ID: 1728745194596
+Note ID: 1728745705503
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: be popular with...
+[16:16:01] Cleaned up injected chat UI elements.
+[16:16:01] Showing button for: be popular with...
+[16:16:01] ChatBot button injected successfully
+[16:16:02] PyCmd received: updateToolbar
+[16:16:03] PyCmd received: gemini_chat_open
+[16:16:03] Opening chat window...
+[16:16:03] Initializing injected ChatWindow...
+[16:16:03] PyCmd handlers registered
+[16:16:03] Deck settings for chat window: {'enabled': True, 'selected_prompt': 'synonyms_antonyms', 'target_field': 'Phrase'}
+[16:16:03] Target field: Phrase
+[16:16:03] Field value: be popular with
+[16:16:03] Prompt key selected: synonyms_antonyms
+[16:16:03] Resolved prompt template: Từ đồng nghĩa/trái nghĩa của: {text}
+[16:16:03] Auto prompt generated: Từ đồng nghĩa/trái nghĩa của: be popular with
+[16:16:03] Attempting to pre-fill with: Từ đồng nghĩa/trái nghĩa của: be popular with...
+[16:16:03] Chat window injected/shown successfully
+[16:16:03] Bridge command received: gemini_chat_open
+[16:16:03] Prefilled input successfully.
+[16:16:04] PyCmd received: gemini_chat_send_message
+[16:16:04] Bridge command received: gemini_chat_send_message
+[16:16:04] Calling Gemini API...
+[16:16:09] Gemini API call successful
+[16:16:55] PyCmd received: gemini_chat_close
+[16:16:55] Bridge command received: gemini_chat_close
+[16:16:56] PyCmd received: gemini_chat_open
+[16:16:56] Opening chat window...
+[16:16:56] Deck settings for chat window: {'enabled': True, 'selected_prompt': 'synonyms_antonyms', 'target_field': 'Phrase'}
+[16:16:56] Target field: Phrase
+[16:16:56] Field value: be popular with
+[16:16:56] Prompt key selected: synonyms_antonyms
+[16:16:56] Resolved prompt template: Từ đồng nghĩa/trái nghĩa của: {text}
+[16:16:56] Auto prompt generated: Từ đồng nghĩa/trái nghĩa của: be popular with
+[16:16:56] Attempting to pre-fill with: Từ đồng nghĩa/trái nghĩa của: be popular with...
+[16:16:56] Chat window injected/shown successfully
+[16:16:56] Bridge command received: gemini_chat_open
+[16:16:56] Skipped prefill (already asked).
+[16:17:00] PyCmd received: gemini_chat_close
+[16:17:00] Bridge command received: gemini_chat_close
+[16:17:14] PyCmd received: updateToolbar
+[16:17:14] Bridge command received: updateToolbar
+[16:17:19] === on_show_question TRIGGERED ===
+[16:17:19] Card ID: 1728745705492
+Deck ID: 1728745194596
+Note ID: 1728745705489
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: for a long time...
+[16:17:19] Cleaned up injected chat UI elements.
+[16:17:19] Showing button for: for a long time...
+[16:17:19] ChatBot button injected successfully
+[16:17:19] PyCmd received: updateToolbar
+[16:17:19] Bridge command received: updateToolbar
+[16:17:21] PyCmd received: gemini_chat_open
+[16:17:21] Opening chat window...
+[16:17:21] Deck settings for chat window: {'enabled': True, 'selected_prompt': 'synonyms_antonyms', 'target_field': 'Phrase'}
+[16:17:21] Target field: Phrase
+[16:17:21] Field value: for a long time
+[16:17:21] Prompt key selected: synonyms_antonyms
+[16:17:21] Resolved prompt template: Từ đồng nghĩa/trái nghĩa của: {text}
+[16:17:21] Auto prompt generated: Từ đồng nghĩa/trái nghĩa của: for a long time
+[16:17:21] Attempting to pre-fill with: Từ đồng nghĩa/trái nghĩa của: for a long time...
+[16:17:21] Chat window injected/shown successfully
+[16:17:21] Bridge command received: gemini_chat_open
+[16:17:21] Prefilled input successfully.
+[16:17:22] PyCmd received: gemini_chat_close
+[16:17:22] Bridge command received: gemini_chat_close
+[16:17:36] [LOAD] Deck 1 settings: {}
+[16:23:06] PyCmd received: gemini_chat_open
+[16:23:06] Opening chat window...
+[16:23:06] Deck settings for chat window: {'enabled': True, 'selected_prompt': 'synonyms_antonyms', 'target_field': 'Phrase'}
+[16:23:06] Target field: Phrase
+[16:23:06] Field value: for a long time
+[16:23:06] Prompt key selected: synonyms_antonyms
+[16:23:06] Resolved prompt template: Từ đồng nghĩa/trái nghĩa của: {text}
+[16:23:06] Auto prompt generated: Từ đồng nghĩa/trái nghĩa của: for a long time
+[16:23:06] Attempting to pre-fill with: Từ đồng nghĩa/trái nghĩa của: for a long time...
+[16:23:06] Chat window injected/shown successfully
+[16:23:06] Bridge command received: gemini_chat_open
+[16:23:06] Prefilled input successfully.
+[16:23:07] PyCmd received: gemini_chat_send_message
+[16:23:07] Bridge command received: gemini_chat_send_message
+[16:23:07] Calling Gemini API...
+[16:23:10] Gemini API call successful
+[16:28:32] Cleaned up injected chat UI elements.
+[16:28:32] Cleanup completed
+[16:28:45] Initializing GeminiChatBot...
+[16:28:45] Configuration loaded successfully
+[16:28:45] Menu setup completed
+[16:28:45] PyCmd handlers registered
+[16:28:45] Registered 4 hooks
+[16:28:45] GeminiChatBot initialized successfully
+[16:28:45] State change: startup → deckBrowser
+[16:28:54] PyCmd received: open:1728745194596
+[16:28:54] State change: deckBrowser → overview
+[16:28:55] PyCmd received: study
+[16:28:55] State change: overview → review
+[16:28:55] === on_show_question TRIGGERED ===
+[16:28:55] Card ID: 1728745705492
+Deck ID: 1728745194596
+Note ID: 1728745705489
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: for a long time...
+[16:28:55] Cleaned up injected chat UI elements.
+[16:28:55] Showing button for: for a long time...
+[16:28:55] ChatBot button injected successfully
+[16:28:55] PyCmd received: updateToolbar
+[16:28:58] PyCmd received: gemini_chat_open
+[16:28:58] Opening chat window...
+[16:29:14] Configuration saved
+[16:29:37] Configuration saved
+[16:29:42] Testing API key...
+[16:29:42] Calling Gemini API...
+[16:29:43] Gemini API call successful
+[16:29:44] API test: SUCCESS
+[16:29:45] PyCmd received: gemini_chat_open
+[16:29:45] Opening chat window...
+[16:29:45] Initializing injected ChatWindow...
+[16:29:45] PyCmd handlers registered
+[16:29:45] Deck settings for chat window: {}
+[16:29:45] Target field: None
+[16:29:51] Error opening chat window: 'NoneType' object has no attribute 'lower'
+[16:29:51] Bridge command received: gemini_chat_open
+[16:29:55] PyCmd received: gemini_chat_close
+[16:29:55] Bridge command received: gemini_chat_close
+[16:29:59] [LOAD] Deck 1 settings: {}
+[16:30:07] [LOAD] Deck 1728745194596 settings: {}
+[16:30:13] Configuration saved
+[16:30:14] [SAVE] 1728745194596 = {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'default_simple'}
+[16:30:18] PyCmd received: gemini_chat_open
+[16:30:18] Opening chat window...
+[16:30:18] Deck settings for chat window: {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'default_simple'}
+[16:30:18] Target field: Phrase
+[16:30:18] Field value: for a long time
+[16:30:18] Prompt key selected: default_simple
+[16:30:18] Resolved prompt template: Giải thích về: {text}
+[16:30:18] Auto prompt generated: Giải thích về: for a long time
+[16:30:18] Attempting to pre-fill with: Giải thích về: for a long time...
+[16:30:18] Chat window injected/shown successfully
+[16:30:18] Bridge command received: gemini_chat_open
+[16:30:18] Prefilled input successfully.
+[16:30:24] PyCmd received: gemini_chat_close
+[16:30:24] Bridge command received: gemini_chat_close
+[16:30:31] [LOAD] Deck 1 settings: {}
+[16:30:35] [LOAD] Deck 1728745194596 settings: {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'default_simple'}
+[16:30:49] Configuration saved
+[16:30:51] [SAVE] 1728745194596 = {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'synonyms_antonyms'}
+[16:30:58] PyCmd received: gemini_chat_open
+[16:30:58] Opening chat window...
+[16:30:58] Deck settings for chat window: {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'synonyms_antonyms'}
+[16:30:58] Target field: Phrase
+[16:30:58] Field value: for a long time
+[16:30:58] Prompt key selected: synonyms_antonyms
+[16:30:58] Resolved prompt template: Từ đồng nghĩa/trái nghĩa của: {text}
+[16:30:58] Auto prompt generated: Từ đồng nghĩa/trái nghĩa của: for a long time
+[16:30:58] Attempting to pre-fill with: Từ đồng nghĩa/trái nghĩa của: for a long time...
+[16:30:58] Chat window injected/shown successfully
+[16:30:58] Bridge command received: gemini_chat_open
+[16:30:58] Prefilled input successfully.
+[16:31:00] PyCmd received: gemini_chat_send_message
+[16:31:00] Bridge command received: gemini_chat_send_message
+[16:31:00] Calling Gemini API...
+[16:31:04] Gemini API call successful
+[16:31:19] PyCmd received: gemini_chat_close
+[16:31:19] Bridge command received: gemini_chat_close
+[16:31:21] PyCmd received: updateToolbar
+[16:31:21] Bridge command received: updateToolbar
+[16:31:23] === on_show_question TRIGGERED ===
+[16:31:23] Card ID: 1728745705497
+Deck ID: 1728745194596
+Note ID: 1728745705497
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: on stage...
+[16:31:23] Cleaned up injected chat UI elements.
+[16:31:23] Error in on_show_question: 'target_field'
+[16:31:23] PyCmd received: updateToolbar
+[16:31:23] Bridge command received: updateToolbar
+[16:31:25] PyCmd received: updateToolbar
+[16:31:25] Bridge command received: updateToolbar
+[16:31:27] Cleaned up injected chat UI elements.
+[16:31:27] Review ended - cleanup completed
+[16:31:27] State change: review → deckBrowser
+[16:31:27] Leaving review → cleaning UI
+[16:31:27] Cleaned up injected chat UI elements.
+[16:31:27] Bridge command received: decks
+[16:31:30] PyCmd received: open:1728745194596
+[16:31:30] Bridge command received: open:1728745194596
+[16:31:30] State change: deckBrowser → overview
+[16:31:30] PyCmd received: study
+[16:31:30] Bridge command received: study
+[16:31:30] State change: overview → review
+[16:31:30] === on_show_question TRIGGERED ===
+[16:31:30] Card ID: 1728745705497
+Deck ID: 1728745194596
+Note ID: 1728745705497
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: on stage...
+[16:31:30] Cleaned up injected chat UI elements.
+[16:31:30] Error in on_show_question: 'target_field'
+[16:31:30] PyCmd received: updateToolbar
+[16:31:30] Bridge command received: updateToolbar
+[16:31:53] Cleaned up injected chat UI elements.
+[16:31:53] Review ended - cleanup completed
+[16:31:53] State change: review → deckBrowser
+[16:31:53] Leaving review → cleaning UI
+[16:31:53] Cleaned up injected chat UI elements.
+[16:31:54] Bridge command received: decks
+[16:31:56] PyCmd received: open:1726415621835
+[16:31:56] Bridge command received: open:1726415621835
+[16:31:56] State change: deckBrowser → overview
+[16:31:57] PyCmd received: study
+[16:31:57] Bridge command received: study
+[16:31:57] State change: overview → review
+[16:31:57] === on_show_question TRIGGERED ===
+[16:31:57] Card ID: 1649256485391
+Deck ID: 1726415621835
+Note ID: 1649001543979
+Fields: ['ID', 'Word', 'Synonyms', 'Antonyms', 'Img1', 'PoS1', 'Def1', 'VNDef1', 'Ex1', 'SoundEx1', 'Phones1', 'VNTrans1', 'Img2', 'PoS2', 'Def2', 'VNDef2', 'Ex2', 'SoundEx2', 'Phones2', 'VNTrans2', 'Img3', 'PoS3', 'Def3', 'VNDef3', 'Ex3', 'SoundEx3', 'Phones3', 'VNTrans3', 'Img4', 'PoS4', 'Def4', 'VNDef4', 'Ex4', 'SoundEx4', 'Phones4', 'VNTrans4', 'Img5', 'PoS5', 'Def5', 'VNDef5', 'Ex5', 'SoundEx5', 'Phones5', 'VNTrans5', 'Img6', 'PoS6', 'Def6', 'VNDef6', 'Ex6', 'SoundEx6', 'Phones6', 'VNTrans6', 'Sound', 'Hint', 'Phonetics', 'Collocations', 'Formations', 'Unit', 'Topic', 'LacViet']
+Front: B1_VOCAB_36_338...
+[16:31:57] Cleaned up injected chat UI elements.
+[16:31:57] Error in on_show_question: 'target_field'
+[16:31:57] PyCmd received: updateToolbar
+[16:31:57] Bridge command received: updateToolbar
+[16:32:00] Cleaned up injected chat UI elements.
+[16:32:00] Cleanup completed
+[16:33:29] Initializing GeminiChatBot...
+[16:33:29] Configuration loaded successfully
+[16:33:29] Menu setup completed
+[16:33:29] PyCmd handlers registered
+[16:33:29] Registered 4 hooks
+[16:33:29] GeminiChatBot initialized successfully
+[16:33:29] State change: startup → deckBrowser
+[16:33:40] PyCmd received: open:1726415621835
+[16:33:40] State change: deckBrowser → overview
+[16:33:40] PyCmd received: study
+[16:33:40] State change: overview → review
+[16:33:40] === on_show_question TRIGGERED ===
+[16:33:40] Card ID: 1649256485391
+Deck ID: 1726415621835
+Note ID: 1649001543979
+Fields: ['ID', 'Word', 'Synonyms', 'Antonyms', 'Img1', 'PoS1', 'Def1', 'VNDef1', 'Ex1', 'SoundEx1', 'Phones1', 'VNTrans1', 'Img2', 'PoS2', 'Def2', 'VNDef2', 'Ex2', 'SoundEx2', 'Phones2', 'VNTrans2', 'Img3', 'PoS3', 'Def3', 'VNDef3', 'Ex3', 'SoundEx3', 'Phones3', 'VNTrans3', 'Img4', 'PoS4', 'Def4', 'VNDef4', 'Ex4', 'SoundEx4', 'Phones4', 'VNTrans4', 'Img5', 'PoS5', 'Def5', 'VNDef5', 'Ex5', 'SoundEx5', 'Phones5', 'VNTrans5', 'Img6', 'PoS6', 'Def6', 'VNDef6', 'Ex6', 'SoundEx6', 'Phones6', 'VNTrans6', 'Sound', 'Hint', 'Phonetics', 'Collocations', 'Formations', 'Unit', 'Topic', 'LacViet']
+Front: B1_VOCAB_36_338...
+[16:33:40] Cleaned up injected chat UI elements.
+[16:33:40] Showing button for: B1_VOCAB_36_338...
+[16:33:40] ChatBot button injected successfully
+[16:33:41] PyCmd received: updateToolbar
+[16:33:42] PyCmd received: gemini_chat_open
+[16:33:42] Opening chat window...
+[16:33:52] Configuration saved
+[16:33:57] Cleaned up injected chat UI elements.
+[16:33:57] Review ended - cleanup completed
+[16:33:57] State change: review → deckBrowser
+[16:33:57] Leaving review → cleaning UI
+[16:33:57] Cleaned up injected chat UI elements.
+[16:34:01] PyCmd received: open:1728746768124
+[16:34:01] State change: deckBrowser → overview
+[16:34:02] PyCmd received: study
+[16:34:02] State change: overview → review
+[16:34:02] === on_show_question TRIGGERED ===
+[16:34:02] Card ID: 1728746796687
+Deck ID: 1728746768124
+Note ID: 1728746796686
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: on the coast...
+[16:34:02] Cleaned up injected chat UI elements.
+[16:34:02] Error in on_show_question: 'target_field'
+[16:34:02] PyCmd received: updateToolbar
+[16:34:04] Cleaned up injected chat UI elements.
+[16:34:04] Review ended - cleanup completed
+[16:34:04] State change: review → deckBrowser
+[16:34:04] Leaving review → cleaning UI
+[16:34:04] Cleaned up injected chat UI elements.
+[16:34:11] PyCmd received: open:1728745176996
+[16:34:11] State change: deckBrowser → overview
+[16:34:16] [LOAD] Deck 1 settings: {}
+[16:34:22] [LOAD] Deck 1728745176996 settings: {}
+[16:34:27] Configuration saved
+[16:34:29] [SAVE] 1728745176996 = {'enabled': True, 'target_field': 'Không tìm thấy trường (deck rỗng hoặc chứa nhiều loại note khác nhau)', 'selected_prompt': 'default_simple'}
+[16:34:31] PyCmd received: study
+[16:34:31] State change: overview → review
+[16:34:31] === on_show_question TRIGGERED ===
+[16:34:31] Card ID: 1728748437507
+Deck ID: 1728748419364
+Note ID: 1728748437506
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: forgive sb for...
+[16:34:31] Cleaned up injected chat UI elements.
+[16:34:31] Error in on_show_question: 'target_field'
+[16:34:31] PyCmd received: updateToolbar
+[16:34:34] Cleaned up injected chat UI elements.
+[16:34:34] Review ended - cleanup completed
+[16:34:34] State change: review → deckBrowser
+[16:34:34] Leaving review → cleaning UI
+[16:34:34] Cleaned up injected chat UI elements.
+[16:34:34] PyCmd received: decks
+[16:34:39] PyCmd received: open:1728745194596
+[16:34:39] State change: deckBrowser → overview
+[16:34:39] PyCmd received: study
+[16:34:39] State change: overview → review
+[16:34:39] === on_show_question TRIGGERED ===
+[16:34:39] Card ID: 1728745705497
+Deck ID: 1728745194596
+Note ID: 1728745705497
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: on stage...
+[16:34:39] Cleaned up injected chat UI elements.
+[16:34:39] Error in on_show_question: 'target_field'
+[16:34:40] PyCmd received: updateToolbar
+[16:36:26] Cleaned up injected chat UI elements.
+[16:36:26] Cleanup completed
+[16:36:39] Initializing GeminiChatBot...
+[16:36:39] Configuration loaded successfully
+[16:36:39] Menu setup completed
+[16:36:39] PyCmd handlers registered
+[16:36:39] Registered 4 hooks
+[16:36:39] GeminiChatBot initialized successfully
+[16:36:39] State change: startup → deckBrowser
+[16:36:48] PyCmd received: open:1728745194596
+[16:36:48] State change: deckBrowser → overview
+[16:36:48] PyCmd received: study
+[16:36:48] State change: overview → review
+[16:36:49] === on_show_question TRIGGERED ===
+[16:36:49] Card ID: 1728745705497
+Deck ID: 1728745194596
+Note ID: 1728745705497
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: on stage...
+[16:36:49] Cleaned up injected chat UI elements.
+[16:36:49] Showing button for: on stage...
+[16:36:49] ChatBot button injected successfully
+[16:36:49] PyCmd received: updateToolbar
+[16:36:51] PyCmd received: gemini_chat_open
+[16:36:51] Opening chat window...
+[16:37:02] Configuration saved
+[16:37:08] Testing API key...
+[16:37:08] Calling Gemini API...
+[16:37:09] Gemini API call successful
+[16:37:10] API test: SUCCESS
+[16:37:11] PyCmd received: gemini_chat_open
+[16:37:11] Opening chat window...
+[16:37:11] Initializing injected ChatWindow...
+[16:37:11] PyCmd handlers registered
+[16:37:11] Deck settings for chat window: {}
+[16:37:11] Target field: None
+[16:37:16] Error opening chat window: 'NoneType' object has no attribute 'lower'
+[16:37:16] Bridge command received: gemini_chat_open
+[16:37:23] [LOAD] Deck 1 settings: {}
+[16:37:26] [LOAD] Deck 1728745176996 settings: {}
+[16:37:32] Configuration saved
+[16:37:33] [SAVE] 1728745176996 = {'enabled': True, 'target_field': 'Không tìm thấy trường (deck rỗng hoặc chứa nhiều loại note khác)', 'selected_prompt': 'explain_simple'}
+[16:37:36] PyCmd received: gemini_chat_close
+[16:37:36] Bridge command received: gemini_chat_close
+[16:37:37] PyCmd received: gemini_chat_open
+[16:37:37] Opening chat window...
+[16:37:37] Deck settings for chat window: {}
+[16:37:37] Target field: None
+[16:38:26] Error opening chat window: 'NoneType' object has no attribute 'lower'
+[16:38:26] Bridge command received: gemini_chat_open
+[16:38:28] PyCmd received: gemini_chat_close
+[16:38:28] Bridge command received: gemini_chat_close
+[16:38:29] Review ended - cleanup completed
+[16:38:29] State change: review → deckBrowser
+[16:38:29] Leaving review → cleaning UI
+[16:38:29] Cleaned up injected chat UI elements.
+[16:38:29] Bridge command received: decks
+[16:38:32] PyCmd received: open:1728745194596
+[16:38:32] Bridge command received: open:1728745194596
+[16:38:32] State change: deckBrowser → overview
+[16:38:33] PyCmd received: study
+[16:38:33] Bridge command received: study
+[16:38:33] State change: overview → review
+[16:38:33] === on_show_question TRIGGERED ===
+[16:38:33] Card ID: 1728745705497
+Deck ID: 1728745194596
+Note ID: 1728745705497
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: on stage...
+[16:38:33] Cleaned up injected chat UI elements.
+[16:38:33] Error in on_show_question: 'target_field'
+[16:38:33] PyCmd received: updateToolbar
+[16:38:33] Bridge command received: updateToolbar
+[16:38:45] Review ended - cleanup completed
+[16:38:45] State change: review → deckBrowser
+[16:38:45] Leaving review → cleaning UI
+[16:38:45] Cleaned up injected chat UI elements.
+[16:38:45] Bridge command received: decks
+[16:38:48] PyCmd received: open:1728746768124
+[16:38:48] Bridge command received: open:1728746768124
+[16:38:48] State change: deckBrowser → overview
+[16:38:48] PyCmd received: study
+[16:38:48] Bridge command received: study
+[16:38:48] State change: overview → review
+[16:38:48] === on_show_question TRIGGERED ===
+[16:38:48] Card ID: 1728746796687
+Deck ID: 1728746768124
+Note ID: 1728746796686
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: on the coast...
+[16:38:48] Cleaned up injected chat UI elements.
+[16:38:48] Error in on_show_question: 'target_field'
+[16:38:49] PyCmd received: updateToolbar
+[16:38:49] Bridge command received: updateToolbar
+[16:38:51] Review ended - cleanup completed
+[16:38:51] State change: review → deckBrowser
+[16:38:51] Leaving review → cleaning UI
+[16:38:51] Cleaned up injected chat UI elements.
+[16:38:51] Bridge command received: decks
+[16:39:02] Cleaned up injected chat UI elements.
+[16:39:02] Cleanup completed
+[16:39:29] Initializing GeminiChatBot...
+[16:39:29] Configuration loaded successfully
+[16:39:29] Menu setup completed
+[16:39:29] PyCmd handlers registered
+[16:39:29] Registered 4 hooks
+[16:39:29] GeminiChatBot initialized successfully
+[16:39:29] State change: startup → deckBrowser
+[16:39:36] PyCmd received: open:1728745194596
+[16:39:36] State change: deckBrowser → overview
+[16:39:36] PyCmd received: study
+[16:39:36] State change: overview → review
+[16:39:36] === on_show_question TRIGGERED ===
+[16:39:36] Card ID: 1728745705497
+Deck ID: 1728745194596
+Note ID: 1728745705497
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: on stage...
+[16:39:36] Cleaned up injected chat UI elements.
+[16:39:36] Showing button for: on stage...
+[16:39:36] ChatBot button injected successfully
+[16:39:37] PyCmd received: updateToolbar
+[16:39:38] PyCmd received: gemini_chat_open
+[16:39:38] Opening chat window...
+[16:41:56] Cleaned up injected chat UI elements.
+[16:41:56] Cleanup completed
+[16:42:08] Initializing GeminiChatBot...
+[16:42:08] Configuration loaded successfully
+[16:42:08] Menu setup completed
+[16:42:08] PyCmd handlers registered
+[16:42:08] Registered 4 hooks
+[16:42:08] GeminiChatBot initialized successfully
+[16:42:08] State change: startup → deckBrowser
+[16:42:22] PyCmd received: open:1728745194596
+[16:42:22] State change: deckBrowser → overview
+[16:42:23] PyCmd received: study
+[16:42:23] State change: overview → review
+[16:42:23] === on_show_question TRIGGERED ===
+[16:42:23] Card ID: 1728745705497
+Deck ID: 1728745194596
+Note ID: 1728745705497
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: on stage...
+[16:42:23] Cleaned up injected chat UI elements.
+[16:42:23] Showing button for: on stage...
+[16:42:23] ChatBot button injected successfully
+[16:42:23] PyCmd received: updateToolbar
+[16:42:25] PyCmd received: gemini_chat_open
+[16:42:25] Opening chat window...
+[16:43:43] PyCmd received: gemini_chat_open
+[16:43:43] Opening chat window...
+[16:45:11] Cleaned up injected chat UI elements.
+[16:45:11] Cleanup completed
+[16:45:23] Initializing GeminiChatBot...
+[16:45:23] Configuration loaded successfully
+[16:45:23] Menu setup completed
+[16:45:23] PyCmd handlers registered
+[16:45:23] Registered 4 hooks
+[16:45:23] GeminiChatBot initialized successfully
+[16:45:23] State change: startup → deckBrowser
+[16:45:58] PyCmd received: open:1728745194596
+[16:45:58] State change: deckBrowser → overview
+[16:45:59] PyCmd received: study
+[16:45:59] State change: overview → review
+[16:45:59] === on_show_question TRIGGERED ===
+[16:45:59] Card ID: 1728745705497
+Deck ID: 1728745194596
+Note ID: 1728745705497
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: on stage...
+[16:45:59] Cleaned up injected chat UI elements.
+[16:45:59] Showing button for: on stage...
+[16:45:59] ChatBot button injected successfully
+[16:45:59] PyCmd received: updateToolbar
+[16:46:01] PyCmd received: gemini_chat_open
+[16:46:01] Opening chat window...
+[16:46:01] Current config in open_chat_window: {'enabled': True, 'api_key': '', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'target_field': 'Front', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {}}
+[16:50:35] Configuration saved
+[16:50:38] PyCmd received: gemini_chat_open
+[16:50:38] Opening chat window...
+[16:50:38] Current config in open_chat_window: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {}}
+[16:50:38] Initializing injected ChatWindow...
+[16:50:38] PyCmd handlers registered
+[16:50:38] Deck settings for chat window: {}
+[16:50:38] Target field: None
+[16:50:43] Error opening chat window: 'NoneType' object has no attribute 'lower'
+[16:50:43] Bridge command received: gemini_chat_open
+[16:50:46] PyCmd received: gemini_chat_close
+[16:50:46] Bridge command received: gemini_chat_close
+[16:51:38] Cleaned up injected chat UI elements.
+[16:51:38] Cleanup completed
+[16:51:51] Initializing GeminiChatBot...
+[16:51:51] Configuration loaded successfully
+[16:51:51] Menu setup completed
+[16:51:51] PyCmd handlers registered
+[16:51:51] Registered 4 hooks
+[16:51:51] GeminiChatBot initialized successfully
+[16:51:51] State change: startup → deckBrowser
+[16:52:27] Cleaned up injected chat UI elements.
+[16:52:27] Cleanup completed
+[16:52:38] Initializing GeminiChatBot...
+[16:52:38] Configuration loaded successfully
+[16:52:38] Menu setup completed
+[16:52:38] PyCmd handlers registered
+[16:52:38] Registered 4 hooks
+[16:52:38] GeminiChatBot initialized successfully
+[16:52:38] State change: startup → deckBrowser
+[16:52:55] Configuration saved
+[16:53:00] PyCmd received: open:1728745194596
+[16:53:00] State change: deckBrowser → overview
+[16:53:00] PyCmd received: study
+[16:53:00] State change: overview → review
+[16:53:00] === on_show_question TRIGGERED ===
+[16:53:00] Card ID: 1728745705497
+Deck ID: 1728745194596
+Note ID: 1728745705497
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: on stage...
+[16:53:00] Cleaned up injected chat UI elements.
+[16:53:00] Error in on_show_question: 'target_field'
+[16:53:01] PyCmd received: updateToolbar
+[16:53:12] [LOAD] Deck 1 settings: {}
+[16:53:16] [LOAD] Deck 1728745194596 settings: {}
+[16:53:19] Configuration saved
+[16:53:20] [SAVE] 1728745194596 = {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'default_simple'}
+[16:53:22] Cleaned up injected chat UI elements.
+[16:53:22] Review ended - cleanup completed
+[16:53:22] State change: review → deckBrowser
+[16:53:22] Leaving review → cleaning UI
+[16:53:22] Cleaned up injected chat UI elements.
+[16:53:26] PyCmd received: open:1728745194596
+[16:53:26] State change: deckBrowser → overview
+[16:53:26] PyCmd received: study
+[16:53:26] State change: overview → review
+[16:53:26] === on_show_question TRIGGERED ===
+[16:53:26] Card ID: 1728745705497
+Deck ID: 1728745194596
+Note ID: 1728745705497
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: on stage...
+[16:53:26] Cleaned up injected chat UI elements.
+[16:53:26] Error in on_show_question: 'target_field'
+[16:53:26] PyCmd received: updateToolbar
+[16:53:29] Cleaned up injected chat UI elements.
+[16:53:29] Review ended - cleanup completed
+[16:53:29] State change: review → deckBrowser
+[16:53:29] Leaving review → cleaning UI
+[16:53:29] Cleaned up injected chat UI elements.
+[16:53:37] PyCmd received: open:1726415621824
+[16:53:37] State change: deckBrowser → overview
+[16:53:39] PyCmd received: study
+[16:53:39] State change: overview → review
+[16:53:39] === on_show_question TRIGGERED ===
+[16:53:39] Card ID: 1649256485499
+Deck ID: 1726415621824
+Note ID: 1649001544063
+Fields: ['ID', 'Word', 'Synonyms', 'Antonyms', 'Img1', 'PoS1', 'Def1', 'VNDef1', 'Ex1', 'SoundEx1', 'Phones1', 'VNTrans1', 'Img2', 'PoS2', 'Def2', 'VNDef2', 'Ex2', 'SoundEx2', 'Phones2', 'VNTrans2', 'Img3', 'PoS3', 'Def3', 'VNDef3', 'Ex3', 'SoundEx3', 'Phones3', 'VNTrans3', 'Img4', 'PoS4', 'Def4', 'VNDef4', 'Ex4', 'SoundEx4', 'Phones4', 'VNTrans4', 'Img5', 'PoS5', 'Def5', 'VNDef5', 'Ex5', 'SoundEx5', 'Phones5', 'VNTrans5', 'Img6', 'PoS6', 'Def6', 'VNDef6', 'Ex6', 'SoundEx6', 'Phones6', 'VNTrans6', 'Sound', 'Hint', 'Phonetics', 'Collocations', 'Formations', 'Unit', 'Topic', 'LacViet']
+Front: B2_VOCAB_02_001...
+[16:53:39] Cleaned up injected chat UI elements.
+[16:53:39] Error in on_show_question: 'target_field'
+[16:53:39] PyCmd received: updateToolbar
+[16:56:31] Cleaned up injected chat UI elements.
+[16:56:31] Cleanup completed
+[16:56:45] Initializing GeminiChatBot...
+[16:56:45] Configuration loaded successfully
+[16:56:45] Menu setup completed
+[16:56:45] PyCmd handlers registered
+[16:56:45] Registered 4 hooks
+[16:56:45] GeminiChatBot initialized successfully
+[16:56:45] State change: startup → deckBrowser
+[16:57:00] PyCmd received: open:1728745194596
+[16:57:00] State change: deckBrowser → overview
+[16:57:00] PyCmd received: study
+[16:57:00] State change: overview → review
+[16:57:00] === on_show_question TRIGGERED ===
+[16:57:00] Card ID: 1728745705497
+Deck ID: 1728745194596
+Note ID: 1728745705497
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: on stage...
+[16:57:00] Cleaned up injected chat UI elements.
+[16:57:00] Showing button for: on stage...
+[16:57:00] ChatBot button injected successfully
+[16:57:00] PyCmd received: updateToolbar
+[16:57:02] PyCmd received: gemini_chat_open
+[16:57:02] Opening chat window...
+[16:57:33] Configuration saved
+[16:57:37] Testing API key...
+[16:57:37] Calling Gemini API...
+[16:57:39] Gemini API call successful
+[16:57:41] API test: SUCCESS
+[16:57:43] PyCmd received: gemini_chat_open
+[16:57:43] Opening chat window...
+[16:57:43] Initializing injected ChatWindow...
+[16:57:43] PyCmd handlers registered
+[16:57:43] Deck settings for chat window: {}
+[16:57:43] Target field: None
+[16:57:52] Error opening chat window: 'NoneType' object has no attribute 'lower'
+[16:57:52] Bridge command received: gemini_chat_open
+[16:58:09] PyCmd received: gemini_chat_send_message
+[16:58:09] Bridge command received: gemini_chat_send_message
+[16:58:09] Calling Gemini API...
+[16:58:10] Gemini API call successful
+[16:58:20] Cleaned up injected chat UI elements.
+[16:58:20] Review ended - cleanup completed
+[16:58:20] State change: review → deckBrowser
+[16:58:20] Leaving review → cleaning UI
+[16:58:20] Cleaned up injected chat UI elements.
+[16:58:21] Bridge command received: decks
+[16:58:24] PyCmd received: open:1728745194596
+[16:58:24] Bridge command received: open:1728745194596
+[16:58:24] State change: deckBrowser → overview
+[16:58:25] PyCmd received: study
+[16:58:25] Bridge command received: study
+[16:58:25] State change: overview → review
+[16:58:25] === on_show_question TRIGGERED ===
+[16:58:25] Card ID: 1728745705497
+Deck ID: 1728745194596
+Note ID: 1728745705497
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: on stage...
+[16:58:25] Cleaned up injected chat UI elements.
+[16:58:25] Error in on_show_question: 'target_field'
+[16:58:25] PyCmd received: updateToolbar
+[16:58:25] Bridge command received: updateToolbar
+[16:58:34] Cleaned up injected chat UI elements.
+[16:58:34] Review ended - cleanup completed
+[16:58:34] State change: review → deckBrowser
+[16:58:34] Leaving review → cleaning UI
+[16:58:34] Cleaned up injected chat UI elements.
+[16:58:34] Bridge command received: decks
+[16:58:37] PyCmd received: open:1728746313787
+[16:58:37] Bridge command received: open:1728746313787
+[16:58:37] State change: deckBrowser → overview
+[16:58:38] PyCmd received: study
+[16:58:38] Bridge command received: study
+[16:58:38] State change: overview → review
+[16:58:38] === on_show_question TRIGGERED ===
+[16:58:38] Card ID: 1728746323927
+Deck ID: 1728746313787
+Note ID: 1728746323926
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: a question about...
+[16:58:38] Cleaned up injected chat UI elements.
+[16:58:38] Error in on_show_question: 'target_field'
+[16:58:39] PyCmd received: updateToolbar
+[16:58:39] Bridge command received: updateToolbar
+[16:58:40] Cleaned up injected chat UI elements.
+[16:58:40] Review ended - cleanup completed
+[16:58:40] State change: review → deckBrowser
+[16:58:40] Leaving review → cleaning UI
+[16:58:40] Cleaned up injected chat UI elements.
+[16:58:41] Bridge command received: decks
+[16:58:44] PyCmd received: open:1729355067743
+[16:58:44] Bridge command received: open:1729355067743
+[16:58:44] State change: deckBrowser → overview
+[16:58:45] PyCmd received: study
+[16:58:45] Bridge command received: study
+[16:58:45] State change: overview → review
+[16:58:45] === on_show_question TRIGGERED ===
+[16:58:45] Card ID: 1729414467043
+Deck ID: 1729414377937
+Note ID: 1729414467043
+Fields: ['Kanji', 'Onyomi', 'Examples_of_Onyomi', 'Meanings of Onyomi', 'Kunyomi', 'Examples of Kunyomi', 'Meanings of Kunyomi', 'Meaning', 'Memory tip']
+Front: 般...
+[16:58:45] Cleaned up injected chat UI elements.
+[16:58:45] Error in on_show_question: 'target_field'
+[16:58:45] PyCmd received: updateToolbar
+[16:58:45] Bridge command received: updateToolbar
+[17:01:37] Cleaned up injected chat UI elements.
+[17:01:37] Review ended - cleanup completed
+[17:01:37] State change: review → deckBrowser
+[17:01:37] Leaving review → cleaning UI
+[17:01:37] Cleaned up injected chat UI elements.
+[17:01:38] Bridge command received: decks
+[17:01:42] PyCmd received: open:1726415621834
+[17:01:42] Bridge command received: open:1726415621834
+[17:01:42] State change: deckBrowser → overview
+[17:01:43] PyCmd received: study
+[17:01:43] Bridge command received: study
+[17:01:43] State change: overview → review
+[17:01:43] === on_show_question TRIGGERED ===
+[17:01:43] Card ID: 1649001544115
+Deck ID: 1726415621834
+Note ID: 1649001543969
+Fields: ['ID', 'Word', 'Synonyms', 'Antonyms', 'Img1', 'PoS1', 'Def1', 'VNDef1', 'Ex1', 'SoundEx1', 'Phones1', 'VNTrans1', 'Img2', 'PoS2', 'Def2', 'VNDef2', 'Ex2', 'SoundEx2', 'Phones2', 'VNTrans2', 'Img3', 'PoS3', 'Def3', 'VNDef3', 'Ex3', 'SoundEx3', 'Phones3', 'VNTrans3', 'Img4', 'PoS4', 'Def4', 'VNDef4', 'Ex4', 'SoundEx4', 'Phones4', 'VNTrans4', 'Img5', 'PoS5', 'Def5', 'VNDef5', 'Ex5', 'SoundEx5', 'Phones5', 'VNTrans5', 'Img6', 'PoS6', 'Def6', 'VNDef6', 'Ex6', 'SoundEx6', 'Phones6', 'VNTrans6', 'Sound', 'Hint', 'Phonetics', 'Collocations', 'Formations', 'Unit', 'Topic', 'LacViet']
+Front: B1_VOCAB_33_328...
+[17:01:43] Cleaned up injected chat UI elements.
+[17:01:43] Error in on_show_question: 'target_field'
+[17:01:43] PyCmd received: updateToolbar
+[17:01:43] Bridge command received: updateToolbar
+[17:01:45] Cleaned up injected chat UI elements.
+[17:01:45] Review ended - cleanup completed
+[17:01:45] State change: review → deckBrowser
+[17:01:45] Leaving review → cleaning UI
+[17:01:45] Cleaned up injected chat UI elements.
+[17:01:45] Bridge command received: decks
+[17:01:48] PyCmd received: open:1728745194596
+[17:01:48] Bridge command received: open:1728745194596
+[17:01:48] State change: deckBrowser → overview
+[17:01:50] PyCmd received: study
+[17:01:50] Bridge command received: study
+[17:01:50] State change: overview → review
+[17:01:50] === on_show_question TRIGGERED ===
+[17:01:50] Card ID: 1728745705497
+Deck ID: 1728745194596
+Note ID: 1728745705497
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: on stage...
+[17:01:50] Cleaned up injected chat UI elements.
+[17:01:50] Error in on_show_question: 'target_field'
+[17:01:50] PyCmd received: updateToolbar
+[17:01:50] Bridge command received: updateToolbar
+[17:01:51] Cleaned up injected chat UI elements.
+[17:01:51] Cleanup completed
+[17:02:43] Initializing GeminiChatBot...
+[17:02:43] Configuration loaded successfully
+[17:02:43] Menu setup completed
+[17:02:43] PyCmd handlers registered
+[17:02:43] Registered 4 hooks
+[17:02:43] GeminiChatBot initialized successfully
+[17:02:44] State change: startup → deckBrowser
+[17:02:51] PyCmd received: open:1726415621834
+[17:02:51] State change: deckBrowser → overview
+[17:02:52] PyCmd received: study
+[17:02:52] State change: overview → review
+[17:02:52] === on_show_question TRIGGERED ===
+[17:02:52] Card ID: 1649001544115
+Deck ID: 1726415621834
+Note ID: 1649001543969
+Fields: ['ID', 'Word', 'Synonyms', 'Antonyms', 'Img1', 'PoS1', 'Def1', 'VNDef1', 'Ex1', 'SoundEx1', 'Phones1', 'VNTrans1', 'Img2', 'PoS2', 'Def2', 'VNDef2', 'Ex2', 'SoundEx2', 'Phones2', 'VNTrans2', 'Img3', 'PoS3', 'Def3', 'VNDef3', 'Ex3', 'SoundEx3', 'Phones3', 'VNTrans3', 'Img4', 'PoS4', 'Def4', 'VNDef4', 'Ex4', 'SoundEx4', 'Phones4', 'VNTrans4', 'Img5', 'PoS5', 'Def5', 'VNDef5', 'Ex5', 'SoundEx5', 'Phones5', 'VNTrans5', 'Img6', 'PoS6', 'Def6', 'VNDef6', 'Ex6', 'SoundEx6', 'Phones6', 'VNTrans6', 'Sound', 'Hint', 'Phonetics', 'Collocations', 'Formations', 'Unit', 'Topic', 'LacViet']
+Front: B1_VOCAB_33_328...
+[17:02:52] Showing button for: B1_VOCAB_33_328...
+[17:02:52] ChatBot button injected successfully
+[17:02:52] PyCmd received: updateToolbar
+[17:02:54] PyCmd received: gemini_chat_open
+[17:02:54] Opening chat window...
+[17:03:10] Configuration saved
+[17:03:13] PyCmd received: gemini_chat_open
+[17:03:13] Opening chat window...
+[17:03:13] Initializing injected ChatWindow...
+[17:03:13] PyCmd handlers registered
+[17:03:13] Deck settings for chat window: {}
+[17:03:13] Target field: None
+[17:03:50] Error opening chat window: 'NoneType' object has no attribute 'lower'
+[17:03:50] Bridge command received: gemini_chat_open
+[17:03:58] PyCmd received: gemini_chat_close
+[17:03:58] Bridge command received: gemini_chat_close
+[17:03:59] PyCmd received: gemini_chat_open
+[17:03:59] Opening chat window...
+[17:03:59] Deck settings for chat window: {}
+[17:03:59] Target field: None
+[17:04:06] Error opening chat window: 'NoneType' object has no attribute 'lower'
+[17:04:06] Bridge command received: gemini_chat_open
+[17:04:13] Review ended - cleanup completed
+[17:04:13] State change: review → deckBrowser
+[17:04:13] Leaving review → cleaning UI
+[17:04:14] Bridge command received: decks
+[17:04:17] PyCmd received: open:1726415621834
+[17:04:17] Bridge command received: open:1726415621834
+[17:04:17] State change: deckBrowser → overview
+[17:04:19] PyCmd received: study
+[17:04:19] Bridge command received: study
+[17:04:19] State change: overview → review
+[17:04:19] === on_show_question TRIGGERED ===
+[17:04:19] Card ID: 1649001544115
+Deck ID: 1726415621834
+Note ID: 1649001543969
+Fields: ['ID', 'Word', 'Synonyms', 'Antonyms', 'Img1', 'PoS1', 'Def1', 'VNDef1', 'Ex1', 'SoundEx1', 'Phones1', 'VNTrans1', 'Img2', 'PoS2', 'Def2', 'VNDef2', 'Ex2', 'SoundEx2', 'Phones2', 'VNTrans2', 'Img3', 'PoS3', 'Def3', 'VNDef3', 'Ex3', 'SoundEx3', 'Phones3', 'VNTrans3', 'Img4', 'PoS4', 'Def4', 'VNDef4', 'Ex4', 'SoundEx4', 'Phones4', 'VNTrans4', 'Img5', 'PoS5', 'Def5', 'VNDef5', 'Ex5', 'SoundEx5', 'Phones5', 'VNTrans5', 'Img6', 'PoS6', 'Def6', 'VNDef6', 'Ex6', 'SoundEx6', 'Phones6', 'VNTrans6', 'Sound', 'Hint', 'Phonetics', 'Collocations', 'Formations', 'Unit', 'Topic', 'LacViet']
+Front: B1_VOCAB_33_328...
+[17:04:19] Error in on_show_question: 'target_field'
+[17:04:19] PyCmd received: updateToolbar
+[17:04:19] Bridge command received: updateToolbar
+[17:05:05] Review ended - cleanup completed
+[17:05:05] State change: review → deckBrowser
+[17:05:05] Leaving review → cleaning UI
+[17:05:05] Bridge command received: decks
+[17:05:05] PyCmd received: decks
+[17:05:05] Bridge command received: decks
+[17:05:09] Cleanup completed
+[17:10:05] Initializing GeminiChatBot...
+[17:10:05] Raw user config loaded: None
+[17:10:05] No user config found, using default.
+[17:10:05] Config loaded in __init__: API Key set? No
+[17:10:05] Menu setup completed
+[17:10:05] PyCmd handlers registered
+[17:10:05] Registered 4 hooks
+[17:10:05] GeminiChatBot initialized successfully
+[17:10:05] State change: startup → deckBrowser
+[17:10:13] PyCmd received: open:1726415621834
+[17:10:13] State change: deckBrowser → overview
+[17:10:14] PyCmd received: study
+[17:10:14] State change: overview → review
+[17:10:14] === on_show_question TRIGGERED ===
+[17:10:14] Card ID: 1649001544115
+Deck ID: 1726415621834
+Note ID: 1649001543969
+Fields: ['ID', 'Word', 'Synonyms', 'Antonyms', 'Img1', 'PoS1', 'Def1', 'VNDef1', 'Ex1', 'SoundEx1', 'Phones1', 'VNTrans1', 'Img2', 'PoS2', 'Def2', 'VNDef2', 'Ex2', 'SoundEx2', 'Phones2', 'VNTrans2', 'Img3', 'PoS3', 'Def3', 'VNDef3', 'Ex3', 'SoundEx3', 'Phones3', 'VNTrans3', 'Img4', 'PoS4', 'Def4', 'VNDef4', 'Ex4', 'SoundEx4', 'Phones4', 'VNTrans4', 'Img5', 'PoS5', 'Def5', 'VNDef5', 'Ex5', 'SoundEx5', 'Phones5', 'VNTrans5', 'Img6', 'PoS6', 'Def6', 'VNDef6', 'Ex6', 'SoundEx6', 'Phones6', 'VNTrans6', 'Sound', 'Hint', 'Phonetics', 'Collocations', 'Formations', 'Unit', 'Topic', 'LacViet']
+Front: B1_VOCAB_33_328...
+[17:10:14] Cleaned up injected chat UI elements.
+[17:10:14] Showing button for: B1_VOCAB_33_328...
+[17:10:14] ChatBot button injected successfully
+[17:10:14] PyCmd received: updateToolbar
+[17:10:16] PyCmd received: gemini_chat_open
+[17:10:16] Opening chat window...
+[17:10:16] API Key before opening chat window: No
+[17:10:22] Opening config dialog. Current API Key status: No
+[17:10:27] Config dialog closed. New API Key status: Yes
+[17:10:27] Attempting to save config. API Key to save: Yes
+[17:10:27] Configuration saved successfully.
+[17:10:27] Config save error: 'NoneType' object has no attribute 'get'
+[17:10:30] PyCmd received: gemini_chat_open
+[17:10:30] Opening chat window...
+[17:10:30] API Key before opening chat window: Yes
+[17:10:30] Initializing injected ChatWindow...
+[17:10:30] PyCmd handlers registered
+[17:10:30] Deck settings for chat window: {}
+[17:10:30] Target field: None
+[17:10:34] Error opening chat window: 'NoneType' object has no attribute 'lower'
+[17:10:34] Bridge command received: gemini_chat_open
+[17:10:36] PyCmd received: gemini_chat_close
+[17:10:36] Bridge command received: gemini_chat_close
+[17:10:40] PyCmd received: editorState:0:-1
+[17:10:40] Bridge command received: editorState:0:-1
+[17:10:40] PyCmd received: focus:0
+[17:10:40] Bridge command received: focus:0
+[17:10:41] PyCmd received: key:59:1649001543969:<style type="text/css">#I_C{width:18px;vertical-align:baseline;} #C_C{width:2000px;}</style><table id="definition_T_id" border="0"><tbody><tr id="XXX" style="height:0px;"><td id="I_C"></td><td id="I_C"></td><td id="I_C"></td><td id="C_C"></td></tr><tr id="pa_T_id"><td id="I_C"><img src="02C013DD.png"></td><td id="C_C" colspan="3"><font color="#7E0000">['su:təbl]</font></td></tr><tr id="tl_T_id"><td id="I_C"><img src="46E762FB.png"></td><td id="C_C" colspan="3"><b><font color="#0000FF">tính từ</font></b></td></tr><tr id="mn_T_id"><td width="18">&nbsp;</td><td id="I_C"><img src="CB1FF077.png"></td><td id="C_C" colspan="2">(<font color="#FF0000">suitable for </font>/ <font color="#FF0000">to something </font>/ <font color="#FF0000">somebody</font>) phù hợp; thích hợp</td></tr><tr id="mh_T_id"><td colspan="2" width="36">&nbsp;</td><td id="I_C"><img src="9F47DE07.png"></td><td id="C_C"><font color="#FF0000">a suitable room</font><font color="#7E7E7E">, </font><font color="#FF0000">book</font><font color="#7E7E7E">, </font><font color="#FF0000">proposal</font><font color="#7E7E7E">, </font><font color="#FF0000">date</font></td></tr><tr id="mh_n_T_id"><td colspan="3" width="54">&nbsp;</td><td id="C_C"><font color="#7E7E7E">một căn phòng, quyển sách, đề nghị, ngày thích hợp</font></td></tr><tr id="mh_T_id"><td colspan="2" width="36">&nbsp;</td><td id="I_C"><img src="9F47DE07.png"></td><td id="C_C"><font color="#FF0000">clothes suitable for cold weather</font></td></tr><tr id="mh_n_T_id"><td colspan="3" width="54">&nbsp;</td><td id="C_C"><font color="#7E7E7E">quần áo phù hợp với tiết trời lạnh</font></td></tr><tr id="mh_T_id"><td colspan="2" width="36">&nbsp;</td><td id="I_C"><img src="9F47DE07.png"></td><td id="C_C"><font color="#FF0000">would now be a suitable moment to show the slides</font><font color="#7E7E7E">?</font></td></tr><tr id="mh_n_T_id"><td colspan="3" width="54">&nbsp;</td><td id="C_C"><font color="#7E7E7E">bây giờ đã là lúc thích hợp để cho xem phim đèn chiếu chưa?</font></td></tr></tbody></table>
+[17:10:41] Bridge command received: key:59:1649001543969:<style type="text/css">#I_C{width:18px;vertical-align:baseline;} #C_C{width:2000px;}</style><table id="definition_T_id" border="0"><tbody><tr id="XXX" style="height:0px;"><td id="I_C"></td><td id="I_C"></td><td id="I_C"></td><td id="C_C"></td></tr><tr id="pa_T_id"><td id="I_C"><img src="02C013DD.png"></td><td id="C_C" colspan="3"><font color="#7E0000">['su:təbl]</font></td></tr><tr id="tl_T_id"><td id="I_C"><img src="46E762FB.png"></td><td id="C_C" colspan="3"><b><font color="#0000FF">tính từ</font></b></td></tr><tr id="mn_T_id"><td width="18">&nbsp;</td><td id="I_C"><img src="CB1FF077.png"></td><td id="C_C" colspan="2">(<font color="#FF0000">suitable for </font>/ <font color="#FF0000">to something </font>/ <font color="#FF0000">somebody</font>) phù hợp; thích hợp</td></tr><tr id="mh_T_id"><td colspan="2" width="36">&nbsp;</td><td id="I_C"><img src="9F47DE07.png"></td><td id="C_C"><font color="#FF0000">a suitable room</font><font color="#7E7E7E">, </font><font color="#FF0000">book</font><font color="#7E7E7E">, </font><font color="#FF0000">proposal</font><font color="#7E7E7E">, </font><font color="#FF0000">date</font></td></tr><tr id="mh_n_T_id"><td colspan="3" width="54">&nbsp;</td><td id="C_C"><font color="#7E7E7E">một căn phòng, quyển sách, đề nghị, ngày thích hợp</font></td></tr><tr id="mh_T_id"><td colspan="2" width="36">&nbsp;</td><td id="I_C"><img src="9F47DE07.png"></td><td id="C_C"><font color="#FF0000">clothes suitable for cold weather</font></td></tr><tr id="mh_n_T_id"><td colspan="3" width="54">&nbsp;</td><td id="C_C"><font color="#7E7E7E">quần áo phù hợp với tiết trời lạnh</font></td></tr><tr id="mh_T_id"><td colspan="2" width="36">&nbsp;</td><td id="I_C"><img src="9F47DE07.png"></td><td id="C_C"><font color="#FF0000">would now be a suitable moment to show the slides</font><font color="#7E7E7E">?</font></td></tr><tr id="mh_n_T_id"><td colspan="3" width="54">&nbsp;</td><td id="C_C"><font color="#7E7E7E">bây giờ đã là lúc thích hợp để cho xem phim đèn chiếu chưa?</font></td></tr></tbody></table>
+[17:10:41] === on_show_question TRIGGERED ===
+[17:10:41] Card ID: 1649001544115
+Deck ID: 1726415621834
+Note ID: 1649001543969
+Fields: ['ID', 'Word', 'Synonyms', 'Antonyms', 'Img1', 'PoS1', 'Def1', 'VNDef1', 'Ex1', 'SoundEx1', 'Phones1', 'VNTrans1', 'Img2', 'PoS2', 'Def2', 'VNDef2', 'Ex2', 'SoundEx2', 'Phones2', 'VNTrans2', 'Img3', 'PoS3', 'Def3', 'VNDef3', 'Ex3', 'SoundEx3', 'Phones3', 'VNTrans3', 'Img4', 'PoS4', 'Def4', 'VNDef4', 'Ex4', 'SoundEx4', 'Phones4', 'VNTrans4', 'Img5', 'PoS5', 'Def5', 'VNDef5', 'Ex5', 'SoundEx5', 'Phones5', 'VNTrans5', 'Img6', 'PoS6', 'Def6', 'VNDef6', 'Ex6', 'SoundEx6', 'Phones6', 'VNTrans6', 'Sound', 'Hint', 'Phonetics', 'Collocations', 'Formations', 'Unit', 'Topic', 'LacViet']
+Front: B1_VOCAB_33_328...
+[17:10:41] Cleaned up injected chat UI elements.
+[17:10:41] Error in on_show_question: 'target_field'
+[17:10:41] PyCmd received: blur:0:1649001543969:B1_VOCAB_33_328
+[17:10:41] Bridge command received: blur:0:1649001543969:B1_VOCAB_33_328
+[17:10:41] === on_show_question TRIGGERED ===
+[17:10:41] Card ID: 1649001544115
+Deck ID: 1726415621834
+Note ID: 1649001543969
+Fields: ['ID', 'Word', 'Synonyms', 'Antonyms', 'Img1', 'PoS1', 'Def1', 'VNDef1', 'Ex1', 'SoundEx1', 'Phones1', 'VNTrans1', 'Img2', 'PoS2', 'Def2', 'VNDef2', 'Ex2', 'SoundEx2', 'Phones2', 'VNTrans2', 'Img3', 'PoS3', 'Def3', 'VNDef3', 'Ex3', 'SoundEx3', 'Phones3', 'VNTrans3', 'Img4', 'PoS4', 'Def4', 'VNDef4', 'Ex4', 'SoundEx4', 'Phones4', 'VNTrans4', 'Img5', 'PoS5', 'Def5', 'VNDef5', 'Ex5', 'SoundEx5', 'Phones5', 'VNTrans5', 'Img6', 'PoS6', 'Def6', 'VNDef6', 'Ex6', 'SoundEx6', 'Phones6', 'VNTrans6', 'Sound', 'Hint', 'Phonetics', 'Collocations', 'Formations', 'Unit', 'Topic', 'LacViet']
+Front: B1_VOCAB_33_328...
+[17:10:41] Cleaned up injected chat UI elements.
+[17:10:41] Error in on_show_question: 'target_field'
+[17:10:41] PyCmd received: updateToolbar
+[17:10:41] Bridge command received: updateToolbar
+[17:10:42] PyCmd received: updateToolbar
+[17:10:42] Bridge command received: updateToolbar
+[17:11:56] Cleaned up injected chat UI elements.
+[17:11:56] Review ended - cleanup completed
+[17:11:56] State change: review → deckBrowser
+[17:11:56] Leaving review → cleaning UI
+[17:11:56] Cleaned up injected chat UI elements.
+[17:11:57] Bridge command received: decks
+[17:12:01] PyCmd received: open:1728745194596
+[17:12:01] Bridge command received: open:1728745194596
+[17:12:01] State change: deckBrowser → overview
+[17:12:02] PyCmd received: study
+[17:12:02] Bridge command received: study
+[17:12:02] State change: overview → review
+[17:12:02] === on_show_question TRIGGERED ===
+[17:12:02] Card ID: 1728745705497
+Deck ID: 1728745194596
+Note ID: 1728745705497
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: on stage...
+[17:12:02] Cleaned up injected chat UI elements.
+[17:12:02] Error in on_show_question: 'target_field'
+[17:12:03] PyCmd received: updateToolbar
+[17:12:03] Bridge command received: updateToolbar
+[17:12:10] [LOAD] Deck 1 settings: {}
+[17:12:16] [LOAD] Deck 1728745176996 settings: {}
+[17:12:22] [LOAD] Deck 1728745194596 settings: {}
+[17:12:25] [LOAD] Deck 1728745176996 settings: {}
+[17:12:31] [LOAD] Deck 1726415621811 settings: {}
+[17:12:34] [LOAD] Deck 1726415621824 settings: {}
+[17:12:37] [LOAD] Deck 1728745194596 settings: {}
+[17:12:45] Attempting to save config. API Key to save: Yes
+[17:12:45] Configuration saved successfully.
+[17:12:45] Config save error: 'NoneType' object has no attribute 'get'
+[17:12:47] [SAVE] 1728745194596 = {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'synonyms_antonyms'}
+[17:12:50] Cleaned up injected chat UI elements.
+[17:12:50] Review ended - cleanup completed
+[17:12:50] State change: review → deckBrowser
+[17:12:50] Leaving review → cleaning UI
+[17:12:50] Cleaned up injected chat UI elements.
+[17:12:50] Bridge command received: decks
+[17:12:53] PyCmd received: open:1728745194596
+[17:12:53] Bridge command received: open:1728745194596
+[17:12:53] State change: deckBrowser → overview
+[17:12:54] PyCmd received: study
+[17:12:54] Bridge command received: study
+[17:12:54] State change: overview → review
+[17:12:54] === on_show_question TRIGGERED ===
+[17:12:54] Card ID: 1728745705497
+Deck ID: 1728745194596
+Note ID: 1728745705497
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: on stage...
+[17:12:54] Cleaned up injected chat UI elements.
+[17:12:54] Error in on_show_question: 'target_field'
+[17:12:54] PyCmd received: updateToolbar
+[17:12:54] Bridge command received: updateToolbar
+[17:13:23] Cleaned up injected chat UI elements.
+[17:13:23] Cleanup completed
+[17:13:54] Initializing GeminiChatBot...
+[17:13:54] Raw user config loaded: None
+[17:13:54] No user config found, using default.
+[17:13:54] Config loaded in __init__: API Key set? No
+[17:13:54] Menu setup completed
+[17:13:54] PyCmd handlers registered
+[17:13:54] Registered 4 hooks
+[17:13:54] GeminiChatBot initialized successfully
+[17:13:54] State change: startup → deckBrowser
+[17:14:06] Opening config dialog. Current API Key status: No
+[17:15:55] Cleaned up injected chat UI elements.
+[17:15:55] Cleanup completed
+[17:16:06] Initializing GeminiChatBot...
+[17:16:06] Raw user config loaded: None
+[17:16:06] No user config found, using default.
+[17:16:06] Config loaded in __init__: API Key set? No
+[17:16:06] Menu setup completed
+[17:16:06] PyCmd handlers registered
+[17:16:06] Registered 4 hooks
+[17:16:06] GeminiChatBot initialized successfully
+[17:16:07] State change: startup → deckBrowser
+[17:16:37] Opening config dialog. Current API Key status: No
+[17:16:42] Config dialog closed. New API Key status: Yes
+[17:16:42] Attempting to save config. API Key to save: Yes
+[17:16:42] Configuration saved successfully.
+[17:16:42] Config save error: 'NoneType' object has no attribute 'get'
+[17:17:39] Cleaned up injected chat UI elements.
+[17:17:39] Cleanup completed
+[17:17:51] Initializing GeminiChatBot...
+[17:17:51] Raw user config loaded: None
+[17:17:51] No user config found, using default.
+[17:17:51] Config loaded in __init__: API Key set? No
+[17:17:51] Menu setup completed
+[17:17:51] PyCmd handlers registered
+[17:17:51] Registered 4 hooks
+[17:17:51] GeminiChatBot initialized successfully
+[17:17:51] State change: startup → deckBrowser
+[17:18:10] PyCmd received: open:1728745194596
+[17:18:10] State change: deckBrowser → overview
+[17:18:10] PyCmd received: study
+[17:18:10] State change: overview → review
+[17:18:10] === on_show_question TRIGGERED ===
+[17:18:10] Card ID: 1728745705497
+Deck ID: 1728745194596
+Note ID: 1728745705497
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: on stage...
+[17:18:10] Cleaned up injected chat UI elements.
+[17:18:10] Showing button for: on stage...
+[17:18:10] ChatBot button injected successfully
+[17:18:11] PyCmd received: updateToolbar
+[17:18:12] PyCmd received: gemini_chat_open
+[17:18:12] Opening chat window...
+[17:18:12] API Key before opening chat window: No
+[17:20:41] PyCmd received: gemini_chat_open
+[17:20:41] Opening chat window...
+[17:20:41] API Key before opening chat window: No
+[17:20:46] PyCmd received: gemini_chat_open
+[17:20:46] Opening chat window...
+[17:20:46] API Key before opening chat window: No
+[17:24:42] Cleaned up injected chat UI elements.
+[17:24:42] Cleanup completed
+[17:24:53] Initializing GeminiChatBot...
+[17:24:53] Raw user config loaded: {'config': {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {}}, 'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {}}
+[17:24:53] Configuration loaded successfully. API Key set? Yes
+[17:24:53] Config loaded in __init__: API Key set? Yes
+[17:24:53] Menu setup completed
+[17:24:53] PyCmd handlers registered
+[17:24:53] Registered 4 hooks
+[17:24:53] GeminiChatBot initialized successfully
+[17:24:53] State change: startup → deckBrowser
+[17:25:13] Opening config dialog. Current API Key status: Yes
+[17:25:17] PyCmd received: open:1728745194596
+[17:25:17] State change: deckBrowser → overview
+[17:25:17] PyCmd received: study
+[17:25:17] State change: overview → review
+[17:25:18] === on_show_question TRIGGERED ===
+[17:25:18] Card ID: 1728745705497
+Deck ID: 1728745194596
+Note ID: 1728745705497
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: on stage...
+[17:25:18] Cleaned up injected chat UI elements.
+[17:25:18] Showing button for: on stage...
+[17:25:18] ChatBot button injected successfully
+[17:25:18] PyCmd received: updateToolbar
+[17:25:19] PyCmd received: gemini_chat_open
+[17:25:19] Opening chat window...
+[17:25:19] API Key before opening chat window: Yes
+[17:25:19] Initializing injected ChatWindow...
+[17:25:19] PyCmd handlers registered
+[17:25:19] Deck settings for chat window: {}
+[17:25:19] Target field: None
+[17:25:22] Error opening chat window: 'NoneType' object has no attribute 'lower'
+[17:25:22] Bridge command received: gemini_chat_open
+[17:25:23] PyCmd received: gemini_chat_close
+[17:25:23] Bridge command received: gemini_chat_close
+[17:27:50] Cleaned up injected chat UI elements.
+[17:27:50] Cleanup completed
+[17:28:01] Initializing GeminiChatBot...
+[17:28:01] Config loaded from meta.json: {'config': {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {}}}
+[17:28:01] Configuration loaded successfully from meta.json
+[17:28:01] Menu setup completed
+[17:28:01] PyCmd handlers registered
+[17:28:01] Registered 4 hooks
+[17:28:01] GeminiChatBot initialized successfully
+[17:28:01] State change: startup → deckBrowser
+[17:28:17] PyCmd received: open:1728745194596
+[17:28:17] State change: deckBrowser → overview
+[17:28:26] PyCmd received: study
+[17:28:26] State change: overview → review
+[17:28:26] === on_show_question TRIGGERED ===
+[17:28:26] Card ID: 1728745705497
+Deck ID: 1728745194596
+Note ID: 1728745705497
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: on stage...
+[17:28:26] Cleaned up injected chat UI elements.
+[17:28:26] Showing button for: on stage...
+[17:28:26] ChatBot button injected successfully
+[17:28:26] PyCmd received: updateToolbar
+[17:28:27] PyCmd received: gemini_chat_open
+[17:28:27] Opening chat window...
+[17:28:42] Configuration saved to meta.json successfully
+[17:28:46] PyCmd received: gemini_chat_open
+[17:28:46] Opening chat window...
+[17:28:46] Initializing injected ChatWindow...
+[17:28:46] PyCmd handlers registered
+[17:28:46] Deck settings for chat window: {}
+[17:28:46] Target field: None
+[17:28:48] Error opening chat window: 'NoneType' object has no attribute 'lower'
+[17:28:48] Bridge command received: gemini_chat_open
+[17:28:49] PyCmd received: updateToolbar
+[17:28:49] Bridge command received: updateToolbar
+[17:28:50] === on_show_question TRIGGERED ===
+[17:28:50] Card ID: 1728745705493
+Deck ID: 1728745194596
+Note ID: 1728745705493
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: for fun...
+[17:28:50] Cleaned up injected chat UI elements.
+[17:28:50] Error in on_show_question: 'target_field'
+[17:28:51] PyCmd received: updateToolbar
+[17:28:51] Bridge command received: updateToolbar
+[17:30:14] Cleaned up injected chat UI elements.
+[17:30:14] Cleanup completed
+[17:30:40] Initializing GeminiChatBot...
+[17:30:40] Configuration loaded successfully
+[17:30:40] Menu setup completed
+[17:30:40] PyCmd handlers registered
+[17:30:40] Registered 4 hooks
+[17:30:40] GeminiChatBot initialized successfully
+[17:30:40] State change: startup → deckBrowser
+[17:30:51] PyCmd received: open:1728745194596
+[17:30:51] State change: deckBrowser → overview
+[17:30:52] PyCmd received: study
+[17:30:52] State change: overview → review
+[17:30:52] === on_show_question TRIGGERED ===
+[17:30:52] Card ID: 1728745705493
+Deck ID: 1728745194596
+Note ID: 1728745705493
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: for fun...
+[17:30:52] Cleaned up injected chat UI elements.
+[17:30:52] Showing button for: for fun...
+[17:30:52] ChatBot button injected successfully
+[17:30:52] PyCmd received: updateToolbar
+[17:31:05] PyCmd received: gemini_chat_open
+[17:31:05] Opening chat window...
+[17:31:56] Cleaned up injected chat UI elements.
+[17:31:56] Cleanup completed
+[17:32:08] Initializing GeminiChatBot...
+[17:32:08] User config loaded: {'config': {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {}}}
+[17:32:08] Configuration loaded successfully
+[17:32:08] Menu setup completed
+[17:32:08] PyCmd handlers registered
+[17:32:08] Registered 4 hooks
+[17:32:08] GeminiChatBot initialized successfully
+[17:32:08] State change: startup → deckBrowser
+[17:32:55] PyCmd received: open:1728745194596
+[17:32:55] State change: deckBrowser → overview
+[17:32:56] PyCmd received: study
+[17:32:56] State change: overview → review
+[17:32:56] === on_show_question TRIGGERED ===
+[17:32:56] Card ID: 1728745705493
+Deck ID: 1728745194596
+Note ID: 1728745705493
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: for fun...
+[17:32:56] Cleaned up injected chat UI elements.
+[17:32:56] Showing button for: for fun...
+[17:32:56] ChatBot button injected successfully
+[17:32:56] PyCmd received: updateToolbar
+[17:32:57] PyCmd received: ans
+[17:32:57] PyCmd received: updateToolbar
+[17:32:59] === on_show_question TRIGGERED ===
+[17:32:59] Card ID: 1728745705494
+Deck ID: 1728745194596
+Note ID: 1728745705494
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: in the middle (of)...
+[17:32:59] Cleaned up injected chat UI elements.
+[17:32:59] Showing button for: in the middle (of)...
+[17:32:59] ChatBot button injected successfully
+[17:32:59] PyCmd received: updateToolbar
+[17:33:00] PyCmd received: gemini_chat_open
+[17:33:00] Opening chat window...
+[17:37:33] Cleaned up injected chat UI elements.
+[17:37:33] Cleanup completed
+[17:38:21] Initializing GeminiChatBot...
+[17:38:21] User config loaded: {'config': {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {}}}
+[17:38:21] Configuration loaded successfully
+[17:38:21] Menu setup completed
+[17:38:21] PyCmd handlers registered
+[17:38:21] Registered 4 hooks
+[17:38:21] GeminiChatBot initialized successfully
+[17:38:21] State change: startup → deckBrowser
+[17:38:28] PyCmd received: open:1728745194596
+[17:38:28] State change: deckBrowser → overview
+[17:38:32] User config loaded: {'config': {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {}}}
+[17:38:32] Configuration loaded successfully
+[17:38:46] PyCmd received: study
+[17:38:46] State change: overview → review
+[17:38:46] === on_show_question TRIGGERED ===
+[17:38:46] Card ID: 1728745705494
+Deck ID: 1728745194596
+Note ID: 1728745705494
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: in the middle (of)...
+[17:38:46] Cleaned up injected chat UI elements.
+[17:38:46] Showing button for: in the middle (of)...
+[17:38:46] ChatBot button injected successfully
+[17:38:46] PyCmd received: updateToolbar
+[17:38:47] PyCmd received: gemini_chat_open
+[17:38:47] Opening chat window...
+[17:40:22] Cleaned up injected chat UI elements.
+[17:40:22] Cleanup completed
+[17:40:39] Initializing GeminiChatBot...
+[17:40:39] User config loaded: {'config': {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {}}}
+[17:40:39] Configuration loaded successfully
+[17:40:39] Menu setup completed
+[17:40:39] PyCmd handlers registered
+[17:40:39] Registered 4 hooks
+[17:40:39] GeminiChatBot initialized successfully
+[17:40:39] State change: startup → deckBrowser
+[17:41:00] User config loaded: {'config': {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {}}}
+[17:41:00] Configuration loaded successfully
+[17:41:00] Current config before dialog: {'enabled': True, 'api_key': '', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'target_field': 'Front', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {}, 'config': {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {}}}
+[17:41:00] Loading API Key from config: {'enabled': True, 'api_key': '', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'target_field': 'Front', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {}, 'config': {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {}}}
+[17:44:53] Cleaned up injected chat UI elements.
+[17:44:53] Cleanup completed
+[17:45:08] Initializing GeminiChatBot...
+[17:45:08] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {}}
+[17:45:08] Configuration loaded successfully
+[17:45:08] Menu setup completed
+[17:45:08] PyCmd handlers registered
+[17:45:08] Registered 4 hooks
+[17:45:08] GeminiChatBot initialized successfully
+[17:45:08] State change: startup → deckBrowser
+[17:45:22] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {}}
+[17:45:22] Configuration loaded successfully
+[17:45:22] Current config before dialog: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'target_field': 'Front', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {}}
+[17:45:22] Loading API Key from config: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'target_field': 'Front', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {}}
+[17:45:36] Configuration saved
+[17:45:40] PyCmd received: open:1728745194596
+[17:45:40] State change: deckBrowser → overview
+[17:45:40] PyCmd received: study
+[17:45:40] State change: overview → review
+[17:45:40] === on_show_question TRIGGERED ===
+[17:45:40] Card ID: 1728745705494
+Deck ID: 1728745194596
+Note ID: 1728745705494
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: in the middle (of)...
+[17:45:40] Cleaned up injected chat UI elements.
+[17:45:40] Error in on_show_question: 'target_field'
+[17:45:40] PyCmd received: updateToolbar
+[17:45:43] PyCmd received: ans
+[17:45:43] PyCmd received: updateToolbar
+[17:45:45] Cleaned up injected chat UI elements.
+[17:45:45] Review ended - cleanup completed
+[17:45:45] State change: review → deckBrowser
+[17:45:45] Leaving review → cleaning UI
+[17:45:45] Cleaned up injected chat UI elements.
+[17:45:50] [LOAD] Deck 1 settings: {}
+[17:45:59] [LOAD] Deck 1728745194596 settings: {}
+[17:46:00] Configuration saved
+[17:46:02] [SAVE] 1728745194596 = {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'default_simple'}
+[17:46:09] Configuration saved
+[17:46:11] [SAVE] 1728745194596 = {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}
+[17:46:15] [LOAD] Deck 1 settings: {}
+[17:46:19] [LOAD] Deck 1728745194596 settings: {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}
+[17:46:48] PyCmd received: open:1728745194596
+[17:46:48] State change: deckBrowser → overview
+[17:46:49] PyCmd received: study
+[17:46:49] State change: overview → review
+[17:46:49] === on_show_question TRIGGERED ===
+[17:46:49] Card ID: 1728745705494
+Deck ID: 1728745194596
+Note ID: 1728745705494
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: in the middle (of)...
+[17:46:49] Cleaned up injected chat UI elements.
+[17:46:49] Error in on_show_question: 'target_field'
+[17:46:49] PyCmd received: updateToolbar
+[17:46:51] Cleaned up injected chat UI elements.
+[17:46:51] Cleanup completed
+[17:47:07] Initializing GeminiChatBot...
+[17:47:07] User config loaded: {'enabled': True, 'api_key': 'AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8', 'max_tokens': 500, 'selected_prompt': 'explain_simple', 'custom_prompts': {'explain_simple': 'Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ', 'synonyms_antonyms': 'Từ đồng nghĩa/trái nghĩa của: {text}', 'real_world_examples': 'Ví dụ thực tế về: {text}', 'memory_tips': 'Mẹo ghi nhớ cho: {text}'}, 'deck_settings': {'1728745194596': {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}}}
+[17:47:07] Configuration loaded successfully
+[17:47:07] Menu setup completed
+[17:47:07] PyCmd handlers registered
+[17:47:07] Registered 4 hooks
+[17:47:07] GeminiChatBot initialized successfully
+[17:47:08] State change: startup → deckBrowser
+[17:47:35] PyCmd received: open:1728745194596
+[17:47:35] State change: deckBrowser → overview
+[17:47:36] PyCmd received: study
+[17:47:36] State change: overview → review
+[17:47:36] === on_show_question TRIGGERED ===
+[17:47:36] Card ID: 1728745705494
+Deck ID: 1728745194596
+Note ID: 1728745705494
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: in the middle (of)...
+[17:47:36] Cleaned up injected chat UI elements.
+[17:47:36] Showing button for: in the middle (of)...
+[17:47:36] ChatBot button injected successfully
+[17:47:36] PyCmd received: updateToolbar
+[17:47:38] PyCmd received: gemini_chat_open
+[17:47:38] Opening chat window...
+[17:47:38] Initializing injected ChatWindow...
+[17:47:38] PyCmd handlers registered
+[17:47:38] Deck settings for chat window: {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}
+[17:47:38] Current card ID: 1728745705494
+[17:47:38] Target field for auto prompt: Phrase
+[17:47:38] Selected prompt template: explain_simple
+[17:47:38] Auto prompt generated: explain_simple
+[17:47:38] Attempting to pre-fill with: explain_simple...
+[17:47:38] Chat window injected/shown successfully
+[17:47:38] Bridge command received: gemini_chat_open
+[17:47:38] Prefilled input successfully.
+[17:48:32] PyCmd received: updateToolbar
+[17:48:32] Bridge command received: updateToolbar
+[17:48:33] === on_show_question TRIGGERED ===
+[17:48:33] Card ID: 1728745705499
+Deck ID: 1728745194596
+Note ID: 1728745705499
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: be crazy about...
+[17:48:33] Cleaned up injected chat UI elements.
+[17:48:33] Showing button for: be crazy about...
+[17:48:33] ChatBot button injected successfully
+[17:48:34] PyCmd received: updateToolbar
+[17:48:34] Bridge command received: updateToolbar
+[17:48:36] PyCmd received: gemini_chat_open
+[17:48:36] Opening chat window...
+[17:48:36] Deck settings for chat window: {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'explain_simple'}
+[17:48:36] Current card ID: 1728745705499
+[17:48:36] Target field for auto prompt: Phrase
+[17:48:36] Selected prompt template: explain_simple
+[17:48:36] Auto prompt generated: explain_simple
+[17:48:36] Attempting to pre-fill with: explain_simple...
+[17:48:36] Chat window injected/shown successfully
+[17:48:36] Bridge command received: gemini_chat_open
+[17:48:36] Prefilled input successfully.
+[17:48:45] PyCmd received: gemini_chat_send_message
+[17:48:45] Bridge command received: gemini_chat_send_message
+[17:48:45] Calling Gemini API...
+[17:48:48] Gemini API call successful
+[17:48:55] PyCmd received: updateToolbar
+[17:48:55] Bridge command received: updateToolbar
+[17:48:56] Cleaned up injected chat UI elements.
+[17:48:56] Review ended - cleanup completed
+[17:48:56] State change: review → overview
+[17:48:56] Leaving review → cleaning UI
+[17:48:56] Cleaned up injected chat UI elements.
+[17:48:58] State change: overview → deckBrowser
+[17:48:59] Bridge command received: decks
+[17:49:01] PyCmd received: open:1728746313787
+[17:49:01] Bridge command received: open:1728746313787
+[17:49:01] State change: deckBrowser → overview
+[17:49:02] PyCmd received: study
+[17:49:02] Bridge command received: study
+[17:49:02] State change: overview → review
+[17:49:02] === on_show_question TRIGGERED ===
+[17:49:02] Card ID: 1728746323927
+Deck ID: 1728746313787
+Note ID: 1728746323926
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: a question about...
+[17:49:02] Cleaned up injected chat UI elements.
+[17:49:02] Showing button for: a question about...
+[17:49:02] ChatBot button injected successfully
+[17:49:02] PyCmd received: updateToolbar
+[17:49:02] Bridge command received: updateToolbar
+[17:49:04] PyCmd received: gemini_chat_open
+[17:49:04] Opening chat window...
+[17:49:04] Initializing injected ChatWindow...
+[17:49:04] PyCmd handlers registered
+[17:49:04] Deck settings for chat window: {}
+[17:49:04] Current card ID: 1728746323927
+[17:49:04] Target field for auto prompt: None
+[17:49:04] Selected prompt template: Giải thích về: {text}
+[17:49:08] Error opening chat window: 'NoneType' object has no attribute 'lower'
+[17:49:08] Bridge command received: gemini_chat_open
+[17:49:08] Bridge command received: gemini_chat_open
+[17:49:09] PyCmd received: updateToolbar
+[17:49:09] Bridge command received: updateToolbar
+[17:49:09] Bridge command received: updateToolbar
+[17:49:10] === on_show_question TRIGGERED ===
+[17:49:10] Card ID: 1728746323926
+Deck ID: 1728746313787
+Note ID: 1728746323925
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: an opinion about/of...
+[17:49:10] Cleaned up injected chat UI elements.
+[17:49:10] Showing button for: an opinion about/of...
+[17:49:10] ChatBot button injected successfully
+[17:49:10] PyCmd received: updateToolbar
+[17:49:10] Bridge command received: updateToolbar
+[17:49:10] Bridge command received: updateToolbar
+[17:49:11] PyCmd received: gemini_chat_open
+[17:49:11] Opening chat window...
+[17:49:11] Deck settings for chat window: {}
+[17:49:11] Current card ID: 1728746323926
+[17:49:11] Target field for auto prompt: None
+[17:49:11] Selected prompt template: Giải thích về: {text}
+[17:49:16] Error opening chat window: 'NoneType' object has no attribute 'lower'
+[17:49:16] Bridge command received: gemini_chat_open
+[17:49:16] Bridge command received: gemini_chat_open
+[17:49:20] PyCmd received: updateToolbar
+[17:49:20] Bridge command received: updateToolbar
+[17:49:20] Bridge command received: updateToolbar
+[17:49:21] === on_show_question TRIGGERED ===
+[17:49:21] Card ID: 1728746323923
+Deck ID: 1728746313787
+Note ID: 1728746323922
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: know about...
+[17:49:21] Cleaned up injected chat UI elements.
+[17:49:21] Showing button for: know about...
+[17:49:21] ChatBot button injected successfully
+[17:49:21] PyCmd received: updateToolbar
+[17:49:21] Bridge command received: updateToolbar
+[17:49:21] Bridge command received: updateToolbar
+[17:49:24] PyCmd received: ans
+[17:49:24] Bridge command received: ans
+[17:49:24] Bridge command received: ans
+[17:49:24] PyCmd received: updateToolbar
+[17:49:24] Bridge command received: updateToolbar
+[17:49:24] Bridge command received: updateToolbar
+[17:49:25] === on_show_question TRIGGERED ===
+[17:49:25] Card ID: 1728746323919
+Deck ID: 1728746313787
+Note ID: 1728746323918
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: confuse sth with...
+[17:49:25] Cleaned up injected chat UI elements.
+[17:49:25] Showing button for: confuse sth with...
+[17:49:25] ChatBot button injected successfully
+[17:49:25] PyCmd received: updateToolbar
+[17:49:25] Bridge command received: updateToolbar
+[17:49:25] Bridge command received: updateToolbar
+[17:49:27] PyCmd received: gemini_chat_open
+[17:49:27] Opening chat window...
+[17:49:27] Deck settings for chat window: {}
+[17:49:27] Current card ID: 1728746323919
+[17:49:27] Target field for auto prompt: None
+[17:49:27] Selected prompt template: Giải thích về: {text}
+[17:49:29] Error opening chat window: 'NoneType' object has no attribute 'lower'
+[17:49:29] Bridge command received: gemini_chat_open
+[17:49:29] Bridge command received: gemini_chat_open
+[17:49:33] Cleaned up injected chat UI elements.
+[17:49:33] Review ended - cleanup completed
+[17:49:33] State change: review → deckBrowser
+[17:49:33] Leaving review → cleaning UI
+[17:49:33] Cleaned up injected chat UI elements.
+[17:49:34] Bridge command received: decks
+[17:49:34] Bridge command received: decks
+[17:49:48] [LOAD] Deck 1 settings: {}
+[17:49:51] [LOAD] Deck 1728746313787 settings: {}
+[17:49:56] Configuration saved
+[17:49:57] [SAVE] 1728746313787 = {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}
+[17:50:01] PyCmd received: open:1728746313787
+[17:50:01] Bridge command received: open:1728746313787
+[17:50:01] Bridge command received: open:1728746313787
+[17:50:01] State change: deckBrowser → overview
+[17:50:01] PyCmd received: study
+[17:50:01] Bridge command received: study
+[17:50:01] Bridge command received: study
+[17:50:01] State change: overview → review
+[17:50:01] === on_show_question TRIGGERED ===
+[17:50:01] Card ID: 1728746323919
+Deck ID: 1728746313787
+Note ID: 1728746323918
+Fields: ['Phrase', 'Part of speech', 'Meaning', 'Example', 'Meaning of Example', 'Image', 'Audio of Phrase', 'Audio of Example']
+Front: confuse sth with...
+[17:50:01] Cleaned up injected chat UI elements.
+[17:50:01] Showing button for: confuse sth with...
+[17:50:01] ChatBot button injected successfully
+[17:50:02] PyCmd received: updateToolbar
+[17:50:02] Bridge command received: updateToolbar
+[17:50:02] Bridge command received: updateToolbar
+[17:50:03] PyCmd received: gemini_chat_open
+[17:50:03] Opening chat window...
+[17:50:03] Initializing injected ChatWindow...
+[17:50:03] PyCmd handlers registered
+[17:50:03] Deck settings for chat window: {'enabled': True, 'target_field': 'Phrase', 'selected_prompt': 'real_world_examples'}
+[17:50:03] Current card ID: 1728746323919
+[17:50:03] Target field for auto prompt: Phrase
+[17:50:03] Selected prompt template: real_world_examples
+[17:50:03] Auto prompt generated: real_world_examples
+[17:50:03] Attempting to pre-fill with: real_world_examples...
+[17:50:03] Chat window injected/shown successfully
+[17:50:03] Bridge command received: gemini_chat_open
+[17:50:03] Bridge command received: gemini_chat_open
+[17:50:03] Bridge command received: gemini_chat_open
+[17:50:03] Prefilled input successfully.
+[17:50:06] PyCmd received: gemini_chat_close
+[17:50:06] Bridge command received: gemini_chat_close
+[17:50:06] Bridge command received: gemini_chat_close
+[17:50:06] Bridge command received: gemini_chat_close

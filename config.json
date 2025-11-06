@@ -1,15 +1,13 @@
 {
     "enabled": true,
-    "api_key": "",
+    "api_key": "AIzaSyBg5kTBp8hA-u7GpoIEPCqc8ntEaaeFIV8",
     "max_tokens": 500,
-    "selected_prompt": "explain_simple", 
-    "target_field": "Front",
+    "selected_prompt": "explain_simple",
     "custom_prompts": {
-        "explain_simple": "Bạn có muốn biết thêm về: {text}",
+        "explain_simple": "Bạn có muốn biết thêm về: {text} ngắn gọn trong 100 chữ",
         "synonyms_antonyms": "Từ đồng nghĩa/trái nghĩa của: {text}",
         "real_world_examples": "Ví dụ thực tế về: {text}",
         "memory_tips": "Mẹo ghi nhớ cho: {text}"
     },
-    "deck_settings": {},
-    "chat_style": "..."
+    "deck_settings": {}
 }

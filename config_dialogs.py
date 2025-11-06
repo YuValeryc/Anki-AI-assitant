@@ -25,6 +25,7 @@ class ConfigDialog(QDialog):
 
         # API Key
         layout.addWidget(QLabel("🔑 Gemini API Key:"))
+        self.debug.log(f"Loading API Key from config: {self.config}")
         self.api_key = QLineEdit()
         self.api_key.setText(self.config.get("api_key", ""))
         layout.addWidget(self.api_key)
@@ -41,14 +42,18 @@ class ConfigDialog(QDialog):
         self.max_tokens.setValue(self.config.get("max_tokens", 500))
         layout.addWidget(self.max_tokens)
 
-        # Default prompt for all (fallback)
+        # Default prompt
         layout.addWidget(QLabel("💡 Prompt mặc định (fallback):"))
         self.default_prompt = QComboBox()
         self.default_prompt.setEditable(True)
 
-        self.default_prompt.addItem("Giải thích ngắn gọn về {field_content}", "default_simple")
+        # Default prompt key
+        self.default_prompt.addItem(
+            "Giải thích ngắn gọn về {field_content}",
+            "default_simple"
+        )
 
-        # load custom prompts
+        # Load custom prompts
         for key, text in self.config.get("custom_prompts", {}).items():
             self.default_prompt.addItem(f"{key}: {text}", key)
 
@@ -101,11 +106,11 @@ class DeckConfigDialog(QDialog):
 
     def setup_ui(self):
         self.setWindowTitle("Cài đặt theo Deck")
-        self.setFixedSize(400, 450)
+        self.setFixedSize(420, 550)
 
         layout = QVBoxLayout()
 
-        # Deck selector
+        # ─── Deck selector ───────────────────────────────────────
         layout.addWidget(QLabel("📚 Chọn Deck:"))
         self.deck_combo = QComboBox()
 
@@ -120,63 +125,100 @@ class DeckConfigDialog(QDialog):
         self.deck_enabled = QCheckBox("Bật ChatBot cho deck này")
         layout.addWidget(self.deck_enabled)
 
-        # Target field per deck
+        # ─── Target Field ───────────────────────────────────────
         layout.addWidget(QLabel("🎯 Trường mục tiêu:"))
         self.deck_target_field = QComboBox()
         self.deck_target_field.setEditable(True)
         layout.addWidget(self.deck_target_field)
 
-        # Prompt selector per deck
+        # ─── Prompt selector ───────────────────────────────────────
         layout.addWidget(QLabel("💡 Prompt cho deck:"))
         self.deck_selected_prompt = QComboBox()
         self.deck_selected_prompt.setEditable(True)
 
-        # Add default simple prompt key
+        # Default
         self.deck_selected_prompt.addItem(
             "Giải thích ngắn gọn về {field_content}",
             "default_simple"
         )
 
-        # Add custom prompts by KEY
+        # Custom prompts (KEY → text)
         for key, text in self.config.get("custom_prompts", {}).items():
             self.deck_selected_prompt.addItem(f"{key}: {text}", key)
 
         layout.addWidget(self.deck_selected_prompt)
 
-        # Buttons
+        # Khi đổi dropdown → bật/tắt custom UI
+        self.deck_selected_prompt.currentIndexChanged.connect(self._on_prompt_changed)
+
+        # ─── Custom Prompt Creator ───────────────────────────────
+        layout.addWidget(QLabel("➕ Tự tạo prompt mới:"))
+
+        self.custom_key = QLineEdit()
+        self.custom_key.setPlaceholderText("Nhập key (vd: synonyms)")
+        layout.addWidget(self.custom_key)
+
+        self.custom_text = QLineEdit()
+        self.custom_text.setPlaceholderText("Nhập prompt (phải có {text})")
+        layout.addWidget(self.custom_text)
+
+        self.btn_add_prompt = QPushButton("Thêm prompt")
+        self.btn_add_prompt.clicked.connect(self.add_custom_prompt)
+        layout.addWidget(self.btn_add_prompt)
+
+        # Tắt custom UI ban đầu
+        self._toggle_custom_ui(False)
+
+        # ─── SAVE BUTTON ─────────────────────────────────────────
         btn_layout = QHBoxLayout()
         btn_save = QPushButton("💾 Lưu")
         btn_save.clicked.connect(self.save_deck_settings)
         btn_layout.addWidget(btn_save)
-
         layout.addLayout(btn_layout)
+
         layout.addStretch()
         self.setLayout(layout)
 
         # Load first deck
         self.load_deck_settings()
 
-    # Get fields for deck
+    # ───────────────────────────────────────────────
+    # UI toggle cho custom prompt
+    # ───────────────────────────────────────────────
+    def _toggle_custom_ui(self, enabled):
+        self.custom_key.setEnabled(enabled)
+        self.custom_text.setEnabled(enabled)
+        self.btn_add_prompt.setEnabled(enabled)
+
+    def _on_prompt_changed(self):
+        """
+        Nếu user chọn một item có KEY → tắt custom UI
+        Nếu user tự gõ prompt → bật custom UI
+        """
+        data = self.deck_selected_prompt.currentData()
+        self._toggle_custom_ui(data is None)
+
+    # ───────────────────────────────────────────────
+    # Lấy fields theo deck
+    # ───────────────────────────────────────────────
     def _get_fields_for_deck(self, deck_id):
         fields = []
         card_id = mw.col.db.scalar(f"SELECT id FROM cards WHERE did = {deck_id} LIMIT 1")
         if card_id:
-            card = mw.col.get_card(card_id)
-            note = card.note()
+            note = mw.col.get_card(card_id).note()
             model = note.model()
             fields = [fld["name"] for fld in model["flds"]]
         return fields
 
-    # ==================================================================
+    # ───────────────────────────────────────────────
     # Load settings
-    # ==================================================================
+    # ───────────────────────────────────────────────
     def load_deck_settings(self):
         deck_id = str(self.deck_combo.currentData())
         deck_settings = self.config.setdefault("deck_settings", {})
 
         settings = deck_settings.get(deck_id, {})
 
-        # Enabled
         self.deck_enabled.setChecked(settings.get("enabled", True))
 
         # Fields
@@ -184,18 +226,21 @@ class DeckConfigDialog(QDialog):
         self.deck_target_field.clear()
 
         if fields:
+            self.deck_target_field.setEnabled(True)
             self.deck_target_field.addItems(fields)
+
             saved_field = settings.get("target_field", fields[0])
             idx = self.deck_target_field.findText(saved_field)
+
             if idx != -1:
                 self.deck_target_field.setCurrentIndex(idx)
             else:
                 self.deck_target_field.setEditText(saved_field)
         else:
-            self.deck_target_field.addItem("Không tìm thấy trường (deck rỗng)")
+            self.deck_target_field.addItem("Không tìm thấy trường")
             self.deck_target_field.setEnabled(False)
 
-        # Prompt KEY
+        # Prompt
         saved_key = settings.get("selected_prompt", "default_simple")
         idx = self.deck_selected_prompt.findData(saved_key)
 
@@ -206,9 +251,48 @@ class DeckConfigDialog(QDialog):
 
         self.debug.log(f"[LOAD] Deck {deck_id} settings: {settings}")
 
-    # ==================================================================
-    # Save settings
-    # ==================================================================
+    # ───────────────────────────────────────────────
+    # Add custom prompt
+    # ───────────────────────────────────────────────
+    def add_custom_prompt(self):
+        key = self.custom_key.text().strip()
+        text = self.custom_text.text().strip()
+
+        if not key:
+            showInfo("❌ Key không được để trống.")
+            return
+
+        if " " in key:
+            showInfo("❌ Key không được chứa khoảng trắng.")
+            return
+
+        if not text:
+            showInfo("❌ Prompt không được để trống.")
+            return
+
+        if "{text}" not in text and "{field_content}" not in text:
+            showInfo("❌ Prompt phải chứa {text} hoặc {field_content}.")
+            return
+
+        # Save to config
+        self.config.setdefault("custom_prompts", {})
+        self.config["custom_prompts"][key] = text
+        self.parent.save_config()
+
+        # Add to dropdown
+        self.deck_selected_prompt.addItem(f"{key}: {text}", key)
+        idx = self.deck_selected_prompt.findData(key)
+        if idx != -1:
+            self.deck_selected_prompt.setCurrentIndex(idx)
+
+        self.custom_key.clear()
+        self.custom_text.clear()
+
+        showInfo("✅ Prompt đã được thêm!")
+
+    # ───────────────────────────────────────────────
+    # Save deck settings
+    # ───────────────────────────────────────────────
     def save_deck_settings(self):
         deck_id = str(self.deck_combo.currentData())
 

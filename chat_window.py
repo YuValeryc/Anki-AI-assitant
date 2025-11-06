@@ -1,5 +1,6 @@
 from aqt import mw
 from aqt.qt import *
+import re
 from aqt.utils import showInfo
 
 from .debug_tools import DebugTools
@@ -139,6 +140,7 @@ class ChatWindow:
             align-self: flex-end; /* Pushes message to the right */
             background: #EBF5FF; /* Light blue bubble for user */
             border-radius: 12px 12px 2px 12px; /* Nicer bubble shape */
+            text-align: left;
             padding: 8px 12px;
             max-width: 80%;
             color: #333;
@@ -310,6 +312,15 @@ class ChatWindow:
             }}
             """
         else: # bot message
+            def format_markdown(text):
+                # **text** → <b>text</b>
+                text = re.sub(r"\*\*(.*?)\*\*", r"<b>\1</b>", text)
+                # *text* → <i>text</i>
+                text = re.sub(r"(?<!\*)\*(?!\*)(.*?)\*(?<!\*)", r"<i>\1</i>", text)
+                # Xuống dòng: nếu Gemini trả về "\n", chuyển thành <br>
+                text = text.replace("\n", "<br>")
+                return text
+            safe_message = format_markdown(safe_message)
             js = f"""
             var m = document.getElementById('gemini-chat-messages');
             if (m) {{
@@ -368,13 +379,38 @@ class ChatWindow:
         # self.debug.log(f"Received response from Gemini: {response}")
     
     def pre_fill_input(self, text):
-        self.debug.log(f"Pre-filling input with text: {text[:50]}...")
-        if mw.reviewer and mw.reviewer.web:
-            safe = text.replace("`", "\\`").replace("${", "\\${}")
-            js = f"""
+        """Prefill input only if this exact prompt has NOT been asked before."""
+        self.debug.log(f"Attempting to pre-fill with: {text[:50]}...")
+
+        if not text:
+            return
+
+        safe = text.replace("`", "\\`").replace("${", "\\${}")
+
+        js = f"""
+        (function() {{
+            var msgs = document.querySelectorAll('.user-message');
+            for (let m of msgs) {{
+                if (m.innerText.trim() === `Bạn: {safe}`.trim()) {{
+                    console.log('Prefill skipped: prompt already asked.');
+                    return false;   // already asked → skip prefill
+                }}
+            }}
+
             var input = document.getElementById('gemini-input-text');
-            if(input) {{
+            if (input) {{
                 input.value = `{safe}`;
             }}
-            """
-            mw.reviewer.web.eval(js)
+            return true; // did prefill
+        }})();
+        """
+
+        def callback(result):
+            if result:
+                self.debug.log("Prefilled input successfully.")
+            else:
+                self.debug.log("Skipped prefill (already asked).")
+
+        if mw.reviewer and mw.reviewer.web:
+            mw.reviewer.web.evalWithCallback(js, callback)
+

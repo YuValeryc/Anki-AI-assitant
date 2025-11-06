@@ -55,6 +55,13 @@ class GeminiChatBot:
     def on_state_change(self, new_state, old_state):
         """Debug state changes"""
         self.debug.log(f"State change: {old_state} → {new_state}")
+        if old_state == "review" and new_state != "review":
+            self.debug.log("Leaving review → cleaning UI")
+            self._cleanup_injected_elements()
+
+            if self.chat_window:
+                self.chat_window.close()
+                self.chat_window = None
 
     def handle_pycmd(self, handled, cmd, context):
         """
@@ -239,7 +246,7 @@ class GeminiChatBot:
                 right: 20px !important;
                 width: 50px !important;
                 height: 50px !important;
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+                background: linear-gradient(135deg, #4A90E2, #5D5BD9) !important;
                 border-radius: 50% !important;
                 display: flex !important;
                 align-items: center !important;
@@ -339,8 +346,42 @@ class GeminiChatBot:
             # Initialize chat_window if it doesn't exist
             if self.chat_window is None:
                 self.chat_window = ChatWindow(self)
-            # Inject/show the chat UI
+
             self.chat_window.inject_ui()
+
+            # ====== TẠO PROMPT TỰ ĐỘNG ======
+            deck_id = str(self.current_card.did)
+            deck_settings = self.config["deck_settings"].get(deck_id, {})
+            self.debug.log(f"Deck settings for chat window: {deck_settings}")
+
+            target_field = deck_settings.get("target_field")
+            self.debug.log(f"Target field: {target_field}")
+
+            # ✅ Lấy content của field
+            card_content = self.get_field_text(self.current_card, target_field)
+            self.debug.log(f"Field value: {card_content}")
+
+            # ✅ Lấy prompt KEY trước
+            prompt_key = deck_settings.get("selected_prompt") \
+                        or self.config.get("selected_prompt")
+
+            self.debug.log(f"Prompt key selected: {prompt_key}")
+
+            # ✅ Lookup từ custom_prompts
+            prompt_template = self.config["custom_prompts"].get(prompt_key)
+
+            # Nếu prompt không nằm trong custom_prompt → dùng default
+            if not prompt_template:
+                prompt_template = "Giải thích về: {text}"
+
+            self.debug.log(f"Resolved prompt template: {prompt_template}")
+
+            # ✅ Tạo auto prompt
+            auto_prompt = prompt_template.replace("{text}", card_content)
+            self.debug.log(f"Auto prompt generated: {auto_prompt}")
+
+            # ✅ Đưa sẵn vào ô input
+            self.chat_window.pre_fill_input(auto_prompt)
             self.debug.log("Chat window injected/shown successfully")
 
         except Exception as e:
@@ -372,7 +413,7 @@ class GeminiChatBot:
         for attempt in range(1, max_attempts + 1):
             try:
                 response = requests.post(url, json=payload, timeout=30)
-                self.debug.log(f"Response: {response.status_code} - {response.text}")
+                # self.debug.log(f"Response: {response.status_code} - {response.text}")
                 if response.status_code == 429:
                     self.debug.log(f"Gemini API rate-limited (429). Attempt {attempt}/{max_attempts}")
                     if attempt < max_attempts:

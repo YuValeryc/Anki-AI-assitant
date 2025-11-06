@@ -62,7 +62,7 @@ class ChatWindow:
                 mw.reviewer.web.evalWithCallback(js_get_input, got_input)
             return True, None
 
-        return handled, None
+        return handled
 
 
     # ==================== UI INJECTION ====================
@@ -75,98 +75,132 @@ class ChatWindow:
             position: fixed;
             bottom: 80px;
             right: 20px;
-            width: 320px;
-            height: 400px;
-            background: #ffffffee;
-            border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-            display: flex; /* Set to flex by default, then toggle visibility via JS */
+            width: 350px; /* Slightly wider */
+            height: 500px; /* Slightly taller */
+            background: #ffffff;
+            border-radius: 16px; /* More rounded corners */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* Softer, more prominent shadow */
+            display: flex;
             flex-direction: column;
             overflow: hidden;
             z-index: 99999;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            border: 1px solid rgba(0,0,0,0.1); /* subtle border */
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; /* Modern font stack */
+            border: none; /* Remove subtle border for cleaner look */
         }
         #gemini-chat-header {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #4A90E2, #5D5BD9); /* Brighter, more vibrant blue gradient */
             color: white;
-            padding: 10px;
-            font-weight: bold;
+            padding: 10px; /* More padding */
+            font-weight: 600; /* Slightly bolder */
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 16px;
+            font-size: 18px; /* Larger font size */
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
         }
         #gemini-close-btn {
-            background: none;
+            background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
             border: none;
             color: white;
-            font-size: 24px;
+            font-size: 20px; /* Smaller font size for 'x' */
+            width: 30px; /* Fixed width */
+            height: 30px; /* Fixed height */
+            aspect-ratio: 1 / 1;
+            border-radius: 50% !important;
             cursor: pointer;
-            line-height: 1;
-            padding: 0 5px;
+            display: flex; /* Use flex to center 'x' */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            transition: background 0.2s ease-in-out, transform 0.2s ease-in-out; /* Smooth transitions */
+            line-height: 1; /* Ensure 'x' is vertically centered */
         }
         #gemini-close-btn:hover {
-            opacity: 0.8;
+            background: rgba(255, 255, 255, 0.35); /* Darker on hover */
+        }
+        #gemini-close-btn:active {
+            background: rgba(255, 255, 255, 0.45);
         }
         #gemini-chat-messages {
             flex: 1;
-            padding: 10px;
+            padding: 15px; /* More padding */
             overflow-y: auto;
-            background: #f9f9fb;
-            word-wrap: break-word; /* Ensure long words wrap */
+            background: #F0F2F5; /* Lighter background for messages */
+            word-wrap: break-word;
+            display: flex; /* Make messages a flex container */
+            flex-direction: column; /* Stack messages vertically */
         }
         .message {
-            margin: 8px 0;
-            line-height: 1.4em;
+            margin: 10px 0; /* More vertical spacing */
+            line-height: 1.4em; /* Improved readability */
+            font-size: 16px;
         }
         .user-message {
-            text-align: right;
+            align-self: flex-end; /* Pushes message to the right */
+            background: #EBF5FF; /* Light blue bubble for user */
+            border-radius: 12px 12px 2px 12px; /* Nicer bubble shape */
+            padding: 8px 12px;
+            max-width: 80%;
             color: #333;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.08); /* Subtle shadow for bubbles */
         }
         .bot-message {
+            align-self: flex-start; /* Pushes message to the left */
             text-align: left;
+            background: #FFFFFF; /* White bubble for bot */
+            border-radius: 12px 12px 12px 2px; /* Nicer bubble shape */
+            padding: 8px 12px;
+            max-width: 80%; /* Limit width to make it look like a bubble */
             color: #222;
-            background: #eef1ff;
-            border-radius: 8px;
-            padding: 6px 10px;
-            display: inline-block;
-            max-width: 85%; /* Limit width to make it look like a bubble */
+            box-shadow: 0 1px 2px rgba(0,0,0,0.08); /* Subtle shadow for bubbles */
         }
         #gemini-chat-input {
             display: flex;
-            border-top: 1px solid #ddd;
-            padding: 5px;
+            border-top: 1px solid #E0E0E0; /* Lighter border */
+            padding: 10px 15px; /* More padding */
             background: #ffffff;
+            align-items: center; /* Vertically align items */
+            gap: 10px; /* Space between input and button */
         }
         #gemini-input-text {
             flex: 1;
-            padding: 8px;
-            border: 1px solid #eee;
-            border-radius: 5px;
+            padding: 10px 12px; /* More padding */
+            border: 1px solid #D0D0D0; /* Lighter border */
+            border-radius: 20px; /* Pill-shaped input */
             outline: none;
-            font-size: 14px;
+            text-align: left;
+            font-size: 15px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
         }
         #gemini-input-text:focus {
-            border-color: #667eea;
+            border-color: #4A90E2;
+            box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2); /* Focus glow */
         }
         #gemini-send-btn {
-            background: #667eea;
+            background: #4A90E2; /* Solid blue send button */
             color: white;
             border: none;
-            padding: 8px 16px;
-            border-radius: 5px;
+            padding: 10px 20px; /* More padding for button */
+            border-radius: 20px; /* Pill-shaped button */
             cursor: pointer;
-            margin-left: 5px;
-            transition: background 0.3s ease;
-            font-size: 14px;
+            transition: background 0.3s ease, transform 0.2s ease;
+            font-size: 15px;
+            font-weight: 500;
+            white-space: nowrap; /* Prevent text wrapping */
         }
         #gemini-send-btn:hover {
-            background: #764ba2;
+            background: #5D5BD9; /* Darker blue on hover */
+            transform: translateY(-1px); /* Slight lift effect */
+        }
+        #gemini-send-btn:active {
+            transform: translateY(0); /* Press effect */
         }
         #gemini-typing {
             font-style: italic;
-            opacity: 0.7;
+            opacity: 0.8;
+            padding: 5px 15px;
+            color: #666;
+            font-size: 13px;
         }
         </style>
         """
@@ -183,6 +217,7 @@ class ChatWindow:
        onkeypress="if(event.key==='Enter'){pycmd('gemini_chat_send_message'); event.preventDefault();}" />
                 <button id="gemini-send-btn" onclick="pycmd('gemini_chat_send_message')">Gửi</button>
             </div>
+            <div id="gemini-typing" style="display:none;">Gemini đang gõ...</div>
         </div>
 
         <script>
@@ -211,15 +246,31 @@ class ChatWindow:
         }})();
         """
         reviewer.eval(js_code_to_inject)
-        self.debug.log("Injected chat UI successfully")
+        # self.debug.log("Injected chat UI successfully")
         # Add an initial greeting from the bot when the chat window is opened
         if mw.reviewer and mw.reviewer.web:
-            self.add_message("bot", "Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?")
+            js_check = """
+            (function() {
+                const msgs = document.querySelectorAll('.bot-message');
+                for (let m of msgs) {
+                    if (m.innerText.includes("Chào bạn, tôi là Gemini ChatBot")) {
+                        return true; // already exists
+                    }
+                }
+                return false;
+            })();
+            """
+
+            def callback(exists):
+                if not exists:
+                    self.add_message("bot", "Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?")
+
+            mw.reviewer.web.evalWithCallback(js_check, callback)
 
     def close(self):
         """Ẩn cửa sổ chat."""
-        self.debug.log(f"Has reviewer web: {bool(mw.reviewer and mw.reviewer.web)}")
-        self.debug.log(f"Has mw.web: {bool(mw.web)}")
+        # self.debug.log(f"Has reviewer web: {bool(mw.reviewer and mw.reviewer.web)}")
+        # self.debug.log(f"Has mw.web: {bool(mw.web)}")
 
         if mw.reviewer and mw.reviewer.web:
             mw.reviewer.web.eval("""
@@ -239,7 +290,7 @@ class ChatWindow:
                 """)
             except:
                 pass
-        self.debug.log("Chat window hidden instantly via bridge command.")
+        # self.debug.log("Chat window hidden instantly via bridge command.")
 
 
     # ==================== MESSAGE HANDLING ====================
@@ -268,7 +319,7 @@ class ChatWindow:
             """
         if mw.reviewer and mw.reviewer.web:
             mw.reviewer.web.eval(js)
-            self.debug.log(f"Added message: [{sender}] {message[:50]}...")
+            # self.debug.log(f"Added message: [{sender}] {message[:50]}...")
 
     def show_typing(self):
         if mw.reviewer and mw.reviewer.web:
@@ -276,13 +327,13 @@ class ChatWindow:
             var m = document.getElementById('gemini-chat-messages');
             if (m) {{
                 var existingTyping = document.getElementById('gemini-typing');
-                if (!existingTyping) {{ // Only add if not already present
+                if (!existingTyping) {{ 
                     m.innerHTML += "<div id='gemini-typing' class='message bot-message'><em>AI đang trả lời...</em></div>";
                     m.scrollTop = m.scrollHeight;
                 }}
             }}
             """)
-            self.debug.log("Showing typing indicator.")
+            # self.debug.log("Showing typing indicator.")
 
     def hide_typing(self):
         if mw.reviewer and mw.reviewer.web:
@@ -290,7 +341,7 @@ class ChatWindow:
             var t = document.getElementById('gemini-typing');
             if (t) t.remove();
             """)
-            self.debug.log("Hiding typing indicator.")
+            # self.debug.log("Hiding typing indicator.")
 
     # ==================== LOGIC ====================
     def send_message(self, text):
@@ -299,7 +350,7 @@ class ChatWindow:
             return
         self.add_message("user", text)
         self.show_typing()
-        self.debug.log(f"Starting GeminiThread for prompt: {text[:50]}...")
+        # self.debug.log(f"Starting GeminiThread for prompt: {text[:50]}...")
 
         # Kill existing thread if it's running
         if self.thread and self.thread.isRunning():
@@ -314,4 +365,16 @@ class ChatWindow:
     def handle_response(self, response):
         self.hide_typing()
         self.add_message("bot", response)
-        self.debug.log(f"Received response from Gemini: {response}")
+        # self.debug.log(f"Received response from Gemini: {response}")
+    
+    def pre_fill_input(self, text):
+        self.debug.log(f"Pre-filling input with text: {text[:50]}...")
+        if mw.reviewer and mw.reviewer.web:
+            safe = text.replace("`", "\\`").replace("${", "\\${}")
+            js = f"""
+            var input = document.getElementById('gemini-input-text');
+            if(input) {{
+                input.value = `{safe}`;
+            }}
+            """
+            mw.reviewer.web.eval(js)

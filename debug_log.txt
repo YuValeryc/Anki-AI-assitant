@@ -883,3 +883,892 @@ Front: keen on sth/sb/doing...
 [11:13:24] Injected chat UI successfully
 [11:13:24] Injected chat UI successfully
 [11:13:24] Chat window injected successfully
+[11:18:19] Cleanup error: 'ChatWindow' object has no attribute 'close'
+[11:19:32] Initializing GeminiChatBot...
+[11:19:32] Configuration loaded successfully
+[11:19:32] Menu setup completed
+[11:19:32] PyCmd handlers registered
+[11:19:32] Registered 4 hooks
+[11:19:32] GeminiChatBot initialized successfully
+[11:19:34] State change: startup → deckBrowser
+[11:19:41] PyCmd received: open:1730211184472
+[11:19:41] State change: deckBrowser → overview
+[11:19:42] PyCmd received: study
+[11:19:42] State change: overview → review
+[11:19:42] === on_show_question TRIGGERED ===
+[11:19:42] Card ID: 1762091025463
+Deck ID: 1730211184472
+Note ID: 1730211423358
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: keen on sth/sb/doing...
+[11:19:42] Cleaned up injected chat UI elements.
+[11:19:42] Showing button for: keen on sth/sb/doing...
+[11:19:42] ChatBot button injected successfully
+[11:19:42] PyCmd received: updateToolbar
+[11:19:44] PyCmd received: gemini_chat_open
+[11:19:44] Opening chat window...
+[11:19:44] Initializing injected ChatWindow...
+[11:19:44] Injected chat UI successfully
+[11:19:44] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:19:44] Chat window injected/shown successfully
+[11:19:52] PyCmd received: gemini_chat_open
+[11:19:52] Opening chat window...
+[11:19:52] Injected chat UI successfully
+[11:19:52] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:19:52] Chat window injected/shown successfully
+[11:21:19] PyCmd received: gemini_chat_open
+[11:21:19] Opening chat window...
+[11:21:19] Injected chat UI successfully
+[11:21:19] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:21:19] Chat window injected/shown successfully
+[11:21:20] PyCmd received: gemini_chat_open
+[11:21:20] Opening chat window...
+[11:21:20] Injected chat UI successfully
+[11:21:20] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:21:20] Chat window injected/shown successfully
+[11:21:20] PyCmd received: gemini_chat_open
+[11:21:20] Opening chat window...
+[11:21:20] Injected chat UI successfully
+[11:21:20] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:21:20] Chat window injected/shown successfully
+[11:21:20] PyCmd received: gemini_chat_open
+[11:21:20] Opening chat window...
+[11:21:20] Injected chat UI successfully
+[11:21:20] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:21:20] Chat window injected/shown successfully
+[11:21:21] PyCmd received: gemini_chat_open
+[11:21:21] Opening chat window...
+[11:21:21] Injected chat UI successfully
+[11:21:21] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:21:21] Chat window injected/shown successfully
+[11:21:21] PyCmd received: gemini_chat_open
+[11:21:21] Opening chat window...
+[11:21:21] Injected chat UI successfully
+[11:21:21] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:21:21] Chat window injected/shown successfully
+[11:21:21] PyCmd received: gemini_chat_open
+[11:21:21] Opening chat window...
+[11:21:21] Injected chat UI successfully
+[11:21:21] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:21:21] Chat window injected/shown successfully
+[11:22:30] Cleaned up injected chat UI elements.
+[11:22:30] Chat window hidden.
+[11:22:30] Cleanup completed
+[11:22:41] Initializing GeminiChatBot...
+[11:22:41] Configuration loaded successfully
+[11:22:41] Menu setup completed
+[11:22:41] PyCmd handlers registered
+[11:22:41] Registered 4 hooks
+[11:22:41] GeminiChatBot initialized successfully
+[11:22:44] State change: startup → deckBrowser
+[11:22:49] PyCmd received: open:1730211184472
+[11:22:49] State change: deckBrowser → overview
+[11:22:50] PyCmd received: study
+[11:22:50] State change: overview → review
+[11:22:50] === on_show_question TRIGGERED ===
+[11:22:50] Card ID: 1762091025463
+Deck ID: 1730211184472
+Note ID: 1730211423358
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: keen on sth/sb/doing...
+[11:22:50] Cleaned up injected chat UI elements.
+[11:22:50] Showing button for: keen on sth/sb/doing...
+[11:22:50] ChatBot button injected successfully
+[11:22:50] PyCmd received: updateToolbar
+[11:22:51] PyCmd received: gemini_chat_open
+[11:22:51] Toggling chat window...
+[11:22:51] Initializing injected ChatWindow...
+[11:22:58] Error toggling chat window: cannot access local variable 'html_content' where it is not associated with a value
+[11:23:01] PyCmd received: gemini_chat_open
+[11:23:01] Toggling chat window...
+[11:23:01] Chat window visibility toggled.
+[11:23:01] Chat window toggle command sent.
+[11:23:03] PyCmd received: gemini_chat_open
+[11:23:03] Toggling chat window...
+[11:23:03] Chat window visibility toggled.
+[11:23:03] Chat window toggle command sent.
+[11:23:04] PyCmd received: gemini_chat_open
+[11:23:04] Toggling chat window...
+[11:23:04] Chat window visibility toggled.
+[11:23:04] Chat window toggle command sent.
+[11:24:21] Cleaned up injected chat UI elements.
+[11:24:21] Cleanup completed
+[11:25:32] Initializing GeminiChatBot...
+[11:25:32] Configuration loaded successfully
+[11:25:32] Menu setup completed
+[11:25:32] PyCmd handlers registered
+[11:25:32] Registered 4 hooks
+[11:25:32] GeminiChatBot initialized successfully
+[11:25:36] State change: startup → deckBrowser
+[11:26:54] PyCmd received: open:1730211184472
+[11:26:54] State change: deckBrowser → overview
+[11:26:55] PyCmd received: study
+[11:26:55] State change: overview → review
+[11:26:55] === on_show_question TRIGGERED ===
+[11:26:55] Card ID: 1762091025463
+Deck ID: 1730211184472
+Note ID: 1730211423358
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: keen on sth/sb/doing...
+[11:26:55] Cleaned up injected chat UI elements.
+[11:26:55] Showing button for: keen on sth/sb/doing...
+[11:26:55] ChatBot button injected successfully
+[11:26:56] PyCmd received: updateToolbar
+[11:26:57] PyCmd received: gemini_chat_open
+[11:26:57] Opening chat window...
+[11:26:57] Initializing injected ChatWindow...
+[11:26:57] Injected chat UI successfully
+[11:26:57] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:26:57] Chat window injected/shown successfully
+[11:28:02] Cleaned up injected chat UI elements.
+[11:28:02] Chat window hidden.
+[11:28:02] Cleanup completed
+[11:28:13] Initializing GeminiChatBot...
+[11:28:13] Configuration loaded successfully
+[11:28:13] Menu setup completed
+[11:28:13] PyCmd handlers registered
+[11:28:13] Registered 4 hooks
+[11:28:13] GeminiChatBot initialized successfully
+[11:28:15] State change: startup → deckBrowser
+[11:28:21] PyCmd received: open:1730211184472
+[11:28:21] State change: deckBrowser → overview
+[11:28:22] PyCmd received: study
+[11:28:22] State change: overview → review
+[11:28:22] === on_show_question TRIGGERED ===
+[11:28:22] Card ID: 1762091025463
+Deck ID: 1730211184472
+Note ID: 1730211423358
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: keen on sth/sb/doing...
+[11:28:22] Cleaned up injected chat UI elements.
+[11:28:22] Showing button for: keen on sth/sb/doing...
+[11:28:22] ChatBot button injected successfully
+[11:28:22] PyCmd received: updateToolbar
+[11:28:24] PyCmd received: gemini_chat_open
+[11:28:24] Opening chat window...
+[11:28:24] Initializing injected ChatWindow...
+[11:28:24] Injected chat UI successfully
+[11:28:24] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:28:24] Chat window injected/shown successfully
+[11:28:24] PyCmd received: gemini_chat_open
+[11:28:24] Opening chat window...
+[11:28:24] Injected chat UI successfully
+[11:28:24] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:28:24] Chat window injected/shown successfully
+[11:28:36] PyCmd received: gemini_chat_open
+[11:28:36] Opening chat window...
+[11:28:36] Injected chat UI successfully
+[11:28:36] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:28:36] Chat window injected/shown successfully
+[11:30:37] Cleaned up injected chat UI elements.
+[11:30:37] Chat window hidden.
+[11:30:37] Cleanup completed
+[11:30:48] Initializing GeminiChatBot...
+[11:30:48] Configuration loaded successfully
+[11:30:48] Menu setup completed
+[11:30:48] PyCmd handlers registered
+[11:30:48] Registered 4 hooks
+[11:30:48] GeminiChatBot initialized successfully
+[11:31:10] State change: startup → deckBrowser
+[11:31:16] PyCmd received: open:1730211184472
+[11:31:16] State change: deckBrowser → overview
+[11:31:16] PyCmd received: study
+[11:31:16] State change: overview → review
+[11:31:16] === on_show_question TRIGGERED ===
+[11:31:16] Card ID: 1762091025463
+Deck ID: 1730211184472
+Note ID: 1730211423358
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: keen on sth/sb/doing...
+[11:31:16] Cleaned up injected chat UI elements.
+[11:31:16] Showing button for: keen on sth/sb/doing...
+[11:31:16] ChatBot button injected successfully
+[11:31:16] PyCmd received: updateToolbar
+[11:31:19] PyCmd received: gemini_chat_open
+[11:31:19] Opening chat window...
+[11:31:19] Initializing injected ChatWindow...
+[11:31:19] Injected chat UI successfully
+[11:31:19] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:31:19] Chat window injected/shown successfully
+[11:31:41] PyCmd received: gemini_chat_open
+[11:31:41] Opening chat window...
+[11:31:41] Injected chat UI successfully
+[11:31:41] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:31:41] Chat window injected/shown successfully
+[11:34:43] Cleaned up injected chat UI elements.
+[11:34:43] Chat window hidden.
+[11:34:43] Cleanup completed
+[11:34:53] Initializing GeminiChatBot...
+[11:34:53] Configuration loaded successfully
+[11:34:53] Menu setup completed
+[11:34:53] PyCmd handlers registered
+[11:34:53] Registered 4 hooks
+[11:34:53] GeminiChatBot initialized successfully
+[11:35:19] State change: startup → deckBrowser
+[11:35:27] PyCmd received: open:1730211184472
+[11:35:27] State change: deckBrowser → overview
+[11:35:28] PyCmd received: study
+[11:35:28] State change: overview → review
+[11:35:28] === on_show_question TRIGGERED ===
+[11:35:28] Card ID: 1762091025463
+Deck ID: 1730211184472
+Note ID: 1730211423358
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: keen on sth/sb/doing...
+[11:35:28] Cleaned up injected chat UI elements.
+[11:35:28] Showing button for: keen on sth/sb/doing...
+[11:35:28] ChatBot button injected successfully
+[11:35:28] PyCmd received: updateToolbar
+[11:35:30] PyCmd received: gemini_chat_open
+[11:35:30] Opening chat window...
+[11:35:30] Initializing injected ChatWindow...
+[11:35:30] Injected chat UI successfully
+[11:35:30] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:35:30] Chat window injected/shown successfully
+[11:35:34] PyCmd received: gemini_chat_open
+[11:35:34] Opening chat window...
+[11:35:34] Injected chat UI successfully
+[11:35:34] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:35:34] Chat window injected/shown successfully
+[11:35:35] PyCmd received: gemini_chat_open
+[11:35:35] Opening chat window...
+[11:35:35] Injected chat UI successfully
+[11:35:35] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:35:35] Chat window injected/shown successfully
+[11:37:58] Cleaned up injected chat UI elements.
+[11:37:58] Chat window hidden.
+[11:37:58] Cleanup completed
+[11:38:08] Initializing GeminiChatBot...
+[11:38:08] Configuration loaded successfully
+[11:38:08] Menu setup completed
+[11:38:08] PyCmd handlers registered
+[11:38:08] Registered 4 hooks
+[11:38:08] GeminiChatBot initialized successfully
+[11:38:37] State change: startup → deckBrowser
+[11:38:44] PyCmd received: open:1730211184472
+[11:38:44] State change: deckBrowser → overview
+[11:38:44] PyCmd received: study
+[11:38:44] State change: overview → review
+[11:38:44] === on_show_question TRIGGERED ===
+[11:38:44] Card ID: 1762091025463
+Deck ID: 1730211184472
+Note ID: 1730211423358
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: keen on sth/sb/doing...
+[11:38:44] Cleaned up injected chat UI elements.
+[11:38:44] Showing button for: keen on sth/sb/doing...
+[11:38:44] ChatBot button injected successfully
+[11:38:45] PyCmd received: updateToolbar
+[11:38:47] PyCmd received: gemini_chat_open
+[11:38:47] Opening chat window...
+[11:38:47] Initializing injected ChatWindow...
+[11:38:47] Injected chat UI successfully
+[11:38:47] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:38:47] Chat window injected/shown successfully
+[11:38:48] PyCmd received: gemini_chat_open
+[11:38:48] Opening chat window...
+[11:38:48] Injected chat UI successfully
+[11:38:48] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:38:48] Chat window injected/shown successfully
+[11:38:48] PyCmd received: gemini_chat_open
+[11:38:48] Opening chat window...
+[11:38:48] Injected chat UI successfully
+[11:38:48] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:38:48] Chat window injected/shown successfully
+[11:38:49] PyCmd received: gemini_chat_open
+[11:38:49] Opening chat window...
+[11:38:49] Injected chat UI successfully
+[11:38:49] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:38:49] Chat window injected/shown successfully
+[11:38:49] PyCmd received: gemini_chat_open
+[11:38:49] Opening chat window...
+[11:38:49] Injected chat UI successfully
+[11:38:49] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:38:49] Chat window injected/shown successfully
+[11:39:02] PyCmd received: gemini_chat_open
+[11:39:02] Opening chat window...
+[11:39:02] Injected chat UI successfully
+[11:39:02] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:39:02] Chat window injected/shown successfully
+[11:39:03] PyCmd received: gemini_chat_open
+[11:39:03] Opening chat window...
+[11:39:03] Injected chat UI successfully
+[11:39:03] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:39:03] Chat window injected/shown successfully
+[11:39:04] PyCmd received: gemini_chat_open
+[11:39:04] Opening chat window...
+[11:39:04] Injected chat UI successfully
+[11:39:04] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:39:04] Chat window injected/shown successfully
+[11:39:09] PyCmd received: gemini_chat_open
+[11:39:09] Opening chat window...
+[11:39:09] Injected chat UI successfully
+[11:39:09] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:39:09] Chat window injected/shown successfully
+[11:40:03] Cleaned up injected chat UI elements.
+[11:40:03] Chat window hidden.
+[11:40:03] Cleanup completed
+[11:40:13] Initializing GeminiChatBot...
+[11:40:13] Configuration loaded successfully
+[11:40:13] Menu setup completed
+[11:40:13] PyCmd handlers registered
+[11:40:13] Registered 4 hooks
+[11:40:13] GeminiChatBot initialized successfully
+[11:40:18] State change: startup → deckBrowser
+[11:40:24] PyCmd received: open:1730211184472
+[11:40:24] State change: deckBrowser → overview
+[11:40:24] PyCmd received: study
+[11:40:24] State change: overview → review
+[11:40:24] === on_show_question TRIGGERED ===
+[11:40:24] Card ID: 1762091025463
+Deck ID: 1730211184472
+Note ID: 1730211423358
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: keen on sth/sb/doing...
+[11:40:24] Cleaned up injected chat UI elements.
+[11:40:24] Showing button for: keen on sth/sb/doing...
+[11:40:24] ChatBot button injected successfully
+[11:40:24] PyCmd received: updateToolbar
+[11:40:26] PyCmd received: gemini_chat_open
+[11:40:26] Opening chat window...
+[11:40:26] Initializing injected ChatWindow...
+[11:40:26] Injected chat UI successfully
+[11:40:26] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:40:26] Chat window injected/shown successfully
+[11:40:27] PyCmd received: gemini_chat_open
+[11:40:27] Opening chat window...
+[11:40:27] Injected chat UI successfully
+[11:40:27] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:40:27] Chat window injected/shown successfully
+[11:40:27] PyCmd received: gemini_chat_open
+[11:40:27] Opening chat window...
+[11:40:27] Injected chat UI successfully
+[11:40:27] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:40:27] Chat window injected/shown successfully
+[11:40:29] PyCmd received: gemini_chat_open
+[11:40:29] Opening chat window...
+[11:40:29] Injected chat UI successfully
+[11:40:29] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:40:29] Chat window injected/shown successfully
+[11:40:30] PyCmd received: gemini_chat_open
+[11:40:30] Opening chat window...
+[11:40:30] Injected chat UI successfully
+[11:40:30] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:40:30] Chat window injected/shown successfully
+[11:40:32] PyCmd received: gemini_chat_open
+[11:40:32] Opening chat window...
+[11:40:32] Injected chat UI successfully
+[11:40:32] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:40:32] Chat window injected/shown successfully
+[11:40:34] PyCmd received: gemini_chat_open
+[11:40:34] Opening chat window...
+[11:40:34] Injected chat UI successfully
+[11:40:34] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:40:34] Chat window injected/shown successfully
+[11:40:45] PyCmd received: gemini_chat_open
+[11:40:45] Opening chat window...
+[11:40:45] Injected chat UI successfully
+[11:40:45] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:40:45] Chat window injected/shown successfully
+[11:40:49] PyCmd received: gemini_chat_open
+[11:40:49] Opening chat window...
+[11:40:49] Injected chat UI successfully
+[11:40:49] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:40:49] Chat window injected/shown successfully
+[11:40:49] PyCmd received: gemini_chat_open
+[11:40:49] Opening chat window...
+[11:40:49] Injected chat UI successfully
+[11:40:49] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:40:49] Chat window injected/shown successfully
+[11:40:49] PyCmd received: gemini_chat_open
+[11:40:49] Opening chat window...
+[11:40:49] Injected chat UI successfully
+[11:40:49] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:40:49] Chat window injected/shown successfully
+[11:40:49] PyCmd received: gemini_chat_open
+[11:40:49] Opening chat window...
+[11:40:49] Injected chat UI successfully
+[11:40:49] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:40:49] Chat window injected/shown successfully
+[11:40:58] Cleaned up injected chat UI elements.
+[11:40:58] Chat window hidden.
+[11:40:58] Cleanup completed
+[11:41:15] Initializing GeminiChatBot...
+[11:41:15] Configuration loaded successfully
+[11:41:15] Menu setup completed
+[11:41:15] PyCmd handlers registered
+[11:41:15] Registered 4 hooks
+[11:41:15] GeminiChatBot initialized successfully
+[11:41:18] State change: startup → deckBrowser
+[11:41:24] PyCmd received: open:1730211184472
+[11:41:24] State change: deckBrowser → overview
+[11:41:25] PyCmd received: study
+[11:41:25] State change: overview → review
+[11:41:25] === on_show_question TRIGGERED ===
+[11:41:25] Card ID: 1762091025463
+Deck ID: 1730211184472
+Note ID: 1730211423358
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: keen on sth/sb/doing...
+[11:41:25] Cleaned up injected chat UI elements.
+[11:41:25] Showing button for: keen on sth/sb/doing...
+[11:41:25] ChatBot button injected successfully
+[11:41:25] PyCmd received: updateToolbar
+[11:41:27] PyCmd received: gemini_chat_open
+[11:41:27] Opening chat window...
+[11:41:27] Initializing injected ChatWindow...
+[11:41:27] Injected chat UI successfully
+[11:41:27] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:41:27] Chat window injected/shown successfully
+[11:41:34] PyCmd received: gemini_chat_open
+[11:41:34] Opening chat window...
+[11:41:34] Injected chat UI successfully
+[11:41:34] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:41:34] Chat window injected/shown successfully
+[11:43:19] Cleaned up injected chat UI elements.
+[11:43:19] Chat window hidden.
+[11:43:19] Cleanup completed
+[11:51:41] Initializing GeminiChatBot...
+[11:51:41] Configuration loaded successfully
+[11:51:41] Menu setup completed
+[11:51:41] PyCmd handlers registered
+[11:51:41] Registered 4 hooks
+[11:51:41] GeminiChatBot initialized successfully
+[11:51:44] State change: startup → deckBrowser
+[11:51:50] PyCmd received: open:1730211184472
+[11:51:50] State change: deckBrowser → overview
+[11:51:51] PyCmd received: study
+[11:51:51] State change: overview → review
+[11:51:51] === on_show_question TRIGGERED ===
+[11:51:51] Card ID: 1762091025463
+Deck ID: 1730211184472
+Note ID: 1730211423358
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: keen on sth/sb/doing...
+[11:51:51] Cleaned up injected chat UI elements.
+[11:51:51] Showing button for: keen on sth/sb/doing...
+[11:51:51] ChatBot button injected successfully
+[11:51:51] PyCmd received: updateToolbar
+[11:51:52] PyCmd received: gemini_chat_open
+[11:51:52] Opening chat window...
+[11:51:52] Initializing injected ChatWindow...
+[11:51:52] Injected chat UI successfully
+[11:51:52] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:51:52] Chat window injected/shown successfully
+[11:51:54] PyCmd received: gemini_chat_close
+[11:51:54] Bridge command received: gemini_chat_close
+[11:51:54] Chat window hidden instantly via bridge command.
+[11:51:55] PyCmd received: gemini_chat_close
+[11:51:55] Bridge command received: gemini_chat_close
+[11:51:55] Chat window hidden instantly via bridge command.
+[11:51:56] PyCmd received: gemini_chat_close
+[11:51:56] Bridge command received: gemini_chat_close
+[11:51:56] Chat window hidden instantly via bridge command.
+[11:51:56] PyCmd received: gemini_chat_close
+[11:51:56] Bridge command received: gemini_chat_close
+[11:51:56] Chat window hidden instantly via bridge command.
+[11:51:56] PyCmd received: gemini_chat_close
+[11:51:56] Bridge command received: gemini_chat_close
+[11:51:56] Chat window hidden instantly via bridge command.
+[11:52:04] PyCmd received: gemini_chat_close
+[11:52:04] Bridge command received: gemini_chat_close
+[11:52:04] Chat window hidden instantly via bridge command.
+[11:52:12] PyCmd received: gemini_chat_close
+[11:52:12] Bridge command received: gemini_chat_close
+[11:52:12] Chat window hidden instantly via bridge command.
+[11:52:15] PyCmd received: gemini_chat_close
+[11:52:15] Bridge command received: gemini_chat_close
+[11:52:15] Chat window hidden instantly via bridge command.
+[11:52:16] PyCmd received: gemini_chat_close
+[11:52:16] Bridge command received: gemini_chat_close
+[11:52:16] Chat window hidden instantly via bridge command.
+[11:52:16] PyCmd received: gemini_chat_close
+[11:52:16] Bridge command received: gemini_chat_close
+[11:52:16] Chat window hidden instantly via bridge command.
+[11:52:16] PyCmd received: gemini_chat_close
+[11:52:16] Bridge command received: gemini_chat_close
+[11:52:16] Chat window hidden instantly via bridge command.
+[11:52:16] PyCmd received: gemini_chat_close
+[11:52:16] Bridge command received: gemini_chat_close
+[11:52:16] Chat window hidden instantly via bridge command.
+[11:52:27] PyCmd received: gemini_chat_close
+[11:52:27] Bridge command received: gemini_chat_close
+[11:52:27] Chat window hidden instantly via bridge command.
+[11:52:28] Cleaned up injected chat UI elements.
+[11:52:28] Chat window hidden instantly via bridge command.
+[11:52:28] Cleanup completed
+[11:57:52] Initializing GeminiChatBot...
+[11:57:52] Configuration loaded successfully
+[11:57:52] Menu setup completed
+[11:57:52] PyCmd handlers registered
+[11:57:52] Registered 4 hooks
+[11:57:52] GeminiChatBot initialized successfully
+[11:57:55] State change: startup → deckBrowser
+[11:58:04] PyCmd received: open:1730211184472
+[11:58:04] State change: deckBrowser → overview
+[11:58:04] PyCmd received: study
+[11:58:04] State change: overview → review
+[11:58:04] === on_show_question TRIGGERED ===
+[11:58:04] Card ID: 1762091025463
+Deck ID: 1730211184472
+Note ID: 1730211423358
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: keen on sth/sb/doing...
+[11:58:04] Cleaned up injected chat UI elements.
+[11:58:04] Showing button for: keen on sth/sb/doing...
+[11:58:04] ChatBot button injected successfully
+[11:58:04] PyCmd received: updateToolbar
+[11:58:06] PyCmd received: gemini_chat_open
+[11:58:06] Opening chat window...
+[11:58:06] Initializing injected ChatWindow...
+[11:58:06] PyCmd handlers registered
+[11:58:06] Injected chat UI successfully
+[11:58:06] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[11:58:06] Chat window injected/shown successfully
+[11:59:30] Cleaned up injected chat UI elements.
+[11:59:30] Chat window hidden instantly via bridge command.
+[11:59:30] Cleanup completed
+[11:59:40] Initializing GeminiChatBot...
+[11:59:40] Configuration loaded successfully
+[11:59:40] Menu setup completed
+[11:59:40] PyCmd handlers registered
+[11:59:40] Registered 4 hooks
+[11:59:40] GeminiChatBot initialized successfully
+[12:00:20] State change: startup → deckBrowser
+[12:00:26] PyCmd received: open:1730211184472
+[12:00:26] State change: deckBrowser → overview
+[12:00:26] PyCmd received: study
+[12:00:26] State change: overview → review
+[12:00:26] === on_show_question TRIGGERED ===
+[12:00:26] Card ID: 1762091025463
+Deck ID: 1730211184472
+Note ID: 1730211423358
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: keen on sth/sb/doing...
+[12:00:26] Cleaned up injected chat UI elements.
+[12:00:26] Showing button for: keen on sth/sb/doing...
+[12:00:26] ChatBot button injected successfully
+[12:00:27] PyCmd received: updateToolbar
+[12:00:29] PyCmd received: gemini_chat_open
+[12:00:29] Opening chat window...
+[12:00:29] Initializing injected ChatWindow...
+[12:00:29] PyCmd handlers registered
+[12:00:29] Injected chat UI successfully
+[12:00:29] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:00:29] Chat window injected/shown successfully
+[12:00:29] Bridge command received: gemini_chat_open
+[12:00:31] PyCmd received: gemini_chat_close
+[12:00:31] Bridge command received: gemini_chat_close
+[12:00:31] Chat window hidden instantly via bridge command.
+[12:00:33] PyCmd received: gemini_chat_close
+[12:00:33] Bridge command received: gemini_chat_close
+[12:00:33] Chat window hidden instantly via bridge command.
+[12:00:36] PyCmd received: gemini_chat_close
+[12:00:36] Bridge command received: gemini_chat_close
+[12:00:36] Chat window hidden instantly via bridge command.
+[12:00:36] PyCmd received: gemini_chat_close
+[12:00:36] Bridge command received: gemini_chat_close
+[12:00:36] Chat window hidden instantly via bridge command.
+[12:00:36] PyCmd received: gemini_chat_close
+[12:00:36] Bridge command received: gemini_chat_close
+[12:00:36] Chat window hidden instantly via bridge command.
+[12:00:36] PyCmd received: gemini_chat_close
+[12:00:36] Bridge command received: gemini_chat_close
+[12:00:36] Chat window hidden instantly via bridge command.
+[12:03:46] PyCmd received: gemini_chat_close
+[12:03:46] Bridge command received: gemini_chat_close
+[12:03:46] Chat window hidden instantly via bridge command.
+[12:03:48] PyCmd received: gemini_chat_close
+[12:03:48] Bridge command received: gemini_chat_close
+[12:03:48] Chat window hidden instantly via bridge command.
+[12:03:48] PyCmd received: gemini_chat_close
+[12:03:48] Bridge command received: gemini_chat_close
+[12:03:48] Chat window hidden instantly via bridge command.
+[12:03:49] PyCmd received: gemini_chat_close
+[12:03:49] Bridge command received: gemini_chat_close
+[12:03:49] Chat window hidden instantly via bridge command.
+[12:05:02] Cleaned up injected chat UI elements.
+[12:05:02] Chat window hidden instantly via bridge command.
+[12:05:02] Cleanup completed
+[12:05:15] Initializing GeminiChatBot...
+[12:05:15] Configuration loaded successfully
+[12:05:15] Menu setup completed
+[12:05:15] PyCmd handlers registered
+[12:05:15] Registered 4 hooks
+[12:05:15] GeminiChatBot initialized successfully
+[12:05:15] State change: startup → deckBrowser
+[12:05:25] PyCmd received: open:1730211184472
+[12:05:25] State change: deckBrowser → overview
+[12:05:25] PyCmd received: study
+[12:05:25] State change: overview → review
+[12:05:25] === on_show_question TRIGGERED ===
+[12:05:25] Card ID: 1762091025463
+Deck ID: 1730211184472
+Note ID: 1730211423358
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: keen on sth/sb/doing...
+[12:05:25] Cleaned up injected chat UI elements.
+[12:05:25] Showing button for: keen on sth/sb/doing...
+[12:05:25] ChatBot button injected successfully
+[12:05:25] PyCmd received: updateToolbar
+[12:05:29] PyCmd received: gemini_chat_open
+[12:05:29] Opening chat window...
+[12:05:29] Initializing injected ChatWindow...
+[12:05:29] PyCmd handlers registered
+[12:05:29] Injected chat UI successfully
+[12:05:29] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:05:29] Chat window injected/shown successfully
+[12:05:29] Bridge command received: gemini_chat_open
+[12:05:29] PyCmd received: gemini_chat_open
+[12:05:29] Opening chat window...
+[12:05:44] Error opening chat window: 'NoneType' object has no attribute 'inject_ui'
+[12:05:44] Bridge command received: gemini_chat_open
+[12:05:45] PyCmd received: gemini_chat_close
+[12:05:45] Bridge command received: gemini_chat_close
+[12:07:10] Chat window hidden instantly via bridge command.
+[12:08:40] Cleaned up injected chat UI elements.
+[12:08:40] Cleanup completed
+[12:08:52] Initializing GeminiChatBot...
+[12:08:52] Configuration loaded successfully
+[12:08:52] Menu setup completed
+[12:08:52] PyCmd handlers registered
+[12:08:52] Registered 4 hooks
+[12:08:52] GeminiChatBot initialized successfully
+[12:08:52] State change: startup → deckBrowser
+[12:09:09] PyCmd received: open:1730211184472
+[12:09:09] State change: deckBrowser → overview
+[12:09:09] PyCmd received: study
+[12:09:09] State change: overview → review
+[12:09:09] === on_show_question TRIGGERED ===
+[12:09:09] Card ID: 1762091025463
+Deck ID: 1730211184472
+Note ID: 1730211423358
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: keen on sth/sb/doing...
+[12:09:09] Cleaned up injected chat UI elements.
+[12:09:09] Showing button for: keen on sth/sb/doing...
+[12:09:09] ChatBot button injected successfully
+[12:09:10] PyCmd received: updateToolbar
+[12:09:11] PyCmd received: gemini_chat_open
+[12:09:11] Opening chat window...
+[12:09:11] Initializing injected ChatWindow...
+[12:09:11] PyCmd handlers registered
+[12:09:11] Injected chat UI successfully
+[12:09:11] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:09:11] Chat window injected/shown successfully
+[12:09:11] Bridge command received: gemini_chat_open
+[12:09:12] PyCmd received: gemini_chat_close
+[12:09:12] Bridge command received: gemini_chat_close
+[12:09:14] Chat window hidden instantly via bridge command.
+[12:09:16] PyCmd received: gemini_chat_close
+[12:09:16] Bridge command received: gemini_chat_close
+[12:09:30] Chat window hidden instantly via bridge command.
+[12:12:52] Cleaned up injected chat UI elements.
+[12:12:52] Chat window hidden instantly via bridge command.
+[12:12:52] Cleanup completed
+[12:13:04] Initializing GeminiChatBot...
+[12:13:04] Configuration loaded successfully
+[12:13:04] Menu setup completed
+[12:13:04] PyCmd handlers registered
+[12:13:04] Registered 4 hooks
+[12:13:04] GeminiChatBot initialized successfully
+[12:13:04] State change: startup → deckBrowser
+[12:13:12] PyCmd received: open:1730211184472
+[12:13:12] State change: deckBrowser → overview
+[12:13:13] PyCmd received: study
+[12:13:13] State change: overview → review
+[12:13:13] === on_show_question TRIGGERED ===
+[12:13:13] Card ID: 1762091025463
+Deck ID: 1730211184472
+Note ID: 1730211423358
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: keen on sth/sb/doing...
+[12:13:13] Cleaned up injected chat UI elements.
+[12:13:13] Showing button for: keen on sth/sb/doing...
+[12:13:13] ChatBot button injected successfully
+[12:13:13] PyCmd received: updateToolbar
+[12:13:15] PyCmd received: gemini_chat_open
+[12:13:15] Opening chat window...
+[12:13:15] Initializing injected ChatWindow...
+[12:13:15] PyCmd handlers registered
+[12:13:15] Injected chat UI successfully
+[12:13:15] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:13:15] Chat window injected/shown successfully
+[12:13:15] Bridge command received: gemini_chat_open
+[12:13:17] PyCmd received: gemini_chat_close
+[12:13:17] Bridge command received: gemini_chat_close
+[12:13:19] Has reviewer web: True
+[12:13:19] Has mw.web: True
+[12:13:19] Chat window hidden instantly via bridge command.
+[12:14:28] Cleaned up injected chat UI elements.
+[12:14:28] Has reviewer web: True
+[12:14:28] Has mw.web: True
+[12:14:28] Chat window hidden instantly via bridge command.
+[12:14:28] Cleanup completed
+[12:15:43] Initializing GeminiChatBot...
+[12:15:43] Configuration loaded successfully
+[12:15:43] Menu setup completed
+[12:15:43] PyCmd handlers registered
+[12:15:43] Registered 4 hooks
+[12:15:43] GeminiChatBot initialized successfully
+[12:15:43] State change: startup → deckBrowser
+[12:15:51] PyCmd received: open:1730211184472
+[12:15:52] State change: deckBrowser → overview
+[12:15:52] PyCmd received: study
+[12:15:52] State change: overview → review
+[12:15:52] === on_show_question TRIGGERED ===
+[12:15:52] Card ID: 1762091025463
+Deck ID: 1730211184472
+Note ID: 1730211423358
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: keen on sth/sb/doing...
+[12:15:52] Cleaned up injected chat UI elements.
+[12:15:52] Showing button for: keen on sth/sb/doing...
+[12:15:52] ChatBot button injected successfully
+[12:15:52] PyCmd received: updateToolbar
+[12:15:54] PyCmd received: gemini_chat_open
+[12:15:54] Opening chat window...
+[12:15:54] Initializing injected ChatWindow...
+[12:15:54] PyCmd handlers registered
+[12:15:54] Injected chat UI successfully
+[12:15:54] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:15:54] Chat window injected/shown successfully
+[12:15:54] Bridge command received: gemini_chat_open
+[12:15:55] PyCmd received: gemini_chat_close
+[12:15:55] Bridge command received: gemini_chat_close
+[12:15:57] Has reviewer web: True
+[12:15:57] Has mw.web: True
+[12:15:57] Chat window hidden instantly via bridge command.
+[12:15:59] PyCmd received: gemini_chat_open
+[12:15:59] Opening chat window...
+[12:16:01] Error opening chat window: 'NoneType' object has no attribute 'inject_ui'
+[12:16:01] Bridge command received: gemini_chat_open
+[12:16:41] PyCmd received: gemini_chat_open
+[12:16:41] Opening chat window...
+[12:16:41] Initializing injected ChatWindow...
+[12:16:41] PyCmd handlers registered
+[12:16:41] Injected chat UI successfully
+[12:16:41] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:16:41] Chat window injected/shown successfully
+[12:16:41] Bridge command received: gemini_chat_open
+[12:16:41] Bridge command received: gemini_chat_open
+[12:16:48] PyCmd received: gemini_chat_close
+[12:16:48] Bridge command received: gemini_chat_close
+[12:16:50] Has reviewer web: True
+[12:16:50] Has mw.web: True
+[12:16:50] Chat window hidden instantly via bridge command.
+[12:16:50] Bridge command received: gemini_chat_close
+[12:16:52] Has reviewer web: True
+[12:16:52] Has mw.web: True
+[12:16:52] Chat window hidden instantly via bridge command.
+[12:16:53] Cleaned up injected chat UI elements.
+[12:16:53] Has reviewer web: True
+[12:16:53] Has mw.web: True
+[12:16:53] Chat window hidden instantly via bridge command.
+[12:16:53] Cleanup completed
+[12:17:07] Initializing GeminiChatBot...
+[12:17:07] Configuration loaded successfully
+[12:17:07] Menu setup completed
+[12:17:07] PyCmd handlers registered
+[12:17:07] Registered 4 hooks
+[12:17:07] GeminiChatBot initialized successfully
+[12:17:07] State change: startup → deckBrowser
+[12:17:25] PyCmd received: open:1730211184472
+[12:17:25] State change: deckBrowser → overview
+[12:17:26] PyCmd received: study
+[12:17:26] State change: overview → review
+[12:17:26] === on_show_question TRIGGERED ===
+[12:17:26] Card ID: 1762091025463
+Deck ID: 1730211184472
+Note ID: 1730211423358
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: keen on sth/sb/doing...
+[12:17:26] Cleaned up injected chat UI elements.
+[12:17:26] Showing button for: keen on sth/sb/doing...
+[12:17:26] ChatBot button injected successfully
+[12:17:26] PyCmd received: updateToolbar
+[12:17:28] PyCmd received: gemini_chat_open
+[12:17:28] Opening chat window...
+[12:17:28] Initializing injected ChatWindow...
+[12:17:28] PyCmd handlers registered
+[12:17:28] Injected chat UI successfully
+[12:17:28] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:17:28] Chat window injected/shown successfully
+[12:17:28] Bridge command received: gemini_chat_open
+[12:17:29] PyCmd received: gemini_chat_close
+[12:17:29] Bridge command received: gemini_chat_close
+[12:17:29] Has reviewer web: True
+[12:17:29] Has mw.web: True
+[12:17:29] Chat window hidden instantly via bridge command.
+[12:17:31] PyCmd received: gemini_chat_open
+[12:17:31] Opening chat window...
+[12:17:31] Injected chat UI successfully
+[12:17:31] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:17:31] Chat window injected/shown successfully
+[12:17:31] Bridge command received: gemini_chat_open
+[12:17:32] PyCmd received: gemini_chat_close
+[12:17:32] Bridge command received: gemini_chat_close
+[12:17:32] Has reviewer web: True
+[12:17:32] Has mw.web: True
+[12:17:32] Chat window hidden instantly via bridge command.
+[12:17:33] PyCmd received: gemini_chat_open
+[12:17:33] Opening chat window...
+[12:17:33] Injected chat UI successfully
+[12:17:33] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:17:33] Chat window injected/shown successfully
+[12:17:33] Bridge command received: gemini_chat_open
+[12:17:35] PyCmd received: gemini_chat_close
+[12:17:35] Bridge command received: gemini_chat_close
+[12:17:35] Has reviewer web: True
+[12:17:35] Has mw.web: True
+[12:17:35] Chat window hidden instantly via bridge command.
+[12:17:36] PyCmd received: gemini_chat_open
+[12:17:36] Opening chat window...
+[12:17:36] Injected chat UI successfully
+[12:17:36] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:17:36] Chat window injected/shown successfully
+[12:17:36] Bridge command received: gemini_chat_open
+[12:17:37] PyCmd received: gemini_chat_close
+[12:17:37] Bridge command received: gemini_chat_close
+[12:17:37] Has reviewer web: True
+[12:17:37] Has mw.web: True
+[12:17:37] Chat window hidden instantly via bridge command.
+[12:17:38] PyCmd received: gemini_chat_open
+[12:17:38] Opening chat window...
+[12:17:38] Injected chat UI successfully
+[12:17:38] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:17:38] Chat window injected/shown successfully
+[12:17:38] Bridge command received: gemini_chat_open
+[12:17:41] PyCmd received: gemini_chat_close
+[12:17:41] Bridge command received: gemini_chat_close
+[12:17:41] Has reviewer web: True
+[12:17:41] Has mw.web: True
+[12:17:41] Chat window hidden instantly via bridge command.
+[12:17:43] PyCmd received: gemini_chat_open
+[12:17:43] Opening chat window...
+[12:17:43] Injected chat UI successfully
+[12:17:43] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:17:43] Chat window injected/shown successfully
+[12:17:43] Bridge command received: gemini_chat_open
+[12:17:45] PyCmd received: gemini_chat_close
+[12:17:45] Bridge command received: gemini_chat_close
+[12:17:45] Has reviewer web: True
+[12:17:45] Has mw.web: True
+[12:17:45] Chat window hidden instantly via bridge command.
+[12:17:46] PyCmd received: gemini_chat_open
+[12:17:46] Opening chat window...
+[12:17:46] Injected chat UI successfully
+[12:17:46] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:17:46] Chat window injected/shown successfully
+[12:17:46] Bridge command received: gemini_chat_open
+[12:17:48] PyCmd received: gemini_chat_close
+[12:17:48] Bridge command received: gemini_chat_close
+[12:17:48] Has reviewer web: True
+[12:17:48] Has mw.web: True
+[12:17:48] Chat window hidden instantly via bridge command.
+[12:17:52] PyCmd received: gemini_chat_open
+[12:17:52] Opening chat window...
+[12:17:52] Injected chat UI successfully
+[12:17:52] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:17:52] Chat window injected/shown successfully
+[12:17:52] Bridge command received: gemini_chat_open

@@ -22,8 +22,8 @@ class DebugTools:
         with open(self.log_file, "a", encoding="utf-8") as f:
             f.write(log_entry + "\n")
 
-        if show_popup:
-            showInfo(f"🔧 {self.addon_name}\n\n{message}")
+        # if show_popup:
+        #     showInfo(f"🔧 {self.addon_name}\n\n{message}")
 
     def debug_hook(self, hook_name, *args):
         """Debug hook calls"""

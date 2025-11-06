@@ -43,10 +43,23 @@ class ChatWindow:
         if message == "gemini_chat_close":
             self.close()
             return True, None
+        elif message == "gemini_chat_send_message":
+            if mw.reviewer and mw.reviewer.web:
+                js_get_input = """
+                (function() {
+                    var inputBox = document.getElementById('gemini-input-text');
+                    var inputText = inputBox ? inputBox.value.trim() : '';
+                    inputBox.value = ''; 
+                    return inputText;
+                })();
+                """
 
-        elif message.startswith("gemini_chat_send:"):
-            text = message.replace("gemini_chat_send:", "", 1)
-            self.send_message(text)
+                def got_input(prompt):
+                    if prompt:  # Check not None or empty
+                        self.send_message(prompt)
+                        # self.add_message("user", prompt)
+
+                mw.reviewer.web.evalWithCallback(js_get_input, got_input)
             return True, None
 
         return handled, None
@@ -166,29 +179,13 @@ class ChatWindow:
             </div>
             <div id="gemini-chat-messages"></div>
             <div id="gemini-chat-input">
-                <input id="gemini-input-text" type="text" placeholder="Nhập tin nhắn..." />
-                <button id="gemini-send-btn">Gửi</button>
+                <input id="gemini-input-text" type="text" placeholder="Nhập tin nhắn..."
+       onkeypress="if(event.key==='Enter'){pycmd('gemini_chat_send_message'); event.preventDefault();}" />
+                <button id="gemini-send-btn" onclick="pycmd('gemini_chat_send_message')">Gửi</button>
             </div>
         </div>
 
         <script>
-        // Send message event
-        document.getElementById('gemini-send-btn').onclick = function() {
-            const text = document.getElementById('gemini-input-text').value.trim();
-            if (text) {
-                pycmd('gemini_chat_send:' + text); // Use pycmd to send message to Python
-                document.getElementById('gemini-input-text').value = ''; // Clear input
-            }
-        };
-
-        // Enter key to send
-        document.getElementById('gemini-input-text').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                document.getElementById('gemini-send-btn').click();
-                e.preventDefault(); // Prevent new line in input if it was a textarea
-            }
-        });
-
         // Ensure chat is visible when injected
         var chatContainer = document.getElementById('gemini-chat-container');
         if (chatContainer) {
@@ -249,6 +246,9 @@ class ChatWindow:
     def add_message(self, sender, message):
         """Thêm tin nhắn vào DOM"""
         # Escape backticks and dollar signs for JavaScript template literals
+        # showInfo(f"Adding message: [{sender}] {message[:50]}...")
+        if message is None:
+            return
         safe_message = message.replace("`", "\\`").replace("${", "\\${}")
         if sender == "user":
             js = f"""

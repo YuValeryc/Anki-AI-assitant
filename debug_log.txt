@@ -1772,3 +1772,834 @@ Front: keen on sth/sb/doing...
 [12:17:52] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
 [12:17:52] Chat window injected/shown successfully
 [12:17:52] Bridge command received: gemini_chat_open
+[12:22:56] PyCmd received: updateToolbar
+[12:22:56] Bridge command received: updateToolbar
+[12:22:57] === on_show_question TRIGGERED ===
+[12:22:57] Card ID: 1730211423364
+Deck ID: 1730211184472
+Note ID: 1730211423364
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: regret to tell/inform you...
+[12:22:57] Cleaned up injected chat UI elements.
+[12:22:57] Showing button for: regret to tell/inform you...
+[12:22:57] ChatBot button injected successfully
+[12:22:57] PyCmd received: updateToolbar
+[12:22:57] Bridge command received: updateToolbar
+[12:22:58] PyCmd received: gemini_chat_open
+[12:22:58] Opening chat window...
+[12:22:58] Injected chat UI successfully
+[12:22:58] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:22:58] Chat window injected/shown successfully
+[12:22:58] Bridge command received: gemini_chat_open
+[12:23:03] PyCmd received: gemini_chat_close
+[12:23:03] Bridge command received: gemini_chat_close
+[12:23:03] Has reviewer web: True
+[12:23:03] Has mw.web: True
+[12:23:03] Chat window hidden instantly via bridge command.
+[12:23:05] PyCmd received: gemini_chat_open
+[12:23:05] Opening chat window...
+[12:23:05] Injected chat UI successfully
+[12:23:05] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:23:05] Chat window injected/shown successfully
+[12:23:05] Bridge command received: gemini_chat_open
+[12:23:10] PyCmd received: gemini_chat_close
+[12:23:10] Bridge command received: gemini_chat_close
+[12:23:10] Has reviewer web: True
+[12:23:10] Has mw.web: True
+[12:23:10] Chat window hidden instantly via bridge command.
+[12:23:25] PyCmd received: gemini_chat_open
+[12:23:25] Opening chat window...
+[12:23:25] Injected chat UI successfully
+[12:23:25] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:23:25] Chat window injected/shown successfully
+[12:23:25] Bridge command received: gemini_chat_open
+[12:29:47] Cleaned up injected chat UI elements.
+[12:29:47] Has reviewer web: True
+[12:29:47] Has mw.web: True
+[12:29:47] Chat window hidden instantly via bridge command.
+[12:29:47] Cleanup completed
+[12:30:00] Initializing GeminiChatBot...
+[12:30:00] Configuration loaded successfully
+[12:30:00] Menu setup completed
+[12:30:00] PyCmd handlers registered
+[12:30:00] Registered 4 hooks
+[12:30:00] GeminiChatBot initialized successfully
+[12:30:00] State change: startup → deckBrowser
+[12:30:37] Cleaned up injected chat UI elements.
+[12:30:37] Cleanup completed
+[12:30:54] Initializing GeminiChatBot...
+[12:30:54] Configuration loaded successfully
+[12:30:54] Menu setup completed
+[12:30:54] PyCmd handlers registered
+[12:30:54] Registered 4 hooks
+[12:30:54] GeminiChatBot initialized successfully
+[12:30:54] State change: startup → deckBrowser
+[12:31:02] PyCmd received: open:1730211184472
+[12:31:02] State change: deckBrowser → overview
+[12:31:02] PyCmd received: study
+[12:31:02] State change: overview → review
+[12:31:03] === on_show_question TRIGGERED ===
+[12:31:03] Card ID: 1730211423364
+Deck ID: 1730211184472
+Note ID: 1730211423364
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: regret to tell/inform you...
+[12:31:03] Cleaned up injected chat UI elements.
+[12:31:03] Showing button for: regret to tell/inform you...
+[12:31:03] ChatBot button injected successfully
+[12:31:03] PyCmd received: updateToolbar
+[12:31:05] PyCmd received: gemini_chat_open
+[12:31:05] Opening chat window...
+[12:31:05] Initializing injected ChatWindow...
+[12:31:05] PyCmd handlers registered
+[12:31:05] Injected chat UI successfully
+[12:31:05] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:31:05] Chat window injected/shown successfully
+[12:31:05] Bridge command received: gemini_chat_open
+[12:31:13] PyCmd received: gemini_chat_send_message
+[12:31:13] Bridge command received: gemini_chat_send_message
+[12:33:24] Cleaned up injected chat UI elements.
+[12:33:24] Has reviewer web: True
+[12:33:24] Has mw.web: True
+[12:33:24] Chat window hidden instantly via bridge command.
+[12:33:24] Cleanup completed
+[12:33:36] Initializing GeminiChatBot...
+[12:33:36] Configuration loaded successfully
+[12:33:36] Menu setup completed
+[12:33:36] PyCmd handlers registered
+[12:33:36] Registered 4 hooks
+[12:33:36] GeminiChatBot initialized successfully
+[12:33:36] State change: startup → deckBrowser
+[12:33:42] PyCmd received: open:1730211184472
+[12:33:42] State change: deckBrowser → overview
+[12:33:43] PyCmd received: study
+[12:33:43] State change: overview → review
+[12:33:43] === on_show_question TRIGGERED ===
+[12:33:43] Card ID: 1730211423364
+Deck ID: 1730211184472
+Note ID: 1730211423364
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: regret to tell/inform you...
+[12:33:43] Cleaned up injected chat UI elements.
+[12:33:43] Showing button for: regret to tell/inform you...
+[12:33:43] ChatBot button injected successfully
+[12:33:43] PyCmd received: updateToolbar
+[12:33:44] PyCmd received: gemini_chat_open
+[12:33:44] Opening chat window...
+[12:33:44] Initializing injected ChatWindow...
+[12:33:44] PyCmd handlers registered
+[12:33:44] Injected chat UI successfully
+[12:33:51] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:33:51] Chat window injected/shown successfully
+[12:33:51] Bridge command received: gemini_chat_open
+[12:33:55] PyCmd received: gemini_chat_send_message
+[12:33:55] Bridge command received: gemini_chat_send_message
+[12:33:58] Added message: [user] chaof banj...
+[12:33:58] Showing typing indicator.
+[12:33:58] Starting GeminiThread for prompt: chaof banj...
+[12:33:58] Calling Gemini API...
+[12:34:00] Response: 200 - {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "It seems you might be trying to say \"Ciao, ban!\" or \"Chao, ban!\" depending on the language you're aiming for.\n\n*   **\"Ciao, ban!\"** - In Italian, \"Ciao\" means \"hello\" or \"goodbye.\" So, \"Ciao, ban!\" could be a casual greeting or farewell to someone named Ban.\n\n*   **\"Chao, ban!\"** - \"Chao\" (你好 - Nǐ hǎo) in Mandarin Chinese means \"hello.\" So, \"Chao, ban!\" could be a greeting to someone named Ban.\n\nIf neither of these is what you meant, could you provide more context or clarify what you're trying to say?\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.292279052734375
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 4,
+    "candidatesTokenCount": 145,
+    "totalTokenCount": 149,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 4
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 145
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "SzMMaeSVFIb-2roPm6idgAQ"
+}
+
+[12:34:00] Gemini API call successful
+[12:34:00] Hiding typing indicator.
+[12:34:02] Added message: [bot] It seems you might be trying to say "Ciao, ban!" o...
+[12:34:02] Received response from Gemini: It seems you might be trying to say "Ciao, ban!" or "Chao, ban!" depending on the language you're aiming for.
+
+*   **"Ciao, ban!"** - In Italian, "Ciao" means "hello" or "goodbye." So, "Ciao, ban!" could be a casual greeting or farewell to someone named Ban.
+
+*   **"Chao, ban!"** - "Chao" (你好 - Nǐ hǎo) in Mandarin Chinese means "hello." So, "Chao, ban!" could be a greeting to someone named Ban.
+
+If neither of these is what you meant, could you provide more context or clarify what you're trying to say?
+
+[12:34:04] Added message: [user] chaof banj...
+[12:34:37] PyCmd received: gemini_chat_send_message
+[12:34:37] Bridge command received: gemini_chat_send_message
+[12:34:39] Added message: [user] hello...
+[12:34:39] Showing typing indicator.
+[12:34:39] Starting GeminiThread for prompt: hello...
+[12:34:39] Calling Gemini API...
+[12:34:40] Response: 200 - {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Hello! How can I help you today?\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.043426874279975894
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 1,
+    "candidatesTokenCount": 10,
+    "totalTokenCount": 11,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 10
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "dDMMaYWyM_2s2roP-e3V8Ao"
+}
+
+[12:34:40] Gemini API call successful
+[12:34:40] Hiding typing indicator.
+[12:34:41] Added message: [bot] Hello! How can I help you today?
+...
+[12:34:41] Received response from Gemini: Hello! How can I help you today?
+
+[12:34:43] Added message: [user] hello...
+[12:36:38] Cleaned up injected chat UI elements.
+[12:36:38] Has reviewer web: True
+[12:36:38] Has mw.web: True
+[12:36:38] Chat window hidden instantly via bridge command.
+[12:36:38] Cleanup completed
+[12:36:49] Initializing GeminiChatBot...
+[12:36:49] Configuration loaded successfully
+[12:36:49] Menu setup completed
+[12:36:49] PyCmd handlers registered
+[12:36:49] Registered 4 hooks
+[12:36:49] GeminiChatBot initialized successfully
+[12:36:49] State change: startup → deckBrowser
+[12:36:58] PyCmd received: open:1730211184472
+[12:36:58] State change: deckBrowser → overview
+[12:36:58] PyCmd received: study
+[12:36:58] State change: overview → review
+[12:36:58] === on_show_question TRIGGERED ===
+[12:36:58] Card ID: 1730211423364
+Deck ID: 1730211184472
+Note ID: 1730211423364
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: regret to tell/inform you...
+[12:36:58] Cleaned up injected chat UI elements.
+[12:36:58] Showing button for: regret to tell/inform you...
+[12:36:58] ChatBot button injected successfully
+[12:36:58] PyCmd received: updateToolbar
+[12:37:00] PyCmd received: gemini_chat_open
+[12:37:00] Opening chat window...
+[12:37:00] Initializing injected ChatWindow...
+[12:37:00] PyCmd handlers registered
+[12:37:00] Injected chat UI successfully
+[12:37:02] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:37:02] Chat window injected/shown successfully
+[12:37:02] Bridge command received: gemini_chat_open
+[12:37:12] PyCmd received: gemini_chat_send_message
+[12:37:12] Bridge command received: gemini_chat_send_message
+[12:37:14] Added message: [user] regret là gì...
+[12:37:14] Showing typing indicator.
+[12:37:14] Starting GeminiThread for prompt: regret là gì...
+[12:37:14] Calling Gemini API...
+[12:37:17] Response: 200 - {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\"Regret\" trong tiếng Việt có nghĩa là **hối tiếc, ân hận, hối hận** về một điều gì đó đã xảy ra trong quá khứ.\n\nCụ thể hơn, regret thường được dùng để diễn tả cảm giác buồn bã, thất vọng, hoặc thậm chí đau khổ vì:\n\n*   **Một hành động đã làm:** Hối tiếc vì đã nói hoặc làm điều gì đó gây tổn thương cho người khác.\n*   **Một hành động không làm:** Hối tiếc vì đã không nắm bắt cơ hội, không nói ra điều mình nghĩ, hoặc không làm điều mình muốn.\n*   **Một quyết định đã đưa ra:** Hối tiếc vì đã chọn sai con đường, sai người, hoặc sai thời điểm.\n\nVí dụ:\n\n*   \"I regret not studying harder in high school.\" (Tôi hối tiếc vì đã không học hành chăm chỉ hơn ở cấp ba.)\n*   \"She regrets saying those hurtful words to her friend.\" (Cô ấy hối hận vì đã nói những lời tổn thương với bạn mình.)\n*   \"He has no regrets about leaving his old job.\" (Anh ấy không hối tiếc về việc rời bỏ công việc cũ.)\n\nHy vọng điều này giải thích rõ nghĩa của \"regret\" cho bạn.\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.16459207054522398
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 4,
+    "candidatesTokenCount": 278,
+    "totalTokenCount": 282,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 4
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 278
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "DzQMaYrBL8Gb0-kP2uzqmQc"
+}
+
+[12:37:17] Gemini API call successful
+[12:37:17] Hiding typing indicator.
+[12:37:19] Added message: [bot] "Regret" trong tiếng Việt có nghĩa là **hối tiếc, ...
+[12:37:19] Received response from Gemini: "Regret" trong tiếng Việt có nghĩa là **hối tiếc, ân hận, hối hận** về một điều gì đó đã xảy ra trong quá khứ.
+
+Cụ thể hơn, regret thường được dùng để diễn tả cảm giác buồn bã, thất vọng, hoặc thậm chí đau khổ vì:
+
+*   **Một hành động đã làm:** Hối tiếc vì đã nói hoặc làm điều gì đó gây tổn thương cho người khác.
+*   **Một hành động không làm:** Hối tiếc vì đã không nắm bắt cơ hội, không nói ra điều mình nghĩ, hoặc không làm điều mình muốn.
+*   **Một quyết định đã đưa ra:** Hối tiếc vì đã chọn sai con đường, sai người, hoặc sai thời điểm.
+
+Ví dụ:
+
+*   "I regret not studying harder in high school." (Tôi hối tiếc vì đã không học hành chăm chỉ hơn ở cấp ba.)
+*   "She regrets saying those hurtful words to her friend." (Cô ấy hối hận vì đã nói những lời tổn thương với bạn mình.)
+*   "He has no regrets about leaving his old job." (Anh ấy không hối tiếc về việc rời bỏ công việc cũ.)
+
+Hy vọng điều này giải thích rõ nghĩa của "regret" cho bạn.
+
+[12:37:52] PyCmd received: gemini_chat_send_message
+[12:37:52] Bridge command received: gemini_chat_send_message
+[12:38:39] Added message: [user] cảm ơn bạn...
+[12:38:39] Showing typing indicator.
+[12:38:39] Starting GeminiThread for prompt: cảm ơn bạn...
+[12:38:39] Calling Gemini API...
+[12:38:40] Response: 200 - {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Chào bạn! Bạn cần tôi giúp gì không?\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.217669407526652
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 4,
+    "candidatesTokenCount": 12,
+    "totalTokenCount": 16,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 4
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 12
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "ZDQMaaiMIuac2roPov6g8Ao"
+}
+
+[12:38:40] Gemini API call successful
+[12:38:40] Hiding typing indicator.
+[12:38:42] Added message: [bot] Chào bạn! Bạn cần tôi giúp gì không?
+...
+[12:38:42] Received response from Gemini: Chào bạn! Bạn cần tôi giúp gì không?
+
+[12:40:12] Cleaned up injected chat UI elements.
+[12:40:12] Has reviewer web: True
+[12:40:12] Has mw.web: True
+[12:40:12] Chat window hidden instantly via bridge command.
+[12:40:12] Cleanup completed
+[12:40:23] Initializing GeminiChatBot...
+[12:40:23] Configuration loaded successfully
+[12:40:23] Menu setup completed
+[12:40:23] PyCmd handlers registered
+[12:40:23] Registered 4 hooks
+[12:40:23] GeminiChatBot initialized successfully
+[12:40:23] State change: startup → deckBrowser
+[12:40:32] PyCmd received: open:1730211184472
+[12:40:32] State change: deckBrowser → overview
+[12:40:32] PyCmd received: study
+[12:40:32] State change: overview → review
+[12:40:32] === on_show_question TRIGGERED ===
+[12:40:32] Card ID: 1730211423364
+Deck ID: 1730211184472
+Note ID: 1730211423364
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: regret to tell/inform you...
+[12:40:32] Cleaned up injected chat UI elements.
+[12:40:32] Showing button for: regret to tell/inform you...
+[12:40:32] ChatBot button injected successfully
+[12:40:33] PyCmd received: updateToolbar
+[12:40:34] PyCmd received: gemini_chat_open
+[12:40:34] Opening chat window...
+[12:40:34] Initializing injected ChatWindow...
+[12:40:34] PyCmd handlers registered
+[12:40:34] Injected chat UI successfully
+[12:40:36] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:40:36] Chat window injected/shown successfully
+[12:40:36] Bridge command received: gemini_chat_open
+[12:40:57] PyCmd received: gemini_chat_send_message
+[12:40:57] Bridge command received: gemini_chat_send_message
+[12:41:01] Added message: [user] zero là gì...
+[12:41:01] Showing typing indicator.
+[12:41:01] Starting GeminiThread for prompt: zero là gì...
+[12:41:01] Calling Gemini API...
+[12:41:05] Response: 200 - {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\"Zero\" có nhiều nghĩa tùy thuộc vào ngữ cảnh sử dụng:\n\n**1. Trong Toán học:**\n\n*   **Số không (0):** Đây là nghĩa phổ biến nhất. Zero là một số nguyên, không âm cũng không dương. Nó là đơn vị cộng (additive identity) trong toán học, nghĩa là khi cộng bất kỳ số nào với zero, kết quả vẫn là số đó. Ví dụ: 5 + 0 = 5.\n*   **Điểm gốc:** Trong hệ tọa độ, zero thường được dùng làm điểm gốc (origin).\n*   **Nghiệm của phương trình:** Zero có thể là nghiệm của một phương trình, tức là giá trị của biến làm cho phương trình đó đúng.\n*   **Giới hạn:** Trong giới hạn, một số có thể \"tiến tới zero\" (approaches zero), nghĩa là nó trở nên rất nhỏ, gần như bằng không.\n\n**2. Trong Ngôn ngữ hàng ngày:**\n\n*   **Không có gì:** Thể hiện sự vắng mặt của một cái gì đó. Ví dụ: \"Tôi có zero đồng trong túi.\"\n*   **Không quan trọng:** Đôi khi dùng để chỉ một người hoặc vật không có giá trị hoặc tầm quan trọng. Ví dụ: \"Anh ta là một kẻ zero trong công ty.\"\n*   **Điểm thấp nhất:** Trong một số trường hợp, zero có thể ám chỉ điểm thấp nhất hoặc mức độ tồi tệ nhất. Ví dụ: \"Nhiệt độ xuống zero độ.\"\n\n**3. Trong Kỹ thuật và Khoa học:**\n\n*   **Điểm chuẩn:** Zero có thể được sử dụng làm điểm chuẩn để đo lường hoặc so sánh các giá trị khác. Ví dụ: \"Hiệu chỉnh thiết bị về zero.\"\n*   **Trạng thái tắt:** Trong điện tử, zero có thể biểu thị trạng thái tắt hoặc không có tín hiệu.\n\n**4. Trong Lập trình:**\n\n*   **Giá trị mặc định:** Zero thường được sử dụng làm giá trị mặc định cho các biến số chưa được khởi tạo.\n*   **Chỉ số đầu tiên:** Trong nhiều ngôn ngữ lập trình, mảng (array) bắt đầu từ chỉ số zero.\n\n**Tóm lại, để hiểu rõ nghĩa của \"zero\" trong một tình huống cụ thể, bạn cần xem xét ngữ cảnh sử dụng nó.**\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.19843928019205728
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 3,
+    "candidatesTokenCount": 498,
+    "totalTokenCount": 501,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 3
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 498
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "8jQMaZHsKsO50-kPo9a0sAc"
+}
+
+[12:41:05] Gemini API call successful
+[12:41:05] Hiding typing indicator.
+[12:41:07] Added message: [bot] "Zero" có nhiều nghĩa tùy thuộc vào ngữ cảnh sử dụ...
+[12:41:07] Received response from Gemini: "Zero" có nhiều nghĩa tùy thuộc vào ngữ cảnh sử dụng:
+
+**1. Trong Toán học:**
+
+*   **Số không (0):** Đây là nghĩa phổ biến nhất. Zero là một số nguyên, không âm cũng không dương. Nó là đơn vị cộng (additive identity) trong toán học, nghĩa là khi cộng bất kỳ số nào với zero, kết quả vẫn là số đó. Ví dụ: 5 + 0 = 5.
+*   **Điểm gốc:** Trong hệ tọa độ, zero thường được dùng làm điểm gốc (origin).
+*   **Nghiệm của phương trình:** Zero có thể là nghiệm của một phương trình, tức là giá trị của biến làm cho phương trình đó đúng.
+*   **Giới hạn:** Trong giới hạn, một số có thể "tiến tới zero" (approaches zero), nghĩa là nó trở nên rất nhỏ, gần như bằng không.
+
+**2. Trong Ngôn ngữ hàng ngày:**
+
+*   **Không có gì:** Thể hiện sự vắng mặt của một cái gì đó. Ví dụ: "Tôi có zero đồng trong túi."
+*   **Không quan trọng:** Đôi khi dùng để chỉ một người hoặc vật không có giá trị hoặc tầm quan trọng. Ví dụ: "Anh ta là một kẻ zero trong công ty."
+*   **Điểm thấp nhất:** Trong một số trường hợp, zero có thể ám chỉ điểm thấp nhất hoặc mức độ tồi tệ nhất. Ví dụ: "Nhiệt độ xuống zero độ."
+
+**3. Trong Kỹ thuật và Khoa học:**
+
+*   **Điểm chuẩn:** Zero có thể được sử dụng làm điểm chuẩn để đo lường hoặc so sánh các giá trị khác. Ví dụ: "Hiệu chỉnh thiết bị về zero."
+*   **Trạng thái tắt:** Trong điện tử, zero có thể biểu thị trạng thái tắt hoặc không có tín hiệu.
+
+**4. Trong Lập trình:**
+
+*   **Giá trị mặc định:** Zero thường được sử dụng làm giá trị mặc định cho các biến số chưa được khởi tạo.
+*   **Chỉ số đầu tiên:** Trong nhiều ngôn ngữ lập trình, mảng (array) bắt đầu từ chỉ số zero.
+
+**Tóm lại, để hiểu rõ nghĩa của "zero" trong một tình huống cụ thể, bạn cần xem xét ngữ cảnh sử dụng nó.**
+
+[12:41:09] PyCmd received: gemini_chat_open
+[12:41:09] Opening chat window...
+[12:41:09] Injected chat UI successfully
+[12:41:11] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:41:11] Chat window injected/shown successfully
+[12:41:11] Bridge command received: gemini_chat_open
+[12:41:14] PyCmd received: gemini_chat_close
+[12:41:14] Bridge command received: gemini_chat_close
+[12:41:14] Has reviewer web: True
+[12:41:14] Has mw.web: True
+[12:41:14] Chat window hidden instantly via bridge command.
+[12:41:16] PyCmd received: gemini_chat_open
+[12:41:16] Opening chat window...
+[12:41:16] Injected chat UI successfully
+[12:41:18] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:41:18] Chat window injected/shown successfully
+[12:41:18] Bridge command received: gemini_chat_open
+[12:42:14] PyCmd received: gemini_chat_close
+[12:42:14] Bridge command received: gemini_chat_close
+[12:42:14] Has reviewer web: True
+[12:42:14] Has mw.web: True
+[12:42:14] Chat window hidden instantly via bridge command.
+[12:42:16] Cleaned up injected chat UI elements.
+[12:42:16] Has reviewer web: True
+[12:42:16] Has mw.web: True
+[12:42:16] Chat window hidden instantly via bridge command.
+[12:42:16] Cleanup completed
+[12:42:26] Initializing GeminiChatBot...
+[12:42:26] Configuration loaded successfully
+[12:42:26] Menu setup completed
+[12:42:26] PyCmd handlers registered
+[12:42:26] Registered 4 hooks
+[12:42:26] GeminiChatBot initialized successfully
+[12:42:26] State change: startup → deckBrowser
+[12:42:43] PyCmd received: open:1730211184472
+[12:42:43] State change: deckBrowser → overview
+[12:42:44] PyCmd received: study
+[12:42:44] State change: overview → review
+[12:42:44] === on_show_question TRIGGERED ===
+[12:42:44] Card ID: 1730211423364
+Deck ID: 1730211184472
+Note ID: 1730211423364
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: regret to tell/inform you...
+[12:42:44] Cleaned up injected chat UI elements.
+[12:42:44] Showing button for: regret to tell/inform you...
+[12:42:44] ChatBot button injected successfully
+[12:42:45] PyCmd received: updateToolbar
+[12:42:46] PyCmd received: gemini_chat_open
+[12:42:46] Opening chat window...
+[12:42:46] Initializing injected ChatWindow...
+[12:42:46] PyCmd handlers registered
+[12:42:46] Injected chat UI successfully
+[12:42:48] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:42:48] Chat window injected/shown successfully
+[12:42:48] Bridge command received: gemini_chat_open
+[12:43:12] PyCmd received: gemini_chat_send_message
+[12:43:12] Bridge command received: gemini_chat_send_message
+[12:43:14] Added message: [user] give là gì...
+[12:43:14] Showing typing indicator.
+[12:43:14] Starting GeminiThread for prompt: give là gì...
+[12:43:14] Calling Gemini API...
+[12:43:18] Response: 200 - {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\"Give\" là một động từ trong tiếng Anh có nghĩa là **cho, tặng, biếu, đưa, trao**. Nó có rất nhiều cách sử dụng và ý nghĩa tùy thuộc vào ngữ cảnh.\n\nDưới đây là một số ví dụ về cách sử dụng \"give\":\n\n*   **Cho/Tặng:**\n    *   *I give you this present.* (Tôi tặng bạn món quà này.)\n    *   *She gave money to charity.* (Cô ấy đã cho tiền từ thiện.)\n*   **Đưa/Trao:**\n    *   *Give me the book, please.* (Làm ơn đưa cho tôi cuốn sách.)\n    *   *He gave her a hug.* (Anh ấy trao cho cô ấy một cái ôm.)\n*   **Cung cấp/Đưa ra:**\n    *   *Can you give me some advice?* (Bạn có thể cho tôi lời khuyên được không?)\n    *   *The teacher gave us an assignment.* (Giáo viên giao cho chúng tôi một bài tập.)\n*   **Gây ra/Tạo ra:**\n    *   *The news gave me a shock.* (Tin tức khiến tôi bị sốc.)\n    *   *The party gave me a headache.* (Bữa tiệc làm tôi đau đầu.)\n*   **Nhường/Hy sinh:**\n    *   *He gave his life for his country.* (Anh ấy hy sinh cuộc đời mình cho đất nước.)\n\nNgoài ra, \"give\" còn được sử dụng trong nhiều cụm động từ (phrasal verbs) với ý nghĩa khác nhau, ví dụ:\n\n*   *Give up:* Từ bỏ\n*   *Give in:* Đầu hàng\n*   *Give away:* Cho đi, tiết lộ\n*   *Give back:* Trả lại\n\nĐể hiểu rõ hơn về nghĩa của \"give\" trong một tình huống cụ thể, bạn cần xem xét ngữ cảnh của câu.\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.17810382095037722
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 3,
+    "candidatesTokenCount": 408,
+    "totalTokenCount": 411,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 3
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 408
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "dzUMaZiDLOec0-kPu7LIsQc"
+}
+
+[12:43:18] Gemini API call successful
+[12:43:18] Hiding typing indicator.
+[12:43:28] Added message: [bot] "Give" là một động từ trong tiếng Anh có nghĩa là ...
+[12:43:28] Received response from Gemini: "Give" là một động từ trong tiếng Anh có nghĩa là **cho, tặng, biếu, đưa, trao**. Nó có rất nhiều cách sử dụng và ý nghĩa tùy thuộc vào ngữ cảnh.
+
+Dưới đây là một số ví dụ về cách sử dụng "give":
+
+*   **Cho/Tặng:**
+    *   *I give you this present.* (Tôi tặng bạn món quà này.)
+    *   *She gave money to charity.* (Cô ấy đã cho tiền từ thiện.)
+*   **Đưa/Trao:**
+    *   *Give me the book, please.* (Làm ơn đưa cho tôi cuốn sách.)
+    *   *He gave her a hug.* (Anh ấy trao cho cô ấy một cái ôm.)
+*   **Cung cấp/Đưa ra:**
+    *   *Can you give me some advice?* (Bạn có thể cho tôi lời khuyên được không?)
+    *   *The teacher gave us an assignment.* (Giáo viên giao cho chúng tôi một bài tập.)
+*   **Gây ra/Tạo ra:**
+    *   *The news gave me a shock.* (Tin tức khiến tôi bị sốc.)
+    *   *The party gave me a headache.* (Bữa tiệc làm tôi đau đầu.)
+*   **Nhường/Hy sinh:**
+    *   *He gave his life for his country.* (Anh ấy hy sinh cuộc đời mình cho đất nước.)
+
+Ngoài ra, "give" còn được sử dụng trong nhiều cụm động từ (phrasal verbs) với ý nghĩa khác nhau, ví dụ:
+
+*   *Give up:* Từ bỏ
+*   *Give in:* Đầu hàng
+*   *Give away:* Cho đi, tiết lộ
+*   *Give back:* Trả lại
+
+Để hiểu rõ hơn về nghĩa của "give" trong một tình huống cụ thể, bạn cần xem xét ngữ cảnh của câu.
+
+[12:43:29] Cleaned up injected chat UI elements.
+[12:43:29] Has reviewer web: True
+[12:43:29] Has mw.web: True
+[12:43:29] Chat window hidden instantly via bridge command.
+[12:43:29] Cleanup completed
+[12:43:41] Initializing GeminiChatBot...
+[12:43:41] Configuration loaded successfully
+[12:43:41] Menu setup completed
+[12:43:41] PyCmd handlers registered
+[12:43:41] Registered 4 hooks
+[12:43:41] GeminiChatBot initialized successfully
+[12:43:41] State change: startup → deckBrowser
+[12:43:49] PyCmd received: open:1730211184472
+[12:43:49] State change: deckBrowser → overview
+[12:43:49] PyCmd received: study
+[12:43:49] State change: overview → review
+[12:43:50] === on_show_question TRIGGERED ===
+[12:43:50] Card ID: 1730211423364
+Deck ID: 1730211184472
+Note ID: 1730211423364
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: regret to tell/inform you...
+[12:43:50] Cleaned up injected chat UI elements.
+[12:43:50] Showing button for: regret to tell/inform you...
+[12:43:50] ChatBot button injected successfully
+[12:43:50] PyCmd received: updateToolbar
+[12:43:51] PyCmd received: gemini_chat_open
+[12:43:51] Opening chat window...
+[12:43:51] Initializing injected ChatWindow...
+[12:43:51] PyCmd handlers registered
+[12:43:51] Injected chat UI successfully
+[12:43:51] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:43:51] Chat window injected/shown successfully
+[12:43:51] Bridge command received: gemini_chat_open
+[12:43:55] PyCmd received: gemini_chat_send_message
+[12:43:55] Bridge command received: gemini_chat_send_message
+[12:43:55] Added message: [user] chào bạn...
+[12:43:55] Showing typing indicator.
+[12:43:55] Starting GeminiThread for prompt: chào bạn...
+[12:43:55] Calling Gemini API...
+[12:43:57] Response: 200 - {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Chào bạn! Rất vui được trò chuyện với bạn. Bạn có khỏe không? Hôm nay bạn muốn mình giúp gì?\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.2360043695994786
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 3,
+    "candidatesTokenCount": 28,
+    "totalTokenCount": 31,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 3
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 28
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "oTUMadfSBOac2roPov6g8Ao"
+}
+
+[12:43:57] Gemini API call successful
+[12:43:57] Hiding typing indicator.
+[12:43:57] Added message: [bot] Chào bạn! Rất vui được trò chuyện với bạn. Bạn có ...
+[12:43:57] Received response from Gemini: Chào bạn! Rất vui được trò chuyện với bạn. Bạn có khỏe không? Hôm nay bạn muốn mình giúp gì?
+
+[12:44:00] PyCmd received: gemini_chat_close
+[12:44:00] Bridge command received: gemini_chat_close
+[12:44:00] Has reviewer web: True
+[12:44:00] Has mw.web: True
+[12:44:00] Chat window hidden instantly via bridge command.
+[12:45:27] Cleaned up injected chat UI elements.
+[12:45:27] Has reviewer web: True
+[12:45:27] Has mw.web: True
+[12:45:27] Chat window hidden instantly via bridge command.
+[12:45:27] Cleanup completed
+[12:45:39] Initializing GeminiChatBot...
+[12:45:39] Configuration loaded successfully
+[12:45:39] Menu setup completed
+[12:45:39] PyCmd handlers registered
+[12:45:39] Registered 4 hooks
+[12:45:39] GeminiChatBot initialized successfully
+[12:45:39] State change: startup → deckBrowser
+[12:45:45] PyCmd received: open:1730211184472
+[12:45:45] State change: deckBrowser → overview
+[12:45:47] PyCmd received: study
+[12:45:47] State change: overview → review
+[12:45:47] === on_show_question TRIGGERED ===
+[12:45:47] Card ID: 1730211423364
+Deck ID: 1730211184472
+Note ID: 1730211423364
+Fields: ['Collocation', 'IPA', 'Meaning', 'Part of Speech', 'Example', 'Meaning of Example', 'Image', 'Audio of Collocation', 'Audio of Example']
+Front: regret to tell/inform you...
+[12:45:47] Cleaned up injected chat UI elements.
+[12:45:47] Showing button for: regret to tell/inform you...
+[12:45:47] ChatBot button injected successfully
+[12:45:47] PyCmd received: updateToolbar
+[12:45:48] PyCmd received: gemini_chat_open
+[12:45:48] Opening chat window...
+[12:45:48] Initializing injected ChatWindow...
+[12:45:48] PyCmd handlers registered
+[12:45:48] Injected chat UI successfully
+[12:45:48] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:45:48] Chat window injected/shown successfully
+[12:45:48] Bridge command received: gemini_chat_open
+[12:45:50] PyCmd received: gemini_chat_send_message
+[12:45:50] Bridge command received: gemini_chat_send_message
+[12:45:50] Added message: [user] chào bạn...
+[12:45:50] Showing typing indicator.
+[12:45:50] Starting GeminiThread for prompt: chào bạn...
+[12:45:50] Calling Gemini API...
+[12:45:51] Response: 200 - {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Chào bạn! Rất vui được trò chuyện với bạn. Bạn có khỏe không? Tôi có thể giúp gì cho bạn hôm nay?\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.079213808322774956
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 3,
+    "candidatesTokenCount": 29,
+    "totalTokenCount": 32,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 3
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 29
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "EzYMaeboO7LG2roPl5ak2Qo"
+}
+
+[12:45:51] Gemini API call successful
+[12:45:51] Hiding typing indicator.
+[12:45:51] Added message: [bot] Chào bạn! Rất vui được trò chuyện với bạn. Bạn có ...
+[12:45:51] Received response from Gemini: Chào bạn! Rất vui được trò chuyện với bạn. Bạn có khỏe không? Tôi có thể giúp gì cho bạn hôm nay?
+
+[12:45:54] PyCmd received: gemini_chat_send_message
+[12:45:54] Bridge command received: gemini_chat_send_message
+[12:45:54] Added message: [user] ngon...
+[12:45:54] Showing typing indicator.
+[12:45:54] Starting GeminiThread for prompt: ngon...
+[12:45:54] Calling Gemini API...
+[12:45:56] Response: 200 - {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\"Ngon\" là một từ tiếng Việt có nghĩa là \"ngon\", \"ngon miệng\" hoặc \"hấp dẫn\". Nó thường được dùng để mô tả hương vị của thức ăn hoặc đồ uống.\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.15520185774022882
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 2,
+    "candidatesTokenCount": 44,
+    "totalTokenCount": 46,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 2
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 44
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "FzYMadL5NNuh2roP4o_diQ8"
+}
+
+[12:45:56] Gemini API call successful
+[12:45:56] Hiding typing indicator.
+[12:45:56] Added message: [bot] "Ngon" là một từ tiếng Việt có nghĩa là "ngon", "n...
+[12:45:56] Received response from Gemini: "Ngon" là một từ tiếng Việt có nghĩa là "ngon", "ngon miệng" hoặc "hấp dẫn". Nó thường được dùng để mô tả hương vị của thức ăn hoặc đồ uống.
+
+[12:46:01] PyCmd received: gemini_chat_close
+[12:46:01] Bridge command received: gemini_chat_close
+[12:46:01] Has reviewer web: True
+[12:46:01] Has mw.web: True
+[12:46:01] Chat window hidden instantly via bridge command.
+[12:46:03] PyCmd received: gemini_chat_open
+[12:46:03] Opening chat window...
+[12:46:03] Injected chat UI successfully
+[12:46:03] Added message: [bot] Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp g...
+[12:46:03] Chat window injected/shown successfully
+[12:46:03] Bridge command received: gemini_chat_open
+[12:46:05] PyCmd received: gemini_chat_close
+[12:46:05] Bridge command received: gemini_chat_close
+[12:46:05] Has reviewer web: True
+[12:46:05] Has mw.web: True
+[12:46:05] Chat window hidden instantly via bridge command.

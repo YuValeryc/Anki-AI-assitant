@@ -27,8 +27,20 @@ class GeminiChatBot:
         self.setup_menu()
         self.register_handlers()
         self.register_hooks()
+        self.register_shortcut()
 
         # self.debug.log("GeminiChatBot initialized successfully", True)
+
+    def register_shortcut(self):
+        """Register global shortcut Ctrl+Y to open chat window"""
+        try:
+            shortcut = QShortcut(QKeySequence("Ctrl+Y"), mw)
+            shortcut.setContext(Qt.ShortcutContext.ApplicationShortcut)
+            shortcut.activated.connect(self.open_chat_window)
+            # self.debug.log("Shortcut Ctrl+Y registered for Gemini ChatBot")
+        except Exception as e:
+            # self.debug.log(f"Error registering shortcut: {e}", True)
+            pass
 
     def register_handlers(self):
         """Register message handlers"""

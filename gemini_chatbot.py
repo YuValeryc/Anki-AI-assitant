@@ -34,10 +34,17 @@ class GeminiChatBot:
     def register_shortcut(self):
         """Register global shortcut Ctrl+Y to open chat window"""
         try:
-            shortcut = QShortcut(QKeySequence("Ctrl+Y"), mw)
-            shortcut.setContext(Qt.ShortcutContext.ApplicationShortcut)
-            shortcut.activated.connect(self.open_chat_window)
-            # self.debug.log("Shortcut Ctrl+Y registered for Gemini ChatBot")
+            # Ctrl + Y → open ChatBot
+            shortcut_open = QShortcut(QKeySequence("Ctrl+Y"), mw)
+            shortcut_open.setContext(Qt.ShortcutContext.ApplicationShortcut)
+            shortcut_open.activated.connect(self.open_chat_window)
+
+            # Ctrl + U → close ChatBot
+            shortcut_close = QShortcut(QKeySequence("Ctrl+U"), mw)
+            shortcut_close.setContext(Qt.ShortcutContext.ApplicationShortcut)
+            shortcut_close.activated.connect(self.close_chat_window)
+
+            # self.debug.log("Shortcut Ctrl+Y and Ctrl + U registered for Gemini ChatBot")
         except Exception as e:
             # self.debug.log(f"Error registering shortcut: {e}", True)
             pass
@@ -347,6 +354,13 @@ class GeminiChatBot:
         except Exception as e:
             # self.debug.log(f"Cleanup error: {e}")
             pass
+
+    def close_chat_window(self):
+        """Close chat window"""
+        if self.chat_window:
+            self.chat_window.close()
+            self.chat_window = None
+            # self.debug.log("Chat window closed")    
 
     def open_chat_window(self):
         """Open chat window"""

@@ -216,7 +216,7 @@ class ChatWindow:
         html_content = css + """
         <div id="gemini-chat-container">
             <div id="gemini-chat-header">
-                Gemini ChatBot
+                Anki Chatbot
                 <button id="gemini-close-btn" onclick="pycmd('gemini_chat_close')">×</button>
             </div>
             <div id="gemini-chat-messages"></div>
@@ -358,7 +358,7 @@ class ChatWindow:
             if (m) {{
                 var existingTyping = document.getElementById('gemini-typing');
                 if (!existingTyping) {{ 
-                    m.innerHTML += "<div id='gemini-typing' class='message bot-message'><em>AI đang trả lời...</em></div>";
+                    m.innerHTML += "<div id='gemini-typing' class='message bot-message'><em>AI của yuu đang trả lời...</em></div>";
                     m.scrollTop = m.scrollHeight;
                 }}
             }}

@@ -209,7 +209,7 @@ class GeminiChatBot:
             # Get deck settings
             deck_id = str(card.did)
             deck_settings = self.config["deck_settings"].get(deck_id, {})
-            deck_enabled = deck_settings.get("enabled", True)
+            deck_enabled = deck_settings.get("enabled", False)
 
             if not deck_enabled:
                 # self.debug.log(f"ChatBot disabled for deck {deck_id}")

@@ -258,7 +258,7 @@ class GeminiChatBot:
         try:
             # Format prompt text for tooltip
             display_text = text[:50] + "..." if len(text) > 50 else text
-            formatted_prompt = prompt.format(text=display_text)
+            formatted_prompt = prompt.format(text="***")
 
             # CSS với !important để override Anki styles
             css = """

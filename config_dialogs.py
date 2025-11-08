@@ -66,6 +66,59 @@ class ConfigDialog(QDialog):
 
         layout.addWidget(self.default_prompt)
 
+        # ----------------------------
+        # CUSTOM PROMPT MANAGEMENT
+        # ----------------------------
+        prompt_group = QGroupBox("🧠 Quản lý Prompt Tùy Chỉnh")
+        prompt_layout = QVBoxLayout()
+
+        # Danh sách prompt
+        self.prompt_list = QListWidget()
+        self.prompt_list.setMinimumHeight(120)  
+        self.prompt_list.setMaximumHeight(150)
+        custom_prompts = self.config.get("custom_prompts", {})
+
+        # Đảm bảo custom prompt nằm cuối (theo thứ tự key)
+        for key, text in sorted(custom_prompts.items(), key=lambda x: x[0].lower()):
+            self.prompt_list.addItem(f"{key}: {text}")
+
+        prompt_layout.addWidget(self.prompt_list)
+
+        # Ô nhập prompt mới / chỉnh sửa
+        key_row = QHBoxLayout()
+        key_row.addWidget(QLabel("🔑 Key:"))
+        self.prompt_key = QLineEdit()
+        self.prompt_key.setPlaceholderText("vd: explain_word")
+        key_row.addWidget(self.prompt_key)
+        prompt_layout.addLayout(key_row)
+
+        text_row = QHBoxLayout()
+        text_row.addWidget(QLabel("💬 Prompt:"))
+        self.prompt_text = QLineEdit()
+        self.prompt_text.setPlaceholderText("Nội dung prompt (phải có {text})")
+        text_row.addWidget(self.prompt_text)
+        prompt_layout.addLayout(text_row)
+
+        # Nút thao tác
+        btns_prompt = QHBoxLayout()
+        btn_add = QPushButton("➕ Thêm / Cập nhật")
+        btn_add.clicked.connect(self.add_or_update_prompt)
+        btns_prompt.addWidget(btn_add)
+
+        btn_delete = QPushButton("🗑️ Xóa")
+        btn_delete.clicked.connect(self.delete_prompt)
+        btns_prompt.addWidget(btn_delete)
+
+        prompt_layout.addLayout(btns_prompt)
+        prompt_group.setLayout(prompt_layout)
+        layout.addWidget(prompt_group)
+
+        # Khi chọn prompt trong danh sách → nạp vào ô nhập
+        self.prompt_list.itemClicked.connect(self.load_prompt_to_fields)
+
+        # Mở rộng chiều cao cửa sổ để đủ chỗ hiển thị
+        self.setFixedSize(500, 600)
+
         # Buttons
         btns = QHBoxLayout()
         btns.addStretch()
@@ -77,7 +130,7 @@ class ConfigDialog(QDialog):
         save_btn = QPushButton("Lưu")
         save_btn.clicked.connect(self.accept)
         btns.addWidget(save_btn)
-
+        
         layout.addLayout(btns)
         self.setLayout(layout)
 
@@ -91,6 +144,61 @@ class ConfigDialog(QDialog):
             "custom_prompts": self.config.get("custom_prompts", {}),
             "deck_settings": self.config.get("deck_settings", {})
         }
+
+    def add_or_update_prompt(self):
+        key = self.prompt_key.text().strip()
+        text = self.prompt_text.text().strip()
+
+        if not key:
+            showInfo("❌ Key không được để trống.")
+            return
+        if " " in key:
+            showInfo("❌ Key không được chứa khoảng trắng.")
+            return
+        if not text:
+            showInfo("❌ Prompt không được để trống.")
+            return
+        if "{text}" not in text and "{field_content}" not in text:
+            showInfo("❌ Prompt phải chứa {text} hoặc {field_content}.")
+            return
+
+        self.config.setdefault("custom_prompts", {})
+        self.config["custom_prompts"][key] = text
+
+        # Cập nhật lại danh sách
+        self.refresh_prompt_list()
+        self.prompt_key.clear()
+        self.prompt_text.clear()
+        showInfo(f"✅ Prompt '{key}' đã được thêm hoặc cập nhật.")
+    
+    def delete_prompt(self):
+        selected = self.prompt_list.currentItem()
+        if not selected:
+            showInfo("❌ Chưa chọn prompt nào để xóa.")
+            return
+
+        key = selected.text().split(":", 1)[0].strip()
+        if key in self.config.get("custom_prompts", {}):
+            del self.config["custom_prompts"][key]
+            self.refresh_prompt_list()
+            showInfo(f"🗑️ Đã xóa prompt '{key}'.")
+        else:
+            showInfo("❌ Prompt không tồn tại trong cấu hình.")
+    
+    def load_prompt_to_fields(self, item):
+        try:
+            key, text = item.text().split(":", 1)
+            self.prompt_key.setText(key.strip())
+            self.prompt_text.setText(text.strip())
+        except ValueError:
+            pass
+    
+    def refresh_prompt_list(self):
+        self.prompt_list.clear()
+        custom_prompts = self.config.get("custom_prompts", {})
+        for key, text in sorted(custom_prompts.items(), key=lambda x: x[0].lower()):
+            self.prompt_list.addItem(f"{key}: {text}")
+
 
 
 # ======================================================================

@@ -418,7 +418,7 @@ class GeminiChatBot:
                 showInfo(f"Lỗi khi inject chat window: {e}")
             # self.debug.log(f"Error opening chat window: {e}", True)
 
-    def call_gemini_api(self, prompt: str) -> str:
+    def call_gemini_api(self, history: str) -> str:
         """Call Gemini API với error handling"""
         if not self.config.get("api_key"):
             return "❌ Lỗi: Chưa cấu hình API Key"
@@ -427,9 +427,9 @@ class GeminiChatBot:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key={api_key}"
 
         payload = {
-            "contents": [{"parts": [{"text": prompt}]}],
+            "contents": history,
             "generationConfig": {
-                "maxOutputTokens": self.config.get("max_tokens", 500),
+                "maxOutputTokens": self.config.get("max_tokens", 500), 
                 "temperature": 0.7,
             }
         }

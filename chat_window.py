@@ -9,14 +9,14 @@ from .debug_tools import DebugTools
 class GeminiThread(QThread):
     finished = pyqtSignal(str)
 
-    def __init__(self, parent, prompt):
+    def __init__(self, parent, history):
         super().__init__()
         self.parent = parent # This is the GeminiChatBot instance
-        self.prompt = prompt
+        self.history = history
 
     def run(self):
         # Call the API through the parent (GeminiChatBot) instance
-        response = self.parent.call_gemini_api(self.prompt)
+        response = self.parent.call_gemini_api(self.history)
         self.finished.emit(str(response))
 
 
@@ -27,6 +27,7 @@ class ChatWindow:
         self.parent = parent # This is the GeminiChatBot instance
         self.debug = DebugTools("ChatWindow")
         self.thread = None
+        self.conversation_history = [] 
         # self.debug.log("Initializing injected ChatWindow...")
         self.register_handlers()
         # self.inject_ui() # Don't inject on init, only when explicitly opened
@@ -380,6 +381,10 @@ class ChatWindow:
             return
         self.add_message("user", text)
         self.show_typing()
+        self.conversation_history.append({
+            "role": "user",
+            "parts": [{"text": text}]
+        })
         # self.debug.log(f"Starting GeminiThread for prompt: {text[:50]}...")
 
         # Kill existing thread if it's running
@@ -388,14 +393,20 @@ class ChatWindow:
             self.thread.wait() # Wait for it to finish gracefully
             # self.debug.log("Terminated previous GeminiThread.")
 
-        self.thread = GeminiThread(self.parent, text)
+        self.thread = GeminiThread(self.parent, self.conversation_history)
         self.thread.finished.connect(self.handle_response)
         self.thread.start()
 
     def handle_response(self, response):
         self.hide_typing()
         self.add_message("bot", response)
-        # self.debug.log(f"Received response from Gemini: {response}")
+
+        self.conversation_history.append({
+            "role": "model",  # 'model' là tên vai trò của AI trong Gemini API
+            "parts": [{"text": response}]
+        })
+
+        # self.debug.log(f"Received response from Gemini and updated history.")
     
     def pre_fill_input(self, text):
         """Prefill input only if this exact prompt has NOT been asked before."""

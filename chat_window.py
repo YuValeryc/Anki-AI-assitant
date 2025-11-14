@@ -248,8 +248,6 @@ class ChatWindow:
                 existingChatContainer.querySelector('#gemini-input-text').focus();
             }} else {{
                 document.body.insertAdjacentHTML('beforeend', `{html_content}`);
-                // Initial message from AI when chat opens
-                // pycmd('gemini_chat_send:Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?');
             }}
             console.log('Gemini Chat Window injected/shown successfully');
         }})();
@@ -262,7 +260,7 @@ class ChatWindow:
             (function() {
                 const msgs = document.querySelectorAll('.bot-message');
                 for (let m of msgs) {
-                    if (m.innerText.includes("Chào bạn, tôi là Gemini ChatBot")) {
+                    if (m.innerText.includes("Chào bạn, tôi là Anki ChatBot")) {
                         return true; // already exists
                     }
                 }
@@ -272,7 +270,7 @@ class ChatWindow:
 
             def callback(exists):
                 if not exists:
-                    self.add_message("bot", "Chào bạn, tôi là Gemini ChatBot. Tôi có thể giúp gì cho bạn?")
+                    self.add_message("bot", "Chào bạn, tôi là Anki ChatBot. Tôi có thể giúp gì cho bạn?")
 
             mw.reviewer.web.evalWithCallback(js_check, callback)
 

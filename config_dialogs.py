@@ -210,6 +210,7 @@ class DeckConfigDialog(QDialog):
         self.config = config
         self.parent = parent
         self.debug = DebugTools("DeckConfigDialog")
+        self.all_decks = []
         self.setup_ui()
 
     # =========================================================
@@ -223,12 +224,15 @@ class DeckConfigDialog(QDialog):
 
         # Deck selector
         layout.addWidget(QLabel("📚 Chọn Deck:"))
+        self.deck_search = QLineEdit()
+        self.deck_search.setPlaceholderText("Nhập tên deck để tìm nhanh")
+        self.deck_search.textChanged.connect(self.filter_decks)
+        layout.addWidget(self.deck_search)
         self.deck_combo = QComboBox()
-        decks = sorted(mw.col.decks.all(), key=lambda d: d["name"].lower())
-        for deck in decks:
-            self.deck_combo.addItem(deck["name"], deck["id"])
         self.deck_combo.currentIndexChanged.connect(self.load_deck_settings)
         layout.addWidget(self.deck_combo)
+        self.all_decks = sorted(mw.col.decks.all(), key=lambda d: d["name"].lower())
+        self._populate_deck_combo(self.all_decks)
 
         # Enable checkbox
         self.deck_enabled = QCheckBox("Bật ChatBot cho deck này")
@@ -291,6 +295,38 @@ class DeckConfigDialog(QDialog):
     def _on_prompt_changed(self):
         data = self.deck_selected_prompt.currentData()
         self._toggle_custom_ui(data is None or data == "custom")
+
+    def _populate_deck_combo(self, decks, selected_id=None):
+        current_selection = selected_id
+        if current_selection is None and self.deck_combo.count():
+            current_selection = self.deck_combo.currentData()
+        self.deck_combo.blockSignals(True)
+        self.deck_combo.clear()
+        for deck in decks:
+            self.deck_combo.addItem(deck["name"], deck["id"])
+        target_idx = -1
+        if current_selection is not None:
+            target_idx = self.deck_combo.findData(current_selection)
+        if target_idx == -1 and self.deck_combo.count():
+            target_idx = 0
+        if target_idx != -1:
+            self.deck_combo.setCurrentIndex(target_idx)
+        self.deck_combo.blockSignals(False)
+
+    def filter_decks(self, text):
+        if not self.all_decks:
+            return
+        query = text.strip().lower()
+        if not query:
+            filtered = self.all_decks
+        else:
+            filtered = [d for d in self.all_decks if query in d["name"].lower()]
+        current_id = self.deck_combo.currentData()
+        valid_ids = {d["id"] for d in filtered}
+        selected_id = current_id if current_id in valid_ids else None
+        self._populate_deck_combo(filtered, selected_id)
+        if self.deck_combo.count():
+            self.load_deck_settings()
 
 
     # =========================================================

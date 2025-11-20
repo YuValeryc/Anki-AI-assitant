@@ -4,6 +4,7 @@ from aqt.utils import showInfo
 
 from PyQt6.QtCore import Qt
 from .debug_tools import DebugTools
+from .languages import get_text
 
 
 # ======================================================================
@@ -15,129 +16,113 @@ class ConfigDialog(QDialog):
         self.config = config
         self.parent = parent
         self.debug = DebugTools("ConfigDialog")
-        self.setup_ui()
+        self.initUI()
 
-    def setup_ui(self):
-        self.setWindowTitle("Cấu hình Gemini ChatBot")
-        self.setFixedSize(500, 350)
-
+    def initUI(self):
+        lang = self.config.get("language", "vi")
+        self.setWindowTitle(get_text(lang, "config_title"))
+        self.setFixedSize(500, 650)
+        
         layout = QVBoxLayout()
 
-        # API Key
-        layout.addWidget(QLabel("🔑 Gemini API Key:"))
-        # self.debug.log(f"Loading API Key from config: {self.config}")
+        # --- Language Selection ---
+        layout.addWidget(QLabel(get_text(lang, "language_label")))
+        self.language = QComboBox()
+        self.language.addItem("Tiếng Việt", "vi")
+        self.language.addItem("English", "en")
+        # Set current language
+        index = self.language.findData(lang)
+        if index >= 0:
+            self.language.setCurrentIndex(index)
+        layout.addWidget(self.language)
+
+        # --- API Key ---
+        layout.addWidget(QLabel(get_text(lang, "api_key_label")))
         self.api_key = QLineEdit()
         self.api_key.setText(self.config.get("api_key", ""))
+        self.api_key.setEchoMode(QLineEdit.EchoMode.Password)
         layout.addWidget(self.api_key)
 
-        # Enable/Disable
-        self.enabled = QCheckBox("Bật ChatBot")
+        # --- Enable Checkbox ---
+        self.enabled = QCheckBox(get_text(lang, "enable_chatbot"))
         self.enabled.setChecked(self.config.get("enabled", True))
         layout.addWidget(self.enabled)
 
-        # Max Tokens
-        layout.addWidget(QLabel("📊 Giới hạn Tokens:"))
+        # --- Max Tokens ---
+        layout.addWidget(QLabel(get_text(lang, "max_tokens_label")))
         self.max_tokens = QSpinBox()
         self.max_tokens.setRange(100, 2000)
         self.max_tokens.setValue(self.config.get("max_tokens", 500))
         layout.addWidget(self.max_tokens)
 
-        # Default prompt
-        layout.addWidget(QLabel("💡 Prompt mặc định (fallback):"))
+        # --- Default Prompt ---
+        layout.addWidget(QLabel(get_text(lang, "default_prompt_label")))
         self.default_prompt = QComboBox()
         self.default_prompt.setEditable(True)
-
-        # Default prompt key
-        self.default_prompt.addItem(
-            "Giải thích ngắn gọn về {text}",
-            "default_simple"
-        )
-
-        # Load custom prompts
-        for key, text in self.config.get("custom_prompts", {}).items():
+        
+        # Add default options
+        self.default_prompt.addItem("Giải thích ngắn gọn về {text}", "explain_simple")
+        self.default_prompt.addItem("Từ đồng nghĩa/trái nghĩa của {text}", "synonyms_antonyms")
+        
+        # Add custom prompts from config
+        custom_prompts = self.config.get("custom_prompts", {})
+        for key, text in custom_prompts.items():
             self.default_prompt.addItem(f"{key}: {text}", key)
-
-        sel_key = self.config.get("selected_prompt", "default_simple")
-        idx = self.default_prompt.findData(sel_key)
-        if idx != -1:
+            
+        # Set current selection
+        current_prompt = self.config.get("selected_prompt", "explain_simple")
+        idx = self.default_prompt.findData(current_prompt)
+        if idx >= 0:
             self.default_prompt.setCurrentIndex(idx)
         else:
-            self.default_prompt.setEditText(sel_key)
-
+            self.default_prompt.setEditText(current_prompt)
+            
         layout.addWidget(self.default_prompt)
 
-        # ----------------------------
-        # CUSTOM PROMPT MANAGEMENT
-        # ----------------------------
-        prompt_group = QGroupBox("🧠 Quản lý Prompt Tùy Chỉnh")
-        prompt_layout = QVBoxLayout()
+        # --- Custom Prompts Management ---
+        group_box = QGroupBox(get_text(lang, "custom_prompt_group"))
+        group_layout = QVBoxLayout()
 
-        # Danh sách prompt
-        self.prompt_list = QListWidget()
-        self.prompt_list.setMinimumHeight(120)  
-        self.prompt_list.setMaximumHeight(150)
-        custom_prompts = self.config.get("custom_prompts", {})
-
-        # Đảm bảo custom prompt nằm cuối (theo thứ tự key)
-        for key, text in sorted(custom_prompts.items(), key=lambda x: x[0].lower()):
-            self.prompt_list.addItem(f"{key}: {text}")
-
-        prompt_layout.addWidget(self.prompt_list)
-
-        # Ô nhập prompt mới / chỉnh sửa
-        key_row = QHBoxLayout()
-        key_row.addWidget(QLabel("🔑 Key:"))
+        form_layout = QFormLayout()
         self.prompt_key = QLineEdit()
-        self.prompt_key.setPlaceholderText("vd: explain_word")
-        key_row.addWidget(self.prompt_key)
-        prompt_layout.addLayout(key_row)
-
-        text_row = QHBoxLayout()
-        text_row.addWidget(QLabel("💬 Prompt:"))
         self.prompt_text = QLineEdit()
-        self.prompt_text.setPlaceholderText("Nội dung prompt (phải có {text})")
-        text_row.addWidget(self.prompt_text)
-        prompt_layout.addLayout(text_row)
+        form_layout.addRow(get_text(lang, "key_label"), self.prompt_key)
+        form_layout.addRow(get_text(lang, "prompt_label"), self.prompt_text)
+        group_layout.addLayout(form_layout)
 
-        # Nút thao tác
-        btns_prompt = QHBoxLayout()
-        btn_add = QPushButton("➕ Thêm / Cập nhật")
+        btn_add = QPushButton(get_text(lang, "btn_add_update"))
         btn_add.clicked.connect(self.add_or_update_prompt)
-        btns_prompt.addWidget(btn_add)
+        group_layout.addWidget(btn_add)
 
-        btn_delete = QPushButton("🗑️ Xóa")
-        btn_delete.clicked.connect(self.delete_prompt)
-        btns_prompt.addWidget(btn_delete)
-
-        prompt_layout.addLayout(btns_prompt)
-        prompt_group.setLayout(prompt_layout)
-        layout.addWidget(prompt_group)
-
-        # Khi chọn prompt trong danh sách → nạp vào ô nhập
+        self.prompt_list = QListWidget()
         self.prompt_list.itemClicked.connect(self.load_prompt_to_fields)
+        group_layout.addWidget(self.prompt_list)
+        self.refresh_prompt_list()
 
-        # Mở rộng chiều cao cửa sổ để đủ chỗ hiển thị
-        self.setFixedSize(500, 600)
+        btn_del = QPushButton(get_text(lang, "btn_delete"))
+        btn_del.clicked.connect(self.delete_prompt)
+        group_layout.addWidget(btn_del)
 
-        # Buttons
-        btns = QHBoxLayout()
-        btns.addStretch()
+        group_box.setLayout(group_layout)
+        layout.addWidget(group_box)
 
-        cancel_btn = QPushButton("Huỷ")
-        cancel_btn.clicked.connect(self.reject)
-        btns.addWidget(cancel_btn)
-
-        save_btn = QPushButton("Lưu")
-        save_btn.clicked.connect(self.accept)
-        btns.addWidget(save_btn)
+        # --- Buttons ---
+        btn_box = QDialogButtonBox(QDialogButtonBox.StandardButton.Save | QDialogButtonBox.StandardButton.Cancel)
+        btn_box.accepted.connect(self.accept)
+        btn_box.rejected.connect(self.reject)
         
-        layout.addLayout(btns)
+        # Localize buttons
+        btn_box.button(QDialogButtonBox.StandardButton.Save).setText(get_text(lang, "btn_save"))
+        btn_box.button(QDialogButtonBox.StandardButton.Cancel).setText(get_text(lang, "btn_cancel"))
+        
+        layout.addWidget(btn_box)
         self.setLayout(layout)
 
     # Return updated config
     def get_config(self):
         return {
             "enabled": self.enabled.isChecked(),
+            "language": self.language.currentData(),
             "api_key": self.api_key.text(),
             "max_tokens": self.max_tokens.value(),
             "selected_prompt": self.default_prompt.currentData() or self.default_prompt.currentText(),
@@ -146,20 +131,21 @@ class ConfigDialog(QDialog):
         }
 
     def add_or_update_prompt(self):
+        lang = self.config.get("language", "vi")
         key = self.prompt_key.text().strip()
         text = self.prompt_text.text().strip()
 
         if not key:
-            showInfo("❌ Key không được để trống.")
+            showInfo(get_text(lang, "error_key_empty"))
             return
         if " " in key:
-            showInfo("❌ Key không được chứa khoảng trắng.")
+            showInfo(get_text(lang, "error_key_space"))
             return
         if not text:
-            showInfo("❌ Prompt không được để trống.")
+            showInfo(get_text(lang, "error_prompt_empty"))
             return
         if "{text}" not in text and "{field_content}" not in text:
-            showInfo("❌ Prompt phải chứa {text} hoặc {field_content}.")
+            showInfo(get_text(lang, "error_prompt_format"))
             return
 
         self.config.setdefault("custom_prompts", {})
@@ -169,21 +155,22 @@ class ConfigDialog(QDialog):
         self.refresh_prompt_list()
         self.prompt_key.clear()
         self.prompt_text.clear()
-        showInfo(f"✅ Prompt '{key}' đã được thêm hoặc cập nhật.")
+        showInfo(get_text(lang, "msg_prompt_saved", key=key))
     
     def delete_prompt(self):
+        lang = self.config.get("language", "vi")
         selected = self.prompt_list.currentItem()
         if not selected:
-            showInfo("❌ Chưa chọn prompt nào để xóa.")
+            showInfo(get_text(lang, "error_no_selection"))
             return
 
         key = selected.text().split(":", 1)[0].strip()
         if key in self.config.get("custom_prompts", {}):
             del self.config["custom_prompts"][key]
             self.refresh_prompt_list()
-            showInfo(f"🗑️ Đã xóa prompt '{key}'.")
+            showInfo(get_text(lang, "msg_prompt_deleted", key=key))
         else:
-            showInfo("❌ Prompt không tồn tại trong cấu hình.")
+            showInfo(get_text(lang, "error_prompt_not_found"))
     
     def load_prompt_to_fields(self, item):
         try:
@@ -217,15 +204,16 @@ class DeckConfigDialog(QDialog):
     # UI SETUP
     # =========================================================
     def setup_ui(self):
-        self.setWindowTitle("Cài đặt theo Deck")
+        lang = self.config.get("language", "vi")
+        self.setWindowTitle(get_text(lang, "deck_config_title"))
         self.setFixedSize(420, 580)
 
         layout = QVBoxLayout()
 
         # Deck selector
-        layout.addWidget(QLabel("📚 Chọn Deck:"))
+        layout.addWidget(QLabel(get_text(lang, "select_deck_label")))
         self.deck_search = QLineEdit()
-        self.deck_search.setPlaceholderText("Nhập tên deck để tìm nhanh")
+        self.deck_search.setPlaceholderText(get_text(lang, "deck_search_placeholder"))
         self.deck_search.textChanged.connect(self.filter_decks)
         layout.addWidget(self.deck_search)
         self.deck_combo = QComboBox()
@@ -235,17 +223,17 @@ class DeckConfigDialog(QDialog):
         self._populate_deck_combo(self.all_decks)
 
         # Enable checkbox
-        self.deck_enabled = QCheckBox("Bật ChatBot cho deck này")
+        self.deck_enabled = QCheckBox(get_text(lang, "enable_deck_chatbot"))
         layout.addWidget(self.deck_enabled)
 
         # Target field
-        layout.addWidget(QLabel("🎯 Trường mục tiêu:"))
+        layout.addWidget(QLabel(get_text(lang, "target_field_label")))
         self.deck_target_field = QComboBox()
         self.deck_target_field.setEditable(True)
         layout.addWidget(self.deck_target_field)
 
         # Prompt selector
-        layout.addWidget(QLabel("💡 Prompt cho deck:"))
+        layout.addWidget(QLabel(get_text(lang, "deck_prompt_label")))
         self.deck_selected_prompt = QComboBox()
         self.deck_selected_prompt.setEditable(True)
         self.deck_selected_prompt.addItem("Giải thích ngắn gọn về {text}", "default_simple")
@@ -255,14 +243,14 @@ class DeckConfigDialog(QDialog):
         self.deck_selected_prompt.currentIndexChanged.connect(self._on_prompt_changed)
 
         # Custom prompt section
-        layout.addWidget(QLabel("➕ Tự tạo prompt mới:"))
+        layout.addWidget(QLabel(get_text(lang, "create_custom_prompt_label")))
         self.custom_key = QLineEdit()
-        self.custom_key.setPlaceholderText("Nhập key (vd: synonyms)")
+        self.custom_key.setPlaceholderText(get_text(lang, "custom_key_placeholder"))
         layout.addWidget(self.custom_key)
         self.custom_text = QLineEdit()
-        self.custom_text.setPlaceholderText("Nhập prompt (phải có {text})")
+        self.custom_text.setPlaceholderText(get_text(lang, "custom_prompt_placeholder"))
         layout.addWidget(self.custom_text)
-        self.btn_add_prompt = QPushButton("Thêm prompt")
+        self.btn_add_prompt = QPushButton(get_text(lang, "btn_add_prompt"))
         self.btn_add_prompt.clicked.connect(self.add_custom_prompt)
         layout.addWidget(self.btn_add_prompt)
         self._toggle_custom_ui(False)  
@@ -270,11 +258,11 @@ class DeckConfigDialog(QDialog):
         # Button section
         btn_layout = QHBoxLayout()
 
-        btn_save = QPushButton("💾 Lưu")
+        btn_save = QPushButton(get_text(lang, "btn_save"))
         btn_save.clicked.connect(self.save_deck_settings)
         btn_layout.addWidget(btn_save)
 
-        btn_check_types = QPushButton("🔍 Kiểm tra Notetype Deck cha")
+        btn_check_types = QPushButton(get_text(lang, "btn_check_notetype"))
         btn_check_types.clicked.connect(self.check_deck_notetypes)
         btn_layout.addWidget(btn_check_types)
 
@@ -403,19 +391,20 @@ class DeckConfigDialog(QDialog):
     # ADD CUSTOM PROMPT
     # =========================================================
     def add_custom_prompt(self):
+        lang = self.config.get("language", "vi")
         key = self.custom_key.text().strip()
         text = self.custom_text.text().strip()
         if not key:
-            showInfo("❌ Key không được để trống.")
+            showInfo(get_text(lang, "error_key_empty"))
             return
         if " " in key:
-            showInfo("❌ Key không được chứa khoảng trắng.")
+            showInfo(get_text(lang, "error_key_space"))
             return
         if not text:
-            showInfo("❌ Prompt không được để trống.")
+            showInfo(get_text(lang, "error_prompt_empty"))
             return
         if "{text}" not in text and "{field_content}" not in text:
-            showInfo("❌ Prompt phải chứa {text} hoặc {field_content}.")
+            showInfo(get_text(lang, "error_prompt_format"))
             return
 
         self.config.setdefault("custom_prompts", {})
@@ -427,13 +416,14 @@ class DeckConfigDialog(QDialog):
             self.deck_selected_prompt.setCurrentIndex(idx)
         self.custom_key.clear()
         self.custom_text.clear()
-        showInfo("✅ Prompt đã được thêm!")
+        showInfo(get_text(lang, "msg_prompt_saved", key=key))
         # self.debug.log(f"[ADD PROMPT] {key} = {text}")
 
     # =========================================================
     # SAVE SETTINGS
     # =========================================================
     def save_deck_settings(self):
+        lang = self.config.get("language", "vi")
         deck_id = str(self.deck_combo.currentData())
         deck_name = self.deck_combo.currentText()
 
@@ -449,7 +439,7 @@ class DeckConfigDialog(QDialog):
                     break
 
         if not model_id:
-            showInfo("❌ Không tìm thấy notetype trong deck hoặc subdeck.")
+            showInfo(get_text(lang, "error_no_notetype"))
             # self.debug.log("[SAVE] ❌ Không tìm thấy notetype nào.")
             return
 
@@ -458,10 +448,10 @@ class DeckConfigDialog(QDialog):
             # Người dùng đang nhập custom prompt thủ công
             custom_prompt = self.custom_text.text().strip()
             if not custom_prompt:
-                showInfo("❌ Vui lòng nhập prompt tùy chỉnh trước khi lưu.")
+                showInfo(get_text(lang, "error_custom_prompt_empty"))
                 return
             if "{text}" not in custom_prompt and "{field_content}" not in custom_prompt:
-                showInfo("❌ Prompt phải chứa {text} hoặc {field_content}.")
+                showInfo(get_text(lang, "error_prompt_format"))
                 return
 
             # Tạo key tạm riêng cho deck này
@@ -506,7 +496,7 @@ class DeckConfigDialog(QDialog):
         #         self.debug.log(f"    - {sub['name']} (ID={sub['id']}, MID={mid})")
 
         self.parent.save_config()
-        msg = f"✅ Đã lưu cho deck: {deck_name} (và {len(same_model_subs)} subdeck cùng notetype)"
+        msg = get_text(lang, "msg_deck_saved", deck_name=deck_name)
         if different_model_subs:
             msg += f"\n⚠️ Bỏ qua {len(different_model_subs)} subdeck có notetype khác."
         showInfo(msg)

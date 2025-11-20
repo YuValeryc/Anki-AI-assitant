@@ -1,5 +1,6 @@
 {
     "enabled": true,
+    "language": "vi",
     "api_key": "",
     "max_tokens": 500,
     "selected_prompt": "explain_simple",

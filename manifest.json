@@ -3,7 +3,7 @@
     "name": "Gemini ChatBot for Anki",
     "version": "1.0.0",
     "author": "yuu",
-    "description": "Transform text fields in bulk (lowercase, uppercase, or custom function)",
+    "description": "Chatbot for reviewing cards using Gemini API.",
     "min_point_version": 25,
     "max_point_version": 30
 }

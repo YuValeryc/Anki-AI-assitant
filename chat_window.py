@@ -94,23 +94,76 @@ class ChatWindow:
 
         # CSS và HTML cho cửa sổ chat
         # Sử dụng prefix #gemini-chat-container để isolate CSS tốt hơn
-        css = """
+        # Theme handling
+        theme = self.parent.config.get("theme", "light")
+        
+        if theme == "dark":
+            css_vars = """
+            --bg-color: #1e1e1e;
+            --header-bg: #1e1e1e;
+            --text-color: #e0e0e0;
+            --border-color: #333333;
+            --input-bg: #2d2d2d;
+            --input-focus-bg: #333333;
+            --input-text: #e0e0e0;
+            --user-msg-bg: #0a84ff;
+            --user-msg-text: #ffffff;
+            --bot-msg-bg: #2d2d2d;
+            --bot-msg-text: #e0e0e0;
+            --close-btn-color: #aaa;
+            --close-btn-hover-bg: #333;
+            --send-btn-bg: #ffffff;
+            --send-btn-hover-bg: #e0e0e0;
+            --send-btn-icon: #000000;
+            --code-bg: #2d2d2d;
+            --code-text: #e0e0e0;
+            --pre-bg: #2d2d2d;
+            --pre-border: #333;
+            --scrollbar-thumb: rgba(255,255,255,0.1);
+            """
+        else:
+            css_vars = """
+            --bg-color: #ffffff;
+            --header-bg: #ffffff;
+            --text-color: #1a1a1a;
+            --border-color: #f0f0f0;
+            --input-bg: #f4f4f4;
+            --input-focus-bg: #ffffff;
+            --input-text: #333333;
+            --user-msg-bg: #007bff;
+            --user-msg-text: #ffffff;
+            --bot-msg-bg: #f1f3f4;
+            --bot-msg-text: #1f1f1f;
+            --close-btn-color: #888;
+            --close-btn-hover-bg: #f5f5f5;
+            --send-btn-bg: #1a1a1a;
+            --send-btn-hover-bg: #333;
+            --send-btn-icon: #ffffff;
+            --code-bg: #e0e0e0;
+            --code-text: #d63384;
+            --pre-bg: #f8f9fa;
+            --pre-border: #eee;
+            --scrollbar-thumb: rgba(0,0,0,0.1);
+            """
+
+        css = f"""
         <style id="gemini-chat-style">
         /* Reset styles for our container to prevent inheritance */
-        #gemini-chat-container, #gemini-chat-container * {
+        #gemini-chat-container, #gemini-chat-container * {{
             box-sizing: border-box;
             margin: 0;
             padding: 0;
             font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        }
+        }}
 
-        #gemini-chat-container {
+        #gemini-chat-container {{
+            {css_vars}
             position: fixed;
             bottom: 30px;
             right: 30px;
             width: 380px;
             height: 600px;
-            background: #ffffff;
+            background: var(--bg-color);
             border-radius: 24px;
             box-shadow: 0 12px 40px rgba(0,0,0,0.12), 0 0 0 1px rgba(0,0,0,0.05);
             display: flex;
@@ -121,47 +174,47 @@ class ChatWindow:
             opacity: 0;
             transform: translateY(20px) scale(0.95);
             animation: gemini-fade-in 0.3s forwards;
-        }
+        }}
 
-        @keyframes gemini-fade-in {
-            to {
+        @keyframes gemini-fade-in {{
+            to {{
                 opacity: 1;
                 transform: translateY(0) scale(1);
-            }
-        }
+            }}
+        }}
 
-        #gemini-chat-header {
+        #gemini-chat-header {{
             padding: 20px 24px;
-            background: #ffffff;
-            color: #1a1a1a;
+            background: var(--header-bg);
+            color: var(--text-color);
             font-weight: 700;
             display: flex;
             justify-content: space-between;
             align-items: center;
             font-size: 18px;
-            border-bottom: 1px solid #f0f0f0;
+            border-bottom: 1px solid var(--border-color);
             flex-shrink: 0;
-        }
+        }}
 
-        #gemini-header-title {
+        #gemini-header-title {{
             display: flex;
             align-items: center;
             gap: 10px;
-        }
+        }}
 
-        #gemini-header-title::before {
+        #gemini-header-title::before {{
             content: '';
             display: block;
             width: 10px;
             height: 10px;
             background: #10a37f; /* OpenAI green-ish or any accent */
             border-radius: 50%;
-        }
+        }}
 
-        #gemini-close-btn {
+        #gemini-close-btn {{
             background: transparent;
             border: none;
-            color: #888;
+            color: var(--close-btn-color);
             font-size: 24px;
             width: 32px;
             height: 32px;
@@ -172,121 +225,126 @@ class ChatWindow:
             align-items: center;
             transition: all 0.2s ease;
             line-height: 1;
-        }
-        #gemini-close-btn:hover {
-            background: #f5f5f5;
-            color: #333;
-        }
+        }}
+        #gemini-close-btn:hover {{
+            background: var(--close-btn-hover-bg);
+            color: var(--text-color);
+        }}
 
-        #gemini-chat-messages {
+        #gemini-chat-messages {{
             flex: 1;
             padding: 20px;
             overflow-y: auto;
-            background: #ffffff;
+            background: var(--bg-color);
             word-wrap: break-word;
             display: flex;
             flex-direction: column;
             gap: 15px;
             scroll-behavior: smooth;
-        }
+        }}
 
         /* Scrollbar styling */
-        #gemini-chat-messages::-webkit-scrollbar {
+        #gemini-chat-messages::-webkit-scrollbar {{
             width: 6px;
-        }
-        #gemini-chat-messages::-webkit-scrollbar-track {
+        }}
+        #gemini-chat-messages::-webkit-scrollbar-track {{
             background: transparent;
-        }
-        #gemini-chat-messages::-webkit-scrollbar-thumb {
-            background-color: rgba(0,0,0,0.1);
+        }}
+        #gemini-chat-messages::-webkit-scrollbar-thumb {{
+            background-color: var(--scrollbar-thumb);
             border-radius: 3px;
-        }
+        }}
 
-        .message {
+        .message {{
             text-align: left;
             max-width: 85%;
             line-height: 1.6;
             font-size: 15px;
             position: relative;
             word-break: break-word;
-        }
+        }}
 
-        .user-message {
+        .user-message {{
             align-self: flex-end;
-            background: #007bff;
-            color: #ffffff;
+            background: var(--user-msg-bg);
+            color: var(--user-msg-text);
             border-radius: 18px 18px 4px 18px;
             padding: 12px 16px !important;
-            box-shadow: 0 2px 5px rgba(0,123,255,0.2);
-        }
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }}
 
-        .bot-message {
+        .bot-message {{
             align-self: flex-start;
-            background: #f1f3f4;
-            color: #1f1f1f;
+            background: var(--bot-msg-bg);
+            color: var(--bot-msg-text);
             border-radius: 18px 18px 18px 4px;
             padding: 12px 16px !important;
             box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-        }
+        }}
 
         /* Markdown styling within bot messages */
-        .bot-message b { font-weight: 600; color: #000; }
-        .bot-message i { font-style: italic; }
-        .bot-message code {
-            background: #e0e0e0;
+        .bot-message b {{ font-weight: 600; color: var(--text-color); }}
+        .bot-message i {{ font-style: italic; }}
+        .bot-message code {{
+            background: var(--code-bg);
             padding: 2px 4px;
             border-radius: 4px;
             font-family: 'Menlo', 'Consolas', monospace;
             font-size: 0.9em;
-            color: #d63384;
-        }
-        .bot-message pre {
-            background: #f8f9fa;
+            color: var(--code-text);
+        }}
+        .bot-message pre {{
+            background: var(--pre-bg);
             padding: 12px !important;
             border-radius: 8px;
             overflow-x: auto;
             margin: 8px 0;
-            border: 1px solid #eee;
-        }
+            border: 1px solid var(--pre-border);
+        }}
+        .bot-message pre code {{
+            background: transparent;
+            color: inherit;
+            padding: 0;
+        }}
 
-        #gemini-chat-input-area {
+        #gemini-chat-input-area {{
             padding: 20px;
-            background: #ffffff;
-            border-top: 1px solid #f0f0f0;
+            background: var(--bg-color);
+            border-top: 1px solid var(--border-color);
             display: flex;
             flex-direction: column;
             gap: 10px;
-        }
+        }}
 
-        #gemini-input-wrapper {
+        #gemini-input-wrapper {{
             display: flex;
             align-items: center;
-            background: #f4f4f4;
+            background: var(--input-bg);
             border-radius: 24px;
             padding: 4px 4px 4px 16px;
             border: 1px solid transparent;
             transition: all 0.2s ease;
-        }
+        }}
         
-        #gemini-input-wrapper:focus-within {
-            background: #ffffff;
-            border-color: #ddd;
+        #gemini-input-wrapper:focus-within {{
+            background: var(--input-focus-bg);
+            border-color: var(--border-color);
             box-shadow: 0 0 0 2px rgba(0,0,0,0.05);
-        }
+        }}
 
-        #gemini-input-text {
+        #gemini-input-text {{
             flex: 1;
             background: transparent;
             border: none;
             outline: none;
             padding: 8px 0;
             font-size: 15px;
-            color: #333;
+            color: var(--input-text);
             min-width: 0;
-        }
+        }}
 
-        #gemini-send-btn {
-            background: #1a1a1a;
+        #gemini-send-btn {{
+            background: var(--send-btn-bg);
             color: white;
             border: none;
             width: 36px;
@@ -299,30 +357,30 @@ class ChatWindow:
             transition: all 0.2s ease;
             flex-shrink: 0;
             margin-left: 8px;
-        }
+        }}
 
-        #gemini-send-btn:hover {
-            background: #333;
+        #gemini-send-btn:hover {{
+            background: var(--send-btn-hover-bg);
             transform: scale(1.05);
-        }
+        }}
         
-        #gemini-send-btn svg {
+        #gemini-send-btn svg {{
             width: 18px;
             height: 18px;
-            fill: white;
-        }
+            fill: var(--send-btn-icon);
+        }}
 
-        #gemini-typing {
+        #gemini-typing {{
             font-size: 12px;
             color: #999;
             margin-left: 16px;
             height: 16px;
             opacity: 0;
             transition: opacity 0.2s;
-        }
-        #gemini-typing.visible {
+        }}
+        #gemini-typing.visible {{
             opacity: 1;
-        }
+        }}
         </style>
         """
 

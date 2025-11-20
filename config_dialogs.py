@@ -36,6 +36,18 @@ class ConfigDialog(QDialog):
             self.language.setCurrentIndex(index)
         layout.addWidget(self.language)
 
+        # --- Theme Selection ---
+        layout.addWidget(QLabel("Theme")) # Simple label, can be localized later if needed
+        self.theme = QComboBox()
+        self.theme.addItem("Light", "light")
+        self.theme.addItem("Dark", "dark")
+        # Set current theme
+        current_theme = self.config.get("theme", "light")
+        theme_index = self.theme.findData(current_theme)
+        if theme_index >= 0:
+            self.theme.setCurrentIndex(theme_index)
+        layout.addWidget(self.theme)
+
         # --- API Key ---
         layout.addWidget(QLabel(get_text(lang, "api_key_label")))
         self.api_key = QLineEdit()
@@ -123,6 +135,8 @@ class ConfigDialog(QDialog):
         return {
             "enabled": self.enabled.isChecked(),
             "language": self.language.currentData(),
+            "theme": self.theme.currentData(),
+            "api_key": self.api_key.text(),
             "api_key": self.api_key.text(),
             "max_tokens": self.max_tokens.value(),
             "selected_prompt": self.default_prompt.currentData() or self.default_prompt.currentText(),

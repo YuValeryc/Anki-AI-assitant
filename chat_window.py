@@ -40,8 +40,13 @@ class ChatWindow:
         webview_did_receive_js_message.append(self.handle_pycmd)
         # self.debug.log("PyCmd handlers registered")
 
+    def clear_history(self):
+        """Delete conversation history"""
+        self.conversation_history = []
+        # self.debug.log("Chat history cleared")
+
     def handle_pycmd(self, handled, message, context):
-        """Xử lý các lệnh được gửi từ JS qua pycmd()."""
+        """Handle commands from JS via pycmd()"""
         # self.debug.log(f"Bridge command received: {message}")
 
         if message == "gemini_chat_close":
@@ -71,7 +76,7 @@ class ChatWindow:
 
     # ==================== UI INJECTION ====================
     def inject_ui(self):
-        """Inject CSS + HTML vào reviewer và hiển thị nó."""
+        """Inject CSS + HTML into reviewer and display it."""
         
         # Localization
         lang = self.parent.config.get("language", "vi")
@@ -211,7 +216,7 @@ class ChatWindow:
             background: #007bff;
             color: #ffffff;
             border-radius: 18px 18px 4px 18px;
-            padding: 12px 16px;
+            padding: 12px 16px !important;
             box-shadow: 0 2px 5px rgba(0,123,255,0.2);
         }
 
@@ -220,7 +225,7 @@ class ChatWindow:
             background: #f1f3f4;
             color: #1f1f1f;
             border-radius: 18px 18px 18px 4px;
-            padding: 12px 16px;
+            padding: 12px 16px !important;
             box-shadow: 0 1px 2px rgba(0,0,0,0.05);
         }
 
@@ -237,7 +242,7 @@ class ChatWindow:
         }
         .bot-message pre {
             background: #f8f9fa;
-            padding: 12px;
+            padding: 12px !important;
             border-radius: 8px;
             overflow-x: auto;
             margin: 8px 0;
@@ -480,7 +485,7 @@ class ChatWindow:
         self.show_typing()
 
         # 3. Cập nhật lịch sử
-        self.conversation_history.append({"role": "user", "parts": [message]})
+        self.conversation_history.append({"role": "user", "parts": [{"text": message}]})
 
         # 4. Gọi API (trong thread riêng để không chặn UI)
         self.thread = GeminiThread(self.parent, self.conversation_history)
@@ -491,7 +496,7 @@ class ChatWindow:
         """Xử lý phản hồi từ API."""
         self.hide_typing()
         self.add_message("bot", response)
-        self.conversation_history.append({"role": "model", "parts": [response]})
+        self.conversation_history.append({"role": "model", "parts": [{"text": response}]})
 
     def show_typing(self):
         if mw.reviewer and mw.reviewer.web:

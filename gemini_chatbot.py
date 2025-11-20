@@ -183,7 +183,6 @@ class GeminiChatBot:
             f"Reviewer Active: {mw.reviewer is not None}",
             f"WebView Ready: {mw.reviewer and mw.reviewer.web is not None}",
             "",
-            "Debug URL: http://localhost:8080",
             "Check console for detailed logs"
         ]
 
@@ -202,6 +201,9 @@ class GeminiChatBot:
             if not self.config["enabled"]:
                 # self.debug.log("Addon disabled in config")
                 return
+            
+            if self.chat_window:
+                self.chat_window.clear_history()
 
             # Check if reviewer and webview are ready
             if not mw.reviewer or not mw.reviewer.web:
@@ -685,7 +687,7 @@ class GeminiChatBot:
                 showInfo(f"Error: {e}")
             # self.debug.log(f"Error opening chat window: {e}", True)
 
-    def call_gemini_api(self, history: str) -> str:
+    def call_gemini_api(self, input_data) -> str:
         """Call Gemini API với error handling"""
         lang = self.config.get("language", "vi")
         if not self.config.get("api_key"):
@@ -694,8 +696,17 @@ class GeminiChatBot:
         api_key = self.config.get("api_key")
         url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key={api_key}"
 
+        # === LOGIC SỬA ĐỔI Ở ĐÂY ===
+        # Kiểm tra input_data là string (Test API) hay list (Chat History)
+        if isinstance(input_data, str):
+            # Nếu là string, gói nó vào format của Gemini
+            contents = [{"parts": [{"text": input_data}]}]
+        else:
+            # Nếu là list (history), dùng trực tiếp
+            contents = input_data
+
         payload = {
-            "contents": [{"parts": [{"text": history}]}],
+            "contents": contents, # Truyền thẳng contents đã xử lý
             "generationConfig": {
                 "maxOutputTokens": self.config.get("max_tokens", 500), 
                 "temperature": 0.7,
